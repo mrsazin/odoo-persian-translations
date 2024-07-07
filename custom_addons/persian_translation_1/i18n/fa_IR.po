@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-07 05:10+0000\n"
-"PO-Revision-Date: 2024-07-07 09:27+0330\n"
+"PO-Revision-Date: 2024-07-07 09:43+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: code:addons/im_livechat/models/chatbot_script.py:0
 #, python-format
 msgid " (copy)"
-msgstr "(کپی)"
+msgstr " (کپی)"
 
 #. module: im_livechat
 #. odoo-python
@@ -3145,7 +3145,7 @@ msgid ""
 "                You will be able to manage allocations, issues and maintenance of your equipment."
 msgstr ""
 "تجهیزات را ردیابی کنید و آن را به یک کارمند یا بخش مرتبط کنید.\n"
-"                در اینجا این امکان برای شما فرهم خواهدبود تا بر نحوه‌ی تخصیص،مسائل و مشکلات و نگهداری تجهیزات خود را مدیریت کنید.."
+"                در اینجا این امکان برای شما فراهم خواهدبود تا بر نحوه‌ی تخصیص،مسائل / مشکلات و نگهداری تجهیزات خود نظارت کنید."
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
