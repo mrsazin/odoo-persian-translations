@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-20 11:15+0000\n"
-"PO-Revision-Date: 2024-07-20 17:01+0330\n"
+"PO-Revision-Date: 2024-07-21 11:19+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -27,8 +27,7 @@ msgid ""
 "                Add addresses to the Allowed List\n"
 "            </p><p>\n"
 "                To protect you from spam and reply loops, Odoo automatically blocks emails\n"
-"                coming to your gateway past a threshold of <b>%(threshold)i</b> emails every <b>%(minutes)i</"
-"b>\n"
+"                coming to your gateway past a threshold of <b>%(threshold)i</b> emails every <b>%(minutes)i</b>\n"
 "                minutes. If there are some addresses from which you need to receive very frequent\n"
 "                updates, you can however add them below and Odoo will let them go through.\n"
 "            </p>"
@@ -792,8 +791,7 @@ msgstr ""
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_res_config_settings__tenor_api_key
-msgid ""
-"Add a Tenor GIF API key to enable GIFs support. https://developers.google.com/tenor/guides/quickstart#setup"
+msgid "Add a Tenor GIF API key to enable GIFs support. https://developers.google.com/tenor/guides/quickstart#setup"
 msgstr ""
 
 #. module: mail
@@ -981,8 +979,7 @@ msgid "Alias Domain Name"
 msgstr "دامین مستعار"
 
 #. module: mail
-#: model:ir.actions.act_window,name:mail.mail_alias_domain_action
-#: model:ir.ui.menu,name:mail.mail_alias_domain_menu
+#: model:ir.actions.act_window,name:mail.mail_alias_domain_action model:ir.ui.menu,name:mail.mail_alias_domain_menu
 #: model_terms:ir.ui.view,arch_db:mail.mail_alias_domain_view_search
 #: model_terms:ir.ui.view,arch_db:mail.mail_alias_domain_view_tree
 msgid "Alias Domains"
@@ -1562,8 +1559,7 @@ msgstr ""
 #: code:addons/mail/models/mail_alias_domain.py:0
 #, python-format
 msgid ""
-"Bounce/Catchall '%(matching_alias_name)s' is already used. Choose another alias or change it on the linked "
-"model."
+"Bounce/Catchall '%(matching_alias_name)s' is already used. Choose another alias or change it on the linked model."
 msgstr ""
 
 #. module: mail
@@ -2715,8 +2711,8 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_discuss_channel__default_display_mode
 msgid ""
-"Determines how the channel will be displayed by default when opening it from its invitation link. No value "
-"means display text (no voice/video)."
+"Determines how the channel will be displayed by default when opening it from its invitation link. No value means "
+"display text (no voice/video)."
 msgstr ""
 
 #. module: mail
@@ -3033,8 +3029,7 @@ msgstr ""
 
 #. module: mail
 #. odoo-javascript
-#: code:addons/mail/static/src/core/common/message_actions.js:0
-#: code:addons/mail/static/src/core/web/activity.xml:0
+#: code:addons/mail/static/src/core/common/message_actions.js:0 code:addons/mail/static/src/core/web/activity.xml:0
 #, python-format
 msgid "Edit"
 msgstr "ویرایش"
@@ -3072,8 +3067,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail.field_res_users__email
 #: model:ir.model.fields.selection,name:mail.selection__ir_actions_server__mail_post_method__email
 #: model:ir.model.fields.selection,name:mail.selection__mail_notification__notification_type__email
-#: model:mail.activity.type,name:mail.mail_activity_data_email
-#: model_terms:ir.ui.view,arch_db:mail.view_mail_search
+#: model:mail.activity.type,name:mail.mail_activity_data_email model_terms:ir.ui.view,arch_db:mail.view_mail_search
 msgid "Email"
 msgstr "پست الکترونیک"
 
@@ -6513,16 +6507,15 @@ msgid ""
 "will be used. This should usually be a placeholder expression that provides the appropriate language, e.g. "
 "{{ object.partner_id.lang }}."
 msgstr ""
-"زبان ترجمه اختیاری (کد ISO) برای انتخاب هنگام ارسال ایمیل. اگر تنظیم نشود، از نسخه انگلیسی استفاده خواهد شد. "
-"این معمولاً باید یک عبارت نگهدارنده باشد که زبان مناسب را ارائه می دهد، به عنوان مثال. {{ object.partner_id."
-"lang }}."
+"زبان ترجمه اختیاری (کد ISO) برای انتخاب هنگام ارسال ایمیل. اگر تنظیم نشود، از نسخه انگلیسی استفاده خواهد شد. این "
+"معمولاً باید یک عبارت نگهدارنده باشد که زبان مناسب را ارائه می دهد، به عنوان مثال. {{ object.partner_id.lang }}."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__reply_to_mode
 msgid ""
 "Original Discussion: Answers go in the original document discussion thread. \n"
-" Another Email Address: Answers go to the email address mentioned in the tracking message-id instead of "
-"original document discussion thread. \n"
+" Another Email Address: Answers go to the email address mentioned in the tracking message-id instead of original "
+"document discussion thread. \n"
 " This has an impact on the generated message-id."
 msgstr ""
 
@@ -6535,8 +6528,7 @@ msgstr ""
 
 #. module: mail
 #. odoo-python
-#: code:addons/mail/models/res_users.py:0
-#: model:ir.actions.act_window,name:mail.mail_activity_without_access_action
+#: code:addons/mail/models/res_users.py:0 model:ir.actions.act_window,name:mail.mail_activity_without_access_action
 #, python-format
 msgid "Other activities"
 msgstr ""
@@ -8973,8 +8965,8 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_res_partner__email_normalized
 #: model:ir.model.fields,help:mail.field_res_users__email_normalized
 msgid ""
-"This field is used to search on email address as the primary email field can contain more than strictly an "
-"email address."
+"This field is used to search on email address as the primary email field can contain more than strictly an email "
+"address."
 msgstr "این فیلد برای جستجوی آدرس ایمیل استفاده می شود، زیرا فیلد اصلی ایمیل می تواند بیش از یک آدرس ایمیل باشد."
 
 #. module: mail
@@ -9285,8 +9277,8 @@ msgid ""
 "- 'Update a Record': update the values of a record\n"
 "- 'Create Activity': create an activity (Discuss)\n"
 "- 'Send Email': post a message, a note or send an email (Discuss)\n"
-"- 'Send SMS': send SMS, log them on documents (SMS)- 'Add/Remove Followers': add or remove followers to a "
-"record (Discuss)\n"
+"- 'Send SMS': send SMS, log them on documents (SMS)- 'Add/Remove Followers': add or remove followers to a record "
+"(Discuss)\n"
 "- 'Create Record': create a new record with new values\n"
 "- 'Execute Code': a block of Python code that will be executed\n"
 "- 'Send Webhook Notification': send a POST request to an external system, also known as a Webhook\n"
@@ -9554,8 +9546,8 @@ msgstr "در حال آپلود"
 #: model:ir.model.fields,help:mail.field_ir_actions_server__activity_user_type
 #: model:ir.model.fields,help:mail.field_ir_cron__activity_user_type
 msgid ""
-"Use 'Specific User' to always assign the same user on the next activity. Use 'Dynamic User' to specify the "
-"field name of the user to choose on the record."
+"Use 'Specific User' to always assign the same user on the next activity. Use 'Dynamic User' to specify the field "
+"name of the user to choose on the record."
 msgstr ""
 
 #. module: mail
@@ -9772,6 +9764,8 @@ msgid ""
 "Using your own email server is required to send/receive emails in Community and Enterprise versions. Online "
 "users already benefit from a ready-to-use email server (@mycompany.odoo.com)."
 msgstr ""
+"جهت ارسال یا دریافت ایمیل (در هر دو نسخه  community  وEnterprise ) ،استفاده از سرور ایمیل خود ضروری است .درحال "
+"حاضر برای کاربران آنلاین  یک سرور ایمیل آماده جهت استفاده (@mycompany.odoo.com) وجوددارد."
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_alias__alias_status__valid

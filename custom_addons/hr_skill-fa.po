@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 06:33+0000\n"
-"PO-Revision-Date: 2024-07-09 10:05+0330\n"
+"PO-Revision-Date: 2024-07-21 16:33+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -50,7 +50,7 @@ msgstr ""
 #: code:addons/hr_skills/static/src/xml/resume_templates.xml:0
 #, python-format
 msgid "CREATE A NEW ENTRY"
-msgstr ""
+msgstr "ایجاد یک سطر جدید"
 
 #. module: hr_skills
 #: model:ir.model.fields,field_description:hr_skills.field_hr_employee_cv_wizard__can_show_others
@@ -65,7 +65,7 @@ msgstr ""
 #. module: hr_skills
 #: model:ir.model.fields.selection,name:hr_skills.selection__hr_resume_line__display_type__classic
 msgid "Classic"
-msgstr ""
+msgstr "کلاسیک"
 
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.hr_employee_cv_wizard_view_form
@@ -87,21 +87,21 @@ msgstr "اطلاعات تماس"
 #: code:addons/hr_skills/static/src/fields/resume_one2many/resume_one2many.xml:0
 #, python-format
 msgid "Create a new entry"
-msgstr ""
+msgstr "ایجاد یک سطر جدید"
 
 #. module: hr_skills
 #. odoo-javascript
 #: code:addons/hr_skills/static/src/fields/resume_one2many/resume_one2many.js:0
 #, python-format
 msgid "Create a resume line"
-msgstr ""
+msgstr "ایجاد یک سطر رزومه"
 
 #. module: hr_skills
 #. odoo-javascript
 #: code:addons/hr_skills/static/src/fields/skills_one2many/skills_one2many.xml:0
 #, python-format
 msgid "Create new Skills"
-msgstr ""
+msgstr "ایجاد مهارت‌های جدید"
 
 #. module: hr_skills
 #: model:ir.model.fields,field_description:hr_skills.field_hr_employee_cv_wizard__create_uid
@@ -153,7 +153,7 @@ msgstr "تاریخ شروع"
 #. module: hr_skills
 #: model:ir.model.fields,field_description:hr_skills.field_hr_skill_level__default_level
 msgid "Default Level"
-msgstr ""
+msgstr "سطح پیش‌فرض"
 
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.report_employee_cv_company
@@ -226,7 +226,7 @@ msgstr "نام کارمند"
 #: model:ir.actions.report,name:hr_skills.action_report_employee_cv
 #: model:ir.model,name:hr_skills.model_report_hr_skills_report_employee_cv
 msgid "Employee Resume"
-msgstr ""
+msgstr "رزومه‌ی کارمند"
 
 #. module: hr_skills
 #: model:ir.actions.act_window,name:hr_skills.hr_employee_skill_report_action
@@ -292,6 +292,8 @@ msgid ""
 "If checked, this level will be the default one selected when choosing this "
 "skill."
 msgstr ""
+"اگر علامت‌زده شود، این سطح به‌صورت سطح پیش‌فرض در هنگام انتخاب این مهارت "
+"نمایش‌داده‌خواهدشد."
 
 #. module: hr_skills
 #. odoo-javascript
@@ -355,7 +357,7 @@ msgstr "نشان"
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.report_employee_cv_sidepanel
 msgid "Marc Demo"
-msgstr "دموی مارچ"
+msgstr ""
 
 #. module: hr_skills
 #: model:ir.model.fields,field_description:hr_skills.field_hr_resume_line__name
@@ -478,7 +480,7 @@ msgstr "رزومه %s"
 #. module: hr_skills
 #: model:ir.actions.act_window,name:hr_skills.hr_resume_type_action
 msgid "Resume Line Types"
-msgstr ""
+msgstr "انواع سطر رزومه"
 
 #. module: hr_skills
 #: model:ir.model,name:hr_skills.model_hr_resume_line
@@ -519,21 +521,21 @@ msgstr "رنگ ثانویه"
 #: code:addons/hr_skills/static/src/fields/form_view_one2many/form_view_one2many.xml:0
 #, python-format
 msgid "Select & Close"
-msgstr ""
+msgstr "انتخاب & بستن"
 
 #. module: hr_skills
 #. odoo-javascript
 #: code:addons/hr_skills/static/src/fields/form_view_one2many/form_view_one2many.xml:0
 #, python-format
 msgid "Select & New"
-msgstr ""
+msgstr "انتخاب & جدید"
 
 #. module: hr_skills
 #. odoo-javascript
 #: code:addons/hr_skills/static/src/fields/skills_one2many/skills_one2many.js:0
 #, python-format
 msgid "Select Skills"
-msgstr ""
+msgstr "انتخاب مهارت‌ها"
 
 #. module: hr_skills
 #: model:ir.model.fields,field_description:hr_skills.field_hr_resume_line_type__sequence
@@ -551,14 +553,14 @@ msgstr "دنباله"
 #: model_terms:ir.ui.view,arch_db:hr_skills.hr_employee_skill_report_view_search
 #: model_terms:ir.ui.view,arch_db:hr_skills.hr_skill_view_search
 msgid "Skill"
-msgstr ""
+msgstr "مهارت"
 
 #. module: hr_skills
 #: model:ir.actions.act_window,name:hr_skills.action_hr_employee_skill_log_department
 #: model:ir.actions.act_window,name:hr_skills.action_hr_employee_skill_log_employee
 #: model:ir.actions.server,name:hr_skills.action_open_skills_log_department
 msgid "Skill History Report"
-msgstr ""
+msgstr "گزارش تاریخچه‌ی مهارت"
 
 #. module: hr_skills
 #: model:ir.model,name:hr_skills.model_hr_skill_level
@@ -567,13 +569,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr_skills.field_hr_employee_skill_report__skill_level
 #: model_terms:ir.ui.view,arch_db:hr_skills.employee_skill_level_view_form
 msgid "Skill Level"
-msgstr ""
+msgstr "میزان یا سطح مهارت"
 
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.employee_skill_level_view_tree
 #: model_terms:ir.ui.view,arch_db:hr_skills.employee_skill_view_tree
 msgid "Skill Levels"
-msgstr ""
+msgstr "سطوح مهارت"
 
 #. module: hr_skills
 #: model:ir.model,name:hr_skills.model_hr_skill_type
@@ -587,19 +589,19 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:hr_skills.hr_employee_skill_type_view_form
 #: model_terms:ir.ui.view,arch_db:hr_skills.hr_skill_view_search
 msgid "Skill Type"
-msgstr ""
+msgstr "نوع مهارت"
 
 #. module: hr_skills
 #: model:ir.actions.act_window,name:hr_skills.hr_skill_type_action
 #: model:ir.ui.menu,name:hr_skills.hr_skill_type_menu
 #: model_terms:ir.ui.view,arch_db:hr_skills.hr_skill_type_view_tree
 msgid "Skill Types"
-msgstr ""
+msgstr "انواع مهارت"
 
 #. module: hr_skills
 #: model:ir.model,name:hr_skills.model_hr_employee_skill
 msgid "Skill level for an employee"
-msgstr ""
+msgstr "میزان مهارت برای یک کارمند"
 
 #. module: hr_skills
 #. odoo-javascript
@@ -626,34 +628,34 @@ msgstr "مهارتها"
 #: model_terms:ir.ui.view,arch_db:hr_skills.hr_employee_skill_log_view_graph_employee
 #: model_terms:ir.ui.view,arch_db:hr_skills.hr_employee_skill_log_view_tree
 msgid "Skills History"
-msgstr ""
+msgstr "تاریخچه‌ی مهارت‌ها"
 
 #. module: hr_skills
 #. odoo-javascript
 #: code:addons/hr_skills/static/src/fields/skills_one2many/skills_one2many.js:0
 #, python-format
 msgid "Skills Report"
-msgstr ""
+msgstr "گزارش مهارت‌ها"
 
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.report_employee_cv_main_panel
 #: model_terms:ir.ui.view,arch_db:hr_skills.report_employee_cv_sidepanel
 msgid "Software Developer"
-msgstr "توسعه دهنده نرم افزار"
+msgstr "توسعه‌دهنده نرم افزار"
 
 #. module: hr_skills
 #. odoo-python
 #: code:addons/hr_skills/models/hr_employee_skill.py:0
 #, python-format
 msgid "The skill %(name)s and skill type %(type)s doesn't match"
-msgstr ""
+msgstr "مهارت %(name)s و نوع مهارت %(type)s  با یکدیگر تطابق‌ندارند"
 
 #. module: hr_skills
 #. odoo-python
 #: code:addons/hr_skills/models/hr_employee_skill.py:0
 #, python-format
 msgid "The skill level %(level)s is not valid for skill type: %(type)s"
-msgstr ""
+msgstr "سطح مهارت %(level)s برای نوع مهارت: %(type)s معتبر نمی‌باشد"
 
 #. module: hr_skills
 #: model:ir.model.constraint,message:hr_skills.constraint_hr_resume_line_date_check
@@ -672,7 +674,7 @@ msgstr ""
 #: code:addons/hr_skills/static/src/fields/skills_one2many/skills_one2many.xml:0
 #, python-format
 msgid "Timeline"
-msgstr ""
+msgstr "خط زمانی"
 
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.resume_line_view_form
@@ -732,7 +734,7 @@ msgstr ""
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.resume_line_view_form
 msgid "e.g. Odoo Inc."
-msgstr ""
+msgstr "به‌عنوان مثال شرکت آلپ"
 
 #. module: hr_skills
 #: model_terms:ir.ui.view,arch_db:hr_skills.report_employee_cv_sidepanel
