@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-14 06:20+0000\n"
-"PO-Revision-Date: 2024-07-14 11:12+0330\n"
+"PO-Revision-Date: 2024-07-22 16:57+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: code:addons/web/static/src/core/expression_editor/expression_editor.xml:0
 #, python-format
 msgid "# Code editor"
-msgstr "تعداد ویرایشگر کد"
+msgstr ""
 
 #. module: web
 #. odoo-javascript
@@ -833,7 +833,7 @@ msgstr ""
 #: code:addons/web/static/src/views/form/status_bar_buttons/status_bar_buttons.xml:0
 #, python-format
 msgid "Action"
-msgstr "عمل"
+msgstr ""
 
 #. module: web
 #. odoo-javascript
@@ -848,14 +848,14 @@ msgstr ""
 #: code:addons/web/static/src/search/cog_menu/cog_menu.xml:0
 #, python-format
 msgid "Actions"
-msgstr "کنش‌ها"
+msgstr ""
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/debug/debug_menu_items.js:0
 #, python-format
 msgid "Activate Assets Debugging"
-msgstr "فعال سازی خطا یابی دارایی‌ها"
+msgstr ""
 
 #. module: web
 #. odoo-javascript
@@ -876,14 +876,14 @@ msgstr ""
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_dev_tool.xml:0
 #, python-format
 msgid "Activate the developer mode"
-msgstr "فعال کردن حالت توسعه دهنده"
+msgstr "فعال‌کردن developer mode"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_dev_tool.xml:0
 #, python-format
 msgid "Activate the developer mode (with assets)"
-msgstr "فعال کردن حالت توسعه دهنده (همراه با دارایی)"
+msgstr "فعال کردن developer mode (همراه با asset ها)"
 
 #. module: web
 #. odoo-javascript
@@ -3984,7 +3984,7 @@ msgstr ""
 #: code:addons/web/static/src/core/debug/debug_menu_items.js:0
 #, python-format
 msgid "Leave the Developer Tools"
-msgstr "ترک ابزارهای توسعه گران"
+msgstr ""
 
 #. module: web
 #. odoo-javascript
@@ -6399,7 +6399,7 @@ msgstr ""
 #: code:addons/web/static/src/views/view_components/view_scale_selector.xml:0
 #, python-format
 msgid "Show weekends"
-msgstr ""
+msgstr "نمایش تعطیلات آخرهفته"
 
 #. module: web
 #. odoo-javascript

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-14 11:19+0000\n"
-"PO-Revision-Date: 2024-07-14 15:06+0330\n"
+"PO-Revision-Date: 2024-07-23 17:34+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -228,19 +228,19 @@ msgstr "نام دسته‌ای"
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.view_picking_internal_search_inherit
 #, python-format
 msgid "Batch Transfer"
-msgstr "انتقال‌های دسته‌ای"
+msgstr "انتقال‌ دسته‌ای"
 
 #. module: stock_picking_batch
 #: model:ir.model,name:stock_picking_batch.model_stock_picking_to_batch
 msgid "Batch Transfer Lines"
-msgstr "سطور انتقال‌های دسته‌ای"
+msgstr "سطور انتقال‌ دسته‌ای"
 
 #. module: stock_picking_batch
 #: model:ir.actions.act_window,name:stock_picking_batch.stock_picking_batch_action
 #: model:ir.ui.menu,name:stock_picking_batch.stock_picking_batch_menu
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.view_picking_type_form_inherit
 msgid "Batch Transfers"
-msgstr "نقل‌و انتقال‌های دسته ای"
+msgstr "نقل‌و انتقال‌های دسته‌ای"
 
 #. module: stock_picking_batch
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.stock_picking_batch_filter
@@ -327,7 +327,7 @@ msgstr ""
 #. module: stock_picking_batch
 #: model_terms:ir.actions.act_window,help:stock_picking_batch.stock_picking_batch_action
 msgid "Create a new batch transfer"
-msgstr "یک انتقال دسته‌ای جدید ایجادکن"
+msgstr "یک انتقال‌دسته‌ای جدید ایجادکنید"
 
 #. module: stock_picking_batch
 #: model_terms:ir.actions.act_window,help:stock_picking_batch.action_picking_tree_wave
@@ -725,7 +725,7 @@ msgstr ""
 #. module: stock_picking_batch
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.stock_picking_batch_filter
 msgid "Search Batch Transfer"
-msgstr "جستجوی انقال دسته‌ای"
+msgstr "جستجوی انتقال دسته‌ای"
 
 #. module: stock_picking_batch
 #: model:ir.model.fields,field_description:stock_picking_batch.field_stock_picking_batch__show_allocation
@@ -796,7 +796,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.stock_picking_batch_form
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.stock_picking_batch_tree
 msgid "Stock Batch Transfer"
-msgstr "انتقال دسته‌ای موجودی انبار"
+msgstr "انتقال دسته‌ای موجودی‌انبار"
 
 #. module: stock_picking_batch
 #: model:ir.model,name:stock_picking_batch.model_stock_move
@@ -999,7 +999,7 @@ msgstr ""
 #: code:addons/stock_picking_batch/models/stock_picking_batch.py:0
 #, python-format
 msgid "You cannot delete Done batch transfers."
-msgstr ""
+msgstr "حذف آن دسته از انتقالات دسته‌ای که انجام‌شده‌اند، امکان‌پذیر نمی‌باشد."
 
 #. module: stock_picking_batch
 #. odoo-python
