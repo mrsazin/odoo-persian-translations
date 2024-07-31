@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-20 11:15+0000\n"
-"PO-Revision-Date: 2024-07-22 16:39+0330\n"
+"PO-Revision-Date: 2024-07-24 15:48+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -5347,14 +5347,14 @@ msgstr ""
 #: code:addons/mail/models/mail_thread.py:0
 #, python-format
 msgid "Mailbox unavailable - %s"
-msgstr ""
+msgstr "صندوق پستی %s  در دسترس نیست "
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/core/web/messaging_menu.js:0
 #, python-format
 msgid "Mailboxes"
-msgstr ""
+msgstr "صندوق‌های پستی"
 
 #. module: mail
 #. odoo-python
@@ -9552,7 +9552,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_config_settings__external_email_server_default
 msgid "Use Custom Email Servers"
-msgstr " از سرورهای ایمیل سفارشی استفاده‌کن"
+msgstr " از سرورهای سفارشی برای ایمیل استفاده‌کنید"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_config_settings__use_twilio_rtc_servers
@@ -10096,7 +10096,7 @@ msgstr "شما «راهبر» این کانال هستید. مطمئنید می�
 #: code:addons/mail/static/src/core/common/thread.xml:0
 #, python-format
 msgid "You can mark any message as 'starred', and it shows up in this mailbox."
-msgstr "شما میتوانید هر پیغامی را «ستاره‌دار» کنید و در اینجا آن را مشاهده کنید."
+msgstr "شما میتوانید هر پیغامی را «ستاره‌دار» کنید و آن‌را در اینجا مشاهده‌کنید."
 
 #. module: mail
 #. odoo-python

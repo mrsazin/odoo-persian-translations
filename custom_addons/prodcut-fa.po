@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-10 11:06+0000\n"
-"PO-Revision-Date: 2024-07-23 19:50+0330\n"
+"PO-Revision-Date: 2024-07-28 12:22+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -180,7 +180,7 @@ msgid ""
 "                                    </span>"
 msgstr ""
 "<span class=\"o_stat_text\" invisible=\"pricelist_item_count == 1\">\n"
-"                                        قیمت های اضافه \n"
+"                                        قیمت های اضافی \n"
 "                                    </span>\n"
 "                                    <span class=\"o_stat_text\" invisible=\"pricelist_item_count != 1\">\n"
 "                                       قیمت های اضافه\n"
@@ -1018,7 +1018,7 @@ msgstr "تخفیف روی سطرها"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo__price_discounted
 msgid "Discounted Price"
-msgstr ""
+msgstr "قیمت تخفیف‌خورده"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_res_config_settings__group_discount_per_so_line
@@ -1168,7 +1168,8 @@ msgstr "هزینه اضافی"
 msgid ""
 "Extra price for the variant with this attribute value on sale price. eg. 200 price extra, 1000 + 200 = 1200."
 msgstr ""
-"قیمت اضافه برای این نوع با این ویژگی ارزش در قیمت فروش. به عنوان مثال. 200 قیمت اضافه 1000 + 200 = 1200 ."
+"قیمت اضافه برای این گونه (variant) از محصول با این مقدار از ویژگی (attribute) در قیمت فروش. به عنوان مثال اگر "
+"قیمت اضافه ۲۰۰ باشد، ۱۰۰۰ + ۲۰۰ = ۱۲۰۰ ."
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__priority
@@ -1443,7 +1444,7 @@ msgstr ""
 #: code:addons/product/models/product_pricelist.py:0
 #, python-format
 msgid "Import Template for Pricelists"
-msgstr "درونش قالب برای لیست قیمت"
+msgstr "وارد‌کردن قالب برای لیست قیمت"
 
 #. module: product
 #. odoo-python
@@ -1457,7 +1458,7 @@ msgstr "ایمپورت قالب برای محصولات"
 #: code:addons/product/models/product_supplierinfo.py:0
 #, python-format
 msgid "Import Template for Vendor Pricelists"
-msgstr "درونش قالب لیست قیمتی فروشنده"
+msgstr "ایمپورت قالب لیست قیمتی فروشنده"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_attribute_value_view_search
@@ -1511,7 +1512,7 @@ msgstr "محصول چند گونه است"
 #: model:ir.model.fields,field_description:product.field_product_product__has_configurable_attributes
 #: model:ir.model.fields,field_description:product.field_product_template__has_configurable_attributes
 msgid "Is a configurable product"
-msgstr "آیا محصول قابل پیکربندی است؟"
+msgstr "آیا محصول قابل پیکربندی است"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_template__is_product_variant
@@ -2361,18 +2362,18 @@ msgstr "محصولات"
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view_search
 msgid "Products Price"
-msgstr "قیمت محصول"
+msgstr "قیمت محصولات"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view_tree
 msgid "Products Price List"
-msgstr "لیست قیمت محصول"
+msgstr "لیست قیمت محصولات"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_item_view_search
 msgid "Products Price Rules Search"
-msgstr "جستجو قوانین قیمت محصولات"
+msgstr "جستجوی قوانین قیمت محصولات"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view_search
@@ -2823,6 +2824,8 @@ msgid ""
 "The sale price is managed from the product template. Click on the 'Configure Variants' button to set the "
 "extra attribute prices."
 msgstr ""
+"قیمت فروش از الگوی محصول مدیریت می شود. برای تنظیم قیمت بابت ویژگی‌های اضافی، روی دکمه \"پیکربندی گونه‌ها\" "
+"کلیک کنید."
 
 #. module: product
 #. odoo-python

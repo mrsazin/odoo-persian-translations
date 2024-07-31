@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-23 13:51+0000\n"
-"PO-Revision-Date: 2024-07-23 17:24+0330\n"
+"PO-Revision-Date: 2024-07-27 21:26+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -101,8 +101,8 @@ msgid ""
 "            (<t t-out=\"object.partner_id.parent_id.name or ''\">Azure Interior</t>)\n"
 "        </t>\n"
 "        <br><br>\n"
-"        Here is a reminder that the delivery of the purchase order <span style=\"font-weight:bold;\" t-out=\"object.name "
-"or ''\">P00015</span>\n"
+"        Here is a reminder that the delivery of the purchase order <span style=\"font-weight:bold;\" t-out=\"object.name or "
+"''\">P00015</span>\n"
 "        <t t-if=\"object.partner_ref\">\n"
 "            <span style=\"font-weight:bold;\">(<t t-out=\"object.partner_ref or ''\">REF_XXX</t>)</span>\n"
 "        </t>\n"
@@ -133,8 +133,7 @@ msgid ""
 "            (<t t-out=\"object.partner_id.parent_id.name or ''\">Azure Interior</t>)\n"
 "        </t>\n"
 "        <br><br>\n"
-"        Here is in attachment a purchase order <span style=\"font-weight:bold;\" t-out=\"object.name or ''\">P00015</"
-"span>\n"
+"        Here is in attachment a purchase order <span style=\"font-weight:bold;\" t-out=\"object.name or ''\">P00015</span>\n"
 "        <t t-if=\"object.partner_ref\">\n"
 "            with reference: <t t-out=\"object.partner_ref or ''\">REF_XXX</t>\n"
 "        </t>\n"
@@ -167,8 +166,8 @@ msgid ""
 "            (<t t-out=\"object.partner_id.parent_id.name or ''\">Azure Interior</t>)\n"
 "        </t>\n"
 "        <br><br>\n"
-"        Here is in attachment a request for quotation <span style=\"font-weight:bold;\" t-out=\"object.name or "
-"''\">P00015</span>\n"
+"        Here is in attachment a request for quotation <span style=\"font-weight:bold;\" t-out=\"object.name or ''\">P00015</"
+"span>\n"
 "        <t t-if=\"object.partner_ref\">\n"
 "            with reference: <t t-out=\"object.partner_ref or ''\">REF_XXX</t>\n"
 "        </t>\n"
@@ -215,8 +214,8 @@ msgstr ""
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.portal_my_purchase_orders
 msgid ""
-"<i class=\"fa fa-fw fa-file-text\" role=\"img\" aria-label=\"Waiting for Bill\" title=\"Waiting for Bill\"/><span "
-"class=\"d-none d-md-inline\"> Waiting for Bill</span>"
+"<i class=\"fa fa-fw fa-file-text\" role=\"img\" aria-label=\"Waiting for Bill\" title=\"Waiting for Bill\"/><span class=\"d-"
+"none d-md-inline\"> Waiting for Bill</span>"
 msgstr ""
 
 #. module: purchase
@@ -752,8 +751,8 @@ msgstr "نمایش تقویمی"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
 msgid ""
-"Calls for tenders are when you want to generate requests for quotations with several vendors for a given set of products "
-"to compare offers."
+"Calls for tenders are when you want to generate requests for quotations with several vendors for a given set of products to "
+"compare offers."
 msgstr ""
 
 #. module: purchase
@@ -865,7 +864,7 @@ msgstr "تایید سفارش خرید در یک گام"
 #: code:addons/purchase/static/src/js/tours/purchase.js:0
 #, python-format
 msgid "Confirm your purchase."
-msgstr " خرید خود را تاییدکنید."
+msgstr "خرید خود را تاییدکنید."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__date_approve
@@ -1016,8 +1015,8 @@ msgstr "شرایط و ضوابط خود را تعریف کنید"
 #: model:ir.model.fields,help:purchase.field_purchase_order_line__date_planned
 msgid "Delivery date expected from vendor. This date respectively defaults to vendor pricelist lead time then today's date."
 msgstr ""
-"تاریخ تحویل از فروشنده انتظار می رود. این تاریخ به ترتیب به صورت پیش‌فرض به زمان پیش‌فرض فهرست قیمت فروشنده پس از تاریخ "
-"امروز است."
+"تاریخ تحویل از فروشنده انتظار می رود. این تاریخ به ترتیب به صورت پیش‌فرض به زمان پیش‌فرض فهرست قیمت فروشنده پس از تاریخ امروز "
+"است."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order__date_planned
@@ -2399,8 +2398,8 @@ msgid ""
 "Selecting the \"Warning\" option will notify user with the message, Selecting \"Blocking Message\" will throw an exception "
 "with the message and block the flow. The Message has to be written in the next field."
 msgstr ""
-"با انتخاب گزینه \"هشدار\" به کاربر با پیام اطلاع داده می شود، با انتخاب \"Blocking Message\" یک استثنا با پیام ایجاد می "
-"شود و جریان را مسدود می کند. پیام باید در قسمت بعدی نوشته شود."
+"با انتخاب گزینه \"هشدار\" به کاربر با پیام اطلاع داده می شود، با انتخاب \"Blocking Message\" یک استثنا با پیام ایجاد می شود "
+"و جریان را مسدود می کند. پیام باید در قسمت بعدی نوشته شود."
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -3065,8 +3064,8 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:purchase.digest_tip_purchase_1
 msgid ""
 "When sending a purchase order by email, Odoo asks the vendor to acknowledge the reception of the order. When the vendor "
-"acknowledges the order by clicking on a button in the email, the information is added on the purchase order. Use filters "
-"to track orders that have not been acknowledged."
+"acknowledges the order by clicking on a button in the email, the information is added on the purchase order. Use filters to "
+"track orders that have not been acknowledged."
 msgstr ""
 "هنگام ارسال سفارش خرید از طریق ایمیل، Odoo از فروشنده می خواهد که دریافت سفارش را تایید کند. هنگامی که فروشنده با کلیک بر "
 "روی دکمه ای در ایمیل، سفارش را تایید کرد، اطلاعات روی سفارش خرید اضافه می شود. از فیلترها برای ردیابی سفارش هایی که تایید "
@@ -3085,8 +3084,7 @@ msgstr "می توانید فروشنده ای را با نام، TIN، ایمی�
 msgid ""
 "You cannot change the type of a purchase order line. Instead you should delete the current line and create a new line of "
 "the proper type."
-msgstr ""
-"شما نمی توانید نوع خط سفارش خرید را تغییر دهید. در عوض باید خط فعلی را حذف کنید و یک خط جدید از نوع مناسب ایجاد کنید."
+msgstr "شما نمی توانید نوع خط سفارش خرید را تغییر دهید. در عوض باید خط فعلی را حذف کنید و یک خط جدید از نوع مناسب ایجاد کنید."
 
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.product_product_action
