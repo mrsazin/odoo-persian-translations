@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-07-29 17:54+0330\n"
+"PO-Revision-Date: 2024-08-04 15:05+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -340,7 +340,7 @@ msgstr "<strong>یادداشت باز کردن نشست:</strong>"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_invoice_document
 msgid "<strong>Source Invoice:</strong>"
-msgstr "<strong>فکتور منبع:</strong>"
+msgstr "<strong>فاکتور منبع:</strong>"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
@@ -504,7 +504,7 @@ msgstr "از دفاتر حسابداری جهت ایجاد فاکتورها اس
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__journal_id model:ir.model.fields,help:point_of_sale.field_pos_order__sale_journal model:ir.model.fields,help:point_of_sale.field_res_config_settings__pos_journal_id
 msgid "Accounting journal used to post POS session journal entries and POS invoice payments."
-msgstr "دفترثبت حسابداری برای ارسال ثبت‌های دفتری نشست POS و پرداخت فاکتور POS استفاده می شود."
+msgstr "دفترثبت حسابداری برای ارسال ثبت‌های دفتری نشست POS و پرداخت فاکتور POS استفاده می‌شود."
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__message_needaction
@@ -869,7 +869,7 @@ msgstr "تأیید خودکار سفارش"
 #: model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__pos_auto_validate_terminal_payment model:ir.model.fields,help:point_of_sale.field_pos_config__auto_validate_terminal_payment
 #: model:ir.model.fields,help:point_of_sale.field_res_config_settings__pos_auto_validate_terminal_payment model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Automatically validates orders paid with a payment terminal."
-msgstr "به طور خودکار سفارشهای پرداخت‌شده با پایانه پرداخت را تأیید می‌کند"
+msgstr "به طور خودکار سفارشهای پرداخت‌شده با پایانه پرداخت را تأیید می‌کند."
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -1967,7 +1967,7 @@ msgstr "اکانت موقت پی‌فرض"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Default journals for orders and invoices"
-msgstr ""
+msgstr "دفاترحسابداری پیش‌فرض جهت سفارشات و فاکتورها"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -2189,7 +2189,7 @@ msgstr "دسترسی ندارید، از این داده ها برای ایمی�
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.js:0
 #, python-format
 msgid "Do you want to accept payments difference and post a profit/loss journal entry?"
-msgstr "آیا مغایرت پرداخت‌ها را می‌پذیرید ؟ یک سود/زیان دفتری ثبت‌‌خوادهدشد"
+msgstr "آیا مغایرت پرداخت‌ها را می‌پذیرید ؟ یک سود/زیان در دفاتر جسابداری ثبت‌‌خوادهدشد"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -6577,7 +6577,7 @@ msgstr "این فیلد برای ارسال شناسه گروه کاربری pos
 #: code:addons/point_of_sale/models/pos_order.py:0
 #, python-format
 msgid "This invoice has been created from the point of sale session: %s"
-msgstr ""
+msgstr "این فاکتور از محل فروش در POS ایجاد شده است: %s"
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__fiscal_position_ids
@@ -7036,7 +7036,7 @@ msgstr ""
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Used to record product pickings. Products are consumed from its default source location."
-msgstr "برای ثبت برداشت محصول استفاده می شود. محصولات از محل منبع پیش‌فرض آن مصرف می‌شوند"
+msgstr "برای ثبت برداشت محصول استفاده می شود. محصولات از محل منبع پیش‌فرض آن مصرف می‌شوند."
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_report_pos_order__user_id model:res.groups,name:point_of_sale.group_pos_user model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_order_filter
@@ -7059,7 +7059,7 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/app/screens/payment_screen/payment_screen.xml:0
 #, python-format
 msgid "Validate"
-msgstr "تایید اعتبار"
+msgstr "تاییدنهایی"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -7336,7 +7336,7 @@ msgstr "شما آفلاین هستید"
 #: code:addons/point_of_sale/static/src/app/customer_display/customer_display_template.xml:0
 #, python-format
 msgid "Your Order"
-msgstr ""
+msgstr "سفارش ما"
 
 #. module: point_of_sale
 #. odoo-python
@@ -7532,7 +7532,7 @@ msgstr "برگشت"
 #: code:addons/point_of_sale/static/src/app/store/models.js:0
 #, python-format
 msgid "the invoice"
-msgstr ""
+msgstr "فاکتور"
 
 #. module: point_of_sale
 #. odoo-javascript
