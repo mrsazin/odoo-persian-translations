@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-07 09:58+0000\n"
-"PO-Revision-Date: 2024-07-21 16:12+0330\n"
+"PO-Revision-Date: 2024-08-06 14:27+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -29,7 +29,7 @@ msgstr ""
 #: code:addons/base_import/static/src/import_action/import_action.js:0
 #, python-format
 msgid "%s records successfully imported"
-msgstr ""
+msgstr "%s رکورد با موفقیت واردشد"
 
 #. module: base_import
 #. odoo-javascript
@@ -59,7 +59,7 @@ msgstr "پیشرفته"
 #: code:addons/base_import/static/src/import_data_sidepanel/import_data_sidepanel.xml:0
 #, python-format
 msgid "Allow matching with subfields"
-msgstr ""
+msgstr "اجازه تطبیق (matching) با زیرفیلدها را بده"
 
 #. module: base_import
 #. odoo-javascript
@@ -71,6 +71,10 @@ msgid ""
 "transient. If the issue still occurs, try to split the file rather than import "
 "it at once."
 msgstr ""
+"مشکل ناشناخته‌ای در حین واردکردن رخ‌داد (احتمالاً اتصال قطع شده، data limit "
+"exceeded  یا از محدودیت حافظه فراتر رفته است). لطفاً دوباره امتحان کنید ممکن "
+"است این مشکلی گذرا باشد. درصورتیکه مشکل همچنان وجود داشت، سعی کنید به‌جای "
+"به‌یکباره واردکردن فایل ، آن را به قسمت‌های کوچکتر تقسیم‌کنید (split) ."
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base
@@ -236,7 +240,7 @@ msgstr "دانلود"
 #: code:addons/base_import/static/src/import_model.js:0
 #, python-format
 msgid "Encoding:"
-msgstr "رمزگذاری"
+msgstr "رمزگذاری:"
 
 #. module: base_import
 #. odoo-python
@@ -282,7 +286,7 @@ msgstr "زمان تخمینی باقی مانده:"
 #: code:addons/base_import/static/src/import_model.js:0
 #, python-format
 msgid "Everything seems valid."
-msgstr ""
+msgstr "همه‌چیز به‌نظر درست‌است."
 
 #. module: base_import
 #. odoo-javascript
@@ -313,7 +317,7 @@ msgstr "پرونده"
 #: code:addons/base_import/static/src/import_data_content/import_data_content.xml:0
 #, python-format
 msgid "File Column"
-msgstr ""
+msgstr "ستون‌های موجود در فایل"
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__file_name
@@ -441,7 +445,7 @@ msgstr ""
 #: code:addons/base_import/static/src/import_action/import_action.js:0
 #, python-format
 msgid "Import a File"
-msgstr "ورود از یک فایل"
+msgstr "import یک فایل"
 
 #. module: base_import
 #. odoo-python
@@ -528,7 +532,7 @@ msgstr "مدل"
 #: code:addons/base_import/static/src/import_data_column_error/import_data_column_error.xml:0
 #, python-format
 msgid "Multiple errors occurred"
-msgstr ""
+msgstr "چندین خطا رخ‌داد"
 
 #. module: base_import
 #. odoo-javascript
@@ -542,28 +546,28 @@ msgstr "به کمک نیاز دارید؟"
 #: code:addons/base_import/static/src/import_model.js:0
 #, python-format
 msgid "No Separator"
-msgstr ""
+msgstr "بدون جداکننده"
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/import_data_column_error/import_data_column_error.xml:0
 #, python-format
 msgid "No matching records found for the following name"
-msgstr ""
+msgstr "هیچ رکورد منطبقی برای نام زیر یافت نشد"
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/import_data_content/import_data_content.xml:0
 #, python-format
 msgid "Odoo Field"
-msgstr ""
+msgstr "فیلد‌ها"
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/import_data_options/import_data_options.js:0
 #, python-format
 msgid "Prevent import"
-msgstr ""
+msgstr "جلوگیری از import"
 
 #. module: base_import
 #. odoo-javascript
@@ -778,7 +782,7 @@ msgstr "جداکننده هزارگان:"
 #: code:addons/base_import/static/src/import_model.js:0
 #, python-format
 msgid "To import multiple values, separate them by a comma."
-msgstr ""
+msgstr "برای وارد کردن چندین مقدار، آنها را با کاما از هم جداکنید."
 
 #. module: base_import
 #. odoo-javascript
@@ -856,7 +860,7 @@ msgstr ""
 #: code:addons/base_import/static/src/import_data_sidepanel/import_data_sidepanel.xml:0
 #, python-format
 msgid "Use first row as header"
-msgstr ""
+msgstr "ردیف اول را header درنظربگیر"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_res_users
