@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-08-10 06:42+0330\n"
+"PO-Revision-Date: 2024-08-11 07:55+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -2939,7 +2939,7 @@ msgstr ""
 #: code:addons/point_of_sale/models/account_tax.py:0
 #, python-format
 msgid "It is forbidden to modify a tax used in a POS order not posted. You must close the POS sessions before modifying the tax."
-msgstr "تغییر مالیات استفاده شده در سفارش POS پست نشده ممنوع است. قبل از تغییر مالیات باید شیفت‌کاری‌های باز POS را ببندید."
+msgstr "ویرایش مالیاتی که در حال حاضر در پایانه‌فروش درحال‌ استفاده‌است ، امکان‌پذیر نمی‌باشد. برای این‌منظور لطفا در ابتدا  شیفت‌‌های کاری‌ باز را ببندید."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -3330,7 +3330,7 @@ msgstr "موعد نهای فعالیت من"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_search
 msgid "My Sessions"
-msgstr "شیفت‌کاری‌های من"
+msgstr "شیفت‌‌های کاری‌من"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -3706,7 +3706,7 @@ msgstr "باز کردن صندوق پول نقد"
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_payment_method__open_session_ids
 msgid "Open PoS sessions that are using this payment method."
-msgstr "شیفت‌کاری‌های  PoS ای که از این روش پرداخت استفاده می کنند، را باز کنید."
+msgstr "شیفت‌‌های کاری‌ که از این روش پرداخت استفاده می کنند، را باز کنید."
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
@@ -4277,7 +4277,7 @@ msgstr ""
 #: code:addons/point_of_sale/models/res_company.py:0
 #, python-format
 msgid "Please close all the point of sale sessions in this period before closing it. Open sessions are: %s "
-msgstr "لطفاً قبل از بستن، تمام شیفت‌کاری‌های پایانه فروش  این دوره را ببندید. شیفت‌کاری‌های باز عبارتند از: %s "
+msgstr "لطفاً قبل از بستن، تمام شیفت‌‌های کاری‌ پایانه فروش این دوره را ببندید. شیفت‌‌های کاری‌ باز عبارتند از: %s "
 
 #. module: point_of_sale
 #. odoo-python
@@ -4287,8 +4287,8 @@ msgid ""
 "Please close and validate the following open PoS Sessions before modifying this payment method.\n"
 "Open sessions: %s"
 msgstr ""
-"لطفاً قبل از تغییر این روش پرداخت، شیفت‌کاری‌های PoS زیر را که بازهستند را بسته و تأیید‌شان کنید.\n"
-"شیفت‌کاری‌های باز: %s"
+"لطفاً قبل از تغییر این روش پرداخت، شیفت‌‌های کاری زیر را که بازهستند را بسته و تأیید‌شان کنید.\n"
+"شیفت‌‌های کاری‌ باز: %s"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -4326,21 +4326,21 @@ msgstr ""
 #: code:addons/point_of_sale/controllers/main.py:0
 #, python-format
 msgid "Please fill all the required fields."
-msgstr ""
+msgstr "لطفا تمام فیلدهای موردنیاز را تکمیل‌نمایید."
 
 #. module: point_of_sale
 #. odoo-python
 #: code:addons/point_of_sale/models/pos_session.py:0
 #, python-format
 msgid "Please go on the %s journal and define a Loss Account. This account will be used to record cash difference."
-msgstr "لطفاً به رهوزنام %s بروید و یک حساب از دست دادن تعریف کنید. این حساب برای ثبت تفاوت نقدی استفاده خواهد شد."
+msgstr "لطفاً به دفترحساب %s بروید و یک حساب زیان تعریف کنید. این حساب برای ثبت تفاوت نقدی استفاده خواهد شد."
 
 #. module: point_of_sale
 #. odoo-python
 #: code:addons/point_of_sale/models/pos_session.py:0
 #, python-format
 msgid "Please go on the %s journal and define a Profit Account. This account will be used to record cash difference."
-msgstr "لطفاً به روزنامه %s بروید و یک حساب سود تعریف کنید. این حساب برای ثبت تفاوت نقدی استفاده خواهد شد."
+msgstr "لطفاً به دفترحساب %s بروید و یک حساب سود تعریف کنید. این حساب برای ثبت تفاوت نقدی استفاده خواهد شد."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -5688,7 +5688,7 @@ msgstr "نسشت بیش از 7 روز باز است"
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_session model:ir.actions.act_window,name:point_of_sale.action_pos_session_filtered model:ir.model.fields,field_description:point_of_sale.field_pos_config__session_ids
 #: model:ir.ui.menu,name:point_of_sale.menu_pos_session_all model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
 msgid "Sessions"
-msgstr "شیفت‌کاری‌ها"
+msgstr "شیفت‌‌های کاری"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__set_maximum_difference model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__pos_set_maximum_difference
@@ -6664,7 +6664,7 @@ msgstr "این مالیات برای هر محصول جدید ایجاد شده 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Those settings are common to all PoS."
-msgstr "تنظمیات مشترک بین همه‌ی PoS ها"
+msgstr "تنظیمات مشترک بین همه‌ی PoS ها"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_order__ticket_code
