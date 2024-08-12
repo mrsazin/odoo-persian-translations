@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-07 09:58+0000\n"
-"PO-Revision-Date: 2024-08-06 14:27+0330\n"
+"PO-Revision-Date: 2024-08-11 22:51+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -293,7 +293,9 @@ msgstr "همه‌چیز به‌نظر درست‌است."
 #: code:addons/base_import/static/src/import_action/import_action.xml:0
 #, python-format
 msgid "Excel files are recommended as formatting is automatic."
-msgstr "فایل های اکسل توصیه می شوند زیرا قالب بندی خودکار است."
+msgstr ""
+"بهتر است از فایل های اکسل استفاده کنید زیرا از امکانات بهتری در قالب‌بندی "
+"خودکار برخوردارند."
 
 #. module: base_import
 #. odoo-python
@@ -445,7 +447,7 @@ msgstr ""
 #: code:addons/base_import/static/src/import_action/import_action.js:0
 #, python-format
 msgid "Import a File"
-msgstr "import یک فایل"
+msgstr "یک فایل آپلودکنید"
 
 #. module: base_import
 #. odoo-python
@@ -539,7 +541,7 @@ msgstr "چندین خطا رخ‌داد"
 #: code:addons/base_import/static/src/import_action/import_action.xml:0
 #, python-format
 msgid "Need Help?"
-msgstr "به کمک نیاز دارید؟"
+msgstr "جهت دریافت راهنمایی بیشتر به لینک زیر مراجعه‌کنید"
 
 #. module: base_import
 #. odoo-javascript
@@ -832,7 +834,7 @@ msgstr "آپلود فایل"
 #: code:addons/base_import/static/src/import_action/import_action.xml:0
 #, python-format
 msgid "Upload an Excel or CSV file to import"
-msgstr "یک فایل اکسل یا CSV را برای وارد کردن آپلود کنید"
+msgstr " یک فایل اکسل یا CSV آپلود کنید"
 
 #. module: base_import
 #. odoo-javascript
