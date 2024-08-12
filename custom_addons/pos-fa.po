@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-08-12 22:17+0330\n"
+"PO-Revision-Date: 2024-08-12 23:12+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -321,7 +321,7 @@ msgstr "<strong>تنظیم نام ها</strong>"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
 msgid "<strong>End of session note:</strong>"
-msgstr "<strong>یادداشت بستن شیفت‌کاری:</strong>"
+msgstr "<strong>یادداشت پایان شیفت‌کاری:</strong>"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
@@ -610,7 +610,9 @@ msgstr "افزودن یک یادداشت..."
 #: code:addons/point_of_sale/static/src/app/store/cash_opening_popup/cash_opening_popup.xml:0
 #, python-format
 msgid "Add an opening note..."
-msgstr "افزودن یک یادداشت آغازین..."
+msgstr ""
+"افزودن یک یادداشت و نکته تکمیلی در مورد صندوقی که تحویل‌گرفته‌اید... \n"
+"(این یادداشت در گزارشات فروش ثبت‌خواهندشد و توسط مدیران قابل مشاهده است)"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -758,7 +760,7 @@ msgid ""
 "You will be redirected to the back-end to manually close the session."
 msgstr ""
 "هنگام تلاش برای بستن شیفت‌کاری خطایی رخ داده است.\n"
-"برای بستن دستی شیفت‌کاری، به پشت‌صحنه (backend) هدایت می‌شوید."
+"جهت بستن به‌صورت دستی ، به پشت‌صحنه (backend) هدایت می‌شوید."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -997,7 +999,7 @@ msgstr "مقدار پایه"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__cash_register_difference
 msgid "Before Closing Difference"
-msgstr "تفاوت قبل از بستن"
+msgstr "میزان مغایرت مالی قبل از بسته‌شدن شیفت"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.ticket_validation_screen
@@ -1337,7 +1339,7 @@ msgstr "شهر"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Click here to close the session"
-msgstr "برای بستن شیفت‌کاری اینجا را کلیک کنید"
+msgstr "جهت خاتمه‌دادن به شیفت‌کاری، بر روی اینجا  کلیک کنید"
 
 #. module: point_of_sale
 #: model:ir.model.fields.selection,name:point_of_sale.selection__barcode_rule__type__client
@@ -1354,7 +1356,7 @@ msgstr "بستن"
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0 code:addons/point_of_sale/static/src/app/navbar/navbar.xml:0 model_terms:ir.ui.view,arch_db:point_of_sale.view_form_pos_close_session_wizard
 #, python-format
 msgid "Close Session"
-msgstr "بستن شیفت‌کاری"
+msgstr " شیفت‌کاری را ببند"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
@@ -1374,7 +1376,7 @@ msgstr "بسته و پست شده"
 #. module: point_of_sale
 #: model:ir.model.fields.selection,name:point_of_sale.selection__pos_session__state__closing_control model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
 msgid "Closing Control"
-msgstr "کنترل بستن"
+msgstr "کنترل پایانی"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__stop_at model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_search
@@ -3337,14 +3339,14 @@ msgstr "شیفت‌‌های کاری‌من"
 #: code:addons/point_of_sale/static/src/app/store/order_change_receipt_template.xml:0
 #, python-format
 msgid "NEW"
-msgstr ""
+msgstr "جدید"
 
 #. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/store/order_change_receipt_template.xml:0
 #, python-format
 msgid "NOTE"
-msgstr ""
+msgstr "یادداشت"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -3711,21 +3713,21 @@ msgstr "شیفت‌‌های کاری‌ که از این روش پرداخت ا
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
 msgid "Open Session"
-msgstr "شروع شیفت"
+msgstr "بازکردن شیفت‌کاری"
 
 #. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/store/cash_opening_popup/cash_opening_popup.xml:0
 #, python-format
 msgid "Open session"
-msgstr "بازکردن شیفت‌کاری"
+msgstr "صندوق را بازکن"
 
 #. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0 code:addons/point_of_sale/static/src/app/store/cash_opening_popup/cash_opening_popup.xml:0
 #, python-format
 msgid "Open the money details popup"
-msgstr "پنجره بازشو جزئیات پول را باز کنید"
+msgstr "گشودن جزئیات پول"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__user_id model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_search
@@ -3749,17 +3751,17 @@ msgstr "ابتدای دوره"
 #: code:addons/point_of_sale/static/src/app/store/cash_opening_popup/cash_opening_popup.xml:0
 #, python-format
 msgid "Opening Cash Control"
-msgstr "کنترل وجه نقد در ابتدای دوره"
+msgstr "شروع کنترل مالی صندوق"
 
 #. module: point_of_sale
 #: model:ir.model.fields.selection,name:point_of_sale.selection__pos_session__state__opening_control model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
 msgid "Opening Control"
-msgstr "کنترل ابتدای دوره"
+msgstr "کنترل آغازین صندوق‌پول"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__start_at model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_search
 msgid "Opening Date"
-msgstr "تاریخ ابتدای دوره"
+msgstr "تاریخ شروع"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__opening_notes
@@ -3769,21 +3771,21 @@ msgstr "یادداشت‌های آغازین"
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_session__cash_register_balance_end
 msgid "Opening balance summed to all cash transactions."
-msgstr ""
+msgstr "موجودی آغازین + همه‌ی معاملات نقدی"
 
 #. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/store/cash_opening_popup/cash_opening_popup.xml:0
 #, python-format
 msgid "Opening cash"
-msgstr "پول نقد آغازین"
+msgstr "پول نقدی که در شروع شیفت شما در صندوق موجود است را شمرده و در این بخش بنویسید (ریال):"
 
 #. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0 code:addons/point_of_sale/static/src/app/store/cash_opening_popup/cash_opening_popup.xml:0
 #, python-format
 msgid "Opening note"
-msgstr "یادداشت آغازین"
+msgstr "یادداشت (اختیاری)"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__picking_type_id model:ir.model.fields,field_description:point_of_sale.field_pos_order__picking_type_id
@@ -6706,7 +6708,7 @@ msgstr "انعام ها:"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
 msgid "To Close"
-msgstr "برای بستن"
+msgstr "آماده برای بسته‌شدن"
 
 #. module: point_of_sale
 #. odoo-javascript
