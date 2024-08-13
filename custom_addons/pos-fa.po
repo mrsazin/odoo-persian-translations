@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-08-12 23:12+0330\n"
+"PO-Revision-Date: 2024-08-13 23:00+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -5906,7 +5906,7 @@ msgstr "تاریخ آغاز"
 #: code:addons/point_of_sale/static/src/app/generic_components/order_widget/order_widget.js:0
 #, python-format
 msgid "Start adding products"
-msgstr "لطغا محصولات موردنظر خورد را انتخاب‌نمایید"
+msgstr "لطفا محصولات موردنظر خود را انتخاب‌نمایید"
 
 #. module: point_of_sale
 #. odoo-python
