@@ -1,0 +1,23 @@
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sale_order_form_view_inherit" model="ir.ui.view">
+            <field name="name">sale.order.form.inherit.sale.expense</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="validity_date" position="attributes">
+                    <attribute name="hasTime">false</attribute>
+                    <attribute name="widget">shpDateTime</attribute>
+                </field>
+                <label for="commitment_date" position="attributes" >
+                    <attribute name="string">asdfasdfasdfasf</attribute>
+                </label> 
+                <field name="commitment_date" position="attributes">
+                    <attribute name="hasTime">true</attribute>
+                    <attribute name="widget">shpDateTime</attribute>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo> -->

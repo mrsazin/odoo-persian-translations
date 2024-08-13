@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="shp.ReceiptHeader" t-inherit="point_of_sale.ReceiptHeader" t-inherit-mode="extension">
+        <xpath expr="." position="replace">
+            <t t-name="point_of_sale.ReceiptHeader">
+                <img t-attf-src="/web/image?model=res.company&amp;id={{props.data.company.id}}&amp;field=logo" alt="Logo" class="pos-receipt-logo"/>
+
+                <br/>
+                <div class="text-end" t-esc="props.data.order_name" />  
+                <div class="text-start">Served by <t t-esc="props.data.cashier" /></div>
+                <div class="text-end"><t t-esc="props.data.order_date" /></div>
+
+                <hr/>
+
+                
+                    
+        <h1 class="tracking-number text-center" style="font-size: 100px" t-if="props.data.trackingNumber and props.data.bigTrackingNumber" t-esc="props.data.trackingNumber" />
+        
+        <br /><br />
+    </t>
+        </xpath>
+    </t>
+</templates>

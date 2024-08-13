@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+        <t t-name="shp.PDateTime" owl="1">
+            <t t-if="props.readonly">
+                <span t-esc="props.record.data[props.name] or ''" />
+            </t>
+            <t t-else="">
+                <div t-ref="div">
+                    <input 
+                        class="o_input" 
+                        t-att-id="props.id"
+                        type="text" 
+                        data-jdp="" 
+                        placeholder="لطفا یک تاریخ وارد نمایید" 
+                        autocomplete="off"
+                        t-on-blur="(e)=>this.onBlur(e)"
+                        t-on-change="(e)=>this.onChange(e)"
+                        onChange.alike="(e) => onChange(e)"
+                        t-att-value="formattedValue"
+                    />
+                </div>
+            </t>
+        </t>
+</templates>

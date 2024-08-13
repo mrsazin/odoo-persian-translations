@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_pos_details_wizard_inherit" model="ir.ui.view">
+            <field name="name">pos.details.wizard.form.inherit</field>
+            <field name="model">pos.details.wizard</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_details_wizard" />
+            <field name="arch" type="xml">
+                <field name="start_date" position="attributes">
+                    <attribute name="hasTime">true</attribute>
+                    <attribute name="widget">shpDateTime</attribute>
+                </field>
+                <field name="end_date" position="attributes">
+                    <attribute name="hasTime">true</attribute>
+                    <attribute name="widget">shpDateTime</attribute>
+                </field>
+            </field>
+        </record>
+</odoo>
