@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<templates xml:space="preserve">
-    <t t-name="shp.DateHijriField" owl="1">
-        <input type="text" class="o_input" id="picker" t-on-blur="(e)=>this.onBlur(e)" />
-    </t>
-</templates>

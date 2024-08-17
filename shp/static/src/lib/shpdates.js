@@ -262,7 +262,6 @@ export const strftimeToLuxonFormat = memoize(function strftimeToLuxonFormat(form
         output.push(character);
         inToken = false;
     }
-    console.log('strftimetoluxonformat is converted to ' + output.join(""));
     return output.join("");
 });
 
@@ -270,7 +269,6 @@ export const strftimeToLuxonFormat = memoize(function strftimeToLuxonFormat(form
  * Lazy getter returning the start of the current day.
  */
 export function today() {
-    console.log('today is converted to ' + DateTime.local().startOf("day"));
     return DateTime.local().startOf("day");
 }
 
@@ -289,7 +287,7 @@ export function formatDate(value, options = {}) {
         return "";
     }
     const format = options.format || localization.dateFormat;
-    console.log(value + ' is converted to ' + value.toFormat(format));
+    
     return value.toFormat(format);
 }
 
@@ -304,9 +302,8 @@ export function formatDateTime(value, options = {}) {
         return "";
     }
     const format = options.format || localization.dateTimeFormat;
-
-    console.log(value + ' is converted to ' + value.setZone("default").toFormat(format));
-    return value.setZone("default").toFormat(format);
+    
+    return moment(value, 'jYYYY-jMM-jDD HH:mm:ss').format("jYYYY/jMM/jDD HH:mm:ss");
 }
 
 /**
@@ -353,7 +350,6 @@ export function formatDuration(seconds, showFullDuration) {
         durationSplit[0] = durationSplit[0].replace("m", "M");
     }
 
-    console.log(value + ' is converted to ' + result);
     return durationSplit.slice(0, numberOfValuesToDisplay).join(",");
 }
 
@@ -367,7 +363,6 @@ export function serializeDate(value) {
     if (value != "" && value != NaN)
         result = moment(value).utc().format().replace('T',' ').substring(0, 10);
     
-    console.log(value + ' is converted to ' + result);
     return result;
     // const org_value = moment(value);
     
@@ -392,7 +387,6 @@ export function serializeDateTime(value) {
     if (value != "" && value != NaN)
         result = moment(value).utc().format().replace('T',' ').substring(0, 19);
     
-    console.log(value + ' is converted to ' + result);
     return result;
     
     const org_value = moment(value).format(SERVER_DATETIME_FORMAT_JALALI);
@@ -423,7 +417,6 @@ export function serializeDateTime(value) {
  */
 export function parseDate(value, options = {}) {
     const parsed = parseDateTime(value, { ...options, format: options.format || localization.dateFormat });
-    console.log(value + ' is converted to ' + parsed + parsed.startOf("day"));
     return parsed && parsed.startOf("day");
 }
 
@@ -535,7 +528,6 @@ export function parseDateTime(value, options = {}) {
         });
     }
 
-    console.log(value + ' is converted to ' + result.setZone("default"));
     return result.setZone("default");
 }
 
@@ -549,7 +541,6 @@ export function deserializeDate(value) {
     if (value != "" && value != NaN)
         result = moment(value).utc(true).local().format().replace('T',' ').substring(0, 10);
     
-    console.log(value + ' is converted to ' + result);
     return result;
 
 
@@ -571,7 +562,6 @@ export function deserializeDateTime(value) {
     if (value != "" && value != NaN){
         result = moment(value).utc(true).local().format().replace('T',' ').substring(0, 19);
     }
-    console.log(value + ' is converted to ' + result);
     return result;
 
     if (moment(value).locale() == 'en'){
