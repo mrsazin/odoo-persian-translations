@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-08-18 03:34+0330\n"
+"PO-Revision-Date: 2024-08-17 21:01+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -55,7 +55,7 @@ msgstr "% تخفیف"
 #: code:addons/point_of_sale/models/pos_config.py:0
 #, python-format
 msgid "%(pos_name)s (not used)"
-msgstr "%(pos_name)s (درحال‌حاضر توسط کسی استفاده نمی‌شود)"
+msgstr "%(pos_name)s ( استفاده نمی‌شود)"
 
 #. module: point_of_sale
 #. odoo-python
@@ -3259,7 +3259,7 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/app/errors/popups/offline_error_popup.js:0
 #, python-format
 msgid "Meanwhile connection is back, Odoo Point of Sale will operate limited operations. Check your connection or continue with limited functionalities"
-msgstr "تا زمانیکه اتصال دوباره برقرارشود، پایانه فروش قادر است عملیات محدودی را انجام‌دهد. اتصال خود را بررسی کنید یا با همین عملکردهای محدود ادامه دهید"
+msgstr "تا زمانیکه اتصال دوباره برقرارشود، پایانه فروش قادر است عملیات محدودی را انجام‌دهد. اتصال خود را بررسی کنید یا با همین میزان از عملکرد محدود ادامه دهید"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__message_has_error

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-21 06:55+0000\n"
-"PO-Revision-Date: 2024-08-04 15:04+0330\n"
+"PO-Revision-Date: 2024-08-18 07:54+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -436,8 +436,8 @@ msgid ""
 "* sequence: let us to sort the identification types depending on the ones that are most used.\n"
 "* active: we can activate/inactivate identifications to make it easier to our customers\n"
 "\n"
-"In order to make this module compatible for multi-company environments where we have companies that does not need/support this requirement, we have added generic identification types "
-"and generic rules to manage the contact information and make it transparent for the user when only use the VAT as we formerly know.\n"
+"In order to make this module compatible for multi-company environments where we have companies that does not need/support this requirement, we have added generic identification types and "
+"generic rules to manage the contact information and make it transparent for the user when only use the VAT as we formerly know.\n"
 "\n"
 "Generic Identifications:\n"
 "\n"
@@ -456,8 +456,7 @@ msgid ""
 "\n"
 "All the defined identification types can be reviewed and activate/deactivate in \"Contacts / Configuration / Identification Type\" menu.\n"
 "\n"
-"This module is compatible with base_vat module in order to be able to validate VAT numbers for each country that have or not have the possibility to manage multiple identification "
-"types.\n"
+"This module is compatible with base_vat module in order to be able to validate VAT numbers for each country that have or not have the possibility to manage multiple identification types.\n"
 msgstr ""
 
 #. module: base
@@ -1442,8 +1441,8 @@ msgid ""
 "In some Latinamerica countries, including Argentina and Chile, some accounting transactions like invoices and vendor bills are classified by a document types defined by the government "
 "fiscal authorities (In Argentina case AFIP, Chile case SII).\n"
 "\n"
-"This module is intended to be extended by localizations in order to manage these document types and is an essential information that needs to be displayed in the printed reports and "
-"that needs to be easily identified, within the set of invoices as well of account moves.\n"
+"This module is intended to be extended by localizations in order to manage these document types and is an essential information that needs to be displayed in the printed reports and that "
+"needs to be easily identified, within the set of invoices as well of account moves.\n"
 "\n"
 "Each document type have their own rules and sequence number, this last one is integrated with the invoice number and journal sequence in order to be easy for the localization user. In "
 "order to support or not this document types a Journal has a new option that lets to use document or not.\n"
@@ -1577,8 +1576,8 @@ msgid ""
 "The users can be evaluated using goals and numerical objectives to reach.\n"
 "**Goals** are assigned through **challenges** to evaluate and compare members of a team with each others and through time.\n"
 "\n"
-"For non-numerical achievements, **badges** can be granted to users. From a simple \"thank you\" to an exceptional achievement, a badge is an easy way to exprimate gratitude to a user "
-"for their good work.\n"
+"For non-numerical achievements, **badges** can be granted to users. From a simple \"thank you\" to an exceptional achievement, a badge is an easy way to exprimate gratitude to a user for "
+"their good work.\n"
 "\n"
 "Both goals and badges are flexibles and can be adapted to a large range of modules and actions. When installed, this module creates easy goals to help new users to discover Odoo and "
 "configure their user profile.\n"
@@ -1621,16 +1620,15 @@ msgstr ""
 msgid ""
 "\n"
 "Generate short links with analytics trackers (UTM) to share your pages through marketing campaigns.\n"
-"Those trackers can be used in Google Analytics to track clicks and visitors, or in Odoo reports to analyze the efficiency of those campaigns in terms of lead generation, related "
-"revenues (sales orders), recruitment, etc.\n"
+"Those trackers can be used in Google Analytics to track clicks and visitors, or in Odoo reports to analyze the efficiency of those campaigns in terms of lead generation, related revenues "
+"(sales orders), recruitment, etc.\n"
 msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_form_project
 msgid ""
 "\n"
-"Generate tasks in Project app from a form published on your website. This module requires the use of the *Form Builder* module (available in Odoo Enterprise) in order to build the "
-"form.\n"
+"Generate tasks in Project app from a form published on your website. This module requires the use of the *Form Builder* module (available in Odoo Enterprise) in order to build the form.\n"
 msgstr ""
 
 #. module: base
@@ -1800,8 +1798,8 @@ msgid ""
 "The specific and easy-to-use Invoicing system in Odoo allows you to keep track of your accounting, even when you are not an accountant. It provides an easy way to follow up on your "
 "vendors and customers.\n"
 "\n"
-"You could use this simplified accounting in case you work with an (external) account to keep your books, and you still want to keep track of payments. This module also offers you an "
-"easy method of registering payments, without having to encode complete abstracts of account.\n"
+"You could use this simplified accounting in case you work with an (external) account to keep your books, and you still want to keep track of payments. This module also offers you an easy "
+"method of registering payments, without having to encode complete abstracts of account.\n"
 msgstr ""
 
 #. module: base
@@ -1921,8 +1919,8 @@ msgid ""
 "Manage expenses by Employees\n"
 "============================\n"
 "\n"
-"This application allows you to manage your employees' daily expenses. It gives you access to your employees’ fee notes and give you the right to complete and validate or refuse the "
-"notes. After validation it creates an invoice for the employee.\n"
+"This application allows you to manage your employees' daily expenses. It gives you access to your employees’ fee notes and give you the right to complete and validate or refuse the notes. "
+"After validation it creates an invoice for the employee.\n"
 "Employee can encode their own expenses and the validation flow puts it automatically in the accounting after validation by managers.\n"
 "\n"
 "\n"
@@ -1933,8 +1931,8 @@ msgid ""
 "* Approved by his manager\n"
 "* Validation by the accountant and accounting entries creation\n"
 "\n"
-"This module also uses analytic accounting and is compatible with the invoice on timesheet module so that you are able to automatically re-invoice your customers' expenses if your work "
-"by project.\n"
+"This module also uses analytic accounting and is compatible with the invoice on timesheet module so that you are able to automatically re-invoice your customers' expenses if your work by "
+"project.\n"
 msgstr ""
 
 #. module: base
@@ -2003,8 +2001,8 @@ msgid ""
 "Manage time off requests and allocations\n"
 "=====================================\n"
 "\n"
-"This application controls the time off schedule of your company. It allows employees to request time off. Then, managers can review requests for time off and approve or reject them. "
-"This way you can control the overall time off planning for the company or department.\n"
+"This application controls the time off schedule of your company. It allows employees to request time off. Then, managers can review requests for time off and approve or reject them. This "
+"way you can control the overall time off planning for the company or department.\n"
 "\n"
 "You can configure several kinds of time off (sickness, paid days, ...) and allocate time off to an employee or department quickly using time off allocation. An employee can also make a "
 "request for more days off by making a new time off allocation. It will increase the total of available days for that time off type (if the request is accepted).\n"
@@ -2015,8 +2013,8 @@ msgid ""
 "* Time Off by Department\n"
 "* Time Off Analysis\n"
 "\n"
-"A synchronization with an internal agenda (Meetings of the CRM module) is also possible in order to automatically create a meeting when a time off request is accepted by setting up a "
-"type of meeting in time off Type.\n"
+"A synchronization with an internal agenda (Meetings of the CRM module) is also possible in order to automatically create a meeting when a time off request is accepted by setting up a type "
+"of meeting in time off Type.\n"
 msgstr ""
 
 #. module: base
@@ -3167,8 +3165,8 @@ msgid ""
 "This module adds a comparison tool to your eCommerce shop, so that your shoppers can easily compare products based on their attributes. It will considerably accelerate their purchasing "
 "decision.\n"
 "\n"
-"To configure product attributes, activate *Attributes & Variants* in the Website settings. This will add a dedicated section in the product form. In the configuration, this module adds "
-"a category field to product attributes in order to structure the shopper's comparison table.\n"
+"To configure product attributes, activate *Attributes & Variants* in the Website settings. This will add a dedicated section in the product form. In the configuration, this module adds a "
+"category field to product attributes in order to structure the shopper's comparison table.\n"
 "\n"
 "Finally, the module comes with an option to display an attribute summary table in product web pages (available in Customize menu).\n"
 msgstr ""
@@ -5193,8 +5191,8 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:base.action_res_groups
 msgid ""
 "A group is a set of functional areas that will be assigned to the user in order to give them access and rights to specific applications and tasks in the system. You can create custom "
-"groups or edit the ones existing by default in order to customize the view of the menu that users will be able to see. Whether they can have a read, write, create and delete access "
-"right can be managed from here."
+"groups or edit the ones existing by default in order to customize the view of the menu that users will be able to see. Whether they can have a read, write, create and delete access right "
+"can be managed from here."
 msgstr ""
 "یک گروه مجموعه ای از مناطق کاربردی است که به کاربر اختصاص داده می شود تا به آنها دسترسی و حقوقی برای برنامه ها و وظایف خاص در سیستم بدهد. می‌توانید گروه‌های سفارشی ایجاد کنید یا گروه‌های "
 "موجود را به‌طور پیش‌فرض ویرایش کنید تا نمای منویی را که کاربران می‌توانند ببینند سفارشی کنید. اینکه آیا آنها می توانند حق دسترسی خواندن، نوشتن، ایجاد و حذف داشته باشند را می توان از اینجا "
@@ -5600,10 +5598,10 @@ msgstr ""
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_act_url__binding_type__action
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_act_window__binding_type__action
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_act_window_close__binding_type__action
-#: model:ir.model.fields.selection,name:base.selection__ir_actions_actions__binding_type__action
-#: model:ir.model.fields.selection,name:base.selection__ir_actions_client__binding_type__action model:ir.model.fields.selection,name:base.selection__ir_actions_report__binding_type__action
-#: model:ir.model.fields.selection,name:base.selection__ir_actions_server__binding_type__action model_terms:ir.ui.view,arch_db:base.action_view
-#: model_terms:ir.ui.view,arch_db:base.action_view_search model_terms:ir.ui.view,arch_db:base.action_view_tree model_terms:ir.ui.view,arch_db:base.view_window_action_search
+#: model:ir.model.fields.selection,name:base.selection__ir_actions_actions__binding_type__action model:ir.model.fields.selection,name:base.selection__ir_actions_client__binding_type__action
+#: model:ir.model.fields.selection,name:base.selection__ir_actions_report__binding_type__action model:ir.model.fields.selection,name:base.selection__ir_actions_server__binding_type__action
+#: model_terms:ir.ui.view,arch_db:base.action_view model_terms:ir.ui.view,arch_db:base.action_view_search model_terms:ir.ui.view,arch_db:base.action_view_tree
+#: model_terms:ir.ui.view,arch_db:base.view_window_action_search
 msgid "Action"
 msgstr "عمل"
 
@@ -5807,7 +5805,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat_mail_bot
 msgid "Add livechat support for OdooBot"
-msgstr "افزودن چت زنده به ربات ادوو"
+msgstr "افزودن چت زنده به ربات پورتال"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mass_mailing_sale
@@ -8386,12 +8384,12 @@ msgid "Countries"
 msgstr "کشورها"
 
 #. module: base
-#: model:ir.model,name:base.model_res_country model:ir.model.fields,field_description:base.field_res_bank__country
-#: model:ir.model.fields,field_description:base.field_res_company__country_id model:ir.model.fields,field_description:base.field_res_country_state__country_id
-#: model:ir.model.fields,field_description:base.field_res_partner__country_id model:ir.model.fields,field_description:base.field_res_users__country_id
-#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_country_state_search
-#: model_terms:ir.ui.view,arch_db:base.view_country_tree model_terms:ir.ui.view,arch_db:base.view_partner_address_form model_terms:ir.ui.view,arch_db:base.view_partner_form
-#: model_terms:ir.ui.view,arch_db:base.view_res_bank_form model_terms:ir.ui.view,arch_db:base.view_res_partner_filter
+#: model:ir.model,name:base.model_res_country model:ir.model.fields,field_description:base.field_res_bank__country model:ir.model.fields,field_description:base.field_res_company__country_id
+#: model:ir.model.fields,field_description:base.field_res_country_state__country_id model:ir.model.fields,field_description:base.field_res_partner__country_id
+#: model:ir.model.fields,field_description:base.field_res_users__country_id model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private
+#: model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_country_state_search model_terms:ir.ui.view,arch_db:base.view_country_tree
+#: model_terms:ir.ui.view,arch_db:base.view_partner_address_form model_terms:ir.ui.view,arch_db:base.view_partner_form model_terms:ir.ui.view,arch_db:base.view_res_bank_form
+#: model_terms:ir.ui.view,arch_db:base.view_res_partner_filter
 msgid "Country"
 msgstr "کشور"
 
@@ -8555,16 +8553,16 @@ msgstr " ایجاد و سفارشی‌کردن برنامه‌ها"
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_res_company_form
 msgid "Create and manage the companies that will be managed by Odoo from here. Shops or subsidiaries can be created and maintained from here."
-msgstr "شرکت هایی را که توسط Odoo مدیریت می شوند از اینجا ایجاد و مدیریت کنید. فروشگاه ها یا شرکت های تابعه می توانند از اینجا ایجاد و نگهداری شوند."
+msgstr "شرکت هایی را که توسط RGERP مدیریت می شوند از اینجا ایجاد و مدیریت کنید. فروشگاه ها یا شرکت های تابعه می توانند از اینجا ایجاد و نگهداری شوند."
 
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_res_users
 msgid ""
-"Create and manage users that will connect to the system. Users can be deactivated should there be a period of time during which they will/should not connect to the system. You can "
-"assign them groups in order to give them specific access to the applications they need to use in the system."
+"Create and manage users that will connect to the system. Users can be deactivated should there be a period of time during which they will/should not connect to the system. You can assign "
+"them groups in order to give them specific access to the applications they need to use in the system."
 msgstr ""
-"کاربرانی را ایجاد و مدیریت کنید که به سیستم متصل می شوند. کاربران می توانند غیرفعال شوند، در صورتی که دوره ای وجود داشته باشد که در طی آن به سیستم متصل نشده باشند. می‌توانید گروه‌هایی را "
-"به آنها اختصاص دهید تا به آنها دسترسی خاصی به برنامه‌هایی که باید در سیستم استفاده کنند، بدهید."
+"کاربرانی را ایجاد و مدیریت کنید که به سیستم متصل می شوند. کاربران می توانند غیرفعال شوند، در صورتی که دوره ای وجود داشته باشد که در طی آن به سیستم متصل نشده باشند. می‌توانید گروه‌هایی را به "
+"آنها اختصاص دهید تا به آنها دسترسی خاصی به برنامه‌هایی که باید در سیستم استفاده کنند، بدهید."
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
@@ -10612,8 +10610,7 @@ msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_server__webhook_field_ids model:ir.model.fields,help:base.field_ir_cron__webhook_field_ids
-msgid ""
-"Fields to send in the POST request. The id and model of the record are always sent as '_id' and '_model'. The name of the action that triggered the webhook is always sent as '_name'."
+msgid "Fields to send in the POST request. The id and model of the record are always sent as '_id' and '_model'. The name of the action that triggered the webhook is always sent as '_name'."
 msgstr ""
 
 #. module: base
@@ -10826,8 +10823,8 @@ msgstr "متن پاورقی نمایش داده شده در همه گزارشه�
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_server__value model:ir.model.fields,help:base.field_ir_cron__value
 msgid ""
-"For Python expressions, this field may hold a Python expression that can use the same values as for the code field on the server action,e.g. `env.user.name` to set the current user's "
-"name as the value or `record.id` to set the ID of the record on which the action is run.\n"
+"For Python expressions, this field may hold a Python expression that can use the same values as for the code field on the server action,e.g. `env.user.name` to set the current user's name "
+"as the value or `record.id` to set the ID of the record on which the action is run.\n"
 "\n"
 "For Static values, the value will be used directly without evaluation, e.g.`42` or `My custom name` or the selected record."
 msgstr ""
@@ -11783,8 +11780,7 @@ msgstr ""
 #: code:addons/base/models/ir_actions.py:0
 #, python-format
 msgid ""
-"I have no idea how you *did that*, but you're trying to use a gibberish configuration: the model of the record on which the action is triggered is not the same as the model of the "
-"action."
+"I have no idea how you *did that*, but you're trying to use a gibberish configuration: the model of the record on which the action is triggered is not the same as the model of the action."
 msgstr ""
 
 #. module: base
@@ -11932,8 +11928,8 @@ msgstr "شناسه ها"
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
-"If a payment is still outstanding more than sixty (60) days after the due payment date, آلپ reserves the right to call on the services of a debt recovery company. All legal expenses "
-"will be payable by the client."
+"If a payment is still outstanding more than sixty (60) days after the due payment date, آلپ reserves the right to call on the services of a debt recovery company. All legal expenses will "
+"be payable by the client."
 msgstr ""
 
 #. module: base
@@ -12400,8 +12396,7 @@ msgid "Install Language"
 msgstr "نصب زبان"
 
 #. module: base
-#: model:ir.model.fields.selection,name:base.selection__ir_module_module__state__installed
-#: model:ir.model.fields.selection,name:base.selection__ir_module_module_dependency__state__installed
+#: model:ir.model.fields.selection,name:base.selection__ir_module_module__state__installed model:ir.model.fields.selection,name:base.selection__ir_module_module_dependency__state__installed
 #: model:ir.model.fields.selection,name:base.selection__ir_module_module_exclusion__state__installed model_terms:ir.ui.view,arch_db:base.module_view_kanban
 #: model_terms:ir.ui.view,arch_db:base.view_module_filter
 msgid "Installed"
@@ -13300,7 +13295,7 @@ msgstr "بارگذاری"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.config_wizard_step_view_form model_terms:ir.ui.view,arch_db:base.ir_actions_todo_tree
 msgid "Launch Configuration Wizard"
-msgstr "جادوگر پیکربندی را راه اندازی کنید"
+msgstr "ویزارد پیکربندی را راه اندازی کنید"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__layout_background
@@ -13854,8 +13849,8 @@ msgstr ""
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.grant_menu_access
 msgid ""
-"Manage and customize the items available and displayed in your Odoo system menu. You can delete an item by clicking on the box at the beginning of each line and then delete it through "
-"the button that appeared. Items can be assigned to specific groups in order to make them accessible to some users within the system."
+"Manage and customize the items available and displayed in your Odoo system menu. You can delete an item by clicking on the box at the beginning of each line and then delete it through the "
+"button that appeared. Items can be assigned to specific groups in order to make them accessible to some users within the system."
 msgstr ""
 
 #. module: base
@@ -16060,7 +16055,7 @@ msgstr ""
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_partner_customer_form
 msgid "Odoo helps you easily track all activities related to a customer."
-msgstr "Odoo به شما کمک می کند تا به راحتی تمام فعالیت های مربوط به یک مشتری را ردیابی کنید."
+msgstr "RGERP به شما کمک می کند تا به راحتی تمام فعالیت های مربوط به یک مشتری را ردیابی کنید."
 
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_partner_supplier_form
@@ -16070,7 +16065,7 @@ msgstr ""
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_partner_form
 msgid "Odoo helps you track all activities related to your contacts."
-msgstr "Odoo به شما کمک می کند تمام فعالیت های مربوط به مخاطبین خود را ردیابی کنید."
+msgstr "RGERP به شما کمک می کند تمام فعالیت های مربوط به مخاطبین خود را ردیابی کنید."
 
 #. module: base
 #. odoo-python
@@ -16460,8 +16455,8 @@ msgid ""
 "\n"
 "### Designers love working on Odoo\n"
 "\n"
-"Themes are awesome and easy to design. You don't need to develop to create new pages, themes or building blocks. We use a clean HTML structure, a [bootstrap](http://getbootstrap.com/) "
-"CSS and our modularity allows to distribute your themes easily.\n"
+"Themes are awesome and easy to design. You don't need to develop to create new pages, themes or building blocks. We use a clean HTML structure, a [bootstrap](http://getbootstrap.com/) CSS "
+"and our modularity allows to distribute your themes easily.\n"
 "\n"
 "The building block approach allows the website to stay clean after the end-users start creating new contents.\n"
 "\n"
@@ -16620,8 +16615,8 @@ msgstr ""
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
 "Our invoices are payable within 21 working days, unless another payment timeframe is indicated on either the invoice or the order. In the event of non-payment by the due date, آلپ "
-"reserves the right to request a fixed interest payment amounting to 10% of the sum remaining due. آلپ will be authorized to suspend any provision of services without prior warning in "
-"the event of late payment."
+"reserves the right to request a fixed interest payment amounting to 10% of the sum remaining due. آلپ will be authorized to suspend any provision of services without prior warning in the "
+"event of late payment."
 msgstr ""
 
 #. module: base
@@ -18282,10 +18277,9 @@ msgstr "جایگزین"
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_act_url__binding_type__report
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_act_window__binding_type__report
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_act_window_close__binding_type__report
-#: model:ir.model.fields.selection,name:base.selection__ir_actions_actions__binding_type__report
-#: model:ir.model.fields.selection,name:base.selection__ir_actions_client__binding_type__report model:ir.model.fields.selection,name:base.selection__ir_actions_report__binding_type__report
-#: model:ir.model.fields.selection,name:base.selection__ir_actions_server__binding_type__report model_terms:ir.ui.view,arch_db:base.act_report_xml_search_view
-#: model_terms:ir.ui.view,arch_db:base.act_report_xml_view
+#: model:ir.model.fields.selection,name:base.selection__ir_actions_actions__binding_type__report model:ir.model.fields.selection,name:base.selection__ir_actions_client__binding_type__report
+#: model:ir.model.fields.selection,name:base.selection__ir_actions_report__binding_type__report model:ir.model.fields.selection,name:base.selection__ir_actions_server__binding_type__report
+#: model_terms:ir.ui.view,arch_db:base.act_report_xml_search_view model_terms:ir.ui.view,arch_db:base.act_report_xml_view
 msgid "Report"
 msgstr "گزارش"
 
@@ -20537,8 +20531,8 @@ msgstr "کد زبان در URL نمایش داده می شود"
 #. module: base
 #: model:ir.model.fields,help:base.field_res_lang__grouping
 msgid ""
-"The Separator Format should be like [,n] where 0 < n :starting from Unit digit. -1 will end the separation. e.g. [3,2,-1] will represent 106500 to be 1,06,500; [1,2,-1] will represent "
-"it to be 106,50,0;[3] will represent it as 106,500. Provided ',' as the thousand separator in each case."
+"The Separator Format should be like [,n] where 0 < n :starting from Unit digit. -1 will end the separation. e.g. [3,2,-1] will represent 106500 to be 1,06,500; [1,2,-1] will represent it "
+"to be 106,50,0;[3] will represent it as 106,500. Provided ',' as the thousand separator in each case."
 msgstr ""
 
 #. module: base
@@ -20624,8 +20618,8 @@ msgid ""
 "The configuration wizards are used to help you configure a new instance of Odoo. They are launched during the installation of new modules, but you can choose to restart some wizards "
 "manually from this menu."
 msgstr ""
-"ویزاردهای پیکربندی برای کمک به پیکربندی نمونه جدیدی از Odoo استفاده می شود. آنها در حین نصب ماژول های جدید راه اندازی می شوند، اما می توانید انتخاب کنید که برخی از ویزارد را به صورت "
-"دستی از این منو راه اندازی مجدد کنید."
+"ویزاردهای پیکربندی برای کمک به پیکربندی نمونه جدیدی از RGERP استفاده می شود. آنها در حین نصب ماژول های جدید راه اندازی می شوند، اما می توانید انتخاب کنید که برخی از ویزارد را به صورت دستی "
+"از این منو راه اندازی مجدد کنید."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields__related
@@ -20734,8 +20728,8 @@ msgid ""
 "The field value you're saving (%s %s) includes content that is restricted for security reasons. It is possible that someone with higher privileges previously modified it, and you are "
 "therefore not able to modify it yourself while preserving the content."
 msgstr ""
-"مقدار فیلدی که ذخیره می کنید (%s%s ) شامل محتوایی است که به دلایل امنیتی محدود شده است. این امکان وجود دارد که شخصی با امتیازات بالاتر قبلاً آن را اصلاح کرده باشد و بنابراین شما نمی "
-"توانید خودتان آن را با حفظ محتوا تغییر دهید."
+"مقدار فیلدی که ذخیره می کنید (%s%s ) شامل محتوایی است که به دلایل امنیتی محدود شده است. این امکان وجود دارد که شخصی با امتیازات بالاتر قبلاً آن را اصلاح کرده باشد و بنابراین شما نمی توانید "
+"خودتان آن را با حفظ محتوا تغییر دهید."
 
 #. module: base
 #. odoo-python
@@ -21057,8 +21051,8 @@ msgid ""
 "deleted when the module is upgraded. Use either no prefix and no dot or a prefix that isn't an existing module. For example, __import__, resulting in the external id __import__."
 "%(record_id)s."
 msgstr ""
-"رکورد%(xml_id)s دارای پیشوند ماژول است%(module_name)s. این قسمت قبل از '. در شناسه خارجی از آنجایی که پیشوند به یک ماژول موجود اشاره دارد، پس از ارتقاء ماژول، رکورد حذف خواهد شد. از "
-"بدون پیشوند و بدون نقطه یا پیشوندی که ماژول موجود نیست استفاده کنید. به عنوان مثال، __import__، که منجر به شناسه خارجی __import__ می شود.%(record_id)s"
+"رکورد%(xml_id)s دارای پیشوند ماژول است%(module_name)s. این قسمت قبل از '. در شناسه خارجی از آنجایی که پیشوند به یک ماژول موجود اشاره دارد، پس از ارتقاء ماژول، رکورد حذف خواهد شد. از بدون "
+"پیشوند و بدون نقطه یا پیشوندی که ماژول موجود نیست استفاده کنید. به عنوان مثال، __import__، که منجر به شناسه خارجی __import__ می شود.%(record_id)s"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_company__company_registry model:ir.model.fields,help:base.field_res_partner__company_registry
@@ -21171,8 +21165,8 @@ msgstr "نام فنی مدلی که این فیلد به آن تعلق دارد"
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_report__report_type
 msgid ""
-"The type of the report that will be rendered, each one having its own rendering method. HTML means the report will be opened directly in your browser PDF means the report will be "
-"rendered using Wkhtmltopdf and downloaded by the user."
+"The type of the report that will be rendered, each one having its own rendering method. HTML means the report will be opened directly in your browser PDF means the report will be rendered "
+"using Wkhtmltopdf and downloaded by the user."
 msgstr ""
 "نوع گزارشی که ارائه می شود، هر کدام روش رندر مخصوص به خود را دارند. HTML به این معنی است که گزارش مستقیماً در مرورگر شما به صورت PDF باز می شود به این معنی که گزارش با استفاده از "
 "Wkhtmltopdf ارائه می شود و توسط کاربر دانلود می شود."
@@ -21339,7 +21333,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_din5008
 msgid "This is the base module that defines the DIN 5008 standard in Odoo."
-msgstr "این ماژول پایه ای است که استاندارد DIN 5008 را در Odoo تعریف می کند."
+msgstr "این ماژول پایه ای است که استاندارد DIN 5008 را در RGERP تعریف می کند."
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_hk
@@ -21376,9 +21370,9 @@ msgid ""
 "\n"
 "Updated for Odoo 9 by Bringsvor Consulting AS <www.bringsvor.com>\n"
 msgstr ""
-"این ماژول برای مدیریت نمودار حسابداری نروژ در Odoo است.\n"
+"این ماژول برای مدیریت نمودار حسابداری نروژ در RGERP است.\n"
 "\n"
-"به روز شده برای Odoo 9 توسط Bringsvor Consulting AS <www.bringsvor.com>\n"
+"به روز شده برای RGERP 9 توسط Bringsvor Consulting AS <www.bringsvor.com>\n"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_ph
@@ -21400,7 +21394,7 @@ msgstr "این روش فقط از طریق HTTP قابل دسترسی است"
 #. module: base
 #: model:ir.module.module,description:base.module_mail_bot_hr
 msgid "This module adds the OdooBot state and notifications in the user form modified by hr."
-msgstr "این ماژول وضعیت OdooBot و اعلان‌ها را در فرم کاربر اصلاح شده توسط hr اضافه می‌کند."
+msgstr "این ماژول وضعیت RGERPBot و اعلان‌ها را در فرم کاربر اصلاح شده توسط hr اضافه می‌کند."
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_hr_recruitment
@@ -21641,8 +21635,7 @@ msgid "To be installed"
 msgstr "باید نصب شود"
 
 #. module: base
-#: model:ir.model.fields.selection,name:base.selection__ir_module_module__state__to_remove
-#: model:ir.model.fields.selection,name:base.selection__ir_module_module_dependency__state__to_remove
+#: model:ir.model.fields.selection,name:base.selection__ir_module_module__state__to_remove model:ir.model.fields.selection,name:base.selection__ir_module_module_dependency__state__to_remove
 #: model:ir.model.fields.selection,name:base.selection__ir_module_module_exclusion__state__to_remove
 msgid "To be removed"
 msgstr "باید حذف شود"
@@ -22447,8 +22440,8 @@ msgid ""
 "Use this field if you want to replace the usual way to encode a complete address. Note that the address_format field is used to modify the way to display addresses (in reports for "
 "example), while this field is used to modify the input form for addresses."
 msgstr ""
-"اگر می خواهید روش معمول را برای رمزگذاری یک آدرس کامل جایگزین کنید، از این فیلد استفاده کنید. توجه داشته باشید که فیلد address_format برای تغییر نحوه نمایش آدرس ها (به عنوان مثال در "
-"گزارش ها) استفاده می شود، در حالی که این فیلد برای تغییر فرم ورودی آدرس ها استفاده می شود."
+"اگر می خواهید روش معمول را برای رمزگذاری یک آدرس کامل جایگزین کنید، از این فیلد استفاده کنید. توجه داشته باشید که فیلد address_format برای تغییر نحوه نمایش آدرس ها (به عنوان مثال در گزارش "
+"ها) استفاده می شود، در حالی که این فیلد برای تغییر فرم ورودی آدرس ها استفاده می شود."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields__relation_table
@@ -22814,7 +22807,7 @@ msgstr "نماها"
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_ui_view
 msgid "Views allows you to personalize each view of Odoo. You can add new fields, move fields, rename them or delete the ones that you do not need."
-msgstr "Views به شما امکان می دهد تا هر نمای Odoo را شخصی کنید. می توانید فیلدهای جدید اضافه کنید، فیلدها را جابجا کنید، نام آنها را تغییر دهید یا مواردی را که نیاز ندارید حذف کنید."
+msgstr "Views به شما امکان می دهد تا هر نمای RGERP را شخصی کنید. می توانید فیلدهای جدید اضافه کنید، فیلدها را جابجا کنید، نام آنها را تغییر دهید یا مواردی را که نیاز ندارید حذف کنید."
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_view__inherit_children_ids
@@ -23098,8 +23091,8 @@ msgid ""
 "implementation will not skip any sequence number upon assignment, there can still be gaps in the sequence if records are deleted. The 'no gap' implementation is slower than the standard "
 "one."
 msgstr ""
-"در حالی که یک دنباله را به یک رکورد اختصاص می دهیم، اجرای توالی \"no gap\" تضمین می کند که هر شماره دنباله قبلی قبلاً اختصاص داده شده است. در حالی که این پیاده سازی دنباله هیچ شماره "
-"دنباله ای را پس از تخصیص نادیده نمی گیرد، در صورت حذف رکوردها همچنان ممکن است شکاف هایی در دنباله وجود داشته باشد. اجرای \"no gap\" کندتر از استاندارد است."
+"در حالی که یک دنباله را به یک رکورد اختصاص می دهیم، اجرای توالی \"no gap\" تضمین می کند که هر شماره دنباله قبلی قبلاً اختصاص داده شده است. در حالی که این پیاده سازی دنباله هیچ شماره دنباله "
+"ای را پس از تخصیص نادیده نمی گیرد، در صورت حذف رکوردها همچنان ممکن است شکاف هایی در دنباله وجود داشته باشد. اجرای \"no gap\" کندتر از استاندارد است."
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_G
@@ -23295,7 +23288,7 @@ msgstr "نمی‌توانید کلیدهای API را حذف کنید، مگر �
 #: code:addons/base/models/res_users.py:0
 #, python-format
 msgid "You can not remove the admin user as it is used internally for resources created by Odoo (updates, module installation, ...)"
-msgstr "شما نمی توانید کاربر ادمین را حذف کنید زیرا به صورت داخلی برای منابع ایجاد شده توسط Odoo استفاده می شود (بروز رسانی، نصب ماژول، ...)"
+msgstr "شما نمی توانید کاربر ادمین را حذف کنید زیرا به صورت داخلی برای منابع ایجاد شده توسط RGERP استفاده می شود (بروز رسانی، نصب ماژول، ...)"
 
 #. module: base
 #. odoo-python
@@ -23348,7 +23341,7 @@ msgstr ""
 #: code:addons/base/models/res_lang.py:0
 #, python-format
 msgid "You cannot archive the language in which Odoo was setup as it is used by automated processes."
-msgstr "شما نمی توانید زبانی را که Odoo با آن راه اندازی شده است، بایگانی کنید زیرا توسط فرآیندهای خودکار استفاده می شود."
+msgstr "شما نمی توانید زبانی را که RGERP با آن راه اندازی شده است، بایگانی کنید زیرا توسط فرآیندهای خودکار استفاده می شود."
 
 #. module: base
 #. odoo-python
@@ -23561,7 +23554,7 @@ msgstr "شما قادر خواهید بود حق دسترسی‌های اضاف�
 #: code:addons/base/models/ir_mail_server.py:0
 #, python-format
 msgid "Your Odoo Server does not support SMTP-over-SSL. You could use STARTTLS instead. If SSL is needed, an upgrade to Python 2.6 on the server-side should do the trick."
-msgstr "سرور Odoo شما از SMTP-over-SSL پشتیبانی نمی کند. می توانید به جای آن از STARTTLS استفاده کنید. اگر SSL مورد نیاز است، ارتقا به پایتون 2.6 در  سرور باید این کار را انجام دهد."
+msgstr "سرور RGERP شما از SMTP-over-SSL پشتیبانی نمی کند. می توانید به جای آن از STARTTLS استفاده کنید. اگر SSL مورد نیاز است، ارتقا به پایتون 2.6 در  سرور باید این کار را انجام دهد."
 
 #. module: base
 #: model_terms:res.company,lunch_notify_message:base.main_company
@@ -24286,9 +24279,9 @@ msgstr "جزایر آلاند"
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
-"آلپ undertakes to do its best to supply performant services in due time in accordance with the agreed timeframes. However, none of its obligations can be considered as being an "
-"obligation to achieve results. آلپ cannot under any circumstances, be required by the client to appear as a third party in the context of any claim for damages filed against the client "
-"by an end consumer."
+"آلپ undertakes to do its best to supply performant services in due time in accordance with the agreed timeframes. However, none of its obligations can be considered as being an obligation "
+"to achieve results. آلپ cannot under any circumstances, be required by the client to appear as a third party in the context of any claim for damages filed against the client by an end "
+"consumer."
 msgstr ""
 
 #. module: base

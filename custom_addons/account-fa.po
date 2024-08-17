@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-14 13:06+0000\n"
-"PO-Revision-Date: 2024-08-18 04:15+0330\n"
+"PO-Revision-Date: 2024-08-18 08:06+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -1705,11 +1705,10 @@ msgstr "حساب مورد استفاده برای انتقال دوره یک ه�
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax__cash_basis_transition_account_id
 msgid ""
-"Account used to transition the tax amount for cash basis taxes. It will contain the tax amount as long as the original invoice has not been reconciled ; at reconciliation, this amount cancelled on this account and put on "
-"the regular tax account."
+"Account used to transition the tax amount for cash basis taxes. It will contain the tax amount as long as the original invoice has not been reconciled ; at reconciliation, this amount cancelled on this account and put on the "
+"regular tax account."
 msgstr ""
-"حساب مورداستفاده برای انتقال مبلغ مالیاتی برای مالیات‌های نقدی. این حساب شامل مبلغ مالیات تا زمانی که فاکتور اصلی تطبیق‌داده‌نشده‌ است، می‌شود; در هنگام تطبیق این مبلغ در این حساب لغو شده و در حساب مالیاتی معمول قرار داده "
-"می‌شود."
+"حساب مورداستفاده برای انتقال مبلغ مالیاتی برای مالیات‌های نقدی. این حساب شامل مبلغ مالیات تا زمانی که فاکتور اصلی تطبیق‌داده‌نشده‌ است، می‌شود; در هنگام تطبیق این مبلغ در این حساب لغو شده و در حساب مالیاتی معمول قرار داده می‌شود."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_search
@@ -1726,7 +1725,7 @@ msgstr "حساب: ورودی های پیشنویس را با استفاده از
 #: model_terms:ir.ui.view,arch_db:account.product_template_form_view model_terms:ir.ui.view,arch_db:account.view_account_analytic_line_form_inherit_account model_terms:ir.ui.view,arch_db:account.view_account_form
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "Accounting"
-msgstr "حسابداری"
+msgstr "صدورفاکتور"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.open_account_journal_dashboard_kanban
@@ -2264,8 +2263,8 @@ msgid "Amount Condition"
 msgstr "شرایط مبلغ"
 
 #. module: account
-#: model:ir.model.fields,field_description:account.field_account_move__amount_residual model:ir.model.fields,field_description:account.field_account_payment__amount_residual
-#: model_terms:ir.ui.view,arch_db:account.portal_my_invoices model_terms:ir.ui.view,arch_db:account.report_invoice_document model_terms:ir.ui.view,arch_db:account.view_invoice_tree
+#: model:ir.model.fields,field_description:account.field_account_move__amount_residual model:ir.model.fields,field_description:account.field_account_payment__amount_residual model_terms:ir.ui.view,arch_db:account.portal_my_invoices
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document model_terms:ir.ui.view,arch_db:account.view_invoice_tree
 msgid "Amount Due"
 msgstr "سررسید مبلغ"
 
@@ -3418,9 +3417,7 @@ msgstr "دسته بندی"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
-msgid ""
-"Certain countries apply withholding at source on the amount of invoices, in accordance with their internal legislation. Any withholding at source will be paid by the client to the tax authorities. Under no circumstances "
-"can"
+msgid "Certain countries apply withholding at source on the amount of invoices, in accordance with their internal legislation. Any withholding at source will be paid by the client to the tax authorities. Under no circumstances can"
 msgstr "برخی کشورها، طبق قوانین داخلی خود، مالیات تکلیفی را روی مبلغ فاکتورها اعمال می‌کنند. هر گونه مالیات تکلیفی توسط مشتری به مراجع مالیاتی پرداخت می‌شود."
 
 #. module: account
@@ -3710,8 +3707,7 @@ msgid "Company has a chart of accounts"
 msgstr "شرکت دارای جدول حساب است"
 
 #. module: account
-#: model:ir.model.fields,help:account.field_account_bank_statement__company_id model:ir.model.fields,help:account.field_account_journal__company_id
-#: model:ir.model.fields,help:account.field_account_payment_method_line__company_id
+#: model:ir.model.fields,help:account.field_account_bank_statement__company_id model:ir.model.fields,help:account.field_account_journal__company_id model:ir.model.fields,help:account.field_account_payment_method_line__company_id
 msgid "Company related to this journal"
 msgstr "شرکت مربوط به این روزنامه"
 
@@ -5850,8 +5846,8 @@ msgstr "دوره‌های مالی"
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_tax__position_id model:ir.model.fields,field_description:account.field_account_invoice_report__fiscal_position_id
 #: model:ir.model.fields,field_description:account.field_account_move__fiscal_position_id model:ir.model.fields,field_description:account.field_account_payment__fiscal_position_id
 #: model:ir.model.fields,field_description:account.field_res_company__fiscal_position_ids model:ir.model.fields,field_description:account.field_res_partner__property_account_position_id
-#: model:ir.model.fields,field_description:account.field_res_users__property_account_position_id model_terms:ir.ui.view,arch_db:account.view_account_position_filter
-#: model_terms:ir.ui.view,arch_db:account.view_account_position_form model_terms:ir.ui.view,arch_db:account.view_account_position_tree
+#: model:ir.model.fields,field_description:account.field_res_users__property_account_position_id model_terms:ir.ui.view,arch_db:account.view_account_position_filter model_terms:ir.ui.view,arch_db:account.view_account_position_form
+#: model_terms:ir.ui.view,arch_db:account.view_account_position_tree
 msgid "Fiscal Position"
 msgstr "موقعیت مالی"
 
@@ -6045,8 +6041,8 @@ msgstr "فرمول"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_report_expression__carryover_target
 msgid ""
-"Formula in the form line_code.expression_label. This allows setting the target of the carryover for this expression (on a _carryover_*-labeled expression), in case it is different from the parent line. 'custom' is also "
-"allowed as value in case the carryover destination requires more complex logic."
+"Formula in the form line_code.expression_label. This allows setting the target of the carryover for this expression (on a _carryover_*-labeled expression), in case it is different from the parent line. 'custom' is also allowed "
+"as value in case the carryover destination requires more complex logic."
 msgstr ""
 "فرمول به شکل سطر_کد.عبارت_برچسب. این گونه امکان تعیین هدف انتقال برای این عبارت فراهم می‌شود (روی یک عبارت برچسب دار *-)، در صورتی که با سطر اصلی متفاوت باشد. سفارشی سازی نیز در صورتی مجاز است که مقصد انتقال نیازمند منطق "
 "پیچیده‌تری باشد."
@@ -6099,14 +6095,12 @@ msgstr "از همان ابتدا"
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_account_invoice_report_all_supp
 msgid "From this report, you can have an overview of the amount invoiced from your vendors. The search tool can also be used to personalise your Invoices reports and so, match this analysis to your needs."
-msgstr ""
-"از این گزارش، می توانید یک نمای کلی از مبلغ صورتحساب فروشندگان خود داشته باشید. امکان استفاده از ابزارهای جستجو برای شخصی سازی گزارش فاکتور هایتان وجود دارد و بنابراین، این تجزیه و تحلیل را با نیازهای خود مطابقت دهید."
+msgstr "از این گزارش، می توانید یک نمای کلی از مبلغ صورتحساب فروشندگان خود داشته باشید. امکان استفاده از ابزارهای جستجو برای شخصی سازی گزارش فاکتور هایتان وجود دارد و بنابراین، این تجزیه و تحلیل را با نیازهای خود مطابقت دهید."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_account_invoice_report_all
 msgid "From this report, you can have an overview of the amount invoiced to your customers. The search tool can also be used to personalise your Invoices reports and so, match this analysis to your needs."
-msgstr ""
-"از این گزارش می توانید نمای کلی از مبلغ فاکتور صادر شده برای مشتریان خود داشته باشید. امکان استفاده از ابزارهای جستجو برای شخصی سازی گزارش فاکتورهایتان وجود دارد و بنابراین، این تجزیه و تحلیل را با نیازهای خود مطابقت دهید."
+msgstr "از این گزارش می توانید نمای کلی از مبلغ فاکتور صادر شده برای مشتریان خود داشته باشید. امکان استفاده از ابزارهای جستجو برای شخصی سازی گزارش فاکتورهایتان وجود دارد و بنابراین، این تجزیه و تحلیل را با نیازهای خود مطابقت دهید."
 
 #. module: account
 #: model:ir.model,name:account.model_account_full_reconcile model:ir.model.fields,field_description:account.field_account_partial_reconcile__full_reconcile_id
@@ -6289,7 +6283,7 @@ msgstr "حاوی هشدار انتقال پول"
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__has_reconciled_entries model:ir.model.fields,field_description:account.field_account_move__has_reconciled_entries
 #: model:ir.model.fields,field_description:account.field_account_payment__has_reconciled_entries
 msgid "Has Reconciled Entries"
-msgstr "حاوی سندهای تطبیق‌داده‌شده‌ "
+msgstr "حاوی سندهای تطبیق‌داده‌شده‌"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__has_sequence_holes
@@ -6360,9 +6354,8 @@ msgstr "چگونگی محاسبه مقدار مالیات در سفارش‌ها
 #: model:ir.model.fields,field_description:account.field_account_cash_rounding__id model:ir.model.fields,field_description:account.field_account_financial_year_op__id
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position__id model:ir.model.fields,field_description:account.field_account_fiscal_position_account__id
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_tax__id model:ir.model.fields,field_description:account.field_account_full_reconcile__id
-#: model:ir.model.fields,field_description:account.field_account_group__id model:ir.model.fields,field_description:account.field_account_incoterms__id
-#: model:ir.model.fields,field_description:account.field_account_invoice_report__id model:ir.model.fields,field_description:account.field_account_journal__id
-#: model:ir.model.fields,field_description:account.field_account_journal_group__id model:ir.model.fields,field_description:account.field_account_move__id
+#: model:ir.model.fields,field_description:account.field_account_group__id model:ir.model.fields,field_description:account.field_account_incoterms__id model:ir.model.fields,field_description:account.field_account_invoice_report__id
+#: model:ir.model.fields,field_description:account.field_account_journal__id model:ir.model.fields,field_description:account.field_account_journal_group__id model:ir.model.fields,field_description:account.field_account_move__id
 #: model:ir.model.fields,field_description:account.field_account_move_line__id model:ir.model.fields,field_description:account.field_account_move_reversal__id
 #: model:ir.model.fields,field_description:account.field_account_move_send__id model:ir.model.fields,field_description:account.field_account_partial_reconcile__id
 #: model:ir.model.fields,field_description:account.field_account_payment__id model:ir.model.fields,field_description:account.field_account_payment_method__id
@@ -6433,24 +6426,22 @@ msgstr "در صورت فعال کردن این گزینه، می‌توان از
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account__message_needaction model:ir.model.fields,help:account.field_account_bank_statement_line__message_needaction
-#: model:ir.model.fields,help:account.field_account_journal__message_needaction model:ir.model.fields,help:account.field_account_move__message_needaction
-#: model:ir.model.fields,help:account.field_account_payment__message_needaction model:ir.model.fields,help:account.field_account_reconcile_model__message_needaction
-#: model:ir.model.fields,help:account.field_account_setup_bank_manual_config__message_needaction model:ir.model.fields,help:account.field_account_tax__message_needaction
-#: model:ir.model.fields,help:account.field_res_company__message_needaction model:ir.model.fields,help:account.field_res_partner_bank__message_needaction
+#: model:ir.model.fields,help:account.field_account_journal__message_needaction model:ir.model.fields,help:account.field_account_move__message_needaction model:ir.model.fields,help:account.field_account_payment__message_needaction
+#: model:ir.model.fields,help:account.field_account_reconcile_model__message_needaction model:ir.model.fields,help:account.field_account_setup_bank_manual_config__message_needaction
+#: model:ir.model.fields,help:account.field_account_tax__message_needaction model:ir.model.fields,help:account.field_res_company__message_needaction model:ir.model.fields,help:account.field_res_partner_bank__message_needaction
 msgid "If checked, new messages require your attention."
 msgstr "اگر این گزینه را انتخاب کنید، باید پیام‌های جدید را مورد توجه قرار دهید."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account__message_has_error model:ir.model.fields,help:account.field_account_account__message_has_sms_error
 #: model:ir.model.fields,help:account.field_account_bank_statement_line__message_has_error model:ir.model.fields,help:account.field_account_bank_statement_line__message_has_sms_error
-#: model:ir.model.fields,help:account.field_account_journal__message_has_error model:ir.model.fields,help:account.field_account_journal__message_has_sms_error
-#: model:ir.model.fields,help:account.field_account_move__message_has_error model:ir.model.fields,help:account.field_account_move__message_has_sms_error
-#: model:ir.model.fields,help:account.field_account_payment__message_has_error model:ir.model.fields,help:account.field_account_payment__message_has_sms_error
-#: model:ir.model.fields,help:account.field_account_reconcile_model__message_has_error model:ir.model.fields,help:account.field_account_reconcile_model__message_has_sms_error
-#: model:ir.model.fields,help:account.field_account_setup_bank_manual_config__message_has_error model:ir.model.fields,help:account.field_account_setup_bank_manual_config__message_has_sms_error
-#: model:ir.model.fields,help:account.field_account_tax__message_has_error model:ir.model.fields,help:account.field_account_tax__message_has_sms_error model:ir.model.fields,help:account.field_res_company__message_has_error
-#: model:ir.model.fields,help:account.field_res_company__message_has_sms_error model:ir.model.fields,help:account.field_res_partner_bank__message_has_error
-#: model:ir.model.fields,help:account.field_res_partner_bank__message_has_sms_error
+#: model:ir.model.fields,help:account.field_account_journal__message_has_error model:ir.model.fields,help:account.field_account_journal__message_has_sms_error model:ir.model.fields,help:account.field_account_move__message_has_error
+#: model:ir.model.fields,help:account.field_account_move__message_has_sms_error model:ir.model.fields,help:account.field_account_payment__message_has_error
+#: model:ir.model.fields,help:account.field_account_payment__message_has_sms_error model:ir.model.fields,help:account.field_account_reconcile_model__message_has_error
+#: model:ir.model.fields,help:account.field_account_reconcile_model__message_has_sms_error model:ir.model.fields,help:account.field_account_setup_bank_manual_config__message_has_error
+#: model:ir.model.fields,help:account.field_account_setup_bank_manual_config__message_has_sms_error model:ir.model.fields,help:account.field_account_tax__message_has_error
+#: model:ir.model.fields,help:account.field_account_tax__message_has_sms_error model:ir.model.fields,help:account.field_res_company__message_has_error model:ir.model.fields,help:account.field_res_company__message_has_sms_error
+#: model:ir.model.fields,help:account.field_res_partner_bank__message_has_error model:ir.model.fields,help:account.field_res_partner_bank__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "در صورت انتخاب این گزینه، برخی از پیام ها دارای خطای تحویل هستند."
 
@@ -6948,7 +6939,7 @@ msgstr "تاریخ فاکتور"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_line_payment_tree
 msgid "Invoice Due Date"
-msgstr "تاریخح سررسید فاکتور"
+msgstr "تاریخ سررسید فاکتور"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__invoice_filter_type_domain model:ir.model.fields,field_description:account.field_account_move__invoice_filter_type_domain
@@ -6989,8 +6980,7 @@ msgstr "پرداخت آنلاین فاکتور"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__invoice_outstanding_credits_debits_widget
-#: model:ir.model.fields,field_description:account.field_account_move__invoice_outstanding_credits_debits_widget
-#: model:ir.model.fields,field_description:account.field_account_payment__invoice_outstanding_credits_debits_widget
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_outstanding_credits_debits_widget model:ir.model.fields,field_description:account.field_account_payment__invoice_outstanding_credits_debits_widget
 msgid "Invoice Outstanding Credits Debits Widget"
 msgstr "ویجت فاکتور بدهی/بستانکاری پرداخت نشده "
 
@@ -7103,9 +7093,9 @@ msgid "Invoices &amp; Bills"
 msgstr "فاکتور‌ها و صورت‌حساب‌ها"
 
 #. module: account
-#: model:ir.actions.act_window,name:account.action_account_invoice_report_all model:ir.actions.act_window,name:account.action_account_invoice_report_all_supp
-#: model_terms:ir.ui.view,arch_db:account.account_invoice_report_view_tree model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_graph
-#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_pivot model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
+#: model:ir.actions.act_window,name:account.action_account_invoice_report_all model:ir.actions.act_window,name:account.action_account_invoice_report_all_supp model_terms:ir.ui.view,arch_db:account.account_invoice_report_view_tree
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_graph model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_pivot
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
 msgid "Invoices Analysis"
 msgstr "تحلیل فاکتورها"
 
@@ -7179,8 +7169,8 @@ msgid "Invoices/Bills Perfect Match"
 msgstr "تطابق کامل فاکتورها/صورت‌حساب‌ها"
 
 #. module: account
-#: model:ir.ui.menu,name:account.account_invoicing_menu model:ir.ui.menu,name:account.menu_finance model_terms:ir.ui.view,arch_db:account.digest_digest_view_form
-#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form model_terms:ir.ui.view,arch_db:account.view_partner_property_form
+#: model:ir.ui.menu,name:account.account_invoicing_menu model:ir.ui.menu,name:account.menu_finance model_terms:ir.ui.view,arch_db:account.digest_digest_view_form model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:account.view_partner_property_form
 msgid "Invoicing"
 msgstr "صدور فاکتور"
 
@@ -7277,8 +7267,7 @@ msgid "Is Valid"
 msgstr "آیا معتبر است"
 
 #. module: account
-#: model:ir.model.fields,help:account.field_account_bank_statement_line__is_being_sent model:ir.model.fields,help:account.field_account_move__is_being_sent
-#: model:ir.model.fields,help:account.field_account_payment__is_being_sent
+#: model:ir.model.fields,help:account.field_account_bank_statement_line__is_being_sent model:ir.model.fields,help:account.field_account_move__is_being_sent model:ir.model.fields,help:account.field_account_payment__is_being_sent
 msgid "Is the move being sent asynchronously"
 msgstr "آیا انتقال به صورت غیرهمزمان ارسال می‌شود"
 
@@ -7321,9 +7310,9 @@ msgstr "ارز دفترروزنامه‌"
 #. module: account
 #. odoo-javascript
 #. odoo-python
-#: code:addons/account/models/account_journal_dashboard.py:0 code:addons/account/static/src/components/journal_dashboard_activity/journal_dashboard_activity.js:0
-#: model:ir.actions.act_window,name:account.action_move_journal_line model:ir.ui.menu,name:account.menu_action_move_journal_line_form model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
-#: model_terms:ir.ui.view,arch_db:account.view_account_journal_form model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_form model_terms:ir.ui.view,arch_db:account.view_move_tree
+#: code:addons/account/models/account_journal_dashboard.py:0 code:addons/account/static/src/components/journal_dashboard_activity/journal_dashboard_activity.js:0 model:ir.actions.act_window,name:account.action_move_journal_line
+#: model:ir.ui.menu,name:account.menu_action_move_journal_line_form model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view model_terms:ir.ui.view,arch_db:account.view_account_journal_form
+#: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_form model_terms:ir.ui.view,arch_db:account.view_move_tree
 #, python-format
 msgid "Journal Entries"
 msgstr "اسناد دفتر روزنامه "
@@ -7411,11 +7400,11 @@ msgstr "برچسب آیتم دفتر روزنامه"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_moves_all model:ir.actions.act_window,name:account.action_account_moves_all_a model:ir.actions.act_window,name:account.action_account_moves_all_grouped_matching
-#: model:ir.actions.act_window,name:account.action_account_moves_all_tree model:ir.actions.act_window,name:account.action_move_line_select
-#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__line_ids model:ir.model.fields,field_description:account.field_account_move__line_ids
-#: model:ir.model.fields,field_description:account.field_account_payment__line_ids model:ir.model.fields,field_description:account.field_res_partner__journal_item_count
-#: model:ir.model.fields,field_description:account.field_res_users__journal_item_count model:ir.ui.menu,name:account.menu_action_account_moves_all model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
-#: model_terms:ir.ui.view,arch_db:account.view_move_form model_terms:ir.ui.view,arch_db:account.view_move_line_pivot model_terms:ir.ui.view,arch_db:account.view_move_line_tree
+#: model:ir.actions.act_window,name:account.action_account_moves_all_tree model:ir.actions.act_window,name:account.action_move_line_select model:ir.model.fields,field_description:account.field_account_bank_statement_line__line_ids
+#: model:ir.model.fields,field_description:account.field_account_move__line_ids model:ir.model.fields,field_description:account.field_account_payment__line_ids
+#: model:ir.model.fields,field_description:account.field_res_partner__journal_item_count model:ir.model.fields,field_description:account.field_res_users__journal_item_count
+#: model:ir.ui.menu,name:account.menu_action_account_moves_all model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view model_terms:ir.ui.view,arch_db:account.view_move_form
+#: model_terms:ir.ui.view,arch_db:account.view_move_line_pivot model_terms:ir.ui.view,arch_db:account.view_move_line_tree
 msgid "Journal Items"
 msgstr "آیتم های روزنامه"
 
@@ -8131,8 +8120,8 @@ msgid "Misc. Operations"
 msgstr "عملیات‌های متفرقه"
 
 #. module: account
-#: model:ir.actions.act_window,name:account.action_account_moves_journal_misc model:ir.model.fields.selection,name:account.selection__account_journal__type__general
-#: model_terms:ir.ui.view,arch_db:account.view_account_journal_search model_terms:ir.ui.view,arch_db:account.view_account_move_filter model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
+#: model:ir.actions.act_window,name:account.action_account_moves_journal_misc model:ir.model.fields.selection,name:account.selection__account_journal__type__general model_terms:ir.ui.view,arch_db:account.view_account_journal_search
+#: model_terms:ir.ui.view,arch_db:account.view_account_move_filter model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
 msgid "Miscellaneous"
 msgstr "متفرقه"
 
@@ -8239,8 +8228,7 @@ msgid "Multi-Company"
 msgstr "چند شرکتی"
 
 #. module: account
-#: model:ir.model.fields,help:account.field_account_bank_statement_line__direction_sign model:ir.model.fields,help:account.field_account_move__direction_sign
-#: model:ir.model.fields,help:account.field_account_payment__direction_sign
+#: model:ir.model.fields,help:account.field_account_bank_statement_line__direction_sign model:ir.model.fields,help:account.field_account_move__direction_sign model:ir.model.fields,help:account.field_account_payment__direction_sign
 msgid "Multiplicator depending on the document type, to convert a price into a balance"
 msgstr "ضریب تبدیل قیمت به یک تراز به نوع سند بستگی دارد"
 
@@ -8627,7 +8615,7 @@ msgstr "اکتبر"
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
 msgid "Odoo"
-msgstr "اودو"
+msgstr "RGERP"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_report_expression__engine__domain
@@ -8644,7 +8632,7 @@ msgstr "اودوو به شما اجازه میدهد یک سطر صورت‌حس
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_customer
 msgid "Odoo helps you easily track all activities related to a customer."
-msgstr "Odoo به شما کمک می کند تا به راحتی تمام فعالیت های مربوط به یک مشتری را ردیابی کنید."
+msgstr "RGERP به شما کمک می کند تا به راحتی تمام فعالیت های مربوط به یک مشتری را ردیابی کنید."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier
@@ -9451,12 +9439,11 @@ msgid "Payment Term Details"
 msgstr "جزئیات شرایط پرداخت"
 
 #. module: account
-#: model:ir.actions.act_window,name:account.action_payment_term_form model:ir.model,name:account.model_account_payment_term
-#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__invoice_payment_term_id model:ir.model.fields,field_description:account.field_account_move__invoice_payment_term_id
-#: model:ir.model.fields,field_description:account.field_account_payment__invoice_payment_term_id model:ir.model.fields,field_description:account.field_account_payment_term__name
-#: model:ir.model.fields,field_description:account.field_account_payment_term_line__payment_id model:ir.ui.menu,name:account.menu_action_payment_term_form model_terms:ir.ui.view,arch_db:account.view_move_form
-#: model_terms:ir.ui.view,arch_db:account.view_partner_property_form model_terms:ir.ui.view,arch_db:account.view_payment_term_form model_terms:ir.ui.view,arch_db:account.view_payment_term_search
-#: model_terms:ir.ui.view,arch_db:account.view_payment_term_tree
+#: model:ir.actions.act_window,name:account.action_payment_term_form model:ir.model,name:account.model_account_payment_term model:ir.model.fields,field_description:account.field_account_bank_statement_line__invoice_payment_term_id
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_payment_term_id model:ir.model.fields,field_description:account.field_account_payment__invoice_payment_term_id
+#: model:ir.model.fields,field_description:account.field_account_payment_term__name model:ir.model.fields,field_description:account.field_account_payment_term_line__payment_id
+#: model:ir.ui.menu,name:account.menu_action_payment_term_form model_terms:ir.ui.view,arch_db:account.view_move_form model_terms:ir.ui.view,arch_db:account.view_partner_property_form
+#: model_terms:ir.ui.view,arch_db:account.view_payment_term_form model_terms:ir.ui.view,arch_db:account.view_payment_term_search model_terms:ir.ui.view,arch_db:account.view_payment_term_tree
 msgid "Payment Terms"
 msgstr "شروط پرداخت"
 
@@ -9886,8 +9873,8 @@ msgstr "گونه محصول"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.product_product_action_purchasable model:ir.actions.act_window,name:account.product_product_action_sellable
-#: model:ir.model.fields.selection,name:account.selection__account_account_tag__applicability__products model:ir.ui.menu,name:account.product_product_menu_purchasable
-#: model:ir.ui.menu,name:account.product_product_menu_sellable model_terms:ir.ui.view,arch_db:account.product_template_view_tree
+#: model:ir.model.fields.selection,name:account.selection__account_account_tag__applicability__products model:ir.ui.menu,name:account.product_product_menu_purchasable model:ir.ui.menu,name:account.product_product_menu_sellable
+#: model_terms:ir.ui.view,arch_db:account.product_template_view_tree
 msgid "Products"
 msgstr "محصولات"
 
@@ -10121,8 +10108,8 @@ msgstr "مرجع"
 #. module: account
 #. odoo-python
 #: code:addons/account/controllers/portal.py:0 model:ir.model.fields,field_description:account.field_account_bank_statement__name model:ir.model.fields,field_description:account.field_account_bank_statement_line__ref
-#: model:ir.model.fields,field_description:account.field_account_move__ref model:ir.model.fields,field_description:account.field_account_move_line__ref
-#: model:ir.model.fields,field_description:account.field_account_payment__ref model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_form
+#: model:ir.model.fields,field_description:account.field_account_move__ref model:ir.model.fields,field_description:account.field_account_move_line__ref model:ir.model.fields,field_description:account.field_account_payment__ref
+#: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_form
 #, python-format
 msgid "Reference"
 msgstr "مرجع‌"
@@ -10769,11 +10756,10 @@ msgstr ""
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_analytic_distribution_model__product_categ_id
-msgid ""
-"Select a product category which will use analytic account specified in analytic default (e.g. create new customer invoice or Sales order if we select this product, it will automatically take this as an analytic account)"
+msgid "Select a product category which will use analytic account specified in analytic default (e.g. create new customer invoice or Sales order if we select this product, it will automatically take this as an analytic account)"
 msgstr ""
-"دسته محصولی را انتخاب کنید که از حساب تحلیلی مشخص شده در پیشفرض تحلیلی مشخص شده است (به طورمثال یک فاکتور مشتری یا سفارش فروش جدید ایجاد کنید، در صورت انتخاب این محصول، این حساب به صوت خودکار به عنوان حساب تحلیلی در نظر "
-"گرفته می‌شود)"
+"دسته محصولی را انتخاب کنید که از حساب تحلیلی مشخص شده در پیشفرض تحلیلی مشخص شده است (به طورمثال یک فاکتور مشتری یا سفارش فروش جدید ایجاد کنید، در صورت انتخاب این محصول، این حساب به صوت خودکار به عنوان حساب تحلیلی در نظر گرفته "
+"می‌شود)"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_analytic_distribution_model__product_id
@@ -10912,7 +10898,7 @@ msgstr ""
 "\n"
 "هر گونه پسوند فایل پذیرفته می شود.\n"
 "\n"
-"فقط فایل های PDF و XML توسط Odoo تفسیر می شوند"
+"فقط فایل های PDF و XML توسط RGERP تفسیر می شوند"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.account_send_payment_receipt_by_email_action
@@ -10946,11 +10932,11 @@ msgstr "فرستادن ایمیل‌تان به"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_setup_bank_manual_config__allow_out_payment model:ir.model.fields,help:account.field_res_partner_bank__allow_out_payment
 msgid ""
-"Sending fake invoices with a fraudulent account number is a common phishing practice. To protect yourself, always verify new bank account numbers, preferably by calling the vendor, as phishing usually happens when their "
-"emails are compromised. Once verified, you can activate the ability to send money."
+"Sending fake invoices with a fraudulent account number is a common phishing practice. To protect yourself, always verify new bank account numbers, preferably by calling the vendor, as phishing usually happens when their emails "
+"are compromised. Once verified, you can activate the ability to send money."
 msgstr ""
-"ارسال فاکتور با یک حساب جعلی، روشی متداول برای کلاهبرداری است. برای محافظت از خود، همواره شماره حساب‌های جدید را بررسی کنید، ترجیحاً این کار را از طریق تماس با فروشنده انجام دهید، زیرا کلاهبرداری معمولاً زمانی اتفاق می‌افتد "
-"که ایمیل‌ها در معرض خطر قرار بگیرند. پس از بررسی، می‌توانید قابلیت ارسال پول را فعال کنید. "
+"ارسال فاکتور با یک حساب جعلی، روشی متداول برای کلاهبرداری است. برای محافظت از خود، همواره شماره حساب‌های جدید را بررسی کنید، ترجیحاً این کار را از طریق تماس با فروشنده انجام دهید، زیرا کلاهبرداری معمولاً زمانی اتفاق می‌افتد که "
+"ایمیل‌ها در معرض خطر قرار بگیرند. پس از بررسی، می‌توانید قابلیت ارسال پول را فعال کنید. "
 
 #. module: account
 #. odoo-python
@@ -11378,9 +11364,9 @@ msgid "Status"
 msgstr "وضعیت"
 
 #. module: account
-#: model:ir.model.fields,help:account.field_account_bank_statement_line__activity_state model:ir.model.fields,help:account.field_account_journal__activity_state
-#: model:ir.model.fields,help:account.field_account_move__activity_state model:ir.model.fields,help:account.field_account_payment__activity_state
-#: model:ir.model.fields,help:account.field_account_setup_bank_manual_config__activity_state model:ir.model.fields,help:account.field_res_partner_bank__activity_state
+#: model:ir.model.fields,help:account.field_account_bank_statement_line__activity_state model:ir.model.fields,help:account.field_account_journal__activity_state model:ir.model.fields,help:account.field_account_move__activity_state
+#: model:ir.model.fields,help:account.field_account_payment__activity_state model:ir.model.fields,help:account.field_account_setup_bank_manual_config__activity_state
+#: model:ir.model.fields,help:account.field_res_partner_bank__activity_state
 msgid ""
 "Status based on activities\n"
 "Overdue: Due date is already passed\n"
@@ -11476,8 +11462,8 @@ msgid "Tag Name"
 msgstr "نام تگ"
 
 #. module: account
-#: model:ir.model.fields,field_description:account.field_account_account__tag_ids model:ir.model.fields,field_description:account.field_account_move_line__tax_tag_ids
-#: model_terms:ir.ui.view,arch_db:account.account_tag_view_form model_terms:ir.ui.view,arch_db:account.account_tag_view_tree
+#: model:ir.model.fields,field_description:account.field_account_account__tag_ids model:ir.model.fields,field_description:account.field_account_move_line__tax_tag_ids model_terms:ir.ui.view,arch_db:account.account_tag_view_form
+#: model_terms:ir.ui.view,arch_db:account.account_tag_view_tree
 msgid "Tags"
 msgstr "برچسب‌ها"
 
@@ -11508,11 +11494,10 @@ msgstr "سطر هدف"
 
 #. module: account
 #: model:account.report.column,name:account.generic_tax_report_account_tax_column_tax model:account.report.column,name:account.generic_tax_report_column_tax
-#: model:account.report.column,name:account.generic_tax_report_tax_account_column_tax model:ir.model,name:account.model_account_tax
-#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__amount_tax model:ir.model.fields,field_description:account.field_account_move__amount_tax
-#: model:ir.model.fields,field_description:account.field_account_payment__amount_tax model:ir.model.fields,field_description:account.field_account_tax_repartition_line__tax_id
-#: model:ir.model.fields.selection,name:account.selection__account_move_line__display_type__tax model_terms:ir.ui.view,arch_db:account.account_tax_view_search model_terms:ir.ui.view,arch_db:account.view_invoice_tree
-#: model_terms:ir.ui.view,arch_db:account.view_move_line_tax_audit_tree
+#: model:account.report.column,name:account.generic_tax_report_tax_account_column_tax model:ir.model,name:account.model_account_tax model:ir.model.fields,field_description:account.field_account_bank_statement_line__amount_tax
+#: model:ir.model.fields,field_description:account.field_account_move__amount_tax model:ir.model.fields,field_description:account.field_account_payment__amount_tax
+#: model:ir.model.fields,field_description:account.field_account_tax_repartition_line__tax_id model:ir.model.fields.selection,name:account.selection__account_move_line__display_type__tax
+#: model_terms:ir.ui.view,arch_db:account.account_tax_view_search model_terms:ir.ui.view,arch_db:account.view_invoice_tree model_terms:ir.ui.view,arch_db:account.view_move_line_tax_audit_tree
 msgid "Tax"
 msgstr "مالیات"
 
@@ -11744,8 +11729,8 @@ msgstr "ابر مالیاتی"
 #: model:ir.model.fields,field_description:account.field_account_move_line__tax_ids model:ir.model.fields,field_description:account.field_account_reconcile_model_line__tax_ids
 #: model:ir.model.fields.selection,name:account.selection__account_account_tag__applicability__taxes model:ir.ui.menu,name:account.menu_action_tax_form
 #: model:onboarding.onboarding.step,title:account.onboarding_onboarding_step_default_taxes model:onboarding.onboarding.step,title:account.onboarding_onboarding_step_sales_tax
-#: model_terms:ir.ui.view,arch_db:account.document_tax_totals_company_currency_template model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
-#: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter model_terms:ir.ui.view,arch_db:account.view_move_line_form
+#: model_terms:ir.ui.view,arch_db:account.document_tax_totals_company_currency_template model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
+#: model_terms:ir.ui.view,arch_db:account.view_move_line_form
 #, python-format
 msgid "Taxes"
 msgstr "مالیات ها"
@@ -11993,8 +11978,8 @@ msgstr "مبلغی که در یک ارز دیگر اختیاری بیان می �
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_move_line_check_amount_currency_balance_sign
 msgid ""
-"The amount expressed in the secondary currency must be positive when account is debited and negative when account is credited. If the currency is the same as the one from the company, this amount must strictly be equal to "
-"the balance."
+"The amount expressed in the secondary currency must be positive when account is debited and negative when account is credited. If the currency is the same as the one from the company, this amount must strictly be equal to the "
+"balance."
 msgstr "مبلغ بیان شده به ارز ثانویه هنگام بدهکار حساب باید مثبت و هنگام بستانکار شدن حساب منفی باشد. اگر ارز با ارز شرکت یکی باشد، این مقدار باید دقیقاً برابر با موجودی باشد."
 
 #. module: account
@@ -12039,8 +12024,8 @@ msgstr "اسناد مبنای نقدی بر اساس مالیات‌های ای�
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
 msgid ""
-"The client explicitly waives its own standard terms and conditions, even if these were drawn up after these standard terms and conditions of sale. In order to be valid, any derogation must be expressly agreed to in "
-"advance in writing."
+"The client explicitly waives its own standard terms and conditions, even if these were drawn up after these standard terms and conditions of sale. In order to be valid, any derogation must be expressly agreed to in advance in "
+"writing."
 msgstr "مشتری به وضوح شرایط و ضوابط خود را لغو می‌کند، حتی اگر پس از شرایط و ضوابط فروش تدوین شده باشند. برای اینکه این لغو کردن معتبر باشد باید از قبل به صورت مکتوب با آن موافقت شده باشد."
 
 #. module: account
@@ -12128,8 +12113,7 @@ msgid "The delivery address will be used in the computation of the fiscal positi
 msgstr "نشانی تحویل در محاسبه‌ی موقعیت مالی مورد استفاده قرار می‌گیرد."
 
 #. module: account
-#: model:ir.model.fields,help:account.field_account_bank_statement_line__invoice_origin model:ir.model.fields,help:account.field_account_move__invoice_origin
-#: model:ir.model.fields,help:account.field_account_payment__invoice_origin
+#: model:ir.model.fields,help:account.field_account_bank_statement_line__invoice_origin model:ir.model.fields,help:account.field_account_move__invoice_origin model:ir.model.fields,help:account.field_account_payment__invoice_origin
 msgid "The document(s) that generated the invoice."
 msgstr "مدرک(ها) که این فاکتور را ایجاد کرده است."
 
@@ -12143,8 +12127,8 @@ msgstr "سند %s (شناسه %s) باید به صورت پیشنویس باشد
 #. module: account
 #: model:ir.model.fields,help:account.field_product_category__property_account_expense_categ_id
 msgid ""
-"The expense is accounted for when a vendor bill is validated, except in anglo-saxon accounting with perpetual inventory valuation in which case the expense (Cost of Goods Sold account) is recognized at the customer "
-"invoice validation."
+"The expense is accounted for when a vendor bill is validated, except in anglo-saxon accounting with perpetual inventory valuation in which case the expense (Cost of Goods Sold account) is recognized at the customer invoice "
+"validation."
 msgstr "هزینه زمانی محاسبه می‌شود که صورت‌حساب فروشنده تأیید می‌شود، به جز در حسابداری آنگلوساکسون با ارزش‌گذاری دائمی موجودی، که در آن صورت هزینه (حساب بهای تمام شده کالای فروخته‌شده) در اعتبار فاکتور مشتری شناسایی می‌شود."
 
 #. module: account
@@ -12840,11 +12824,11 @@ msgstr "این فقط می‌تواند برای آیتم‌های دفتررو�
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax__name_searchable
 msgid ""
-"This dummy field lets us use another search method on the field 'name'.This allows more freedom on how to search the 'name' compared to 'filter_domain'.See '_search_name' and '_parse_name_search' for why this is not "
-"possible with 'filter_domain'."
+"This dummy field lets us use another search method on the field 'name'.This allows more freedom on how to search the 'name' compared to 'filter_domain'.See '_search_name' and '_parse_name_search' for why this is not possible "
+"with 'filter_domain'."
 msgstr ""
-"این فیلد نمایشی به ما امکان می‌دهد از روش جستجوی دیگری در فیلد «نام» استفاده کنید. این کار آزادی بیشتری را در مورد نحوه‌ی جستجوی «نام» در مقایسه با «دامنه‌ی فیلتر» ایجاد می‌کند. برای اینکه بدانید چرا این کار در مورد «دامنه‌ی "
-"فیلتر» امکان‌پذیر نیست، لطفاً به «جستجوی نام» و «تحلیل و جستجوی نام» مراجعه کنید."
+"این فیلد نمایشی به ما امکان می‌دهد از روش جستجوی دیگری در فیلد «نام» استفاده کنید. این کار آزادی بیشتری را در مورد نحوه‌ی جستجوی «نام» در مقایسه با «دامنه‌ی فیلتر» ایجاد می‌کند. برای اینکه بدانید چرا این کار در مورد «دامنه‌ی فیلتر» "
+"امکان‌پذیر نیست، لطفاً به «جستجوی نام» و «تحلیل و جستجوی نام» مراجعه کنید."
 
 #. module: account
 #. odoo-python
@@ -13311,8 +13295,7 @@ msgid "Type a message..."
 msgstr "تایپ کنید ..."
 
 #. module: account
-#: model:ir.model.fields,help:account.field_account_bank_statement_line__qr_code_method model:ir.model.fields,help:account.field_account_move__qr_code_method
-#: model:ir.model.fields,help:account.field_account_payment__qr_code_method
+#: model:ir.model.fields,help:account.field_account_bank_statement_line__qr_code_method model:ir.model.fields,help:account.field_account_move__qr_code_method model:ir.model.fields,help:account.field_account_payment__qr_code_method
 msgid "Type of QR-code to be generated for the payment of this invoice, when printing it. If left blank, the first available and usable method will be used."
 msgstr "نوع کد QR که برای پرداخت این فاکتور در هنگام چاپ آن تولید می شود. در صورت خالی ماندن از اولین روش موجود و قابل استفاده استفاده خواهد شد."
 
@@ -13583,11 +13566,11 @@ msgstr "استفاده از قالب"
 #. module: account
 #: model_terms:digest.tip,tip_description:account.digest_tip_account_0
 msgid ""
-"Use the “<i>Send by Post</i>” option to post invoices automatically. For the cost of a local stamp, we do all the manual work: your invoice will be printed in the right country, put in an envelop and sent by snail mail. "
-"Use this feature from the list view to post hundreds of invoices in bulk."
+"Use the “<i>Send by Post</i>” option to post invoices automatically. For the cost of a local stamp, we do all the manual work: your invoice will be printed in the right country, put in an envelop and sent by snail mail. Use this "
+"feature from the list view to post hundreds of invoices in bulk."
 msgstr ""
-"استفاده کنید “<i>Send by Post</i>” گزینه ارسال فاکتورها به صورت خودکار برای هزینه تمبر محلی ، ما تمام کارهای دستی را انجام می دهیم: فاکتور شما در کشور مناسب چاپ می شود ، در پاکت قرار می گیرد و با نامه ارسال می شود. از این "
-"ویژگی از نمای لیست برای ارسال صدها فاکتور به صورت انبوه استفاده کنید ."
+"استفاده کنید “<i>Send by Post</i>” گزینه ارسال فاکتورها به صورت خودکار برای هزینه تمبر محلی ، ما تمام کارهای دستی را انجام می دهیم: فاکتور شما در کشور مناسب چاپ می شود ، در پاکت قرار می گیرد و با نامه ارسال می شود. از این ویژگی "
+"از نمای لیست برای ارسال صدها فاکتور به صورت انبوه استفاده کنید ."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_bank_statement_line__quick_edit_total_amount model:ir.model.fields,help:account.field_account_move__quick_edit_total_amount
@@ -13605,10 +13588,9 @@ msgstr "استفاده شده"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account__include_initial_balance
 msgid ""
-"Used in reports to know if we should consider journal items from the beginning of time instead of from the fiscal year only. Account types that should be reset to zero at each new fiscal year (like expenses, revenue..) "
-"should not have this option set."
-msgstr ""
-"در گزارش‌ها استفاده می‌شود تا بدانیم آیا باید اقلام روزنامه را از ابتدا به جای سال مالی در نظر بگیریم یا خیر. انواع حساب‌هایی که باید در هر سال مالی جدید به صفر برسند (مانند هزینه‌ها، درآمد...) نباید این گزینه را تنظیم کنند."
+"Used in reports to know if we should consider journal items from the beginning of time instead of from the fiscal year only. Account types that should be reset to zero at each new fiscal year (like expenses, revenue..) should "
+"not have this option set."
+msgstr "در گزارش‌ها استفاده می‌شود تا بدانیم آیا باید اقلام روزنامه را از ابتدا به جای سال مالی در نظر بگیریم یا خیر. انواع حساب‌هایی که باید در هر سال مالی جدید به صفر برسند (مانند هزینه‌ها، درآمد...) نباید این گزینه را تنظیم کنند."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__sequence
