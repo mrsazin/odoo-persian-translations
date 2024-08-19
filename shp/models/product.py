@@ -130,7 +130,7 @@ class ProductProduct(models.Model):
         supplier_list = []
         for key, group in groupby(sorted(self.seller_ids, key=key), key=key):
             for s in list(group):
-                if not((s.date_start and s.date_start > myfields.Date.today()) or (s.date_end and s.date_end < myfields.Date.today()) or (s.min_qty > quantity)):
+                if not((s.date_start and s.date_start > fields.Date.today()) or (s.date_end and s.date_end < fields.Date.today()) or (s.min_qty > quantity)):
                     supplier_list.append({
                         'name': s.partner_id.name,
                         'delay': s.delay,

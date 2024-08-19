@@ -6,7 +6,7 @@
     'sequence': -1,
     'description': """SHP Components""",
     'category': 'SHP',
-    'depends' : ['web', 'sale', 'point_of_sale'],
+    'depends' : ['web', 'sale', 'point_of_sale', 'stock'],
     'data': [
         'views/point_of_sale_dashboard.xml',
         'views/report_saledetails_custom.xml',

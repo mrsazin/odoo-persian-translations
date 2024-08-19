@@ -30,16 +30,16 @@ class ReportSaleDetails(models.AbstractModel):
             domain = AND([domain, [('session_id', 'in', session_ids)]])
         else:
             if date_start:
-                date_start = myfields.Datetime.from_string(date_start)
+                date_start = fields.Datetime.from_string(date_start)
             else:
                 # start by default today 00:00:00
                 user_tz = TehranTimezone # pytz.timezone(self.env.context.get('tz') or self.env.user.tz or 'UTC')
-                # today = user_tz.localize(myfields.Datetime.from_string(myfields.Date.context_today(self)))
-                today = myfields.Date.context_today(self)
+                # today = user_tz.localize(fields.Datetime.from_string(fields.Date.context_today(self)))
+                today = fields.Date.context_today(self)
                 date_start = today.astimezone(pytz.timezone('UTC')).replace(tzinfo=None)
 
             if date_stop:
-                date_stop = myfields.Datetime.from_string(date_stop)
+                date_stop = fields.Datetime.from_string(date_stop)
                 # avoid a date_stop smaller than date_start
                 if (date_stop < date_start):
                     date_stop = date_start + timedelta(days=1, seconds=-1)
@@ -48,8 +48,8 @@ class ReportSaleDetails(models.AbstractModel):
                 date_stop = date_start + timedelta(days=1, seconds=-1)
 
             domain = AND([domain,
-                [('date_order', '>=', myfields.Datetime.to_string(date_start)),
-                ('date_order', '<=', myfields.Datetime.to_string(date_stop))]
+                [('date_order', '>=', fields.Datetime.to_string(date_start)),
+                ('date_order', '<=', fields.Datetime.to_string(date_stop))]
             ])
 
             if config_ids:
@@ -75,7 +75,7 @@ class ReportSaleDetails(models.AbstractModel):
         for order in orders:
             if user_currency != order.pricelist_id.currency_id:
                 total += order.pricelist_id.currency_id._convert(
-                    order.amount_total, user_currency, order.company_id, order.date_order or myfields.Date.today())
+                    order.amount_total, user_currency, order.company_id, order.date_order or fields.Date.today())
             else:
                 total += order.amount_total
             currency = order.session_id.currency_id

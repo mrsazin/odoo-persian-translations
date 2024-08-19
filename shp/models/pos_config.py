@@ -4,7 +4,7 @@ from datetime import datetime
 from khayyam import JalaliDate, JalaliDatetime, TehranTimezone
 import pytz
 from odoo import api, fields, models
-import odoo.addons.shp.common.fields as myfields
+# import odoo.addons.shp.common.fields as myfields
 
 
 class PosConfig(models.Model):
@@ -20,7 +20,7 @@ class PosConfig(models.Model):
                 order="stop_at desc", limit=1)
             if session:
                 # timezone = pytz.timezone(self._context.get('tz') or self.env.user.tz or 'UTC')
-                last_session_date = myfields.Datetime.to_datetime(str((session[0]['stop_at']))[:10]).astimezone(TehranTimezone()).date()
+                last_session_date = fields.Datetime.to_datetime(str((session[0]['stop_at']))[:10]).astimezone(TehranTimezone()).date()
 
                 pos_config.last_session_closing_date = last_session_date
                 pos_config.last_session_closing_cash = session[0]['cash_register_balance_end_real']
@@ -36,7 +36,7 @@ class PosConfig(models.Model):
                 pos_config.pos_session_username = session[0].user_id.sudo().name
                 pos_config.pos_session_state = session[0].state
                 pos_config.pos_session_duration = (
-                    myfields.Datetime.now() - myfields.Datetime.to_datetime(session[0].start_at)
+                    fields.Datetime.now() - fields.Datetime.to_datetime(session[0].start_at)
                 ).days if session[0].start_at else 0
                 pos_config.current_user_id = session[0].user_id
             else:
@@ -45,5 +45,5 @@ class PosConfig(models.Model):
                 pos_config.pos_session_duration = 0
                 pos_config.current_user_id = False
 
-    last_session_closing_date = myfields.Date(compute='_compute_last_session')
+    last_session_closing_date = fields.Date(compute='_compute_last_session')
     

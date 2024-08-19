@@ -223,7 +223,7 @@ class PosOrder(models.Model):
                 'name': _('return'),
                 'pos_order_id': order.id,
                 'amount': -pos_order['amount_return'],
-                'payment_date': myfields.Datetime.now(),
+                'payment_date': fields.Datetime.now(),
                 'payment_method_id': cash_payment_method.id,
                 'is_change': True,
             }
@@ -288,7 +288,7 @@ class PosOrder(models.Model):
 
     name = fields.Char(string='Order Ref', required=True, readonly=True, copy=False, default='/')
     last_order_preparation_change = fields.Char(string='Last preparation change', help="Last printed state of the order")
-    date_order = myfields.Datetime(string='Date', readonly=True, index=True, default=myfields.Datetime.to_string(myfields.Datetime.now()))
+    date_order = fields.Datetime(string='Date', readonly=True, index=True, default=fields.Datetime.to_string(fields.Datetime.now()))
     user_id = fields.Many2one(
         comodel_name='res.users', string='Responsible',
         help="Person who uses the cash register. It can be a reliever, a student or an interim employee.",
@@ -339,7 +339,7 @@ class PosOrder(models.Model):
     payment_ids = fields.One2many('pos.payment', 'pos_order_id', string='Payments', readonly=True)
     session_move_id = fields.Many2one('account.move', string='Session Journal Entry', related='session_id.move_id', readonly=True, copy=False)
     to_invoice = fields.Boolean('To invoice', copy=False)
-    shipping_date = myfields.Date('Shipping Date')
+    shipping_date = fields.Date('Shipping Date')
     is_invoiced = fields.Boolean('Is Invoiced', compute='_compute_is_invoiced')
     is_tipped = fields.Boolean('Is this already tipped?', readonly=True)
     tip_amount = fields.Float(string='Tip Amount', digits=0, readonly=True)
@@ -391,7 +391,7 @@ class PosOrder(models.Model):
     @api.depends('date_order', 'company_id', 'currency_id', 'company_id.currency_id')
     def _compute_currency_rate(self):
         for order in self:
-            order.currency_rate = self.env['res.currency']._get_conversion_rate(order.company_id.currency_id, order.currency_id, order.company_id, myfields.Datetime.to_datetime(order.date_order).date())
+            order.currency_rate = self.env['res.currency']._get_conversion_rate(order.company_id.currency_id, order.currency_id, order.company_id, fields.Datetime.to_datetime(order.date_order).date())
 
     @api.depends('lines.is_total_cost_computed')
     def _compute_is_total_cost_computed(self):
@@ -660,7 +660,7 @@ class PosOrder(models.Model):
     def _prepare_invoice_vals(self):
         self.ensure_one()
         timezone = TehranTimezone() # pytz.timezone(self._context.get('tz') or self.env.user.tz or 'UTC')
-        invoice_date = myfields.Datetime.now() if self.session_id.state == 'closed' else self.date_order
+        invoice_date = fields.Datetime.now() if self.session_id.state == 'closed' else self.date_order
         pos_refunded_invoice_ids = []
         for orderline in self.lines:
             if orderline.refunded_orderline_id and orderline.refunded_orderline_id.order_id.account_move:
@@ -675,7 +675,7 @@ class PosOrder(models.Model):
             'partner_bank_id': self._get_partner_bank_id(),
             'currency_id': self.currency_id.id,
             'invoice_user_id': self.user_id.id,
-            'invoice_date': myfields.Datetime.to_datetime(invoice_date).astimezone(timezone).date(),
+            'invoice_date': fields.Datetime.to_datetime(invoice_date).astimezone(timezone).date(),
             'fiscal_position_id': self.fiscal_position_id.id,
             'invoice_line_ids': self._prepare_invoice_lines(),
             'invoice_payment_term_id': self.partner_id.property_payment_term_id.id or False,
@@ -1035,7 +1035,7 @@ class PosOrder(models.Model):
         return {
             'name': self.name + _(' REFUND'),
             'session_id': current_session.id,
-            'date_order': myfields.Datetime.now(),
+            'date_order': fields.Datetime.now(),
             'pos_reference': self.pos_reference,
             'lines': False,
             'amount_tax': -self.amount_tax,
@@ -1172,7 +1172,7 @@ class PosOrder(models.Model):
         # orders that are not up-to-date.
         # The date of their last modification is either the last time one of its orderline has changed,
         # or the last time a refunded orderline related to it has changed.
-        orders_info = defaultdict(lambda: datetime.min)
+        orders_info = defaultdict(lambda: JalaliDatetime.min)
         for orderline in orderlines:
             key_order = orderline.order_id.id if orderline.order_id in orders \
                             else orderline.refunded_orderline_id.order_id.id
@@ -1197,7 +1197,7 @@ class PosOrder(models.Model):
             'partner_id': order.partner_id.id,
             'user_id': order.user_id.id,
             'sequence_number': order.sequence_number,
-            'date_order': str(myfields.Datetime.to_datetime(order.date_order).astimezone(TehranTimezone())),
+            'date_order': str(fields.Datetime.to_datetime(order.date_order).astimezone(TehranTimezone())),
             'fiscal_position_id': order.fiscal_position_id.id,
             'to_invoice': order.to_invoice,
             'shipping_date': order.shipping_date,
@@ -1449,10 +1449,10 @@ class PosOrderLine(models.Model):
             # because shipping_date is date and date_planned is datetime
             # from_zone = pytz.timezone(self._context.get('tz') or self.env.user.tz or 'UTC')
             # from_zone = TehranTimezone()
-            shipping_date = myfields.Datetime.to_datetime(self.order_id.shipping_date).astimezone(TehranTimezone())
+            shipping_date = fields.Datetime.to_datetime(self.order_id.shipping_date).astimezone(TehranTimezone())
             # shipping_date = from_zone.localize(shipping_date)
             # date_deadline = shipping_date.astimezone(pytz.UTC).replace(tzinfo=None)
-            date_deadline = myfields.Datetime.to_datetime(shipping_date).astimezone(Timezone.fromutc)
+            date_deadline = fields.Datetime.to_datetime(shipping_date).astimezone(Timezone.fromutc)
         else:
             date_deadline = self.order_id.date_order
 
@@ -1528,7 +1528,7 @@ class PosOrderLine(models.Model):
                 from_amount=product_cost,
                 to_currency=line.currency_id,
                 company=line.company_id or self.env.company,
-                date=line.order_id.date_order or myfields.Date.today(),
+                date=line.order_id.date_order or fields.Date.today(),
                 round=False,
             )
             line.is_total_cost_computed = True

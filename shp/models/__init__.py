@@ -4,7 +4,6 @@ from . import pos_config
 from . import pos_session
 from . import report_sale_details
 
-from . import mail_activity
 from . import account_bank_statement
 from . import account_payment
 from . import account_journal
@@ -28,4 +27,10 @@ from . import pos_payment_method
 from . import pos_bill
 from . import pos_printer
 from . import pos_order
+from . import res_currency
+from . import assetsbundle
+
+from . import stock
+from . import account
+
 

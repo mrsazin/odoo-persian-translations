@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 import logging
 
-from odoo import http, _
+from odoo import fields, http, _
 from odoo.http import request
 from odoo.osv.expression import AND
 from odoo.tools import format_amount
 from odoo.addons.account.controllers.portal import PortalAccount
 from datetime import timedelta, datetime
-import odoo.addons.shp.common.fields as myfields
 
 _logger = logging.getLogger(__name__)
 
@@ -39,7 +38,7 @@ class PosController(PortalAccount):
             elif len(form_values['pos_reference']) < 14:
                 errors['pos_reference'] = _("The Ticket Number should be at least 14 characters long.")
             else:
-                date_order = myfields.DateTime.to_datetime(*[int(i) for i in form_values['date_order'].split('-')])
+                date_order = fields.DateTime.to_datetime(*[int(i) for i in form_values['date_order'].split('-')])
                 order = request.env['pos.order'].sudo().search([
                     ('pos_reference', '=like', '%' + form_values['pos_reference'].replace('%', r'\%').replace('_', r'\_')),
                     ('date_order', '>=', date_order),
