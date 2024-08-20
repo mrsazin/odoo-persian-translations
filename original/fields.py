@@ -4,7 +4,9 @@
 """ High-level objects for fields. """
 
 from collections import defaultdict
-from datetime import date, datetime, time
+from datetime import date, datetime, time, timedelta
+from khayyam import JalaliDate
+import khayyam
 from lxml import etree, html
 from operator import attrgetter
 from xmlrpc.client import MAXINT
@@ -44,9 +46,11 @@ from .tools.mimetypes import guess_mimetype
 from odoo import SUPERUSER_ID
 from odoo.exceptions import CacheMiss
 from odoo.osv import expression
+from dateutil.relativedelta import relativedelta
+from dateutil.parser import parse
 
-DATE_LENGTH = len(date.today().strftime(DATE_FORMAT))
-DATETIME_LENGTH = len(datetime.now().strftime(DATETIME_FORMAT))
+DATE_LENGTH = len(JalaliDate.today().strftime(DATE_FORMAT))
+DATETIME_LENGTH = len(khayyam.JalaliDatetime.now().strftime(DATETIME_FORMAT))
 
 # hacky-ish way to prevent access to a field through the ORM (except for sudo mode)
 NO_ACCESS='.'
@@ -2107,16 +2111,132 @@ class Html(_String):
         # ensure the translation terms are stringified, otherwise we can break the PO file
         return list(map(str, super().get_trans_terms(value)))
 
+class JalaliDatetime(khayyam.JalaliDatetime):
+    def timestamp(self):
+        # تبدیل تاریخ شمسی به میلادی
+        gregorian_date = self.todatetime()
+        # تبدیل به timestamp
+        return datetime(gregorian_date.year, gregorian_date.month, gregorian_date.day).timestamp()
+
+# class datetime(datetime.datetime):
+#     def timestamp(self):
+#         # تبدیل تاریخ شمسی به میلادی
+#         gregorian_date = self.todatetime()
+#         # تبدیل به timestamp
+#         return datetime(self.year, self.month, self.day)
+
+def correct_date(date_obj):
+    try:
+        dec = str(date_obj)[:2]
+        
+        if isinstance(date_obj, date):
+            if dec != '18' and dec !='19' and dec != '20' and dec != '21' and dec != '22':
+                if isinstance(date_obj, datetime):
+                    return JalaliDatetime(date_obj.year, date_obj.month, date_obj.day, date_obj.hour, date_obj.minute, date_obj.second)
+                return JalaliDate(date_obj.year, date_obj.month, date_obj.day)
+        elif isinstance(date_obj, JalaliDate):
+            if dec != '12' and dec !='13' and dec != '14' and dec != '15' and dec != '16':
+                if isinstance(date_obj, JalaliDatetime):
+                    return datetime(date_obj.year, date_obj.month, date_obj.day, date_obj.hour, date_obj.minute, date_obj.second)
+                return date(date_obj.year, date_obj.month, date_obj.day)
+        
+        return date_obj
+
+    except ValueError:
+        return False
+
+
+def is_valid_gregorian_date(date_string):
+    try:
+        parse(date_string)
+        return True
+    except ValueError:
+        return False
+
+def is_gregorian(date_obj):
+    try:
+        # if type(date_obj) == str:
+        #     date_obj = datetime.strptime(date_obj[:10], DATE_FORMAT)
+
+        # temp_date = JalaliDate(date_obj)
+        # if temp_date.year < 1000:
+        #     return False
+        dec = str(date_obj)[:2]
+        if dec == '18' or dec =='19' or dec == '20' or dec == '21' or dec == '22':
+            return True
+        return False
+    except ValueError:
+        return True   
 
 class Date(Field):
     """ Encapsulates a python :class:`date <datetime.date>` object. """
     type = 'date'
     column_type = ('date', 'date')
 
+    def __format__(self, format_spec):
+        date_obj = self.to_date()
+        return date_obj.__format__(format_spec)
+
+    @staticmethod
+    def subtract(value, *args, **kwargs):
+        """
+        Return the difference between ``value`` and a :class:`relativedelta`.
+
+        :param value: initial date or datetime.
+        :param args: positional args to pass directly to :class:`relativedelta`.
+        :param kwargs: keyword args to pass directly to :class:`relativedelta`.
+        :return: the resulting date/datetime.
+        """
+        new_miladi_date = JalaliDate(value).todate() - relativedelta(*args, **kwargs)
+        new_jalali_date = JalaliDate(new_miladi_date)
+        return new_jalali_date
+
+    @staticmethod
+    def subtract(value, reldelta:relativedelta):
+        """
+        Return the difference between ``value`` and a :class:`relativedelta`.
+
+        :param value: initial date or datetime.
+        :param args: positional args to pass directly to :class:`relativedelta`.
+        :param kwargs: keyword args to pass directly to :class:`relativedelta`.
+        :return: the resulting date/datetime.
+        """
+        new_miladi_date = JalaliDate(value).todate() - reldelta
+        new_jalali_date = JalaliDate(new_miladi_date)
+        return new_jalali_date
+    
+    @staticmethod
+    def add(value, *args, **kwargs):
+        """
+        Return the sum of ``value`` and a :class:`relativedelta`.
+
+        :param value: initial date or datetime.
+        :param args: positional args to pass directly to :class:`relativedelta`.
+        :param kwargs: keyword args to pass directly to :class:`relativedelta`.
+        :return: the resulting date/datetime.
+        """
+        new_miladi_date = JalaliDate(value).todate() + relativedelta(*args, **kwargs)
+        new_jalali_date = JalaliDate(new_miladi_date)
+        return new_jalali_date
+    
+    @staticmethod
+    def add(value, reldelta: relativedelta):
+        """
+        Return the sum of ``value`` and a :class:`relativedelta`.
+
+        :param value: initial date or datetime.
+        :param args: positional args to pass directly to :class:`relativedelta`.
+        :param kwargs: keyword args to pass directly to :class:`relativedelta`.
+        :return: the resulting date/datetime.
+        """
+        new_miladi_date = JalaliDate(value).todate() + reldelta
+        new_jalali_date = JalaliDate(new_miladi_date)
+        return new_jalali_date
+
     start_of = staticmethod(date_utils.start_of)
     end_of = staticmethod(date_utils.end_of)
-    add = staticmethod(date_utils.add)
-    subtract = staticmethod(date_utils.subtract)
+    add = staticmethod(add)
+    subtract = staticmethod(subtract)
 
     @staticmethod
     def today(*args):
@@ -2124,7 +2244,8 @@ class Date(Field):
 
         .. note:: This function may be used to compute default values.
         """
-        return date.today()
+        # return date.today()
+        return JalaliDate.today()
 
     @staticmethod
     def context_today(record, timestamp=None):
@@ -2139,13 +2260,20 @@ class Date(Field):
             can't be converted between timezones).
         :rtype: date
         """
-        today = timestamp or datetime.now()
+        today = timestamp or Datetime.now()
         context_today = None
         tz_name = record._context.get('tz') or record.env.user.tz
         if tz_name:
             try:
                 today_utc = pytz.timezone('UTC').localize(today, is_dst=False)  # UTC = no DST
-                context_today = today_utc.astimezone(pytz.timezone(tz_name))
+                timezone = khayyam.Timezone(timedelta(minutes=210),
+                    timedelta(minutes=0),
+                    False
+                    ,'Iran/Tehran')
+                if is_gregorian(today_utc):
+                    context_today = JalaliDatetime(today_utc).astimezone(timezone)
+                else:
+                    context_today = JalaliDatetime(today_utc.year,today_utc.month, today_utc.day).astimezone(timezone)
             except Exception:
                 _logger.debug("failed to compute context/client-specific today date, using UTC value for `today`",
                               exc_info=True)
@@ -2168,16 +2296,45 @@ class Date(Field):
         """
         if not value:
             return None
-        if isinstance(value, date):
-            if isinstance(value, datetime):
-                return value.date()
-            return value
-        value = value[:DATE_LENGTH]
-        return datetime.strptime(value, DATE_FORMAT).date()
+        value = correct_date(value)
+        if (isinstance(value, date) or isinstance(value, JalaliDate)):
+            if (isinstance(value, datetime) or isinstance(value, JalaliDatetime)):
+                if is_gregorian(value):
+                    value = JalaliDatetime(value)
+                return JalaliDatetime(value.year, value.month, value.day).date()
+            
+            if is_gregorian(value):
+                value = JalaliDate(value)
+            return JalaliDate(value.year, value.month, value.day)
+        value = str(value)[:DATE_LENGTH]
+        if is_gregorian(value):
+            value = datetime.strptime(str(value), DATE_FORMAT)
+            return JalaliDate(value)
+        return JalaliDate.strptime(value, DATE_FORMAT)
+
+    @staticmethod
+    def from_string(value):
+        if not value:
+            return None
+        value = correct_date(value)
+        if (isinstance(value, date) or isinstance(value, JalaliDate)):
+            if (isinstance(value, datetime) or isinstance(value, JalaliDatetime)):
+                if is_gregorian(value):
+                    value = JalaliDatetime(value)
+                return JalaliDatetime(value.year, value.month, value.day).date()
+                
+            if is_gregorian(value):
+                value = JalaliDate(value)
+            return JalaliDate(value.year, value.month, value.day)
+        value = str(value)[:DATE_LENGTH]
+        if is_gregorian(value):
+            value = datetime.strptime(str(value), DATE_FORMAT)
+            value = JalaliDate(value)
+        return JalaliDate.strptime(value, DATE_FORMAT)
 
     # kept for backwards compatibility, but consider `from_string` as deprecated, will probably
     # be removed after V12
-    from_string = to_date
+    # from_string = to_date
 
     @staticmethod
     def to_string(value):
@@ -2189,32 +2346,113 @@ class Date(Field):
             type :class:`datetime`, the hours, minute, seconds, tzinfo will be truncated.
         :rtype: str
         """
-        return value.strftime(DATE_FORMAT) if value else False
+        if not value:
+            return False
+        value = correct_date(value)
+        if is_gregorian(value):
+            value = JalaliDate(value)
+        
+        return JalaliDate.strftime(value, DATE_FORMAT) if value else False
 
     def convert_to_cache(self, value, record, validate=True):
         if not value:
             return None
-        if isinstance(value, datetime):
-            # TODO: better fix data files (crm demo data)
-            value = value.date()
-            # raise TypeError("%s (field %s) must be string or date, not datetime." % (value, self))
-        return self.to_date(value)
+        value = correct_date(value)
+        if (isinstance(value, date) or isinstance(value, JalaliDate)):
+            if (isinstance(value, datetime) or isinstance(value, JalaliDatetime)):
+                if is_gregorian(value):
+                    value = JalaliDatetime(value)
+                return JalaliDatetime(value.year, value.month, value.day).date()
+            
+            if is_gregorian(value):
+                value = JalaliDate(value)
+            return JalaliDate(value.year, value.month, value.day)
+        value = str(value)[:DATE_LENGTH]
+        if is_gregorian(value):
+            value = datetime.strptime(str(value), DATE_FORMAT)
+            value = JalaliDate(value)
+        return JalaliDate.strptime(value, DATE_FORMAT)
+                        
+        # if (isinstance(value, datetime) or isinstance(value, JalaliDatetime)):
+        #     # TODO: better fix data files (crm demo data)
+        #     value = value.date()
+        #     # raise TypeError("%s (field %s) must be string or date, not datetime." % (value, self))
+        # return self.to_date(value)
 
     def convert_to_export(self, value, record):
         if not value:
             return ''
         return self.from_string(value)
 
-
 class Datetime(Field):
     """ Encapsulates a python :class:`datetime <datetime.datetime>` object. """
     type = 'datetime'
     column_type = ('timestamp', 'timestamp')
 
+    def __format__(self, format_spec):
+        datetime_obj = self.to_datetime()
+        return datetime_obj.__format__(format_spec)
+
+    @staticmethod
+    def subtract(value, *args, **kwargs):
+        """
+        Return the difference between ``value`` and a :class:`relativedelta`.
+
+        :param value: initial date or datetime.
+        :param args: positional args to pass directly to :class:`relativedelta`.
+        :param kwargs: keyword args to pass directly to :class:`relativedelta`.
+        :return: the resulting date/datetime.
+        """
+        new_miladi_datetime = JalaliDatetime(value).todatetime() - relativedelta(*args, **kwargs)
+        new_jalali_datetime = JalaliDatetime(new_miladi_datetime)
+        return new_jalali_datetime
+    
+    @staticmethod
+    def subtract(value, reldelta: relativedelta):
+        """
+        Return the difference between ``value`` and a :class:`relativedelta`.
+
+        :param value: initial date or datetime.
+        :param args: positional args to pass directly to :class:`relativedelta`.
+        :param kwargs: keyword args to pass directly to :class:`relativedelta`.
+        :return: the resulting date/datetime.
+        """
+        new_miladi_datetime = JalaliDatetime(value).todatetime() - reldelta
+        new_jalali_datetime = JalaliDatetime(new_miladi_datetime)
+        return new_jalali_datetime
+
+    @staticmethod
+    def add(value, *args, **kwargs):
+        """
+        Return the sum of ``value`` and a :class:`relativedelta`.
+
+        :param value: initial date or datetime.
+        :param args: positional args to pass directly to :class:`relativedelta`.
+        :param kwargs: keyword args to pass directly to :class:`relativedelta`.
+        :return: the resulting date/datetime.
+        """
+        new_miladi_datetime = JalaliDatetime(value).todatetime() + relativedelta(*args, **kwargs)
+        new_jalali_datetime = JalaliDatetime(new_miladi_datetime)
+        return new_jalali_datetime
+
+    @staticmethod
+    def add(value, reldelta: relativedelta):
+        """
+        Return the sum of ``value`` and a :class:`relativedelta`.
+
+        :param value: initial date or datetime.
+        :param args: positional args to pass directly to :class:`relativedelta`.
+        :param kwargs: keyword args to pass directly to :class:`relativedelta`.
+        :return: the resulting date/datetime.
+        """
+        new_miladi_datetime = JalaliDatetime(value).todatetime() + reldelta
+        new_jalali_datetime = JalaliDatetime(new_miladi_datetime)
+        return new_jalali_datetime
+
     start_of = staticmethod(date_utils.start_of)
     end_of = staticmethod(date_utils.end_of)
-    add = staticmethod(date_utils.add)
-    subtract = staticmethod(date_utils.subtract)
+    add = staticmethod(add)
+    subtract = staticmethod(subtract)
 
     @staticmethod
     def now(*args):
@@ -2223,7 +2461,12 @@ class Datetime(Field):
         .. note:: This function may be used to compute default values.
         """
         # microseconds must be annihilated as they don't comply with the server datetime format
-        return datetime.now().replace(microsecond=0)
+        # return datetime.now().replace(microsecond=0)
+        timezone = khayyam.Timezone(timedelta(minutes=210),
+            timedelta(minutes=0),
+            False
+            ,'Iran/Tehran')
+        return JalaliDatetime.now().astimezone(timezone).replace(microsecond=0)
 
     @staticmethod
     def today(*args):
@@ -2231,7 +2474,7 @@ class Datetime(Field):
         return Datetime.now().replace(hour=0, minute=0, second=0)
 
     @staticmethod
-    def context_timestamp(record, timestamp):
+    def context_today(record, timestamp):
         """Return the given timestamp converted to the client's timezone.
 
         .. note:: This method is *not* meant for use as a default initializer,
@@ -2248,15 +2491,58 @@ class Datetime(Field):
         assert isinstance(timestamp, datetime), 'Datetime instance expected'
         tz_name = record._context.get('tz') or record.env.user.tz
         utc_timestamp = pytz.utc.localize(timestamp, is_dst=False)  # UTC = no DST
+        if is_gregorian(utc_timestamp):
+            utc_timestamp = JalaliDatetime(utc_timestamp)
         if tz_name:
             try:
-                context_tz = pytz.timezone(tz_name)
-                return utc_timestamp.astimezone(context_tz)
+                # context_tz = TehranTimezone() # pytz.timezone(tz_name)
+                timezone = khayyam.Timezone(timedelta(minutes=210),
+                    timedelta(minutes=0),
+                    False
+                    ,'Iran/Tehran')
+                                
+                return utc_timestamp.astimezone(timezone)
             except Exception:
                 _logger.debug("failed to compute context/client-specific timestamp, "
                               "using the UTC value",
                               exc_info=True)
         return utc_timestamp
+
+    @staticmethod
+    def context_timestamp(record, timestamp):
+        """Return the given timestamp converted to the client's timezone.
+
+        .. note:: This method is *not* meant for use as a default initializer,
+            because datetime fields are automatically converted upon
+            display on client side. For default values, :meth:`now`
+            should be used instead.
+
+        :param record: recordset from which the timezone will be obtained.
+        :param datetime timestamp: naive datetime value (expressed in UTC)
+            to be converted to the client timezone.
+        :return: timestamp converted to timezone-aware datetime in context timezone.
+        :rtype: datetime
+        """
+        timestamp = correct_date(timestamp)
+        assert isinstance(timestamp, datetime), 'Datetime instance expected'
+        tz_name = record._context.get('tz') or record.env.user.tz
+        utc_timestamp = pytz.utc.localize(timestamp, is_dst=False)  # UTC = no DST
+        if is_gregorian(utc_timestamp):
+            utc_timestamp = JalaliDatetime(utc_timestamp)
+        if tz_name:
+            try:
+                # context_tz = TehranTimezone() # pytz.timezone(tz_name)
+                timezone = khayyam.Timezone(timedelta(minutes=210),
+                    timedelta(minutes=0),
+                    False
+                    ,'Iran/Tehran')
+                return utc_timestamp.astimezone(timezone)
+            except Exception:
+                _logger.debug("failed to compute context/client-specific timestamp, "
+                              "using the UTC value",
+                              exc_info=True)
+        return utc_timestamp
+
 
     @staticmethod
     def to_datetime(value):
@@ -2269,19 +2555,53 @@ class Datetime(Field):
         """
         if not value:
             return None
-        if isinstance(value, date):
-            if isinstance(value, datetime):
+        value = correct_date(value)
+        if (isinstance(value, date) or isinstance(value, JalaliDate)):
+            if (isinstance(value, datetime) or isinstance(value, JalaliDatetime)):
                 if value.tzinfo:
                     raise ValueError("Datetime field expects a naive datetime: %s" % value)
+                if is_gregorian(value):
+                    value = JalaliDatetime(value)
                 return value
-            return datetime.combine(value, time.min)
-
+            if is_gregorian(value):
+                value = JalaliDate(value)
+            return JalaliDatetime.combine(value, time.min)
+        value = str(value)[:DATETIME_LENGTH]
+        if is_gregorian(value):
+            value = datetime.strptime(str(value), DATETIME_FORMAT)
+            return JalaliDatetime(value)
+        
+        return JalaliDatetime.strptime(str(value).replace('T', ' ')[:19] , DATETIME_FORMAT[:len(str(value))-2])
         # TODO: fix data files
-        return datetime.strptime(value, DATETIME_FORMAT[:len(value)-2])
+        
+
+    @staticmethod
+    def from_string(value):
+        
+        if not value:
+            return None
+        value = correct_date(value)
+        if (isinstance(value, date) or isinstance(value, JalaliDate)):
+            if (isinstance(value, datetime) or isinstance(value, JalaliDatetime)):
+                if value.tzinfo:
+                    raise ValueError("Datetime field expects a naive datetime: %s" % value)
+                if is_gregorian(value):
+                    value = JalaliDatetime(value)
+                return value
+            if is_gregorian(value):
+                value = JalaliDate(value)
+            return JalaliDatetime.combine(value, time.min)
+        value = str(value)[:DATETIME_LENGTH]
+        if is_gregorian(value):
+            value = datetime.strptime(str(value), DATETIME_FORMAT)
+            return JalaliDatetime(value)
+        
+        return JalaliDatetime.strptime(str(value).replace('T', ' ')[:19] , DATETIME_FORMAT[:len(str(value))-2])
+
 
     # kept for backwards compatibility, but consider `from_string` as deprecated, will probably
     # be removed after V12
-    from_string = to_datetime
+    # from_string = to_datetime
 
     @staticmethod
     def to_string(value):
@@ -2294,7 +2614,13 @@ class Datetime(Field):
             the time portion will be midnight (00:00:00).
         :rtype: str
         """
-        return value.strftime(DATETIME_FORMAT) if value else False
+        if not value:
+            return False
+        value = correct_date(value)
+        if is_gregorian(value):
+            value = JalaliDatetime(value)
+        
+        return JalaliDatetime.strftime(value, DATETIME_FORMAT) if value else False
 
     def convert_to_cache(self, value, record, validate=True):
         return self.to_datetime(value)
@@ -2308,7 +2634,143 @@ class Datetime(Field):
     def convert_to_display_name(self, value, record):
         if not value:
             return False
-        return Datetime.to_string(Datetime.context_timestamp(record, value))
+        return self.to_string(self.context_timestamp(record, value)) 
+
+def Date__add__(self, other):
+    if isinstance(other, date):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDate(other)
+        else:
+            other = JalaliDate(other.year, other.month, other.day)
+    
+    if isinstance(other, timedelta):
+        days = self.tojulianday() + other.days
+        return JalaliDate(julian_day=days)
+
+def Date__sub__(self, other):
+    if isinstance(other, date):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDate(other)
+        else:
+            other = JalaliDate(other.year, other.month, other.day)
+    
+    if isinstance(other, timedelta):
+        days = self.tojulianday() - other.days
+        return JalaliDate(julian_day=days)
+    elif isinstance(other, JalaliDate):
+        days = self.tojulianday() - other.tojulianday()
+        return timedelta(days=days)
+
+def Date__gt__(self, other):
+    if isinstance(other, date):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDate(other)
+        else:
+            other = JalaliDate(other.year, other.month, other.day)
+     
+    return self.tojulianday() > other.tojulianday()
+
+def Date__lt__(self, other):
+    if isinstance(other, date):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDate(other)
+        else:
+            other = JalaliDate(other.year, other.month, other.day)
+        
+    return self.tojulianday() < other.tojulianday()
+
+def Date__ge__(self, other):
+    if isinstance(other, date):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDate(other)
+        else:
+            other = JalaliDate(other.year, other.month, other.day)
+    
+    return self.tojulianday() >= other.tojulianday()
+
+def Date__le__(self, other):
+    if isinstance(other, date):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDate(other)
+        else:
+            other = JalaliDate(other.year, other.month, other.day)
+    
+    return self.tojulianday() <= other.tojulianday()
+    
+def Datetime__add__(self, other):
+    if isinstance(other, datetime):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDatetime(other)
+        else:
+            other = JalaliDatetime(other.year, other.month, other.day, other.hour, other.minute, other.second)
+    
+    if isinstance(other, timedelta):
+        return JalaliDatetime(other + self.todatetime())
+
+def Datetime__sub__(self, other):
+    if isinstance(other, datetime):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDatetime(other)
+        else:
+            other = JalaliDatetime(other.year, other.month, other.day, other.hour, other.minute, other.second)
+    
+    if isinstance(other, timedelta):
+        return JalaliDatetime(self.todatetime() - other)
+    elif isinstance(other, JalaliDatetime):
+        return self.todatetime() - other.todatetime()
+    elif isinstance(other, khayyam.JalaliDate):
+        return self.todatetime() - JalaliDatetime(other).todatetime()
+
+def Datetime__gt__(self, other):
+    if isinstance(other, datetime):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDatetime(other)
+        else:
+            other = JalaliDatetime(other.year, other.month, other.day,other.hour, other.minute, other.second)
+     
+    return self.todatetime() > other.todatetime()
+
+def Datetime__lt__(self, other):
+    if isinstance(other, datetime):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDatetime(other)
+        else:
+            other = JalaliDatetime(other.year, other.month, other.day, other.hour, other.minute, other.second)
+        
+    return self.todatetime() < other.todatetime()
+
+def Datetime__ge__(self, other):
+    if isinstance(other, datetime):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDatetime(other)
+        else:
+            other = JalaliDatetime(other.year, other.month, other.day, other.hour, other.minute, other.second)
+    
+    return self.todatetime() >= other.todatetime()
+
+def Datetime__le__(self, other):
+    if isinstance(other, datetime):
+        if is_gregorian(other) and other.year > 1:
+            other = JalaliDatetime(other)
+        else:
+            other = JalaliDatetime(other.year, other.month, other.day, other.hour, other.minute, other.second)
+    
+    return self.todatetime() <= other.todatetime()
+
+
+JalaliDate.__gt__ = Date__gt__
+JalaliDate.__lt__ = Date__lt__
+JalaliDate.__ge__ = Date__ge__
+JalaliDate.__le__ = Date__le__
+JalaliDate.__add__ = Date__add__
+JalaliDate.__sub__ = Date__sub__
+
+JalaliDatetime.__gt__ = Datetime__gt__
+JalaliDatetime.__lt__ = Datetime__lt__
+JalaliDatetime.__ge__ = Datetime__ge__
+JalaliDatetime.__le__ = Datetime__le__
+JalaliDatetime.__add__ = Datetime__add__
+JalaliDatetime.__sub__ = Datetime__sub__
 
 # http://initd.org/psycopg/docs/usage.html#binary-adaptation
 # Received data is returned as buffer (in Python 2) or memoryview (in Python 3).
@@ -4203,9 +4665,8 @@ class _RelationalMulti(_Relational):
                 browse = lambda it: comodel.browse((it and NewId(it),))
             else:
                 browse = comodel.browse
-            # determine the value ids: in case of a real record or a new record
-            # with origin, take its current value
-            ids = OrderedSet(record[self.name]._ids if record._origin else ())
+            # determine the value ids
+            ids = OrderedSet(record[self.name]._ids if validate else ())
             # modify ids with the commands
             for command in value:
                 if isinstance(command, (tuple, list)):
