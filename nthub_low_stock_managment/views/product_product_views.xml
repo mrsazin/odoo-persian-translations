@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Inherit product.product view form to add field-->
+    <record id="product_variant_form_view" model="ir.ui.view">
+        <field name="name">product.product.view.form.inherit.low.stocks.product.alert</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='group_lots_and_weight']"
+                   position="inside">
+                <field name="is_low_stock_alert" invisible="1"/>
+                <field name="min_low_stock_alert" invisible="not is_low_stock_alert"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="product_variant_tree_view" model="ir.ui.view">
+        <field name="name">
+            product.variant.view.tree.inherit.low.stocks.product.alert
+        </field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_product_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='qty_available']" position="after">
+                <field name="min_low_stock_alert" invisible="1"/>
+                <field name="qty_available" invisible="1"/>
+            </xpath>
+            <tree position="attributes">
+                <attribute name="decoration-danger">(qty_available &lt;= min_low_stock_alert) and (qty_available &gt; 0)
+                </attribute>
+                <attribute name="decoration-warning">(qty_available &gt; min_low_stock_alert) and (qty_available &lt;= (min_low_stock_alert * 2))
+                </attribute>
+            </tree>
+        </field>
+    </record>
+    <record id="product_variant_kanban_view" model="ir.ui.view">
+        <field name="name">
+            product.variant.view.kanban.inherit.low.stocks.product.alert
+        </field>
+        <field name="inherit_id" ref="product.product_kanban_view"/>
+        <field name="model">product.product</field>
+        <field name="arch" type="xml">
+            <xpath expr="//kanban" position="inside">
+                <field name="min_low_stock_alert"/>
+                <field name="qty_available"/>
+            </xpath>
+            <xpath expr="//div[hasclass('oe_kanban_global_click')]"
+                   position="attributes">
+                <attribute name="t-attf-style">
+                    background-color:#{(record.qty_available.raw_value lte record.min_low_stock_alert.raw_value) and (record.qty_available.raw_value gt 0) ? '#ff4c4c': (record.qty_available.raw_value gt record.min_low_stock_alert.raw_value) and (record.qty_available.raw_value lte (record.min_low_stock_alert.raw_value * 2)) ? '#ffff66':''}
+                </attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
