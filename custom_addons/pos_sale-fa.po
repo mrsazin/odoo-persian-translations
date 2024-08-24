@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-28 16:14+0000\n"
-"PO-Revision-Date: 2024-08-04 18:33+0330\n"
+"PO-Revision-Date: 2024-08-24 09:35+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -48,14 +48,14 @@ msgstr "یک سفارش جدید ایجاد شده است."
 #: code:addons/pos_sale/static/src/app/order_management_screen/sale_order_management_screen/sale_order_management_screen.js:0
 #, python-format
 msgid "Apply a down payment (fixed amount)"
-msgstr ""
+msgstr "درخواست پیش پرداخت (مبلغ ثابت)"
 
 #. module: pos_sale
 #. odoo-javascript
 #: code:addons/pos_sale/static/src/app/order_management_screen/sale_order_management_screen/sale_order_management_screen.js:0
 #, python-format
 msgid "Apply a down payment (percentage)"
-msgstr ""
+msgstr "درخواست پیش پرداخت (درصد)"
 
 #. module: pos_sale
 #. odoo-javascript
