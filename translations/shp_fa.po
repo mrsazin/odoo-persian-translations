@@ -1,0 +1,1791 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* shp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-18 13:18+0000\n"
+"PO-Revision-Date: 2024-08-18 17:55+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid " REFUND"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/mail_activity.py:0
+#, python-format
+msgid "\"%(activity_name)s: %(summary)s\" assigned to you"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/lib/shpdates.js:0
+#, python-format
+msgid "'%s' is not a correct date or datetime"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "(RESCUE FOR %(session)s)"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "0.00"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "100.00"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "1000"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "10000"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "10000.00"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "123.45"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "2-03-2000 9:00 AM"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "45"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order__ticket_code
+msgid "5 digits alphanumeric code to be used by portal user to request an invoice"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "5.00"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "50.00"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "567789"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "95.00"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "987657"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "99.99"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "<p>Dear %(client_name)s,<br/>Here is your electronic ticket for the %(pos_name)s. </p>"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+msgid "<span>Balance</span>"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+msgid "<span>Closing</span>"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "<strong>Config names</strong>"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "<strong>End of session note:</strong>"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "<strong>Opening of session note:</strong>"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "<strong>Total Payments:</strong>"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order__sequence_number
+msgid "A session-unique sequence number for the order"
+msgstr "یک شماره توالی منحصر به فرد شیفت‌کاری برای سفارش"
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_product_product__detailed_type model:ir.model.fields,help:shp.field_product_template__detailed_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+"محصول قابل ذخیره سازی محصولی است که شما موجودی آن را مدیریت می کنید. به این منظور برنامه انبار باید نصب شود.\n"
+"کالای مصرفی محصولی است که موجودی آن مدیریت نمی شود.\n"
+"خدمات، محصول غیر فیزیکی است که شما آن را ارائه می‌دهید."
+
+#. module: shp
+#: model:ir.model,name:shp.model_account_cash_rounding
+msgid "Account Cash Rounding"
+msgstr "حساب گرد کردن وجه نقد"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_payment__account_move_id
+msgid "Account Move"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order__sale_journal
+msgid "Accounting journal used to post POS session journal entries and POS invoice payments."
+msgstr "دفترثبت حسابداری برای ارسال ثبت‌های دفتری شیفت‌کاری POS و پرداخت فاکتور POS استفاده می‌شود."
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__activity_category
+msgid "Action"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_mail_activity__activity_category
+msgid "Actions may trigger specific behavior like opening calendar view or automatically mark as done when a document is uploaded"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__active
+msgid "Active"
+msgstr "فعال"
+
+#. module: shp
+#: model:ir.model.constraint,message:shp.constraint_mail_activity_check_res_id_is_set
+msgid "Activities have to be linked to records with a not null res_id."
+msgstr ""
+
+#. module: shp
+#: model:ir.model,name:shp.model_mail_activity
+msgid "Activity"
+msgstr "فعالیت"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__activity_type_id
+msgid "Activity Type"
+msgstr "نوع فعالیت"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/mail_activity.py:0
+#, python-format
+msgid "Activity: %s"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order__is_total_cost_computed
+msgid "Allows to know if all the total cost of the order lines have already been computed"
+msgstr "این امکان را فراهم می‌آورد که بدانید هزینه کل سطرهای سفارش قبلا محاسبه شده‌است یا نه"
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order_line__is_total_cost_computed
+msgid "Allows to know if the total cost has already been computed or not"
+msgstr "به شما این امکان را می‌دهد که بدانید هزینه کل قبلا محاسبه شده‌است یا نه"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_make_payment__amount model:ir.model.fields,field_description:shp.field_pos_payment__amount
+msgid "Amount"
+msgstr "مقدار"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/lib/models.js:0
+#, python-format
+msgid "An error occurred when loading product prices. Make sure all pricelists are available in the POS."
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__user_id
+msgid "Assigned to"
+msgstr "واگذار شده به"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/mail_activity.py:0
+#, python-format
+msgid "Assigned user %s has no access to the document and is not able to handle this activity."
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__attachment_ids
+msgid "Attachments"
+msgstr "پیوست ها"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__automated
+msgid "Automated activity"
+msgstr "فعالیت اتوماسیون شده"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_product_product__available_in_pos model:ir.model.fields,field_description:shp.field_product_template__available_in_pos
+msgid "Available in POS"
+msgstr "موجود در POS"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0
+#, python-format
+msgid "Balance"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Base Amount"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__can_write
+msgid "Can Write"
+msgstr "می تواند بنویسد"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.view_pos_details_wizard
+msgid "Cancel"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields.selection,name:shp.selection__pos_order__state__cancel
+msgid "Cancelled"
+msgstr "لغو شد"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/ticket_screen.js:0 model:ir.model.fields,field_description:shp.field_pos_payment__cardholder_name
+#, python-format
+msgid "Cardholder Name"
+msgstr "نام دارنده کارت"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/report_sale_details.py:0 model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+#, python-format
+msgid "Cash"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Cash Move 1"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/report_sale_details.py:0
+#, python-format
+msgid "Cash Opening"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_product_product__pos_categ_ids model:ir.model.fields,help:shp.field_product_template__pos_categ_ids
+msgid "Category used in the Point of Sale."
+msgstr "دسته‌ی محصولات مورد استفاده در پایانه فروش."
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__chaining_type
+msgid "Chaining Type"
+msgstr "نوع زنجیره"
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_mail_activity__activity_decoration
+msgid "Change the background color of the related activities of this type."
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_product_product__to_weight model:ir.model.fields,help:shp.field_product_template__to_weight
+msgid "Check if the product should be weighted using the hardware scale integration."
+msgstr "بررسی کنید که آیا محصول باید با استفاده از ترازو سخت افزاری اغدام شده وزن شود."
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_product_product__available_in_pos model:ir.model.fields,help:shp.field_product_template__available_in_pos
+msgid "Check if you want this product to appear in the Point of Sale."
+msgstr "چک کنید که آیا می خواهید این محصول در پایانه فروش ظاهر شود یا خیر."
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_uom_category__is_pos_groupable model:ir.model.fields,help:shp.field_uom_uom__is_pos_groupable
+msgid "Check if you want to group products of this category in point of sale orders"
+msgstr "بررسی کنید که آیا می‌خواهید محصولات این دسته را در سفارشات پایانه فروش گروه‌بندی کنید"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "Close"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0
+#, python-format
+msgid "Closing"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "Closing Control"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_session__stop_at
+msgid "Closing Date"
+msgstr "تاریخ بسته شدن"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_product_product__combo_ids model:ir.model.fields,field_description:shp.field_product_template__combo_ids
+msgid "Combinations"
+msgstr "ترکیبات"
+
+#. module: shp
+#: model:ir.model.fields.selection,name:shp.selection__product_template__detailed_type__combo model:ir.model.fields.selection,name:shp.selection__product_template__type__combo
+msgid "Combo"
+msgstr "ترکیبی (کمبو)"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__combo_line_ids
+msgid "Combo Lines"
+msgstr "سطور کمبو"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__combo_parent_id
+msgid "Combo Parent"
+msgstr "بالاسری کمبو"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/product.py:0
+#, python-format
+msgid "Combo products cannot contains variants or attributes"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__company_id model:ir.model.fields,field_description:shp.field_pos_order_line__company_id
+#: model:ir.model.fields,field_description:shp.field_pos_payment__company_id
+msgid "Company"
+msgstr "شرکت"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "Continue Selling"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_payment__currency_rate
+msgid "Conversion Rate"
+msgstr "نرخ تبدیل"
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_payment__currency_rate
+msgid "Conversion rate from company currency to order currency."
+msgstr "نرخ تبدیل ارز شرکت به ارز سفارشی."
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Counted"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__country_code
+msgid "Country Code"
+msgstr "کد کشور"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__create_uid model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__create_uid
+msgid "Created by"
+msgstr "ایجاد شده توسط"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__create_date model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__create_date
+msgid "Created on"
+msgstr "ایجادشده در"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__currency_id model:ir.model.fields,field_description:shp.field_pos_order_line__currency_id
+#: model:ir.model.fields,field_description:shp.field_pos_payment__currency_id
+msgid "Currency"
+msgstr "ارز"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__currency_rate
+msgid "Currency Rate"
+msgstr "نرخ ارز"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__custom_attribute_value_ids
+msgid "Custom Values"
+msgstr "مقادیر سفارشی"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/ticket_screen.js:0 model:ir.model.fields,field_description:shp.field_pos_order__partner_id
+#: model:ir.model.fields,field_description:shp.field_pos_payment__partner_id
+#, python-format
+msgid "Customer"
+msgstr "مشتری"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Customer Invoice"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/orderline.xml:0 model:ir.model.fields,field_description:shp.field_pos_order_line__customer_note
+#, python-format
+msgid "Customer Note"
+msgstr "یادداشت مشتری"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/wizard/pos_payment.py:0
+#, python-format
+msgid "Customer is required for %s payment method."
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "DEMO_PRODUCT_NAME"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "DEMO_REF"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Daily Sales Report"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/ticket_screen.js:0 model:ir.model.fields,field_description:shp.field_pos_order__date_order
+#: model:ir.model.fields,field_description:shp.field_pos_payment__payment_date
+#, python-format
+msgid "Date"
+msgstr "تاریخ"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/mail_activity.py:0
+#, python-format
+msgid "Deadline: %s"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__activity_decoration
+msgid "Decoration Type"
+msgstr "نوع دکوراسیون"
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order_line__product_uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "واحد اندازه گیری پیش فرض برای همه عملیات موجودی استفاده می شود."
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Demo 3-03-2000 5:00 PM"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Demo Name"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Difference"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Disc:"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__discount
+msgid "Discount (%)"
+msgstr "تخفیف(٪)"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__notice
+msgid "Discount Notice"
+msgstr "اطلاعیه تخفیف"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__display_name model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__display_name
+msgid "Display Name"
+msgstr "نام نمایش داده شده"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__res_model_id
+msgid "Document Model"
+msgstr "مدل سند"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__res_name
+msgid "Document Name"
+msgstr "نام سند"
+
+#. module: shp
+#: model:ir.model.fields.selection,name:shp.selection__mail_activity__state__done
+msgid "Done"
+msgstr "انجام شده"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__date_done
+msgid "Done Date"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__date_deadline
+msgid "Due Date"
+msgstr "تاریخ سررسید"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__mail_template_ids
+msgid "Email templates"
+msgstr "قالب ایمیل"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_details_wizard__end_date
+msgid "End Date"
+msgstr "تاریخ پایان"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Expected"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__failed_pickings
+msgid "Failed Pickings"
+msgstr "برداشت‌های ناموفق"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__fiscal_position_id
+msgid "Fiscal Position"
+msgstr "موقعیت مالی"
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_mail_activity__icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "آیکون فونت عالی به عبارتی fa-tasks"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/orderline.xml:0
+#, python-format
+msgid "Free"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__full_product_name
+msgid "Full Product Name"
+msgstr "نام کامل محصول"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_uom_category__is_pos_groupable model:ir.model.fields,field_description:shp.field_uom_uom__is_pos_groupable
+msgid "Group Products in POS"
+msgstr "گروه بندی محصولات در POS"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__has_refundable_lines
+msgid "Has Refundable Lines"
+msgstr "دارای خطوط قابل استرداد"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__id model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__id
+msgid "ID"
+msgstr "شناسه"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__icon
+msgid "Icon"
+msgstr "آیکون"
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order_line__refunded_orderline_id
+msgid "If this orderline is a refund, then the refunded orderline is specified in this field."
+msgstr "اگر این سطر سفارش بازپرداخت است، سطر سفارش بازپرداخت شده در این قسمت مشخص می شود."
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "In order to delete a sale, it must be new or cancelled."
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_mail_activity__automated
+msgid "Indicates this activity has been created automatically and not by any user."
+msgstr "نشان دهنده این است که این فعالیت خودکار ایجاد شده و نه توسط هیچ کاربری."
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__note
+msgid "Internal Notes"
+msgstr "یادداشت های داخلی"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__account_move
+msgid "Invoice"
+msgstr "فاکتور"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Invoice Name"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_payment.py:0
+#, python-format
+msgid "Invoice payment for %s (%s) using %s"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields.selection,name:shp.selection__pos_order__state__invoiced
+msgid "Invoiced"
+msgstr "فاکتور شده"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Invoices"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__is_invoiced
+msgid "Is Invoiced"
+msgstr "فاکتور شده hsj"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__is_refunded
+msgid "Is Refunded"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__is_total_cost_computed model:ir.model.fields,field_description:shp.field_pos_order_line__is_total_cost_computed
+msgid "Is Total Cost Computed"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__is_tipped
+msgid "Is this already tipped?"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_payment__is_change
+msgid "Is this payment change?"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_payment__name
+msgid "Label"
+msgstr "بر چسب"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Laptop model x"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_config__last_session_closing_date
+msgid "Last Session Closing Date"
+msgstr "تاریخ آخرین بسته شدن شیفت"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__write_uid model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__write_uid
+msgid "Last Updated by"
+msgstr "آخرین بروز رسانی توسط"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__write_date model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__write_date
+msgid "Last Updated on"
+msgstr "آخرین بروز رسانی در"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__last_order_preparation_change
+msgid "Last preparation change"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order__last_order_preparation_change
+msgid "Last printed state of the order"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__name
+msgid "Line No"
+msgstr "شماره سطر"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/receipt_header.xml:0
+#, python-format
+msgid "Logo"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__lot_name
+msgid "Lot Name"
+msgstr "نام سری ساخت"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__pack_lot_ids
+msgid "Lot/serial Number"
+msgstr "شماره سری ساخت/سریال"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__margin model:ir.model.fields,field_description:shp.field_pos_order_line__margin
+msgid "Margin"
+msgstr "حاشیه سود"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__margin_percent model:ir.model.fields,field_description:shp.field_pos_order_line__margin_percent
+msgid "Margin (%)"
+msgstr "حاشیه سود (%)"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Name"
+msgstr "نام"
+
+#. module: shp
+#: model:ir.model.fields.selection,name:shp.selection__pos_order__state__draft
+msgid "New"
+msgstr "جدید"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "New Session"
+msgstr "شیفت‌کاری جدید"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__has_recommended_activities
+msgid "Next activities available"
+msgstr "فعالیت های بعدی موجود است"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "No cash statement found for this session. Unable to record returned cash."
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/controllers/main.py:0
+#, python-format
+msgid "No sale order found."
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/orderline.xml:0 model:ir.model.fields,field_description:shp.field_mail_activity__note
+#, python-format
+msgid "Note"
+msgstr "یادداشت"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__nb_print
+msgid "Number of Print"
+msgstr "تعداد چاپ"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__refund_orders_count
+msgid "Number of Refund Orders"
+msgstr "تعداد سفارشات مرجوعی"
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order_line__refunded_qty
+msgid "Number of items refunded in this orderline."
+msgstr "تعداد آیتم‌های مرجوعی در این سطر سفارش."
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "Open Session"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "Opened by"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "Opening Control"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_session__start_at
+msgid "Opening Date"
+msgstr "تاریخ شروع"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__picking_type_id
+msgid "Operation Type"
+msgstr "نوع عملیات"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_payment__pos_order_id
+msgid "Order"
+msgstr "سفارش"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/lib/models.js:0
+#, python-format
+msgid "Order %s"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Order %s is not fully paid."
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_report_pos_order__date
+msgid "Order Date"
+msgstr "تاریخ سفارش"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__lines
+msgid "Order Lines"
+msgstr "سطرهای سفارش"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/ticket_screen.js:0 model:ir.model.fields,field_description:shp.field_pos_order__tracking_number
+#, python-format
+msgid "Order Number"
+msgstr "شماره سفارش"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__name model:ir.model.fields,field_description:shp.field_pos_order_line__order_id
+#: model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__order_id model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Order Ref"
+msgstr "مرجع سفارش"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Order reference"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order_line__refund_orderline_ids
+msgid "Orderlines in this field are the lines that refunded this orderline."
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields.selection,name:shp.selection__mail_activity__state__overdue
+msgid "Overdue"
+msgstr "سررسید گذشته"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__amount_paid model:ir.model.fields.selection,name:shp.selection__pos_order__state__paid
+msgid "Paid"
+msgstr "پرداخت شد"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/wizard/pos_payment.py:0
+#, python-format
+msgid "Payment"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_make_payment__payment_date
+msgid "Payment Date"
+msgstr "تاریخ پرداخت"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_make_payment__payment_method_id model:ir.model.fields,field_description:shp.field_pos_payment__payment_method_id
+msgid "Payment Method"
+msgstr "روش پرداخت"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Payment Name Demo"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_payment__ticket
+msgid "Payment Receipt Info"
+msgstr "اطلاعات رسید پرداخت"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_make_payment__payment_name
+msgid "Payment Reference"
+msgstr "مرجع پرداخت"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_payment__payment_status
+msgid "Payment Status"
+msgstr "وضعیت پرداخت"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_payment__transaction_id
+msgid "Payment Transaction ID"
+msgstr "شناسه تراکنش پرداخت"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__payment_ids model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Payments"
+msgstr "پرداخت‌ها"
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order__user_id
+msgid "Person who uses the cash register. It can be a reliever, a student or an interim employee."
+msgstr "شخصی که از صندوق پول استفاده می کند. این می تواند یک دانش آموز یا یک کارمند موقت باشد."
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__picking_ids
+msgid "Picking"
+msgstr "برداشت سفارش"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__picking_count
+msgid "Picking Count"
+msgstr "شمارش برداشت سفارش"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Pickings"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields.selection,name:shp.selection__mail_activity__state__planned
+msgid "Planned"
+msgstr "برنامه ریزی شده"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Please define income account for this product: '%s' (id:%d)."
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/controllers/main.py:0
+#, python-format
+msgid "Please fill all the required fields."
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Please provide a partner for the sale."
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_product_attribute_custom_value__pos_order_line_id
+msgid "PoS Order Line"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__config_id
+msgid "Point of Sale"
+msgstr "پایانه فروش"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_product_product__pos_categ_ids model:ir.model.fields,field_description:shp.field_product_template__pos_categ_ids
+msgid "Point of Sale Category"
+msgstr "دسته بندی پایانه فروش"
+
+#. module: shp
+#: model:ir.model,name:shp.model_pos_config model:ir.model.fields,field_description:shp.field_pos_make_payment__config_id
+msgid "Point of Sale Configuration"
+msgstr "پیکربندی پایانه فروش"
+
+#. module: shp
+#: model:ir.model,name:shp.model_report_point_of_sale_report_saledetails
+msgid "Point of Sale Details"
+msgstr "جزئیات پایانه فروش"
+
+#. module: shp
+#: model:ir.model,name:shp.model_pos_details_wizard
+msgid "Point of Sale Details Report"
+msgstr "گزارش جزئیات پایانه فروش"
+
+#. module: shp
+#: model:ir.model,name:shp.model_pos_make_payment
+msgid "Point of Sale Make Payment Wizard"
+msgstr "ویزارد پرداخت پایانه فروش"
+
+#. module: shp
+#: model:ir.model,name:shp.model_pos_order_line
+msgid "Point of Sale Order Lines"
+msgstr "سطرهای سفارش پایانه فروش"
+
+#. module: shp
+#: model:ir.model,name:shp.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "سفارشات پایانه فروش"
+
+#. module: shp
+#: model:ir.model,name:shp.model_report_pos_order
+msgid "Point of Sale Orders Report"
+msgstr "گزارش سفارشات پایانه فروش"
+
+#. module: shp
+#: model:ir.model,name:shp.model_pos_payment
+msgid "Point of Sale Payments"
+msgstr "پرداخت های پایانه فروش"
+
+#. module: shp
+#: model:ir.model,name:shp.model_pos_session
+msgid "Point of Sale Session"
+msgstr "شیفت‌کاری پایانه فروش"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_details_wizard__pos_config_ids
+msgid "Pos Config"
+msgstr "پیکربندی Pos"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__pos_order_line_id
+msgid "Pos Order Line"
+msgstr "سطر سفارش Pos"
+
+#. module: shp
+#: model:ir.model.fields.selection,name:shp.selection__pos_order__state__done
+msgid "Posted"
+msgstr "ارسال‌شد"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__previous_activity_type_id
+msgid "Previous Activity Type"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Price discount from %s -> %s"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__price_extra
+msgid "Price extra"
+msgstr "قیمت اضافی"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__pricelist_id
+msgid "Pricelist"
+msgstr "لیست قیمت"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.view_pos_details_wizard
+msgid "Print"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__procurement_group_id
+msgid "Procurement Group"
+msgstr "گروه تدارکات"
+
+#. module: shp
+#: model:ir.model,name:shp.model_product_template model:ir.model.fields,field_description:shp.field_pos_order_line__product_id
+#: model:ir.model.fields,field_description:shp.field_pos_pack_operation_lot__product_id model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Product"
+msgstr "محصول"
+
+#. module: shp
+#: model:ir.model,name:shp.model_product_attribute_custom_value
+msgid "Product Attribute Custom Value"
+msgstr "مقدار سفارشی مشخصه‌ محصول"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Product Category"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_product_product__detailed_type model:ir.model.fields,field_description:shp.field_product_template__detailed_type
+msgid "Product Type"
+msgstr "نوع محصول"
+
+#. module: shp
+#: model:ir.model,name:shp.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr "واحد اندازه گیری محصول"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__product_uom_id
+msgid "Product UoM"
+msgstr "واحد اندازه گیری محصول"
+
+#. module: shp
+#: model:ir.model,name:shp.model_uom_category
+msgid "Product UoM Categories"
+msgstr "دسته بندی واحد اندازه گیری محصول"
+
+#. module: shp
+#: model:ir.model,name:shp.model_product_product
+msgid "Product Variant"
+msgstr "گونه محصول"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__qty model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Quantity"
+msgstr "تعداد"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Receipt %s"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/ticket_screen.js:0 model:ir.model.fields,field_description:shp.field_pos_order__pos_reference
+#, python-format
+msgid "Receipt Number"
+msgstr "شماره رسید"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__recommended_activity_type_id
+msgid "Recommended Activity Type"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Ref 876787"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__refund_orderline_ids
+msgid "Refund Order Lines"
+msgstr "سطرهای سفارش استردادکالا"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Refund Orders"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__refunded_order_ids
+msgid "Refunded Order"
+msgstr "سفارش پس‌گرفته‌شده"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__refunded_orderline_id
+msgid "Refunded Order Line"
+msgstr "سطر سفارش استردادکالا"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Refunded Orders"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__refunded_orders_count
+msgid "Refunded Orders Count"
+msgstr "تعداد سفارشات استردادکالا"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__refunded_qty
+msgid "Refunded Quantity"
+msgstr "مقدار وجه بازپرداخت‌شده‌ی مشتری"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Refunds"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__res_id
+msgid "Related Document ID"
+msgstr "شناسه مدرک مربوطه"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__res_model
+msgid "Related Document Model"
+msgstr "مدل مدرک مربوطه"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__request_partner_id
+msgid "Requesting Partner"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__user_id
+msgid "Responsible"
+msgstr "پاسخگو"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Return Products"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__amount_return
+msgid "Returned"
+msgstr "بازگشت"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Reversal of POS closing entry %s for order %s from session %s"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Reversal of: %s"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Rounding difference"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Sales"
+msgstr ""
+
+#. module: shp
+#: model:ir.actions.report,name:shp.sale_details_report_inherit model_terms:ir.ui.view,arch_db:shp.view_pos_details_wizard
+msgid "Sales Details"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__sale_journal
+msgid "Sales Journal"
+msgstr "روزنامه فروش"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Sample Closing Note"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Sample Config Name"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Sample Opening Note"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/mail_activity.py:0
+#, python-format
+msgid "Schedule an Activity"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__attribute_value_ids
+msgid "Selected Attributes"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__sequence_number
+msgid "Sequence Number"
+msgstr "شماره دنباله"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/receipt_header.xml:0
+#, python-format
+msgid "Served by"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__session_id model:ir.model.fields,field_description:shp.field_pos_payment__session_id
+msgid "Session"
+msgstr "شیفت‌کاری"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Session Control"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Session ID:"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__session_move_id
+msgid "Session Journal Entry"
+msgstr "ثبت‌دفتری شیفت‌کاری"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__shipping_date
+msgid "Shipping Date"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__skip_change
+msgid "Skip line when sending ticket to kitchen printers."
+msgstr ""
+
+#. module: shp
+#: model:ir.model,name:shp.model_pos_pack_operation_lot
+msgid "Specify product lot/serial number in pos order line"
+msgstr "سری ساخت/شماره سریال محصول را در سطر سفارش pos مشخص کنید"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_details_wizard__start_date
+msgid "Start Date"
+msgstr "تاریخ آغاز"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/order_widget.js:0
+#, python-format
+msgid "Start adding products"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__state
+msgid "State"
+msgstr "استان"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__state
+msgid "Status"
+msgstr "وضعیت"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Stock input for %s"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Stock output for %s"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__price_subtotal_incl
+msgid "Subtotal"
+msgstr "جمع جزء"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__price_subtotal
+msgid "Subtotal w/o Tax"
+msgstr "جمع جزء بدون مالیات"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_mail_activity__summary
+msgid "Summary"
+msgstr "خلاصه"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Tax Amount"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Tax Name"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__amount_tax model:ir.model.fields,field_description:shp.field_pos_order_line__tax_ids
+msgid "Taxes"
+msgstr "مالیات ها"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Taxes on refunds"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Taxes on sales"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__tax_ids_after_fiscal_position
+msgid "Taxes to Apply"
+msgstr "مالیات برای اعمال"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/order_receipt.xml:0 code:addons/shp/static/src/order_widget.xml:0
+#, python-format
+msgid "Taxes:"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Technical Stuff"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Technical Stuffs"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/receipt_header.xml:0
+#, python-format
+msgid "Tel:"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"کد کشور ISO در دو کاراکتر.\n"
+"می توانید از این قسمت برای جستجوی سریع استفاده کنید."
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/controllers/main.py:0
+#, python-format
+msgid "The Ticket Number should be at least 14 characters long."
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_payment.py:0
+#, python-format
+msgid "The payment method selected is not allowed in the config of the POS session."
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_order__currency_rate
+msgid "The rate of the currency to the currency of rate applicable at the date of the order"
+msgstr "نرخ ارز به واحد پولی که در تاریخ سفارش اعمال می شود"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "The session has been opened for an unusually long period. Please consider closing."
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "This invoice has been created from the point of sale session: %s"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_session.py:0
+#, python-format
+msgid "This session is already closed."
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__ticket_code
+msgid "Ticket Code"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__tip_amount
+msgid "Tip Amount"
+msgstr "مبلغ انعام"
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "To Close"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_product_product__to_weight model:ir.model.fields,field_description:shp.field_product_template__to_weight
+msgid "To Weigh With Scale"
+msgstr "برای وزن کردن با ترازو"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/product.py:0
+#, python-format
+msgid ""
+"To delete a product, make sure all point of sale sessions are closed.\n"
+"\n"
+"Deleting a product available in a session would be like attempting to snatch ahamburger from a customer’s hand mid-bite; chaos will ensue as ketchup and mayo go flying everywhere!"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__to_invoice
+msgid "To invoice"
+msgstr "برای فاکتور"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "To return product(s), you need to open a session in the POS %s"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields.selection,name:shp.selection__mail_activity__state__today
+msgid "Today"
+msgstr "امروز"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order__amount_total model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Total"
+msgstr "مجموع"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Total (Tax included)"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,help:shp.field_pos_payment__amount
+msgid "Total amount of the payment."
+msgstr "کل مبلغ پرداختی."
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__total_cost
+msgid "Total cost"
+msgstr "مجموع هزینه"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Total with rounding"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Total without rounding"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/order_receipt.xml:0 code:addons/shp/static/src/order_widget.xml:0
+#, python-format
+msgid "Total:"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_product_product__type model:ir.model.fields,field_description:shp.field_product_template__type
+msgid "Type"
+msgstr "نوع"
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_payment__card_type
+msgid "Type of card used"
+msgstr "نوع کارت استفاده شده"
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Unit"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__price_unit
+msgid "Unit Price"
+msgstr "قیمت واحد"
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "Unsupported search operation"
+msgstr ""
+
+#. module: shp
+#: model:ir.model.fields,field_description:shp.field_pos_order_line__uuid
+msgid "Uuid"
+msgstr ""
+
+#. module: shp
+#: model_terms:ir.ui.view,arch_db:shp.report_saledetails_custom
+msgid "Value"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/orderline.xml:0
+#, python-format
+msgid "With a"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "You are not allowed to change the cash rounding configuration while a pos session using it is already opened."
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "You can only unlink PoS order lines that are related to orders in new or cancelled state."
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid ""
+"You can't: create a pos order from the backend interface, or unset the pricelist, or create a pos.order in a python test with Form tool, or edit the form view in studio if no PoS "
+"order exist"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_session.py:0
+#, python-format
+msgid "You cannot close the POS when orders are still in draft"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_session.py:0
+#, python-format
+msgid "You cannot create a session before the accounting lock date."
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "You cannot invoice orders belonging to different companies."
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/product.py:0
+#, python-format
+msgid "You must first remove this product from the %s combo"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_session.py:0
+#, python-format
+msgid "Your PoS Session is open since %(date)s, we advise you to close it and to create a new one."
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/orderline.xml:0
+#, python-format
+msgid "discount"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0 model_terms:ir.ui.view,arch_db:shp.view_pos_config_kanban_inherit
+#, python-format
+msgid "outstanding rescue session"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0
+#, python-format
+msgid "pos.config"
+msgstr ""
+
+#. module: shp
+#. odoo-javascript
+#: code:addons/shp/static/src/point_of_sale_dashboard.xml:0
+#, python-format
+msgid "pos.config.kanban.view.inherit"
+msgstr ""
+
+#. module: shp
+#. odoo-python
+#: code:addons/shp/models/pos_order.py:0
+#, python-format
+msgid "return"
+msgstr ""
