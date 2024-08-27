@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="aos_whatsapp.Composer" t-inherit="mail.Composer" t-inherit-mode="extension">
+        <xpath expr="//Typing" position="replace">
+            <div class="d-flex justify-content-between">
+                <t>$0</t>
+                <span t-if="displayNextWhatsappHint()" class="text-muted fst-italic form-text">Tab to next whatsapp</span>
+            </div>
+        </xpath>
+    </t>
+</templates>

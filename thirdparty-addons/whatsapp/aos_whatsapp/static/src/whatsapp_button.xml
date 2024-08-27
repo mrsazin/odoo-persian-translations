@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- <t t-name="aos_whatsapp.SendWhatsAppButton" t-inherit="mail.Chatter" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('o-mail-Chatter-sendMessage btn text-nowrap me-1')]/child::*" position="after">
+            <button class="btn btn-odoo o_ChatterTopbar_button"
+                type="button" 
+                t-att-disabled="!chatterTopbar.chatter.hasReadAccess" 
+                t-on-click="chatterTopbar.chatter.onClickSendWhatsapp"
+                data-hotkey="w"
+                title="WhatsApp">
+                <i class="fa fa-whatsapp"/>
+                <small class="fw-bold ms-1">WhatsApp</small>
+            </button>
+        </xpath>
+    </t>  -->
+    <t t-name="aos_whatsapp.Chatter" t-inherit="mail.Chatter" t-inherit-mode="extension">
+        <xpath expr="//*[contains(@class, 'o-mail-Chatter-logNote')]" position="before">
+            <button class="btn btn-secondary text-nowrap me-2" t-att-class="{
+                    'btn-primary': state.composerType !== 'note',
+                    'btn-secondary': state.composerType === 'note',
+                    'active': state.composerType === 'message',
+                    'my-2': !props.compactHeight
+                }" data-hotkey="shift+w" t-on-click="ClicksendWhatsapp">
+                <i class="fa fa-whatsapp me-1" />
+                <span>WhatsApp</span>
+            </button>
+            <!-- <button class="btn btn-odoo o_ChatterTopbar_button"
+                type="button" 
+                t-att-disabled="!chatterTopbar.chatter.hasReadAccess" 
+                t-on-click="chatterTopbar.chatter.onClickSendWhatsapp"
+                data-hotkey="w"
+                title="WhatsApp">
+                <i class="fa fa-whatsapp"/>
+                <small class="fw-bold ms-1">WhatsApp</small>
+            </button> -->
+        </xpath>
+    </t>
+    <!-- <t t-name="aos_whatsapp.SendWhatsAppButton">
+        <a 
+            t-att-title="title"
+            t-att-href="'whatsapp:' + props.record.data[props.name]"
+            t-on-click.prevent.stop="onClick"
+            class="ms-3 d-inline-flex align-items-center o_field_phone_whatsapp"
+        >
+            <i class="fa fa-whatsapp"/>
+            <small class="fw-bold ms-1">WhatsApp</small>
+        </a>
+    </t> -->
+
+    <!-- <t t-name="aos_whatsapp.SendWhatsAppButton">
+        <a 
+            t-att-title="title"
+            t-att-href="'whatsapp:' + props.record.data[props.name]"
+            t-on-click.prevent.stop="onClick"
+            class="ms-3 d-inline-flex align-items-center o_field_phone_whatsapp"
+        >
+            <i class="fa fa-whatsapp"/>
+            <small class="fw-bold ms-1">WhatsApp</small>
+        </a>
+    </t> -->
+
+</templates>
