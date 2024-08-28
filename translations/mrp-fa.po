@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-14 06:57+0000\n"
-"PO-Revision-Date: 2024-07-14 11:34+0330\n"
+"PO-Revision-Date: 2024-08-27 16:54+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -1185,8 +1185,7 @@ msgstr "لغو"
 
 #. module: mrp
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_production__state__cancel
-#: model:ir.model.fields.selection,name:mrp.selection__mrp_workorder__state__cancel
-#: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_filter
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_workorder__state__cancel model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_filter
 msgid "Cancelled"
 msgstr "لغو شد"
 
@@ -1795,8 +1794,8 @@ msgid ""
 "Defines if you can consume more or less components than the quantity defined on the BoM:\n"
 "  * Allowed: allowed for all manufacturing users.\n"
 "  * Allowed with warning: allowed for all manufacturing users with summary of consumption differences when closing the manufacturing order.\n"
-"  Note that in the case of component Manual Consumption, where consumption is registered manually exclusively, consumption warnings will "
-"still be issued when appropriate also.\n"
+"  Note that in the case of component Manual Consumption, where consumption is registered manually exclusively, consumption warnings will still "
+"be issued when appropriate also.\n"
 "  * Blocked: only a manager can close a manufacturing order when the BoM consumption is not respected."
 msgstr ""
 
@@ -2390,8 +2389,8 @@ msgstr "ساعت"
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_split__id
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__id
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_split_multi__id
-#: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__id
-#: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__id model:ir.model.fields,field_description:mrp.field_mrp_workcenter__id
+#: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__id model:ir.model.fields,field_description:mrp.field_mrp_unbuild__id
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__id
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_capacity__id
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity__id
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss__id
@@ -2427,8 +2426,8 @@ msgstr "اگر این گزینه را انتخاب کنید، پیام‌های 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_bom__message_has_error model:ir.model.fields,help:mrp.field_mrp_bom__message_has_sms_error
 #: model:ir.model.fields,help:mrp.field_mrp_production__message_has_error
-#: model:ir.model.fields,help:mrp.field_mrp_production__message_has_sms_error
-#: model:ir.model.fields,help:mrp.field_mrp_unbuild__message_has_error model:ir.model.fields,help:mrp.field_mrp_unbuild__message_has_sms_error
+#: model:ir.model.fields,help:mrp.field_mrp_production__message_has_sms_error model:ir.model.fields,help:mrp.field_mrp_unbuild__message_has_error
+#: model:ir.model.fields,help:mrp.field_mrp_unbuild__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "اگر علامت زده شود، برخی از پیام ها دارای خطای تحویل هستند."
 
@@ -3267,8 +3266,7 @@ msgid "Next Activity Type"
 msgstr "نوع فعالیت بعدی"
 
 #. module: mrp
-#: model_terms:ir.ui.view,arch_db:mrp.view_assign_serial_numbers_production
-#: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_backorder_form
+#: model_terms:ir.ui.view,arch_db:mrp.view_assign_serial_numbers_production model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_backorder_form
 msgid "No Backorder"
 msgstr "بدون سفارش معوق"
 
@@ -3696,19 +3694,19 @@ msgstr ""
 #: code:addons/mrp/models/stock_warehouse.py:0
 #, python-format
 msgid "Pick components and then manufacture"
-msgstr ""
+msgstr "قطعات را انتخاب کنید و سپس بسازید"
 
 #. module: mrp
 #: model:ir.model.fields.selection,name:mrp.selection__stock_warehouse__manufacture_steps__pbm
 msgid "Pick components and then manufacture (2 steps)"
-msgstr ""
+msgstr "قطعات را انتخاب کنید و سپس بسازید (2 مرحله)"
 
 #. module: mrp
 #. odoo-python
 #: code:addons/mrp/models/stock_warehouse.py:0 model:ir.model.fields.selection,name:mrp.selection__stock_warehouse__manufacture_steps__pbm_sam
 #, python-format
 msgid "Pick components, manufacture and then store products (3 steps)"
-msgstr ""
+msgstr "قطعات را انتخاب کنید، محصولات را بسازید و سپس ذخیره کنید (3 مرحله)"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_stock_warehouse__pbm_mto_pull_id
@@ -3738,12 +3736,12 @@ msgstr ""
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_stock_warehouse__pbm_loc_id
 msgid "Picking before Manufacturing Location"
-msgstr ""
+msgstr "برداشت (جمع‌آوری) قبل از انبارک تولید"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrp_production_components
 msgid "Pieces"
-msgstr ""
+msgstr "قطعات"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view model_terms:ir.ui.view,arch_db:mrp.mrp_production_tree_view
@@ -3758,7 +3756,7 @@ msgstr "برنامه ریزی سفارش‌ها"
 #. module: mrp
 #: model:ir.actions.server,name:mrp.action_plan_with_components_availability
 msgid "Plan based on Components Availability"
-msgstr ""
+msgstr "برنامه ریزی بر اساس دسترس‌پذیری قطعات"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
@@ -4202,8 +4200,7 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/mrp/static/src/components/bom_overview_control_panel/mrp_bom_overview_control_panel.xml:0
 #: code:addons/mrp/static/src/components/bom_overview_table/mrp_bom_overview_table.xml:0
-#: code:addons/mrp/static/src/components/mo_overview/mrp_mo_overview.xml:0
-#: model:ir.model.fields,field_description:mrp.field_mrp_bom__product_qty
+#: code:addons/mrp/static/src/components/mo_overview/mrp_mo_overview.xml:0 model:ir.model.fields,field_description:mrp.field_mrp_bom__product_qty
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__product_qty
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__product_qty
 #: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__product_qty
@@ -4888,12 +4885,12 @@ msgstr ""
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_stock_warehouse__sam_type_id
 msgid "Stock After Manufacturing Operation Type"
-msgstr "موجودی پس از نوع عملیات ساخت"
+msgstr "موجودی ‌کالا پس از عملیات از نوع ساخت (تولید)"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_stock_warehouse__sam_rule_id
 msgid "Stock After Manufacturing Rule"
-msgstr "موجودی پس از قانون ساخت"
+msgstr "موجودی پس از قانون ساخت (Manufacturing Rule)"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_stock_assign_serial
@@ -5200,9 +5197,9 @@ msgstr "این فیلد به منظور تعیین اینکه منابع در ک
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workcenter__time_efficiency
 msgid ""
-"This field is used to calculate the expected duration of a work order at this work center. For example, if a work order takes one hour and "
-"the efficiency factor is 100%, then the expected duration will be one hour. If the efficiency factor is 200%, however the expected duration "
-"will be 30 minutes."
+"This field is used to calculate the expected duration of a work order at this work center. For example, if a work order takes one hour and the "
+"efficiency factor is 100%, then the expected duration will be one hour. If the efficiency factor is 200%, however the expected duration will "
+"be 30 minutes."
 msgstr ""
 "این فیلد برای محاسبه مدت زمان مورد انتظار یک سفارش کاری در این مرکز کاری استفاده می شود. به عنوان مثال، اگر یک سفارش کاری یک ساعت طول بکشد و "
 "ضریب کارایی 100٪ باشد، مدت زمان مورد انتظار یک ساعت خواهد بود. اگر ضریب کارایی 200 درصد باشد، مدت زمان مورد انتظار 30 دقیقه خواهد بود."
@@ -5875,8 +5872,8 @@ msgstr "هنگامی که محصولات در <b>%s</b> مورد نیاز است
 #. module: mrp
 #: model_terms:digest.tip,tip_description:mrp.digest_tip_mrp_0
 msgid ""
-"With the Odoo work center control panel, your worker can start work orders in the shop and follow instructions of the worksheet. Quality "
-"tests are perfectly integrated into the process. Workers can trigger feedback loops, maintenance alerts, scrap products, etc."
+"With the Odoo work center control panel, your worker can start work orders in the shop and follow instructions of the worksheet. Quality tests "
+"are perfectly integrated into the process. Workers can trigger feedback loops, maintenance alerts, scrap products, etc."
 msgstr ""
 "با کنترل پنل مرکز کار Odoo، کارگر شما می تواند سفارشات کاری را در مغازه شروع کند و دستورالعمل های کاربرگ را دنبال کند. تست های کیفیت کاملاً در "
 "فرآیند ادغام شده اند. کارگران می توانند حلقه های بازخورد، هشدارهای تعمیر و نگهداری، محصولات ضایعاتی و غیره را راه اندازی کنند."
@@ -5977,8 +5974,8 @@ msgstr ""
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
 msgid ""
-"Work Order Operations allow you to create and manage the manufacturing operations that should be followed within your work centers in order "
-"to produce a product. They are attached to bills of materials that will define the required components."
+"Work Order Operations allow you to create and manage the manufacturing operations that should be followed within your work centers in order to "
+"produce a product. They are attached to bills of materials that will define the required components."
 msgstr ""
 "عملیات سفارش کار به شما این امکان را می دهد که عملیات تولیدی را ایجاد و مدیریت کنید که باید در مراکز کاری خود به منظور تولید محصول دنبال شود. "
 "آنها به صورت های مواد اولیه متصل می شوند که قطعات مورد نیاز را مشخص می کنند."
@@ -6294,8 +6291,8 @@ msgstr "شما باید حداقل یک کاهش بهره وری را در دس�
 #: code:addons/mrp/models/mrp_workorder.py:0
 #, python-format
 msgid ""
-"You need to define at least one productivity loss in the category 'Productivity'. Create one from the Manufacturing app, menu: "
-"Configuration / Productivity Losses."
+"You need to define at least one productivity loss in the category 'Productivity'. Create one from the Manufacturing app, menu: Configuration / "
+"Productivity Losses."
 msgstr "شما باید حداقل یک کاهش بهره وری را در دسته «بهره وری» تعریف کنید. یکی از برنامه ساخت، منو ایجاد کنید: پیکربندی / ضررهای بهره وری."
 
 #. module: mrp

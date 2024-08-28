@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 07:44+0000\n"
-"PO-Revision-Date: 2024-08-27 12:16+0330\n"
+"PO-Revision-Date: 2024-08-28 14:36+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -91,7 +91,7 @@ msgstr " - محصول: %s، شماره سریال: %s"
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location__cyclic_inventory_frequency model:ir.model.fields,help:stock.field_stock_quant__cyclic_inventory_frequency
 msgid " When different than 0, inventory count date for products stored at this location will be automatically set at the defined frequency."
-msgstr " زمانی که 0 متفاوت باشد، تاریخ شمارش موجودی برای محصولات ذخیره شده در این انبارک به طور خودکار در فرکانس تعریف شده تنظیم می شود."
+msgstr " زمانی که مقداری غیراز صفر باشد، تاریخ شمارش موجودی برای محصولات ذخیره شده در این انبارک به طور خودکار منطبق با دوره‌زمانی تعریف شده تنظیم می شود."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__return_count
@@ -236,12 +236,12 @@ msgid ""
 "* Transit Location: Counterpart location that should be used in inter-company or inter-warehouses operations"
 msgstr ""
 "* انبارک تامین‌کننده(vendor): یک مکان مجازی است جهت نمایش مبدا مکانی محصولاتی که از سمت تامین‌کنندگان می آیند\n"
-"* ویو (view): یک مکان مجازی است که  برای ایجاد ساختارهای سلسله مراتبی انبار مورد استفاده قرامیگیرد و همه‌ی خرده انبارک های زیردست خود را در یک جا تجمیع می‌کند. این نوع از انبار نمی تواند مستقیماً حاوی محصولات باشد\n"
+"* نما (view): یک مکان مجازی است که برای ایجاد ساختارهای سلسله مراتبی انبار مورد استفاده قرامیگیرد و همه‌ی خرده انبارک های زیردست خود را در یک جا تجمیع می‌کند. این نوع از انبار نمی تواند مستقیماً حاوی محصولات باشد\n"
 "* انبارک داخلی: مکان های فیزیکی موجود در داخل انبارهای خودتان،\n"
 "* انبارک مشتری: یک مکان مجازی است جهت نمایش مقصد محصولات ارسال شده به سوی مشتریان شما\n"
 "* مصرف (ضایعات): یک مکان مجازی است که به عنوان یک همتای مکمل در عملیات‌ انبارداری فعالیت‌میکند و در جهت اصلاح سطوح موجودی استفاده می شود (انبارهای فیزیکی)\n"
 "* تولید: مکان همتای مجازی برای عملیات تولید: این مکان اجزا را مصرف می کند و محصولات نهایی را تولید می کند.\n"
-"* انبارک ترانزیت: ابنارک‌های فیزیکی یا مجازی که به‌عنوان انبارهای واسط یا سیار درنظرگرفته‌می‌شوند."
+"* انبارک ترانزیت: ابنارک‌های فیزیکی یا مجازی که به‌عنوان انبارهای واسط یا سیار درنظرگرفته‌می‌شوند"
 
 #. module: stock
 #. odoo-python
@@ -1054,7 +1054,7 @@ msgstr "اعمال بر همه"
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_replenish__route_id
 msgid "Apply specific route for the replenishment instead of product's default routes."
-msgstr "جهت تجدید موجودی به‌جای استفاده از مسیرهای پیش‌فرض محصول، می‌توانید یک مسیر ویژه اعمال کنید."
+msgstr "جهت تجدید موجودی به‌جای استفاده از مسیرهای پیش‌فرض محصول، می‌توانیدیک مسیر ویژه را واردنمایید."
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__res_company__annual_inventory_month__4
@@ -1398,7 +1398,7 @@ msgstr "ظرفیت بر اساس محصول"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Categorize your locations for smarter putaway rules"
-msgstr "با دسته‌یندی مکان‌های خود ، از قوانین جانمایی به‌صورت هوشمندانه‌تری بهره‌مندشوید"
+msgstr "با دسته‌یندی انبارک‌های خود ، از قوانین جانمایی به‌صورت هوشمندانه‌تری بهره‌مندشوید"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__product_uom_category_id model:ir.model.fields,field_description:stock.field_stock_move__product_uom_category_id model:ir.model.fields,field_description:stock.field_stock_move_line__product_uom_category_id model:ir.model.fields,field_description:stock.field_stock_scrap__product_uom_category_id
@@ -1460,26 +1460,26 @@ msgstr "از وجود عملیات بسته‌بندی در بخش برداشت 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location__return_location
 msgid "Check this box to allow using this location as a return location."
-msgstr "این کادر را علامت بزنید تا استفاده از این مکان به عنوان مکان بازگشت مجاز باشد."
+msgstr "این کادر را علامت بزنید تا استفاده از این انبارک به عنوان محل مرجوعی مجازشود."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location__scrap_location model:ir.model.fields,help:stock.field_stock_move__scrapped
 msgid "Check this box to allow using this location to put scrapped/damaged goods."
-msgstr "این کادر را علامت بزنید تا استفاده از این مکان برای قرار دادن کالاهای اسقاط شده/آسیب دیده مجاز باشد."
+msgstr "این کادر را علامت بزنید تا استفاده از این انبارک برای قرار دادن کالاهای اسقاط شده/آسیب دیده مجازشود."
 
 #. module: stock
 #. odoo-python
 #: code:addons/stock/models/stock_picking.py:0 code:addons/stock/wizard/stock_label_type.py:0
 #, python-format
 msgid "Choose Labels Layout"
-msgstr "انتخاب چیدمان لیبل ها"
+msgstr "انتخاب طرح‌بندی لیبل ها"
 
 #. module: stock
 #. odoo-python
 #: code:addons/stock/models/stock_picking.py:0
 #, python-format
 msgid "Choose Type of Labels To Print"
-msgstr ""
+msgstr "نوع لیبل را جهت چاپ انتخاب نمایید"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_quantity_history__inventory_datetime model:ir.model.fields,help:stock.field_stock_request_count__inventory_date
@@ -1901,27 +1901,27 @@ msgstr "مشتری"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__sale_delay model:ir.model.fields,field_description:stock.field_product_template__sale_delay
 msgid "Customer Lead Time"
-msgstr "زمان تحویل مشتری"
+msgstr "زمان انتظار مشتری"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_partner__property_stock_customer model:ir.model.fields,field_description:stock.field_res_users__property_stock_customer model:ir.model.fields.selection,name:stock.selection__stock_location__usage__customer
 msgid "Customer Location"
-msgstr "مکان مشتری"
+msgstr "انبارک مشتری"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_location_search
 msgid "Customer Locations"
-msgstr "مکان های مشتری"
+msgstr "انبارک‌های مشتری"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_delivery_document model_terms:ir.ui.view,arch_db:stock.report_lot_label model_terms:ir.ui.view,arch_db:stock.report_package_barcode model_terms:ir.ui.view,arch_db:stock.report_picking
 msgid "Customizable Desk"
-msgstr ""
+msgstr "میز قابل‌سفارشی‌سازی"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_location_form
 msgid "Cyclic Counting"
-msgstr "شمارش چرخشی"
+msgstr "شمارش چرخشی (انبارگردانی)"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_reception_body
@@ -1999,7 +1999,7 @@ msgstr "تاریخی که در آن انتقال، پردازش یا لغو شد
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location__next_inventory_date
 msgid "Date for next planned inventory based on cyclic schedule."
-msgstr "تاریخ موجودی برنامه ریزی شده بعدی بر اساس برنامه‌ی چرخشی."
+msgstr "تاریخ برنامه ریزی شده بعدی جهت شمارش بر اساس برنامه‌ی چرخشی."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__date_done
@@ -2009,7 +2009,7 @@ msgstr "تاریخ انتقال"
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location__last_inventory_date
 msgid "Date of the last inventory at this location."
-msgstr "تاریخ آخرین موجودی در این مکان."
+msgstr "تاریخ آخرین شمارش‌انجام‌شده در این مکان."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__reservation_date
@@ -2153,9 +2153,9 @@ msgid ""
 "            the stock operations like the manufacturing orders\n"
 "            consumptions, inventories, etc."
 msgstr ""
-"مکان های خود را طوری تعریف کنید که ساختارانبار و سازمان شما را منعکس کند.\n"
-"            ادو قادر به مدیریت مکان‌های مختلف است ازجمله: مکان‌های فیزیکی (انبارها، قفسه‌ها، سطل ، جعبه و غیره)، \n"
-"            مکان‌های شریک تجاری (مشتریان، فروشندگان) و مکان‌های مجازی."
+"انبارک های خود را طوری تعریف کنید که ساختار انبار و سازمان شما را منعکس کند.\n"
+"            پورتال RGERP قادر به مدیریت انبارک‌های مختلف است ازجمله: انبارک‌های فیزیکی (انبارها، قفسه‌ها، سطل ، جعبه و غیره)، \n"
+"            انبارک‌های طرف‌های تجاری (مشتریان، فروشندگان) و انبارک‌های مجازی."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location__removal_strategy_id
@@ -2169,10 +2169,10 @@ msgid ""
 msgstr ""
 "روشی پیش‌فرض جهت پیشنهاد مکان دقیق (قفسه) محصولات تعریف می‌کند، از کجا برداشته شده، از کدام دسته ( سری ساخت) و غیره. این روش را می‌توان در سطح دسته‌بندی محصول نیز اعمال کرد، و برای مواقعی که گزینه‌ای دراینجا انتخاب نشده باشد (none ) ، یک راهبرد جایگزین در لوکیشن های اصلی(parent) ایجاد میکند .\n"
 "\n"
-"FIFO: محصولات یا / مجموعه هایی  که زودتر از بقیه انبارشده‌بودند، زودتر از همه از انبار حارج می‌شوند\n"
-"LIFO: محصولات/مجموعه هایی که آخرین بار انبار شده بودند ابتدا خارج می شوند.\n"
-"Closet location: محصولات/مجموعه‌های نزدیک به مکان مورد نظر ابتدا خارج می شوند.\n"
-"FEFO: محصولات/مجموعه‌هایی با نزدیکترین تاریخ حذف ابتدا منتقل می شوند (در دسترس بودن این روش به تنظیم \"تاریخ انقضا\" بستگی دارد)."
+"فایفو (FIFO): محصولات یا مجموعه‌هایی (lots) که زودتر از بقیه انبارشده‌بودند، زودتر از همه از انبار خارج می‌شوند.\n"
+"لایفو(LIFO): محصولات یامجموعه‌هایی (lots) که آخرین بار انبار شده بودند ابتدا خارج می شوند.\n"
+"نزدیک‌ترین مکان: محصولات یامجموعه‌های نزدیک به مکان مورد نظر، ابتدا خارج می شوند.\n"
+"ففو(FEFO): محصولات یا مجموعه‌هایی با نزدیکترین تاریخ حذف ابتدا منتقل می شوند (در دسترس بودن این روش به تنظیم \"تاریخ انقضا\" بستگی دارد)."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__delay_alert_date model:ir.model.fields,field_description:stock.field_stock_picking__delay_alert_date
@@ -2271,7 +2271,7 @@ msgstr "نوع تحویل"
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product__sale_delay model:ir.model.fields,help:stock.field_product_template__sale_delay
 msgid "Delivery lead time, in days. It's the number of days, promised to the customer, between the confirmation of the sales order and the delivery."
-msgstr "زمان تحویل، بر اساس روز. تعداد روزهایی( مابین تایید سفارش‌فروش و تحویل) که به مشتری وعده داده شده است."
+msgstr "زمان انتظار، بر اساس روز محاسبه‌می‌شود. تعداد روزهایی( مابین تایید سفارش‌فروش و تحویل) که به مشتری وعده داده شده است."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_lot__delivery_count
@@ -2396,17 +2396,17 @@ msgstr "نشانی مقصد "
 #: model_terms:ir.ui.view,arch_db:stock.view_move_search
 #, python-format
 msgid "Destination Location"
-msgstr "مکان مقصد"
+msgstr "انبارک مقصد"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__location_dest_usage model:ir.model.fields,field_description:stock.field_stock_move_line__location_dest_usage
 msgid "Destination Location Type"
-msgstr "نوع مکان مقصد"
+msgstr "نوع انبارک مقصد"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.message_body
 msgid "Destination Location:"
-msgstr "مکان مقصد:"
+msgstr "انبارک مقصد:"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__move_dest_ids model_terms:ir.ui.view,arch_db:stock.view_move_form
@@ -2426,7 +2426,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_package_destination__location_dest_id
 msgid "Destination location"
-msgstr "مکان مقصد"
+msgstr "انبارک مقصد"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__route_ids
@@ -2594,7 +2594,7 @@ msgstr "ویرایش محصول"
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
 msgid "Editing quantities in an Inventory Adjustment location is forbidden,those locations are used as counterpart when correcting the quantities."
-msgstr "ویرایش مقادیر در یک مکان تنظیم موجودی ممنوع است، از آن مکان ها به عنوان همکار در هنگام تصحیح مقادیر استفاده می شود."
+msgstr "ویرایش مقادیر در یک انبارک \"تنظیم موجودی\" ممنوع است، از آن انبارک ها  در هنگام تصحیح مقادیر  به عنوان یک همتا استفاده می شود."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form model_terms:ir.ui.view,arch_db:stock.vpicktree
@@ -2998,7 +2998,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Get a full traceability from vendors to customers"
-msgstr "رهگیری کامل از فروشندگان تا مشتریان "
+msgstr "دریافت یک رهگیری کامل از فروشندگان(vendor) تا مشتریان "
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -3409,12 +3409,12 @@ msgstr "داخلی"
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_location__usage__internal
 msgid "Internal Location"
-msgstr "مکان داخلی"
+msgstr "انبارک داخلی"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view model_terms:ir.ui.view,arch_db:stock.view_location_search
 msgid "Internal Locations"
-msgstr "مکان های داخلی"
+msgstr "انبارک‌های داخلی"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_lot__ref
@@ -3436,7 +3436,7 @@ msgstr "نقل و انتقال‌های داخلی"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_company__internal_transit_location_id
 msgid "Internal Transit Location"
-msgstr "مکان ترانزیت داخلی"
+msgstr "انبارک ترانزیت داخلی"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__int_type_id
@@ -3500,7 +3500,7 @@ msgstr "انبار"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_stock_inventory_adjustement_name model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_editable
 msgid "Inventory Adjustment"
-msgstr "انبارگردانی"
+msgstr "تعدیل موجودی (انبارگردانی)"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_inventory_adjustment_name
@@ -3532,22 +3532,22 @@ msgstr "تاریخ موجودی"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__cyclic_inventory_frequency model:ir.model.fields,field_description:stock.field_stock_quant__cyclic_inventory_frequency
 msgid "Inventory Frequency (Days)"
-msgstr "فرکانس موجودی (روز)"
+msgstr "تناوب زمانی برای شمارش موجودی (روز)"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__property_stock_inventory model:ir.model.fields,field_description:stock.field_product_template__property_stock_inventory
 msgid "Inventory Location"
-msgstr "مکان موجودی"
+msgstr "انبارک موجودی"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_location
 msgid "Inventory Locations"
-msgstr "مکان های انبارداری"
+msgstr "انبارک‌های موجودی"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_location__usage__inventory
 msgid "Inventory Loss"
-msgstr "از دست دادن موجودی"
+msgstr "انبارک مصرف (ضایعات)"
 
 #. module: stock
 #. odoo-javascript
@@ -3619,12 +3619,12 @@ msgstr "امضا شده"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__return_location
 msgid "Is a Return Location?"
-msgstr "آیا مکان بازگشتی است؟"
+msgstr "ایا مکانی برای مرجوعی‌ها است؟"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__scrap_location
 msgid "Is a Scrap Location?"
-msgstr "آیا مکان ضایعات است؟"
+msgstr "آیا مکانی برای ضایعات و اوراقی‌ها است؟"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__is_initial_demand_editable
@@ -3772,12 +3772,12 @@ msgstr "آخرین شریک تحویل"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__last_inventory_date
 msgid "Last Effective Inventory"
-msgstr "آخرین موجودی موثر"
+msgstr "تاریخ آخرین فهرست‌برداری حقیقی"
 
 #. module: stock
 #: model:product.removal,name:stock.removal_lifo
 msgid "Last In First Out (LIFO)"
-msgstr ""
+msgstr "لایفو (LIFO)"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_lot_label_layout__write_uid model:ir.model.fields,field_description:stock.field_picking_label_type__write_uid model:ir.model.fields,field_description:stock.field_procurement_group__write_uid model:ir.model.fields,field_description:stock.field_product_removal__write_uid
@@ -3838,24 +3838,24 @@ msgstr "آخرین وضعیت در دسترس بودن محصول در زمان 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__lead_days_date
 msgid "Lead Days Date"
-msgstr ""
+msgstr "تاریخ انتظار"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_replenishment_option__lead_time model:ir.model.fields,field_description:stock.field_stock_rule__delay
 msgid "Lead Time"
-msgstr "زمان سرنخ"
+msgstr "زمان انتظار"
 
 #. module: stock
 #. odoo-javascript
 #: code:addons/stock/static/src/widgets/json_widget.xml:0
 #, python-format
 msgid "Lead Times"
-msgstr "زمان های تحویل"
+msgstr "زمان های انتظار"
 
 #. module: stock
 #: model:product.removal,name:stock.removal_least_packages
 msgid "Least Packages"
-msgstr ""
+msgstr "بسته‌های کوچکتر"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_request_count__set_count__empty model:ir.model.fields.selection,name:stock.selection__stock_rule__group_propagation_option__none
@@ -3913,27 +3913,27 @@ msgstr "نمای لیست عملیات"
 #: model:ir.model.fields,field_description:stock.field_stock_warn_insufficient_qty_scrap__location_id model:ir.model.fields.selection,name:stock.selection__barcode_rule__type__location model_terms:ir.ui.view,arch_db:stock.quant_package_search_view model_terms:ir.ui.view,arch_db:stock.quant_search_view model_terms:ir.ui.view,arch_db:stock.search_product_lot_filter
 #: model_terms:ir.ui.view,arch_db:stock.stock_move_line_view_search model_terms:ir.ui.view,arch_db:stock.stock_reorder_report_search model_terms:ir.ui.view,arch_db:stock.stock_scrap_search_view model_terms:ir.ui.view,arch_db:stock.view_location_tree2 model_terms:ir.ui.view,arch_db:stock.view_move_search model_terms:ir.ui.view,arch_db:stock.warehouse_orderpoint_search
 msgid "Location"
-msgstr "مکان"
+msgstr "انبارک"
 
 #. module: stock
 #: model:ir.actions.report,name:stock.action_report_location_barcode
 msgid "Location Barcode"
-msgstr "بارکد مکان"
+msgstr "بارکد انبارک"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__name
 msgid "Location Name"
-msgstr "نام مکان"
+msgstr "نام انبارک"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_replenishment_option__location_id model:ir.model.fields,field_description:stock.field_stock_warehouse__lot_stock_id
 msgid "Location Stock"
-msgstr "موجودی مکان"
+msgstr "نام انبارک حاوی موجودی کالا"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__usage model_terms:ir.ui.view,arch_db:stock.view_location_search
 msgid "Location Type"
-msgstr "نوع مکان"
+msgstr "نوع انبارک"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move__location_dest_id
@@ -3943,12 +3943,12 @@ msgstr "مکانی که سیستم محصولات نهایی را در آن ذخ
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_putaway_search
 msgid "Location: Store to"
-msgstr "مکان: ذخیره به"
+msgstr "انبارک: ذخیره در"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_putaway_search
 msgid "Location: When arrives to"
-msgstr "مکان: زمان رسیدن به"
+msgstr "انبارک: زمان رسیدن به"
 
 #. module: stock
 #. odoo-python
@@ -3957,14 +3957,14 @@ msgstr "مکان: زمان رسیدن به"
 #: model_terms:ir.ui.view,arch_db:stock.view_warehouse
 #, python-format
 msgid "Locations"
-msgstr "مکان‌ها"
+msgstr "انبارک‌ها"
 
 #. module: stock
 #. odoo-python
 #: code:addons/stock/models/stock_picking.py:0
 #, python-format
 msgid "Locations to update"
-msgstr ""
+msgstr "انبارک‌ها جهت یه‌روزرسانی"
 
 #. module: stock
 #: model:ir.actions.server,name:stock.action_toggle_is_locked
@@ -4432,7 +4432,7 @@ msgstr "نوع فعالیت بعدی"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__next_inventory_date
 msgid "Next Expected Inventory"
-msgstr "موجودی مورد انتظار بعدی"
+msgstr "تاریخ مورد انتظار بعدی برای فهرست‌برداری"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_quant__inventory_date
@@ -5609,12 +5609,12 @@ msgstr "تولید"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__property_stock_production model:ir.model.fields,field_description:stock.field_product_template__property_stock_production
 msgid "Production Location"
-msgstr "مکان تولید"
+msgstr "انبارک تولید"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_location_search
 msgid "Production Locations"
-msgstr "مکان های تولید"
+msgstr "انبارک‌های های تولید"
 
 #. module: stock
 #. odoo-python
@@ -6156,12 +6156,12 @@ msgstr "جستجو قوانین سفارش مجدد"
 #: code:addons/stock/static/src/stock_forecasted/forecasted_buttons.xml:0 model_terms:ir.ui.view,arch_db:stock.product_form_view_procurement_button model_terms:ir.ui.view,arch_db:stock.product_product_view_form_easy_inherit_stock model_terms:ir.ui.view,arch_db:stock.product_template_form_view_procurement_button
 #, python-format
 msgid "Replenish"
-msgstr "جایگزین"
+msgstr "تجدید‌موجودی"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__replenish_location
 msgid "Replenish Location"
-msgstr "مکان جهت تجدید‌موجودی"
+msgstr "تجدید‌موجودی‌ شود"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_scrap__should_replenish
@@ -6478,7 +6478,7 @@ msgstr ""
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_rules_form model:ir.model.fields,field_description:stock.field_stock_route__rule_ids model:ir.ui.menu,name:stock.menu_action_rules_form model_terms:ir.ui.view,arch_db:stock.stock_location_route_form_view model_terms:ir.ui.view,arch_db:stock.view_stock_rule_form model_terms:ir.ui.view,arch_db:stock.view_stock_rule_tree
 msgid "Rules"
-msgstr "قواعد"
+msgstr "قوانین"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_putaway_search
@@ -7216,7 +7216,7 @@ msgstr "گزارش قوانین موجودی"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_rules_report
 msgid "Stock Rules report"
-msgstr "گزارش قواعد انبار"
+msgstr "گزارش قوانین انبار"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_track_confirmation
@@ -7320,7 +7320,7 @@ msgstr "محصولات را در مکان‌های خاصی از انبار خو
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_putaway_rule__location_out_id
 msgid "Store to sublocation"
-msgstr ""
+msgstr "ذخیره در زیرانبارک"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_route__supplied_wh_id
@@ -7354,6 +7354,9 @@ msgid ""
 "Trigger Another Rule: the system will try to find a stock rule to bring the products in the source location. The available stock will be ignored.\n"
 "Take From Stock, if Unavailable, Trigger Another Rule: the products will be taken from the available stock of the source location.If there is no stock available, the system will try to find a  rule to bring the products in the source location."
 msgstr ""
+"برداشت از انبار : محصولات از موجودی کالا در محل منبع گرفته می شود.\n"
+"اجرای یک قانون(rule) دیگر: سیستم سعی می کند یک قانون موجودی انبار پیدا کند تا محصولات را به محل منبع بیاورد. کالای موجود نادیده گرفته خواهد شد.\n"
+"از محل موجودی انبار بردار، اگر در دسترس نبود، تریگر قانون دیگری را بکش: محصولات از محل موجودی در محل منبع گرفته می شوند. اگر کالا موجود نباشد، سیستم سعی می کند قانونی را برای آوردن محصولات در محل منبع پیدا کند."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking__show_allocation
@@ -7474,7 +7477,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.constraint,message:stock.constraint_stock_location_inventory_freq_nonneg
 msgid "The inventory frequency (days) for a location must be non-negative"
-msgstr "فرکانس موجودی (روزها) برای یک مکان باید غیرمنفی باشد"
+msgstr "تناوب زمانی شمارش موجودی (روز) برای هر انبارکی باید مقداری غیرمنفی باشد"
 
 #. module: stock
 #: model:ir.model.constraint,message:stock.constraint_stock_warehouse_warehouse_name_uniq
@@ -7552,7 +7555,7 @@ msgstr "عملیات درخواستی نمی‌تواند پردازش شود ز
 #: code:addons/stock/models/stock_location.py:0
 #, python-format
 msgid "The selected Inventory Frequency (Days) creates a date too far into the future."
-msgstr "فرکانس موجودی انتخاب شده (روزها) تاریخی بسیار دور از آینده ایجاد می کند."
+msgstr "تناوب زمانی انتخاب شده (روز) برای شمارش موجودی، تاریخی بسیار دور در‌ آینده، ایجاد میکند."
 
 #. module: stock
 #. odoo-python
@@ -7568,7 +7571,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.constraint,message:stock.constraint_stock_warehouse_warehouse_code_uniq
 msgid "The short name of the warehouse must be unique per company!"
-msgstr "نام کوتاه انبار باید برای هر شرکت منحصر به فرد باشد!"
+msgstr "نام کوتاه انبار باید برای هر شرکت منحصربه‌فرد باشد!"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_res_partner__property_stock_customer model:ir.model.fields,help:stock.field_res_users__property_stock_customer
@@ -7649,12 +7652,12 @@ msgstr "این فیلد مبدا بسته‌بندی و نام انتقالات 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_type__default_location_dest_id
 msgid "This is the default destination location when you create a picking manually with this operation type. It is possible however to change it or that the routes put another location. If it is empty, it will check for the customer location on the partner. "
-msgstr "این مکان مقصد پیش‌فرض زمانی است که با این نوع عملیات یک برداشت را به صورت دستی ایجاد می‌کنید. با این حال ممکن است آن را تغییر دهید یا اینکه مسیرها مکان دیگری قرار دهند. اگر خالی باشد، مکان مشتری را در شریک بررسی می کند. "
+msgstr "این یک مکان مقصد پیش‌فرض برای زمانی است که با این نوع عملیات یک برداشت را به صورت دستی ایجاد می‌کنید. با این حال ممکن است آن را تغییر دهید یا اینکه مسیرها مکان دیگری را برگزینند. اگر مقدار این فیلد خالی باشد، انبارک مشتری را در طرف‌تجاری بررسی می کند. "
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_type__default_location_return_id
 msgid "This is the default location for returns created from a picking with this operation type."
-msgstr ""
+msgstr "این مکان پیش‌فرض برای بازگشت‌های ایجاد شده از یک برداشت با استفاده از این نوع عملیات است."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_type__default_location_src_id
@@ -7785,12 +7788,12 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product__property_stock_production model:ir.model.fields,help:stock.field_product_template__property_stock_production
 msgid "This stock location will be used, instead of the default one, as the source location for stock moves generated by manufacturing orders."
-msgstr "این مکان ذخیره به جای مکان پیش‌فرض، به‌عنوان مکان منبع برای جابه‌جایی موجودی تولید شده توسط سفارش‌های تولید استفاده می‌شود."
+msgstr "این مکان موجودی به‌عنوان مبدامکانی برای نقل و انتقالات موجودی‌هایی استفاده‌می‌شود که از طریق سفارش‌های تولید ایجاد‌شده اند."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product__property_stock_inventory model:ir.model.fields,help:stock.field_product_template__property_stock_inventory
 msgid "This stock location will be used, instead of the default one, as the source location for stock moves generated when you do an inventory."
-msgstr "این مکان موجودی به جای مکان پیش‌فرض، به‌عنوان مکان منبع برای جابه‌جایی موجودی ایجاد شده هنگام انجام موجودی استفاده می‌شود."
+msgstr "این مکان موجودی به‌عنوان مبدامکانی برای نقل و انتقالات موجودی‌هایی استفاده‌می‌شود که در هنگام تعدیل موجودی و فهرست‌بندی ایجاد‌شده‌اند."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product__responsible_id model:ir.model.fields,help:stock.field_product_template__responsible_id
@@ -8020,7 +8023,7 @@ msgstr "انتقالاتی که در زمان مقرر یا یکی از انتخ
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_location__usage__transit
 msgid "Transit Location"
-msgstr "مکان حمل و نقل"
+msgstr "انبارک تزانزیت"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view
@@ -8294,17 +8297,17 @@ msgstr "فروشنده"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_partner__property_stock_supplier model:ir.model.fields,field_description:stock.field_res_users__property_stock_supplier model:ir.model.fields.selection,name:stock.selection__stock_location__usage__supplier
 msgid "Vendor Location"
-msgstr "مکان مشتری"
+msgstr "انبارک تامین‌کننده (vendor)"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_location_search
 msgid "Vendor Locations"
-msgstr "مکان های مشتری"
+msgstr "انبارک‌های مشتری"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_location__usage__view model_terms:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "View"
-msgstr "نما"
+msgstr "نما (view)"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.product_view_kanban_catalog
@@ -9204,7 +9207,7 @@ msgstr "به عنوان مثال، پذیرش دو مرحله ای"
 #. module: stock
 #: model:product.removal,method:stock.removal_fifo
 msgid "fifo"
-msgstr ""
+msgstr "فایفو(fifo)"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_warn_insufficient_qty_scrap_form_view
