@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 07:44+0000\n"
-"PO-Revision-Date: 2024-08-28 14:36+0330\n"
+"PO-Revision-Date: 2024-08-29 17:14+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -633,7 +633,7 @@ msgstr "<strong>آدرس تحویل</strong>"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_inventory_conflict_form_view
 msgid "<strong>Due to some stock moves done between your initial update of the quantity and now, the difference of quantity is not consistent anymore.</strong>"
-msgstr "<strong>به دلیل تفاوت مقدار مابین موجودی اولیه و حال‌حاضر که به دلیل جابجایی برخی از موجودی ها صورت گرفته، ای تفاوت مقدار ،دیگر پایدار نیست.</strong>"
+msgstr "<strong>به دلیل برخی جابجایی‌های موجودی که بین مقدار به‌روزرسانی اولیه و اکنون انجام شده است، تفاوت مقدار دیگر قابل‌قبول نیست.</strong>"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_picking
@@ -913,7 +913,7 @@ msgstr "آدرس محل تحویل کالا. اختیاری."
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_adjustments
 msgid "Adjustments"
-msgstr "تعدیل"
+msgstr "تعدیل موجودی انبار"
 
 #. module: stock
 #: model:res.groups,name:stock.group_stock_manager
@@ -3404,7 +3404,7 @@ msgstr "ترانزیت بین انباری"
 #. module: stock
 #: model:ir.ui.menu,name:stock.int_picking model_terms:ir.ui.view,arch_db:stock.stock_move_line_view_search model_terms:ir.ui.view,arch_db:stock.view_location_search model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Internal"
-msgstr "داخلی"
+msgstr "جابجایی‌های داخلی"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_location__usage__internal
@@ -3517,7 +3517,7 @@ msgstr "هشدار تعدیل موجودی"
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
 msgid "Inventory Adjustments"
-msgstr "انبارگردانی ها"
+msgstr "تعدیل موجودی"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_inventory
@@ -3720,12 +3720,12 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_inventory_conflict_form_view
 msgid "Keep the <strong>Counted Quantity</strong> (the Difference will be updated)"
-msgstr ""
+msgstr "<strong>مقدار شمارش شده</strong> را حفظ کنید (تفاوت به روز خواهد شد)"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_inventory_conflict_form_view
 msgid "Keep the <strong>Difference</strong> (the Counted Quantity will be updated to reflect the same difference as when you counted)"
-msgstr ""
+msgstr "<strong>تفاوت</strong> را حفظ کنید (مقدار شمارش شده به‌روزرسانی می‌شود تا همان تفاوتی را که هنگام شمارش شما نشان می‌دهد منعکس کند)"
 
 #. module: stock
 #. odoo-javascript
@@ -3762,7 +3762,7 @@ msgstr "30 روز گذشته"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant__last_count_date
 msgid "Last Count Date"
-msgstr ""
+msgstr "تاریخ شمارش آخر"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_lot__last_delivery_partner_id
@@ -4177,7 +4177,7 @@ msgstr "مارس"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 msgid "Mark as Todo"
-msgstr "علامت به عنوان در دست اقدام"
+msgstr "علامت‌گذاری به‌عنوان Todo"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__product_max_qty
@@ -5197,7 +5197,7 @@ msgstr "نشانی شریک تجاری"
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_action_inventory_tree
 msgid "Physical Inventory"
-msgstr "موجودی فیزیکی"
+msgstr "اقلام فیزیکی"
 
 #. module: stock
 #. odoo-python
@@ -5398,7 +5398,7 @@ msgstr "پردازش انتقال‌های دسته ای به ازای هر کا
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_procurement
 msgid "Procurement"
-msgstr "تدارک"
+msgstr "تدارکات"
 
 #. module: stock
 #: model:ir.model,name:stock.model_procurement_group model:ir.model.fields,field_description:stock.field_stock_move__group_id model:ir.model.fields,field_description:stock.field_stock_picking__group_id model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__group_id
@@ -6185,17 +6185,17 @@ msgstr "راهنمای‌گام‌به‌گام(wizard) تجدید‌موجود�
 #: code:addons/stock/static/src/stock_forecasted/forecasted_details.xml:0 model:ir.actions.act_window,name:stock.action_orderpoint_replenish model:ir.actions.server,name:stock.action_replenishment model:ir.ui.menu,name:stock.menu_reordering_rules_replenish model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_editable
 #, python-format
 msgid "Replenishment"
-msgstr "شارژ مجدد"
+msgstr "شارژ مجدد موجودی"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_replenishment_option__replenishment_info_id
 msgid "Replenishment Info"
-msgstr ""
+msgstr "اطلاعات شارژمجدد"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_stock_replenishment_info model_terms:ir.ui.view,arch_db:stock.view_warehouse_orderpoint_tree_editable
 msgid "Replenishment Information"
-msgstr ""
+msgstr "اطلاعات شارژمجدد"
 
 #. module: stock
 #. odoo-python
@@ -6226,7 +6226,7 @@ msgstr "اکشن گزارش"
 #: code:addons/stock/static/src/client_actions/multi_print.js:0
 #, python-format
 msgid "Report Printing Error"
-msgstr ""
+msgstr "گزارش خطای چاپ"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_warehouse_report
@@ -6565,7 +6565,7 @@ msgstr "زمان برنامه ریزی شده برای پردازش قسمت ا�
 #. module: stock
 #: model:ir.actions.server,name:stock.action_scrap model:ir.model,name:stock.model_stock_scrap model:ir.model.fields,field_description:stock.field_stock_warn_insufficient_qty_scrap__scrap_id model:ir.ui.menu,name:stock.menu_stock_scrap model_terms:ir.ui.view,arch_db:stock.stock_scrap_form_view model_terms:ir.ui.view,arch_db:stock.stock_scrap_form_view2
 msgid "Scrap"
-msgstr "اسقاط"
+msgstr "اقلام اسقاطی"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_scrap__scrap_location_id model_terms:ir.ui.view,arch_db:stock.stock_scrap_search_view
@@ -6582,12 +6582,12 @@ msgstr "در خواسط اسقاط"
 #: code:addons/stock/models/stock_picking.py:0 model_terms:ir.ui.view,arch_db:stock.stock_scrap_form_view2
 #, python-format
 msgid "Scrap Products"
-msgstr ""
+msgstr "محصولات اسقاطی"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__scrap_id
 msgid "Scrap operation"
-msgstr ""
+msgstr "عملیات اسقاط"
 
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_stock_scrap
@@ -6624,7 +6624,7 @@ msgstr "جستجوی اسقاط"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.replenishment_option_tree_view
 msgid "Select Route"
-msgstr ""
+msgstr "انتخاب مسیر"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_location_route_form_view
@@ -6669,7 +6669,7 @@ msgstr "اتصال‌دهندهSendcloud"
 #. module: stock
 #: model:mail.template,description:stock.mail_template_data_delivery_confirmation
 msgid "Sent to the customers when orders are delivered, if the setting is enabled"
-msgstr ""
+msgstr "در صورت فعال بودن تنظیمات، هنگام تحویل سفارش برای مشتریان ارسال می شود"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__res_company__annual_inventory_month__9
@@ -6767,12 +6767,12 @@ msgstr ""
 #: code:addons/stock/static/src/views/list/inventory_report_list_controller.js:0 model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_inventory_editable
 #, python-format
 msgid "Set"
-msgstr ""
+msgstr "تنظیم"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_request_count__set_count__set
 msgid "Set Current Value"
-msgstr ""
+msgstr "تنظیم مقدار کنونی"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -6789,6 +6789,12 @@ msgid ""
 "Closet location: products/lots closest to the target location will be moved out first.\n"
 "FEFO: products/lots with the closest removal date will be moved out first (the availability of this method depends on the \"Expiration Dates\" setting)."
 msgstr ""
+" یک استراتژی \"حذف یا خروج کالا از انبار\" انتخاب نمایید که بدون توجه به مکان منبع برای این نوع از محصول قابل‌استفاده‌باشد.\n"
+"\n"
+"فایفو (FIFO): محصولات/ یا مجموعه‌هایی(Lots) که ابتدا انبار شده بودند ابتدا خارج می شوند.\n"
+"لایفو (LIFO): محصولات یامجموعه هایی که آخرین بار انبار شده بودند ابتدا خارج می شوند.\n"
+"نزدیک‌ترین مکان: محصولات یامجموعه هایی که به مکان مورد نظر نزدیک‌تر هستد ،ابتدا خارج می شوند.\n"
+"ففو (FEFO): محصولات/ یامجموعه هایی با نزدیکترین تاریخ حذف ابتدا خارج‌می شوند (در دسترس بودن این روش به تنظیم \"تاریخ انقضا\" بستگی دارد)."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -6948,7 +6954,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_backorder_confirmation__show_transfers
 msgid "Show Transfers"
-msgstr "نمایش انتقالات"
+msgstr " انتقالات"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
@@ -7596,7 +7602,7 @@ msgstr "قانون موجودی که این انتقال موجودی را ای�
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_procurement_compute_wizard
 msgid "The stock will be reserved for operations waiting for availability and the reordering rules will be triggered."
-msgstr "موجودی برای عملیات در انتظار در دسترس بودن رزرو می شود و قوانین سفارش مجدد فعال می شود."
+msgstr "موجودی برای عملیاتی که در انتظار در دسترس‌پذیری اقلام هستند، رزرو می شود و قوانین سفارش مجدد فعال می‌شود."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_rule__propagate_warehouse_id

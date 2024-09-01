@@ -1,0 +1,39 @@
+// ------------------------------------------------------------------
+// IRAN FONT FOR ODOO DEVELOPED BY FADOO TEAM
+// fadoo.ir
+// ------------------------------------------------------------------
+$iran-font-path: '../fonts/Vazir';
+
+@mixin iran-font($type, $weight, $style) {
+    @font-face {
+        font-family: 'Vazir';
+        src: url('#{$iran-font-path}/eot/Vazir-#{$type}-FD-WOL.eot');
+        src: url('#{$iran-font-path}/eot/Vazir-#{$type}-FD-WOL.eot?#iefix') format('embedded-opentype'),
+             url('#{$iran-font-path}/woff/Vazir-#{$type}-FD-WOL.woff') format('woff'),
+             url('#{$iran-font-path}/woff2/Vazir-#{$type}-FD-WOL.woff2') format('woff2'),
+             url('#{$iran-font-path}/ttf/Vazir-#{$type}-FD-WOL.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+    }
+
+    @font-face {
+        font-family: 'Vazir_#{$type}';
+        src: url('#{$iran-font-path}/eot/Vazir-#{$type}-FD-WOL.eot');
+        src: url('#{$iran-font-path}/eot/Vazir-#{$type}-FD-WOL.eot?#iefix') format('embedded-opentype'),
+             url('#{$iran-font-path}/woff/Vazir-#{$type}-FD-WOL.woff') format('woff'),
+             url('#{$iran-font-path}/woff2/Vazir-#{$type}-FD-WOL.woff2') format('woff2'),
+             url('#{$iran-font-path}/ttf/Vazir-#{$type}-FD-WOL.ttf') format('truetype');
+    }
+}
+
+@mixin iran-font-pair($type, $weight) {
+    @include iran-font('#{$type}', $weight, normal);
+}
+
+
+
+@include iran-font-pair('Thin', 200);
+@include iran-font-pair('Light', 300);
+@include iran-font-pair('Regular', 400);
+@include iran-font-pair('Medium', 500);
+@include iran-font-pair('Bold', 600);

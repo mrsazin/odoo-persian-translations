@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-27 07:12+0000\n"
-"PO-Revision-Date: 2024-08-27 10:48+0330\n"
+"PO-Revision-Date: 2024-08-29 17:03+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -65,7 +65,7 @@ msgstr ""
 #. module: stock_account
 #: model_terms:ir.ui.view,arch_db:stock_account.stock_valuation_layer_picking
 msgid "<span class=\"o_stat_text\">Valuation</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">ارزیابی</span>"
 
 #. module: stock_account
 #: model_terms:ir.ui.view,arch_db:stock_account.stock_account_report_invoice_document
@@ -490,7 +490,7 @@ msgstr ""
 #. module: stock_account
 #: model_terms:ir.ui.view,arch_db:stock_account.stock_valuation_layer_tree
 msgid "Moved Quantity"
-msgstr ""
+msgstr "مقدار جابجا‌شده"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_valuation_layer_revaluation__new_value
@@ -877,9 +877,9 @@ msgid ""
 "being moved out of this location and into an internal location, instead of the generic Stock Output Account set on the product. This has no effect "
 "for internal locations."
 msgstr ""
-"برای ارزیابی موجودی در زمان واقعی استفاده می شود. وقتی روی یک مکان مجازی (نوع غیر داخلی) تنظیم شود، این حساب برای نگهداری ارزش محصولاتی که به خارج "
-"از این مکان منتقل می شوند و به یک مکان داخلی منتقل می شوند، به جای حساب خروجی موجودی عمومی که روی محصول تنظیم شده است، استفاده می شود. این هیچ "
-"تاثیری برای مکان های داخلی ندارد."
+"برای ارزیابی موجودی در زمان واقعی استفاده می شود. وقتی روی یک مکان مجازی (نوع غیر داخلی) تنظیم شود، این حساب برای نگهداری ارزش محصولاتی که به خارج از "
+"این مکان منتقل می شوند و به یک مکان داخلی منتقل می شوند، به جای حساب خروجی موجودی عمومی که روی محصول تنظیم شده است، استفاده می شود. این هیچ تاثیری "
+"برای مکان های داخلی ندارد."
 
 #. module: stock_account
 #: model:ir.ui.menu,name:stock_account.menu_valuation model_terms:ir.ui.view,arch_db:stock_account.res_config_settings_view_form
@@ -954,10 +954,8 @@ msgstr ""
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_product_category__property_stock_journal
 msgid ""
-"When doing automated inventory valuation, this is the Accounting Journal in which entries will be automatically posted when stock moves are "
-"processed."
-msgstr ""
-"هنگام انجام ارزیابی خودکار موجودی، این روزنامه حسابداری است که در آن زمانی که جابجایی موجودی پردازش می شود، ورودی ها به طور خودکار پست می شوند."
+"When doing automated inventory valuation, this is the Accounting Journal in which entries will be automatically posted when stock moves are processed."
+msgstr "هنگام انجام ارزیابی خودکار موجودی، این روزنامه حسابداری است که در آن زمانی که جابجایی موجودی پردازش می شود، ورودی ها به طور خودکار پست می شوند."
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_valuation_layer_revaluation

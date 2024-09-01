@@ -1,0 +1,17 @@
+
+body  {
+    font-family: Vazir !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: Vazir_Bold !important;
+}
+p, a:not(.fa){
+	font-family: Vazir_Medium !important;	
+}
+#oe_main_menu_navbar,.nav-link {
+	font-family: Vazir !important;	
+}
+.o_account_reports_body,.o_account_report_column_value,.o_account_report_line,.o_account_reports_page table > tbody > tr > td.number{
+	font-family: Vazir !important;	
+}
