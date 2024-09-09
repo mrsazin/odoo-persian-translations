@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 07:44+0000\n"
-"PO-Revision-Date: 2024-08-29 17:14+0330\n"
+"PO-Revision-Date: 2024-09-08 17:11+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -1229,12 +1229,12 @@ msgstr "مقدار موجود باید قبل از تغییر نوع روی صف
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__backorder_id
 msgid "Back Order of"
-msgstr "سفارش معوق از"
+msgstr "سفارش پشتیبان از"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__backorder_ids model_terms:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "Back Orders"
-msgstr "سفارشات معوق"
+msgstr "سفارشات پشتیبان"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_backorder_confirmation
@@ -1244,22 +1244,22 @@ msgstr "تایید سفارش"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_backorder_confirmation_line
 msgid "Backorder Confirmation Line"
-msgstr "سطر تایید سفارش معوق"
+msgstr "سطر تایید سفارش پشتیبان"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_backorder_confirmation__backorder_confirmation_line_ids
 msgid "Backorder Confirmation Lines"
-msgstr "سطرهای تایید سفارش معوق"
+msgstr "سطرهای تایید سفارش پشتیبان"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
 msgid "Backorder creation"
-msgstr "ایجاد سفارش معوق"
+msgstr "ایجاد سفارش پشتیبان (backorder)"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_backorder model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Backorders"
-msgstr "سفارشات معوق"
+msgstr "سفارشات پشتیبان"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__barcode model:ir.model.fields,field_description:stock.field_stock_package_type__barcode model:ir.model.fields,field_description:stock.field_stock_picking_type__barcode model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -1745,14 +1745,14 @@ msgstr "مکان های همکار"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__create_backorder model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
 msgid "Create Backorder"
-msgstr "ایجاد سفارش معوق"
+msgstr "ایجاد سفارش پشتیبان"
 
 #. module: stock
 #. odoo-python
 #: code:addons/stock/models/stock_picking.py:0
 #, python-format
 msgid "Create Backorder?"
-msgstr "ایجاد سفارش معوق؟"
+msgstr "ایجاد سفارش پشتیبان؟"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_type_form
@@ -3828,7 +3828,7 @@ msgstr "فعالیتهای اخیر"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_late
 msgid "Late Transfers"
-msgstr "انتقالات معوقه"
+msgstr "انتقالات اخیر"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking__products_availability
@@ -4247,7 +4247,7 @@ msgstr "حداقل مقدار"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_warehouse_orderpoint
 msgid "Minimum Inventory Rule"
-msgstr "قاعده حداقل انبارداری"
+msgstr ""
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__orderpoint_ids
@@ -4454,7 +4454,7 @@ msgstr "نه %s  و نه هیچگونه سفارش تحویلی انتخاب ن�
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
 msgid "No Backorder"
-msgstr "بدون سفارش معوق"
+msgstr "بدون سفارش پشتیبان"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__res_partner__picking_warn__no-message
@@ -5536,7 +5536,7 @@ msgstr ""
 #: code:addons/stock/static/src/stock_forecasted/forecasted_buttons.js:0 model:ir.model,name:stock.model_product_replenish
 #, python-format
 msgid "Product Replenish"
-msgstr ""
+msgstr "شارژ مجدد محصول"
 
 #. module: stock
 #: model:ir.actions.report,name:stock.action_report_stock_rule model_terms:ir.ui.view,arch_db:stock.view_stock_rules_report
@@ -6096,7 +6096,7 @@ msgstr "انتقال‌های انبار مرتبط‌به‌هم"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_editable model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_inventory_editable
 msgid "Relocate"
-msgstr "تعییر‌مکان"
+msgstr "تغییر مکان"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_quant_relocate_view_form
@@ -6864,7 +6864,7 @@ msgstr "سیاست حمل و نقل"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Shipping connectors allow to compute accurate shipping costs, print shipping labels and request carrier picking at your warehouse to ship to the customer. Apply shipping connector from delivery methods."
-msgstr "اتصال‌دهندههای حمل و نقل امکان محاسبه دقیق هزینه های حمل و نقل، چاپ برچسب های حمل و نقل و درخواست انتخاب حامل در انبار شما را برای ارسال به مشتری فراهم می کنند.اتصال‌دهنده حمل و نقل را از انواع روش های تحویل اعمال کنید."
+msgstr "اتصال‌دهنده‌های حمل و نقل امکان محاسبه دقیق هزینه های حمل و نقل، چاپ برچسب های حمل و نقل و درخواست انتخاب حامل در انبار شما را برای ارسال به مشتری فراهم می کنند.اتصال‌دهنده حمل و نقل را از انواع روش های تحویل اعمال کنید."
 
 #. module: stock
 #: model:mail.template,name:stock.mail_template_data_delivery_confirmation
@@ -7457,7 +7457,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_product_replenish
 msgid "The forecasted quantity of"
-msgstr ""
+msgstr "مقدار پیش‌پینی‌شده‌ی"
 
 #. module: stock
 #. odoo-javascript
@@ -7839,7 +7839,7 @@ msgstr "برای اعمال"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_backorder_confirmation_line__to_backorder
 msgid "To Backorder"
-msgstr "برای سفارش معوق"
+msgstr "برای سفارش پشتیبان"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view
@@ -8034,7 +8034,7 @@ msgstr "انبارک تزانزیت"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view
 msgid "Transit Locations"
-msgstr "مکان های حمل و نقل"
+msgstr "انبارک‌های ترانزیت"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__trigger model_terms:ir.ui.view,arch_db:stock.stock_reorder_report_search
@@ -8054,7 +8054,7 @@ msgstr "در صورت عدم موجودی، قانون دیگری را فعال 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_reorder_report_search
 msgid "Trigger Manual"
-msgstr ""
+msgstr "راه‌اندازی دستی"
 
 #. module: stock
 #. odoo-javascript
@@ -9133,7 +9133,7 @@ msgstr "]<br/>حداقل:"
 #: code:addons/stock/static/src/widgets/json_widget.xml:0
 #, python-format
 msgid "below the inventory"
-msgstr "زیر موجودی"
+msgstr "پایین‌تر از "
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_bpost
@@ -9252,7 +9252,7 @@ msgstr "همین‌حالا به صورت دستی قوانین سفارش‌م�
 #: code:addons/stock/static/src/widgets/json_widget.xml:0
 #, python-format
 msgid "minimum of"
-msgstr "حداقل از"
+msgstr "مقدار حداقل"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.exception_on_picking
@@ -9288,7 +9288,7 @@ msgstr "رزرو‌شده"
 #: code:addons/stock/static/src/widgets/json_widget.xml:0
 #, python-format
 msgid "should be replenished"
-msgstr "باید شارژ مجدد شود"
+msgstr "باید تجدیدشارژ شود"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_category__filter_for_stock_putaway_rule
