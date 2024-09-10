@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-20 11:15+0000\n"
-"PO-Revision-Date: 2024-08-27 19:46+0330\n"
+"PO-Revision-Date: 2024-09-09 20:29+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -32,11 +32,20 @@ msgid ""
 "                updates, you can however add them below and Odoo will let them go through.\n"
 "            </p>"
 msgstr ""
+"\n"
+"            <p class=\"o_view_nocontent_smiling_face\">\n"
+"                 آدرس ها را به لیست مجاز اضافه کنید\n"
+"            </p><p>\n"
+"                 برای محافظت از شما در برابر هرزنامه ها ، این پورتال به طور خودکار ارسال ایمیل هایی را \n"
+"                 که از آستانه <b>%(threshold)i</b> ایمیل در هر <b>%(minutes)i</b> دقیقه، عبورکنند، را مسدود می کند.\n"
+"                اگر آدرس‌هایی وجود دارد که نیازاست تا مکرر از آنها ایمیل دریافت کنید و نمی‌خواهید ارسالشان متوقف‌شوند\n"
+"                آن‌ها را در زیر اضافه کنید تا سیستم حفاظتی پورتال از روی آنها عبورکند.\n"
+"             </p>"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.message_document_unfollowed
 msgid "\" no longer followed"
-msgstr ""
+msgstr "\"دیگر دنبال نمی شود"
 
 #. module: mail
 #. odoo-python
@@ -781,12 +790,14 @@ msgstr "ری‌اکشن اضافه کنید"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Add a Tenor GIF API key to enable GIFs support."
-msgstr ""
+msgstr "برای فعال کردن پشتیبانی از GIF، یک کلید Tenor GIF API اضافه کنید."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_res_config_settings__tenor_api_key
 msgid "Add a Tenor GIF API key to enable GIFs support. https://developers.google.com/tenor/guides/quickstart#setup"
 msgstr ""
+"برای فعال کردن پشتیبانی از GIF، یک کلید Tenor GIF API اضافه کنید. https://developers.google.com/tenor/guides/"
+"quickstart#setup"
 
 #. module: mail
 #. odoo-javascript
@@ -934,8 +945,8 @@ msgstr "مستعار"
 #: code:addons/mail/models/mail_alias.py:0
 #, python-format
 msgid ""
-"Alias %(matching_name)s (%(current_id)s) is already linked with %(alias_model_name)s (%(matching_id)s) and used by "
-"the %(parent_name)s %(parent_model_name)s."
+"Alias %(matching_name)s (%(current_id)s) is already linked with %(alias_model_name)s (%(matching_id)s) and used by the "
+"%(parent_name)s %(parent_model_name)s."
 msgstr ""
 
 #. module: mail
@@ -1161,8 +1172,8 @@ msgstr "مطمئنید میخواهید این پیام را حذف کنید؟"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_template_reset_view_form
 msgid ""
-"Are you sure you want to reset these email templates to their original configuration? Changes and translations will "
-"be lost."
+"Are you sure you want to reset these email templates to their original configuration? Changes and translations will be "
+"lost."
 msgstr ""
 
 #. module: mail
@@ -1548,8 +1559,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/mail/models/mail_alias_domain.py:0
 #, python-format
-msgid ""
-"Bounce/Catchall '%(matching_alias_name)s' is already used. Choose another alias or change it on the linked model."
+msgid "Bounce/Catchall '%(matching_alias_name)s' is already used. Choose another alias or change it on the linked model."
 msgstr ""
 
 #. module: mail
@@ -1636,8 +1646,7 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/mail/static/src/core/common/link_preview_confirm_delete.xml:0
 #: code:addons/mail/static/src/core/common/message_confirm_dialog.xml:0
-#: code:addons/mail/static/src/core/web/activity.xml:0
-#: code:addons/mail/static/src/core/web/follower_subtype_dialog.xml:0
+#: code:addons/mail/static/src/core/web/activity.xml:0 code:addons/mail/static/src/core/web/follower_subtype_dialog.xml:0
 #: code:addons/mail/static/src/discuss/call/common/call_settings.xml:0
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_schedule_view_form
 #: model_terms:ir.ui.view,arch_db:mail.mail_compose_message_view_form_template_save
@@ -2018,8 +2027,7 @@ msgstr "شرکت"
 
 #. module: mail
 #. odoo-javascript
-#: code:addons/mail/static/src/core/common/composer.js:0
-#: code:addons/mail/static/src/core/web/activity_mail_template.js:0
+#: code:addons/mail/static/src/core/common/composer.js:0 code:addons/mail/static/src/core/web/activity_mail_template.js:0
 #: model:ir.actions.act_window,name:mail.action_email_compose_message_wizard
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 #, python-format
@@ -2104,14 +2112,14 @@ msgstr "صندوق ایمیل شما خالی است!"
 #: model:ir.model.fields.selection,name:mail.selection__mail_mail__failure_type__mail_smtp
 #: model:ir.model.fields.selection,name:mail.selection__mail_notification__failure_type__mail_smtp
 msgid "Connection failed (outgoing mail server problem)"
-msgstr ""
+msgstr "اتصال ناموفق بود (مشکل سرور خروجی ایمیل )"
 
 #. module: mail
 #. odoo-python
 #: code:addons/mail/models/fetchmail.py:0
 #, python-format
 msgid "Connection test failed: %s"
-msgstr "آزمایش اتصال شکست خورد: %s"
+msgstr "تست اتصال شکست خورد: %s"
 
 #. module: mail
 #. odoo-javascript
@@ -2125,14 +2133,14 @@ msgstr ""
 #: code:addons/mail/static/src/discuss/call/common/call_context_menu.xml:0
 #, python-format
 msgid "Connection type:"
-msgstr ""
+msgstr "نوع اتصال:"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/discuss/call/common/call_context_menu.xml:0
 #, python-format
 msgid "Connection:"
-msgstr ""
+msgstr "اتصال:"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_fetchmail_server__is_ssl
@@ -2152,7 +2160,7 @@ msgstr "مخاطب"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.account_security_setting_update
 msgid "Contact your administrator"
-msgstr ""
+msgstr "تماس با ادمین سایت"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_partner_view_activity
@@ -2417,27 +2425,27 @@ msgstr "پیام برگشتی سفارشی"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Custom ICE server list"
-msgstr ""
+msgstr "لیست سرور سفارشی ICE"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_template__template_category__custom_template
 msgid "Custom Template"
-msgstr ""
+msgstr "قالب سفارشی"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_email_template_search
 msgid "Custom Templates"
-msgstr ""
+msgstr "قالب‌های سفارشی"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_discuss_channel_member__custom_channel_name
 msgid "Custom channel name"
-msgstr "نام سفارشی کانال"
+msgstr "نام کانال سفارشی"
 
 #. module: mail
 #: model:ir.model.constraint,message:mail.constraint_mail_notification_notification_partner_required
 msgid "Customer is required for inbox / email notification"
-msgstr ""
+msgstr "مشتری برای اطلاع رسانی صندوق ورودی / ایمیل مورد نیاز است"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
@@ -3246,8 +3254,7 @@ msgstr "قالب ایمیل"
 
 #. module: mail
 #: model:ir.actions.act_window,name:mail.action_view_mail_mail model:ir.ui.menu,name:mail.menu_mail_mail
-#: model_terms:ir.ui.view,arch_db:mail.mail_message_schedule_view_tree
-#: model_terms:ir.ui.view,arch_db:mail.view_mail_tree
+#: model_terms:ir.ui.view,arch_db:mail.mail_message_schedule_view_tree model_terms:ir.ui.view,arch_db:mail.view_mail_tree
 msgid "Emails"
 msgstr "ایمیل ها"
 
@@ -3524,7 +3531,7 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_res_config_settings__tenor_gif_limit
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Fetch up to the specified number of GIF."
-msgstr ""
+msgstr "حداکثر تعداد عکسی که از موتور جستجوی فایل‌های GIF گوگل، می‌توانید دریافت‌کنید."
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_tracking_value__field_id
@@ -3565,8 +3572,8 @@ msgstr "جزئیات فیلد"
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_message_subtype__relation_field
 msgid ""
-"Field used to link the related model to the subtype model when using automatic subscription on a related document. "
-"The field is used to compute getattr(related_document.relation_field)."
+"Field used to link the related model to the subtype model when using automatic subscription on a related document. The "
+"field is used to compute getattr(related_document.relation_field)."
 msgstr ""
 
 #. module: mail
@@ -3574,8 +3581,7 @@ msgstr ""
 #: code:addons/mail/models/mail_tracking_duration_mixin.py:0
 #, python-format
 msgid ""
-"Field “%(field)s” on model “%(model)s” must be of type Many2one and have tracking=True for the computation of "
-"duration."
+"Field “%(field)s” on model “%(model)s” must be of type Many2one and have tracking=True for the computation of duration."
 msgstr ""
 
 #. module: mail
@@ -3819,8 +3825,7 @@ msgid "GIF Favorites"
 msgstr ""
 
 #. module: mail
-#: model:ir.actions.act_window,name:mail.discuss_gif_favorite_action
-#: model:ir.ui.menu,name:mail.discuss_gif_favorite_menu
+#: model:ir.actions.act_window,name:mail.discuss_gif_favorite_action model:ir.ui.menu,name:mail.discuss_gif_favorite_menu
 #: model_terms:ir.ui.view,arch_db:mail.discuss_gif_favorite_view_form
 #: model_terms:ir.ui.view,arch_db:mail.discuss_gif_favorite_view_tree
 msgid "GIF favorite"
@@ -3854,7 +3859,7 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Google Translate Integration"
-msgstr ""
+msgstr "ادغام ترجمه گوگل"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__discuss_channel__channel_type__group
@@ -3979,12 +3984,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail.field_res_partner__has_message
 #: model:ir.model.fields,field_description:mail.field_res_users__has_message
 msgid "Has Message"
-msgstr "آیا دارای پیام است"
+msgstr "دارای پیام"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_discuss_channel_rtc_session__is_deaf
 msgid "Has disabled incoming sound"
-msgstr ""
+msgstr "صدای ورودی را غیرفعال کرده است"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_mail__has_error
@@ -4002,7 +4007,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail.field_mail_mail__headers
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_form
 msgid "Headers"
-msgstr "سرآیندها"
+msgstr ""
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_bounce_catchall
@@ -4362,8 +4367,8 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__scheduled_date
 msgid ""
-"In comment mode: if set, postpone notifications sending. In mass mail mode: if sent, send emails after that date. "
-"This date is considered as being in UTC timezone."
+"In comment mode: if set, postpone notifications sending. In mass mail mode: if sent, send emails after that date. This "
+"date is considered as being in UTC timezone."
 msgstr ""
 
 #. module: mail
@@ -4392,35 +4397,35 @@ msgstr "صندوق پستی"
 #: code:addons/mail/static/src/discuss/call/common/call_invitation.xml:0
 #, python-format
 msgid "Incoming Call..."
-msgstr ""
+msgstr "تماس ورودی ..."
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_message__message_type__email
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_search
 msgid "Incoming Email"
-msgstr ""
+msgstr "ایمیل ورودی"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Incoming Email Servers"
-msgstr "سرورهای ایمیل ورودی"
+msgstr "سرورهای ورودی ایمیل"
 
 #. module: mail
 #: model:ir.model,name:mail.model_fetchmail_server model_terms:ir.ui.view,arch_db:mail.view_email_server_form
 #: model_terms:ir.ui.view,arch_db:mail.view_email_server_search
 msgid "Incoming Mail Server"
-msgstr "سرور ایمیل ورودی"
+msgstr "سرور ورودی ایمیل"
 
 #. module: mail
 #: model:ir.actions.act_window,name:mail.action_email_server_tree
 #: model:ir.ui.menu,name:mail.menu_action_fetchmail_server_tree
 msgid "Incoming Mail Servers"
-msgstr "سرورهای ایمیل ورودی"
+msgstr "سرورهای ورودی ایمیل"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_activity__automated
 msgid "Indicates this activity has been created automatically and not by any user."
-msgstr "نشان دهنده این است که این فعالیت خودکار ایجاد شده و نه توسط هیچ کاربری."
+msgstr "نشان دهنده این است که این فعالیت به‌صورت خودکار ایجاد شده و نه توسط هیچ کاربری."
 
 #. module: mail
 #. odoo-javascript
@@ -4445,7 +4450,7 @@ msgstr ""
 #: code:addons/mail/static/src/discuss/call/common/call_settings.xml:0
 #, python-format
 msgid "Input device"
-msgstr ""
+msgstr "دستگاه ورودی"
 
 #. module: mail
 #. odoo-javascript
@@ -4458,17 +4463,17 @@ msgstr "نصب"
 #: model:ir.ui.menu,name:mail.discuss_channel_integrations_menu
 #: model_terms:ir.ui.view,arch_db:mail.discuss_channel_view_form
 msgid "Integrations"
-msgstr "ادغامها"
+msgstr "ادغام‌ها"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_message_subtype__internal
 msgid "Internal Only"
-msgstr ""
+msgstr "فقط داخلی"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.notification_preview
 msgid "Internal communication:"
-msgstr ""
+msgstr "ارتباطات داخلی:"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_alias__alias_status__invalid
@@ -4486,14 +4491,14 @@ msgstr ""
 #: model:ir.model.fields.selection,name:mail.selection__mail_mail__failure_type__mail_email_invalid
 #: model:ir.model.fields.selection,name:mail.selection__mail_notification__failure_type__mail_email_invalid
 msgid "Invalid email address"
-msgstr ""
+msgstr "آدرس ایمیل نامعتبر"
 
 #. module: mail
 #. odoo-python
 #: code:addons/mail/models/mail_blacklist.py:0
 #, python-format
 msgid "Invalid email address %r"
-msgstr ""
+msgstr "ایمیل نامعتبر %r"
 
 #. module: mail
 #. odoo-python
@@ -5328,7 +5333,7 @@ msgstr ""
 #: code:addons/mail/models/mail_thread.py:0
 #, python-format
 msgid "Mailbox unavailable - %s"
-msgstr "صندوق پستی %s  در دسترس نیست "
+msgstr "صندوق پستی %s  در دسترس نیست"
 
 #. module: mail
 #. odoo-javascript
@@ -5566,7 +5571,7 @@ msgstr "نام رکورد پیام"
 #: model:ir.model,name:mail.model_mail_message_translation
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Message Translation"
-msgstr ""
+msgstr "ترجمه پیام"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_config_settings__google_translate_api_key
@@ -5612,8 +5617,8 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_message_subtype__name
 msgid ""
 "Message subtype gives a more precise type on the message, especially for system notifications. For example, it can be "
-"a notification related to a new record (New), or to a stage change in a process (Stage change). Message subtypes "
-"allow to precisely tune the notifications the user want to receive on its wall."
+"a notification related to a new record (New), or to a stage change in a process (Stage change). Message subtypes allow "
+"to precisely tune the notifications the user want to receive on its wall."
 msgstr ""
 
 #. module: mail
@@ -5629,8 +5634,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__message_type
 msgid ""
-"Message type: email for email message, notification for system message, comment for other messages such as user "
-"replies"
+"Message type: email for email message, notification for system message, comment for other messages such as user replies"
 msgstr "نوع پیام: ایمیل برای پیام ایمیل، اعلان برای پیام سیستم، نظر برای پیام های دیگر مانند پاسخ های کاربر"
 
 #. module: mail
@@ -5657,8 +5661,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail.field_mail_thread_cc__message_ids
 #: model:ir.model.fields,field_description:mail.field_mail_thread_main_attachment__message_ids
 #: model:ir.model.fields,field_description:mail.field_res_partner__message_ids
-#: model:ir.model.fields,field_description:mail.field_res_users__message_ids
-#: model:ir.ui.menu,name:mail.menu_mail_message model_terms:ir.ui.view,arch_db:mail.view_message_tree
+#: model:ir.model.fields,field_description:mail.field_res_users__message_ids model:ir.ui.menu,name:mail.menu_mail_message
+#: model_terms:ir.ui.view,arch_db:mail.view_message_tree
 #, python-format
 msgid "Messages"
 msgstr "پیام ها"
@@ -6453,8 +6457,8 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_force_thread_id
 msgid ""
-"Optional ID of a thread (record) to which all incoming messages will be attached, even if they did not reply to it. "
-"If set, this will disable the creation of new records completely."
+"Optional ID of a thread (record) to which all incoming messages will be attached, even if they did not reply to it. If "
+"set, this will disable the creation of new records completely."
 msgstr ""
 "شناسه اختیاری یک موضوع (رکورد) که تمام پیام‌های دریافتی به آن پیوست می‌شود، حتی اگر به آن پاسخ نداده باشند. اگر تنظیم "
 "شود، ایجاد رکوردهای جدید به طور کامل غیرفعال می شود."
@@ -6467,7 +6471,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_template__mail_server_id
 msgid "Optional preferred server for outgoing mails. If not set, the highest priority one will be used."
-msgstr ""
+msgstr "سرور ترجیحی اختیاری برای ایمیل‌های خروجی. اگر تنظیم نشود، از بالاترین اولویت استفاده خواهد شد."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__lang
@@ -6515,29 +6519,29 @@ msgstr "خروجی"
 #: model:ir.model.fields.selection,name:mail.selection__mail_message__message_type__email_outgoing
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_search
 msgid "Outgoing Email"
-msgstr ""
+msgstr "ایمیل خروجی"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Outgoing Email Servers"
-msgstr "سرورهای ایمیل خروجی"
+msgstr "سرورهای خروجی ایمیل"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_template__mail_server_id
 msgid "Outgoing Mail Server"
-msgstr "سرور ایمیل Outgoing"
+msgstr "سرور خروجی ایمیل"
 
 #. module: mail
 #: model:ir.model,name:mail.model_mail_mail
 msgid "Outgoing Mails"
-msgstr ""
+msgstr "ایمیل‌های خروجی"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_compose_message__mail_server_id
 #: model:ir.model.fields,field_description:mail.field_mail_mail__mail_server_id
 #: model:ir.model.fields,field_description:mail.field_mail_message__mail_server_id
 msgid "Outgoing mail server"
-msgstr "میل سرور خروجی"
+msgstr "ایمیل سرور خروجی"
 
 #. module: mail
 #. odoo-javascript
@@ -6698,7 +6702,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_discuss_channel__channel_partner_ids
 msgid "Partners"
-msgstr "طرف حساب"
+msgstr "طرف های تجاری"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_mail__notified_partner_ids
@@ -6714,7 +6718,7 @@ msgstr "گذرواژه"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Paste your API key"
-msgstr ""
+msgstr "کلید API خود را جایگذاری کنید"
 
 #. module: mail
 #. odoo-javascript
@@ -7037,8 +7041,8 @@ msgid ""
 "Process each incoming mail as part of a conversation corresponding to this document type. This will create new "
 "documents for new conversations, or attach follow-up emails to the existing conversations (documents)."
 msgstr ""
-"هر ایمیل دریافتی را به عنوان بخشی از مکالمه مربوط به این نوع سند پردازش کنید. با این کار اسناد جدیدی برای مکالمات "
-"جدید ایجاد می شود یا ایمیل های بعدی را به مکالمات (اسناد) موجود پیوست می کند."
+"هر ایمیل دریافتی را به عنوان بخشی از مکالمه مربوط به این نوع سند پردازش کنید. با این کار اسناد جدیدی برای مکالمات جدید "
+"ایجاد می شود یا ایمیل های بعدی را به مکالمات (اسناد) موجود پیوست می کند."
 
 #. module: mail
 #. odoo-javascript
@@ -7428,8 +7432,7 @@ msgstr ""
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__reply_to
-#: model:ir.model.fields,help:mail.field_mail_mail__reply_to
-#: model:ir.model.fields,help:mail.field_mail_message__reply_to
+#: model:ir.model.fields,help:mail.field_mail_mail__reply_to model:ir.model.fields,help:mail.field_mail_message__reply_to
 msgid "Reply email address. Setting the reply_to bypasses the automatic thread creation."
 msgstr "آدرس ایمیل پاسخ تنظیم reply_to ایجاد رشته خودکار را دور می زند."
 
@@ -7871,14 +7874,14 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Select the content filter used for filtering GIFs"
-msgstr ""
+msgstr "فیلتر محتوای مورد استفاده جهت فیلتر کردن تصاویر GIF را انتخاب کنید"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/discuss/core/common/channel_invitation.xml:0
 #, python-format
 msgid "Selected users:"
-msgstr ""
+msgstr "کاربران انتخاب‌شده:"
 
 #. module: mail
 #. odoo-javascript
@@ -7891,7 +7894,7 @@ msgstr "ارسال"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_resend_message_view_form
 msgid "Send & close"
-msgstr ""
+msgstr "ارسال و بستن"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__ir_actions_server__state__mail_post
@@ -7902,19 +7905,19 @@ msgstr "ارسال ایمیل"
 #: model:ir.model.fields,field_description:mail.field_ir_actions_server__mail_post_method
 #: model:ir.model.fields,field_description:mail.field_ir_cron__mail_post_method
 msgid "Send Email As"
-msgstr ""
+msgstr "ارسال ایمیل به‌عنوان"
 
 #. module: mail
 #. odoo-python
 #: code:addons/mail/models/mail_template.py:0
 #, python-format
 msgid "Send Mail (%s)"
-msgstr ""
+msgstr "ارسال ایمیل (%s)"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_wizard_invite__notify
 msgid "Send Notification"
-msgstr ""
+msgstr "ارسال نوتیفیکیشن"
 
 #. module: mail
 #. odoo-javascript
@@ -7929,17 +7932,17 @@ msgstr "هم اکنون ارسال شود"
 #: code:addons/mail/static/src/views/web/composer_patch.js:0
 #, python-format
 msgid "Send a message to followers…"
-msgstr ""
+msgstr "ارسال پیام به دنبال‌کنندگان..."
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Send and receive emails through your Gmail account."
-msgstr ""
+msgstr "از طریق اکانت Gmail خود، ایمیل ارسال و دریافت کنید."
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Send and receive emails through your Outlook account."
-msgstr ""
+msgstr "از طریق حساب Outlook خود، ایمیل ارسال و دریافت کنید."
 
 #. module: mail
 #: model:ir.actions.act_window,name:mail.action_partner_mass_mail
@@ -7949,7 +7952,7 @@ msgstr "ارسال ایمیل"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_compose_message__force_send
 msgid "Send mailing or notifications directly"
-msgstr ""
+msgstr "ارسال ایمیل یا نوتیفیکیشن‌ها به طور مستقیم"
 
 #. module: mail
 #. odoo-javascript
@@ -8103,8 +8106,8 @@ msgstr "میان‌بر"
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_shortcode__source
 msgid ""
-"Shortcut that will automatically be substituted with longer content in your messages. Type ':' followed by the name "
-"of your shortcut (e.g. :hello) to use in your messages."
+"Shortcut that will automatically be substituted with longer content in your messages. Type ':' followed by the name of "
+"your shortcut (e.g. :hello) to use in your messages."
 msgstr ""
 
 #. module: mail
@@ -8603,32 +8606,32 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Tenor GIF limits"
-msgstr ""
+msgstr "محدودیت‌های دریافت از Tenor GIF"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_config_settings__tenor_gif_limit
 msgid "Tenor Gif Limit"
-msgstr ""
+msgstr "محدودسازی Tenor GIF"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_config_settings__tenor_content_filter
 msgid "Tenor content filter"
-msgstr ""
+msgstr "فیلتر محتوایTenor"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_email_server_form
 msgid "Test & Confirm"
-msgstr "آزمایش و تایید"
+msgstr "تست و تایید"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_template_preview_view_form
 msgid "Test Record:"
-msgstr ""
+msgstr "سوابق تست:"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_mail__body_html
 msgid "Text Contents"
-msgstr ""
+msgstr "محتوای متن"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_bounce_catchall
@@ -9139,8 +9142,8 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_mail__tracking_value_ids
 #: model:ir.model.fields,help:mail.field_mail_message__tracking_value_ids
 msgid ""
-"Tracked values are stored in a separate model. This field allow to reconstruct the tracking and to generate "
-"statistics on the model."
+"Tracked values are stored in a separate model. This field allow to reconstruct the tracking and to generate statistics "
+"on the model."
 msgstr ""
 
 #. module: mail
@@ -9516,7 +9519,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_config_settings__external_email_server_default
 msgid "Use Custom Email Servers"
-msgstr " از سرورهای سفارشی برای ایمیل استفاده‌کنید"
+msgstr "استفاده از از میل سرورهای سفارشی"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_config_settings__use_twilio_rtc_servers
@@ -9526,7 +9529,7 @@ msgstr "استفاده از سرور‌های ICE شرکت Twillo"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Use a Gmail Server"
-msgstr ""
+msgstr "استفاده از یک سرور جیمیل(gmail)"
 
 #. module: mail
 #. odoo-python
@@ -9538,12 +9541,12 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Use an Outlook Server"
-msgstr ""
+msgstr "استفاده از سرور Outlook"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Use different domains for your mail aliases"
-msgstr ""
+msgstr "از دامنه های مختلف برای ایمیل جانشین (mail alias) خود استفاده کنید"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_activity_schedule__is_batch_mode
