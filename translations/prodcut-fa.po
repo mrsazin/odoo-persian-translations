@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-10 11:06+0000\n"
-"PO-Revision-Date: 2024-08-18 11:17+0330\n"
+"PO-Revision-Date: 2024-09-11 10:32+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -289,9 +289,9 @@ msgid ""
 "A consumable product is a product for which stock is not managed.\n"
 "A service is a non-material product you provide."
 msgstr ""
-"محصول قابل ذخیره سازی محصولی است که شما موجودی آن را مدیریت می کنید. برنامه انبار باید نصب شود.\n"
+"محصول قابل ذخیره سازی محصولی است که شما موجودی آن را مدیریت می کنید. \n"
 "کالای مصرفی محصولی است که انبار آن مدیریت نمی شود.\n"
-"خدمات یک محصول غیر مادی است که شما ارائه می کنید."
+"یک خدمت یا service یک محصول غیر مادی است که توسط شما ارائه می‌شود."
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_document__access_token
@@ -754,7 +754,7 @@ msgstr "تایید کردن"
 #: model:ir.model.fields.selection,name:product.selection__product_template__detailed_type__consu
 #: model:ir.model.fields.selection,name:product.selection__product_template__type__consu
 msgid "Consumable"
-msgstr "مصرفی"
+msgstr "کالای مصرفی"
 
 #. module: product
 #. odoo-python
@@ -762,7 +762,7 @@ msgstr "مصرفی"
 #, python-format
 msgid ""
 "Consumables are physical products for which you don't manage the inventory level: they are always available."
-msgstr "مواد مصرفی محصولات فیزیکی هستند که شما سطح موجودی آنها را مدیریت نمی کنید: آنها همیشه در دسترس هستند."
+msgstr "کالای مصرفی محصولات فیزیکی هستند که شما سطح موجودی آنها را مدیریت نمی کنید: آنها همیشه در دسترس هستند."
 
 #. module: product
 #: model:ir.model,name:product.model_res_partner

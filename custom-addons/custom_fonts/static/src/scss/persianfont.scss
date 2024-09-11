@@ -1,0 +1,32 @@
+// ------------------------------------------------------------------
+// IRAN FONT FOR ODOO DEVELOPED BY FADOO TEAM
+// fadoo.ir
+// ------------------------------------------------------------------
+@font-face {
+        font-family: 'Vazir';
+        src: url("/custom_font/static/src/fonts/Vazir-Light-FD-WOL.ttf") format("trutype");
+        font-weight: normal;
+}
+
+@font-face {
+        font-family: 'Vazir_Bold';
+        src: url("/custom_font/static/src/fonts/Vazir-Bold-FD-WOL.ttf") format("trutype");
+        font-weight: normal;
+}
+
+.page {
+	
+        font-family: 'Vazir';
+}
+
+.header {
+        font-family: 'Vazir';
+}
+
+.footer {
+        font-family: 'Vazir';
+}
+
+div {
+        font-family: 'Vazir';
+}
