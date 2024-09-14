@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-23 13:51+0000\n"
-"PO-Revision-Date: 2024-07-27 21:26+0330\n"
+"PO-Revision-Date: 2024-09-14 09:34+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -728,7 +728,7 @@ msgstr "صورتحساب"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_search
 msgid "Bills Received"
-msgstr "صورتهای دریافت شده"
+msgstr "صورت‌حساب‌های دریافت شده"
 
 #. module: purchase
 #: model:ir.model.fields.selection,name:purchase.selection__product_template__purchase_line_warn__block
@@ -898,11 +898,11 @@ msgstr "ساسیت کنترلی"
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order_line__product_uom_category_id
 msgid ""
-"Conversion between Units of Measure can only occur if they belong to the same category. The conversion will be made based "
-"on the ratios."
+"Conversion between Units of Measure can only occur if they belong to the same category. The conversion will be made based on "
+"the ratios."
 msgstr ""
-"تبدیل بین واحدهای اندازه گیری تنها در صورتی می تواند اتفاق بیفتد که به یک دسته تعلق داشته باشند. تبدیل بر اساس نسبت ها "
-"انجام خواهد شد."
+"تبدیل بین واحدهای اندازه گیری تنها در صورتی می تواند اتفاق بیفتد که به یک دسته تعلق داشته باشند. تبدیل بر اساس نسبت ها انجام "
+"خواهد شد."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__country_code
@@ -1385,7 +1385,7 @@ msgstr "قفل شده"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
 msgid "Make sure you only pay bills for which you received the goods you ordered"
-msgstr "مطمئن شوید شما تنها صورتهایی که دریافت می‌کنید پرداخت می‌کنید."
+msgstr "مطمئن شوید که فقط صورتحساب هایی را پرداخت می کنید که بابت رسید اجناسی که سفارش‌داده‌اید، دریافت کرده اید"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -1661,8 +1661,8 @@ msgstr "پس از دریافت قیمت از فروشنده، می توانید 
 msgid ""
 "Once you ordered your products to your supplier, confirm your request for quotation and it will turn into a purchase order."
 msgstr ""
-"هنگامی که محصولات خود را به تامین کننده خود سفارش دادید، درخواست خود را برای استعلام قیمت تایید کنید و به یک سفارش خرید "
-"تبدیل می شود."
+"هنگامی که محصولات خود را به تامین کننده خود سفارش دادید، درخواست خود را برای استعلام قیمت تایید کنید و به یک سفارش خرید تبدیل "
+"می شود."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report__order_id
@@ -1917,8 +1917,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:purchase.selection__purchase_order__state__purchase
 #: model:ir.model.fields.selection,name:purchase.selection__purchase_report__state__purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form model_terms:ir.ui.view,arch_db:purchase.purchase_order_graph
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_pivot
+#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree model_terms:ir.ui.view,arch_db:purchase.purchase_order_pivot
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_portal_content
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_tree
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_activity
@@ -1950,8 +1949,7 @@ msgstr "تعداد سفارش خرید"
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.action_purchase_history model:ir.model,name:purchase.model_purchase_order_line
 #: model:ir.model.fields,field_description:purchase.field_account_move_line__purchase_line_id
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_line_form2
+#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form model_terms:ir.ui.view,arch_db:purchase.purchase_order_line_form2
 msgid "Purchase Order Line"
 msgstr "سطر سفارش خرید"
 
@@ -1962,8 +1960,7 @@ msgid "Purchase Order Line Warning"
 msgstr "هشدار سطر سفارش خرید"
 
 #. module: purchase
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_line_tree
+#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form model_terms:ir.ui.view,arch_db:purchase.purchase_order_line_tree
 msgid "Purchase Order Lines"
 msgstr "سطرهای سفارش خرید"
 
@@ -2088,8 +2085,8 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order__dest_address_id
 msgid ""
-"Put an address if you want to deliver directly from the vendor to the customer. Otherwise, keep empty to deliver to your "
-"own company."
+"Put an address if you want to deliver directly from the vendor to the customer. Otherwise, keep empty to deliver to your own "
+"company."
 msgstr ""
 "اگر می خواهید مستقیماً از فروشنده به مشتری تحویل دهید، یک آدرس قرار دهید. در غیر این صورت خالی نگه دارید تا به شرکت خودتان "
 "تحویل دهید."
@@ -2244,8 +2241,7 @@ msgstr "ثبت یک صورتحساب جدید فروشنده"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_bill_union__name
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_tree
+#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree model_terms:ir.ui.view,arch_db:purchase.purchase_order_tree
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_tree
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_bill_union_filter
 msgid "Reference"
@@ -2272,8 +2268,8 @@ msgid ""
 "Reference of the sales order or bid sent by the vendor. It's used to do the matching when you receive the products as this "
 "reference is usually written on the delivery order sent by your vendor."
 msgstr ""
-"مرجع سفارش فروش یا پیشنهاد ارسال شده توسط فروشنده. برای انجام تطابق هنگام دریافت محصولات استفاده می شود زیرا این مرجع "
-"معمولاً در سفارش تحویل ارسال شده توسط فروشنده شما نوشته می شود."
+"مرجع سفارش فروش یا پیشنهاد ارسال شده توسط فروشنده. برای انجام تطابق هنگام دریافت محصولات استفاده می شود زیرا این مرجع معمولاً "
+"در سفارش تحویل ارسال شده توسط فروشنده شما نوشته می شود."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__mail_reminder_confirmed
@@ -2398,8 +2394,8 @@ msgid ""
 "Selecting the \"Warning\" option will notify user with the message, Selecting \"Blocking Message\" will throw an exception "
 "with the message and block the flow. The Message has to be written in the next field."
 msgstr ""
-"با انتخاب گزینه \"هشدار\" به کاربر با پیام اطلاع داده می شود، با انتخاب \"Blocking Message\" یک استثنا با پیام ایجاد می شود "
-"و جریان را مسدود می کند. پیام باید در قسمت بعدی نوشته شود."
+"با انتخاب گزینه \"هشدار\" به کاربر با پیام اطلاع داده می شود، با انتخاب \"Blocking Message\" یک استثنا با پیام ایجاد می شود و "
+"جریان را مسدود می کند. پیام باید در قسمت بعدی نوشته شود."
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -2674,8 +2670,8 @@ msgstr "در حال حاضر هیچ درخواستی برای استعلام ق�
 #: code:addons/purchase/models/purchase_order.py:0
 #, python-format
 msgid ""
-"There is no invoiceable line. If a product has a control policy based on received quantity, please make sure that a "
-"quantity has been received."
+"There is no invoiceable line. If a product has a control policy based on received quantity, please make sure that a quantity "
+"has been received."
 msgstr ""
 "هیچ خط فاکتوری وجود ندارد. اگر محصولی دارای سیاست کنترلی بر اساس مقدار دریافتی است، لطفاً مطمئن شوید که یک مقدار دریافت شده "
 "است."
@@ -2783,15 +2779,13 @@ msgid "Total Quantity"
 msgstr "تعداد کل"
 
 #. module: purchase
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_tree
+#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree model_terms:ir.ui.view,arch_db:purchase.purchase_order_tree
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_tree
 msgid "Total Untaxed amount"
 msgstr "مبلغ بدون مالیات"
 
 #. module: purchase
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_tree
+#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree model_terms:ir.ui.view,arch_db:purchase.purchase_order_tree
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_tree
 msgid "Total amount"
 msgstr "مبلغ کل"
@@ -2871,8 +2865,7 @@ msgid "Unlock"
 msgstr "باز کردن قفل"
 
 #. module: purchase
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree
-#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_tree
+#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree model_terms:ir.ui.view,arch_db:purchase.purchase_order_tree
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_tree
 msgid "Untaxed"
 msgstr "پایه"
@@ -2939,7 +2932,7 @@ msgstr "صورتحساب فروشنده"
 #: model_terms:ir.ui.view,arch_db:purchase.res_partner_view_purchase_account_buttons
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_bill_union_filter
 msgid "Vendor Bills"
-msgstr "صورتهای فروشنده"
+msgstr "صورت‌حساب‌های فروشنده (vendor)"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_order_search
@@ -3001,7 +2994,7 @@ msgstr "در انتظار"
 #: model:ir.model.fields.selection,name:purchase.selection__purchase_order__invoice_status__to_invoice
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_search
 msgid "Waiting Bills"
-msgstr "صورتهای در انتظار"
+msgstr "صورت‌حساب‌های در انتظار"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_order_filter
@@ -3054,10 +3047,10 @@ msgstr "تاریخچه ارتباط با وبسایت"
 #. module: purchase
 #: model_terms:digest.tip,tip_description:purchase.digest_tip_purchase_0
 msgid ""
-"When creating a purchase order, have a look at the vendor's <i>On Time Delivery</i> rate: the percentage of products "
-"shipped on time. If it is too low, activate the <i>automated reminders</i>. A few days before the due shipment, Odoo will "
-"send the vendor an email to ask confirmation of shipment dates and keep you informed in case of any delays. To get the "
-"vendor's performance statistics, click on the OTD rate."
+"When creating a purchase order, have a look at the vendor's <i>On Time Delivery</i> rate: the percentage of products shipped "
+"on time. If it is too low, activate the <i>automated reminders</i>. A few days before the due shipment, Odoo will send the "
+"vendor an email to ask confirmation of shipment dates and keep you informed in case of any delays. To get the vendor's "
+"performance statistics, click on the OTD rate."
 msgstr ""
 
 #. module: purchase
@@ -3067,9 +3060,9 @@ msgid ""
 "acknowledges the order by clicking on a button in the email, the information is added on the purchase order. Use filters to "
 "track orders that have not been acknowledged."
 msgstr ""
-"هنگام ارسال سفارش خرید از طریق ایمیل، Odoo از فروشنده می خواهد که دریافت سفارش را تایید کند. هنگامی که فروشنده با کلیک بر "
-"روی دکمه ای در ایمیل، سفارش را تایید کرد، اطلاعات روی سفارش خرید اضافه می شود. از فیلترها برای ردیابی سفارش هایی که تایید "
-"نشده اند استفاده کنید."
+"هنگام ارسال سفارش خرید از طریق ایمیل، Odoo از فروشنده می خواهد که دریافت سفارش را تایید کند. هنگامی که فروشنده با کلیک بر روی "
+"دکمه ای در ایمیل، سفارش را تایید کرد، اطلاعات روی سفارش خرید اضافه می شود. از فیلترها برای ردیابی سفارش هایی که تایید نشده "
+"اند استفاده کنید."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order__partner_id
@@ -3082,8 +3075,8 @@ msgstr "می توانید فروشنده ای را با نام، TIN، ایمی�
 #: code:addons/purchase/models/purchase_order_line.py:0
 #, python-format
 msgid ""
-"You cannot change the type of a purchase order line. Instead you should delete the current line and create a new line of "
-"the proper type."
+"You cannot change the type of a purchase order line. Instead you should delete the current line and create a new line of the "
+"proper type."
 msgstr "شما نمی توانید نوع خط سفارش خرید را تغییر دهید. در عوض باید خط فعلی را حذف کنید و یک خط جدید از نوع مناسب ایجاد کنید."
 
 #. module: purchase
@@ -3113,8 +3106,7 @@ msgid ""
 "%(quote_company)s. \n"
 " Please change the company of your quotation or remove the products from other companies (%(bad_products)s)."
 msgstr ""
-"استعلام قیمت شما حاوی محصولات شرکت %(product_company)s است، در حالی که استعلام قیمت شما متعلق به شرکت %(quote_company)s "
-"است.\n"
+"استعلام قیمت شما حاوی محصولات شرکت %(product_company)s است، در حالی که استعلام قیمت شما متعلق به شرکت %(quote_company)s است.\n"
 "  لطفا شرکت استعلام قیمت خود را تغییر دهید یا محصولات را از سایر شرکت ها (%(bad_products)s) حذف کنید."
 
 #. module: purchase
