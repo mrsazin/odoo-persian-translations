@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Automated action to notify when stock reaches zero -->
+        <record id="rule_notify_zero_stock" model="base.automation">
+            <field name="name">Notify Zero Stock</field>
+            <field name="model_id" ref="stock.model_stock_quant"/>
+            <field name="trigger">on_create_or_write</field>
+            <field name="state">code</field>
+            <field name="code">
+                for record in records:
+                    if record.qty_available <= 0:
+                        env['mail.message'].create({
+                            'message_type': 'notification',
+                            'subtype_id': env.ref('mail.mt_comment').id,
+                            'body': 'The stock of product %s has reached zero or fallen below.' % (record.product_id.name),
+                            'subject': 'Zero Stock Notification',
+                            'partner_ids': [(4, env.user.partner_id.id)],
+                        })
+            </field>
+        </record>
+    </data>
+</odoo>
