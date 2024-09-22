@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-14 06:20+0000\n"
-"PO-Revision-Date: 2024-09-16 10:49+0330\n"
+"PO-Revision-Date: 2024-09-18 09:04+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -1165,7 +1165,7 @@ msgstr ""
 #: code:addons/web/static/src/views/list/list_controller.js:0
 #, python-format
 msgid "Are you sure that you want to archive all the selected records?"
-msgstr ""
+msgstr "آیا مطمئن هستید که می خواهید تمام رکوردهای انتخاب شده را بایگانی کنید؟"
 
 #. module: web
 #. odoo-javascript
@@ -1193,7 +1193,7 @@ msgstr "آیا مطمئنید که می‌خواهید این رکوردها ر�
 #: code:addons/web/static/src/views/kanban/kanban_header.js:0
 #, python-format
 msgid "Are you sure you want to delete this column?"
-msgstr ""
+msgstr "آیا مطمئن هستید که می خواهید این ستون را حذف کنید؟"
 
 #. module: web
 #. odoo-javascript
@@ -1203,13 +1203,15 @@ msgid ""
 "Are you sure you want to delete this property field? It will be removed for everyone using the "
 "\"%s\" %s."
 msgstr ""
+"آیا مطمئن هستید که می خواهید این فیلد ویژگی را حذف کنید؟ برای همه افرادی که از \"%s\" %s استفاده "
+"می کنند، حذف خواهد شد."
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/list/list_confirmation_dialog.xml:0
 #, python-format
 msgid "Are you sure you want to perform the following update on those"
-msgstr ""
+msgstr "آیا مطمئن هستید که می‌خواهید به‌روزرسانی زیر را روی آن‌ها انجام دهید"
 
 #. module: web
 #. odoo-javascript
@@ -1224,7 +1226,7 @@ msgstr ""
 #: code:addons/web/static/src/views/fields/datetime/datetime_field.xml:0
 #, python-format
 msgid "Arrow"
-msgstr ""
+msgstr "پیکان (فلش)"
 
 #. module: web
 #. odoo-javascript
@@ -1232,14 +1234,14 @@ msgstr ""
 #: code:addons/web/static/src/views/fields/datetime/datetime_field.xml:0
 #, python-format
 msgid "Arrow icon"
-msgstr ""
+msgstr "آیکون پیکان"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/fields/dynamic_placeholder_popover.xml:0
 #, python-format
 msgid "As a default text when no value are set"
-msgstr ""
+msgstr "به عنوان یک متن پیش فرض زمانی که هیچ مقداری تنظیم نشده باشد"
 
 #. module: web
 #. odoo-javascript
@@ -1282,7 +1284,7 @@ msgstr "پیوست"
 #: code:addons/web/static/src/views/fields/attachment_image/attachment_image_field.js:0
 #, python-format
 msgid "Attachment Image"
-msgstr ""
+msgstr "تصویر پیوست"
 
 #. module: web
 #. odoo-javascript
