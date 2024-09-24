@@ -33,7 +33,6 @@ This module Changes all Odoo's logos of the Odoo Web Client.
             'custom_branding/static/img',
             'custom_branding/static/img',
             'custom_branding/static/img',
-            'custom_branding/static/src/webclient/webclient.js',
         ],
     },
     'installable': True,
