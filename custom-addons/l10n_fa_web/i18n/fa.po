@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-14 06:20+0000\n"
-"PO-Revision-Date: 2024-09-23 12:56+0330\n"
+"PO-Revision-Date: 2024-09-24 15:31+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -4906,28 +4906,28 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:web.brand_promotion_message
 #, python-format
 msgid "Odoo"
-msgstr "اودو"
+msgstr "پورتال"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
 msgid "Odoo Client Error"
-msgstr "خطای کلاینت اودو"
+msgstr "خطای کلاینت "
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
 msgid "Odoo Error"
-msgstr "خطای اودو"
+msgstr "خطا"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
 msgid "Odoo Network Error"
-msgstr ""
+msgstr "خطای شبکه"
 
 #. module: web
 #. odoo-javascript
@@ -4935,6 +4935,8 @@ msgstr ""
 #, python-format
 msgid "Odoo Push notifications have been blocked. Go to your browser settings to allow them."
 msgstr ""
+"نوتیفیکیشن‌های پورتال به‌خاطر تنظیمات مرورگرتان مسدود شده‌اند. می‌توانید از طریق مراجعه به بخش "
+"تنظیمات مرورگر خود، این مساله را برطرف‌کنید."
 
 #. module: web
 #. odoo-javascript
@@ -4948,7 +4950,7 @@ msgstr "سایت اودوو "
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
 msgid "Odoo Server Error"
-msgstr ""
+msgstr "خطای سرور"
 
 #. module: web
 #. odoo-javascript
@@ -4956,7 +4958,7 @@ msgstr ""
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
 msgid "Odoo Session Expired"
-msgstr "نشست اودو منقضی شده"
+msgstr "نشست پورتال منقضی شده"
 
 #. module: web
 #. odoo-javascript
@@ -4994,7 +4996,7 @@ msgstr "آفلاین"
 #: code:addons/web/static/src/views/form/form_error_dialog/form_error_dialog.xml:0
 #, python-format
 msgid "Oh snap!"
-msgstr ""
+msgstr "اوه نه!"
 
 #. module: web
 #. odoo-javascript
@@ -6531,7 +6533,7 @@ msgstr "این جا بمان"
 #: code:addons/web/static/src/views/form/form_error_dialog/form_error_dialog.xml:0
 #, python-format
 msgid "Stay here"
-msgstr ""
+msgstr "همین‌جا بمان"
 
 #. module: web
 #. odoo-javascript
