@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-24 12:12+0000\n"
-"PO-Revision-Date: 2024-07-24 15:50+0330\n"
+"PO-Revision-Date: 2024-09-29 11:28+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -408,7 +408,7 @@ msgstr "امکان بازنشانی"
 #: model:ir.model.fields,field_description:hr_expense.field_product_template__can_be_expensed
 #: model_terms:ir.ui.view,arch_db:hr_expense.product_template_search_view_inherit_hr_expense
 msgid "Can be Expensed"
-msgstr "می‌تواند هزینه‌شود"
+msgstr "به‌عنوان هزینه‌ ثبت شود"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_approve_duplicate_view_form
@@ -1860,7 +1860,9 @@ msgstr ""
 #: model:ir.model.fields,help:hr_expense.field_product_product__can_be_expensed
 #: model:ir.model.fields,help:hr_expense.field_product_template__can_be_expensed
 msgid "Specify whether the product can be selected in an expense."
-msgstr "مشخص کنید که آیا محصول می تواند در یک هزینه انتخاب شود."
+msgstr ""
+"اگر این گزینه فعال باشد، محصول به‌عنوان هزینه‌های شرکت ثبت می‌شود، نه به‌عنوان موجودی انبار. این ویژگی برای "
+"محصولاتی مانند لوازم اداری، هزینه‌های سفر یا خدماتی که برای استفاده داخلی شرکت خریداری می‌شوند، مفید است."
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_split
