@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-10 11:06+0000\n"
-"PO-Revision-Date: 2024-09-29 11:05+0330\n"
+"PO-Revision-Date: 2024-09-29 19:23+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -31,12 +31,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product__product_variant_count
 #: model:ir.model.fields,field_description:product.field_product_template__product_variant_count
 msgid "# Product Variants"
-msgstr "تعداد انواع محصول"
+msgstr "# انواع محصول"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category__product_count
 msgid "# Products"
-msgstr "تعداد محصولات"
+msgstr "# محصولات"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.report_pricelist_page

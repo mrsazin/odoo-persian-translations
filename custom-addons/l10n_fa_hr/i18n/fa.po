@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-25 15:19+0000\n"
-"PO-Revision-Date: 2024-09-25 19:42+0330\n"
+"PO-Revision-Date: 2024-10-05 11:21+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -215,7 +215,7 @@ msgstr "برنامه زمانبندی فعالیت جادوگر"
 #: model_terms:ir.actions.act_window,help:hr.hr_employee_public_action
 #: model_terms:ir.actions.act_window,help:hr.open_view_employee_list_my
 msgid "Add a new employee"
-msgstr "افزودن یک کارمند جدید"
+msgstr "یک کارمند جدید اضافه‌کنید"
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.mail_activity_plan_action
@@ -2570,9 +2570,8 @@ msgid ""
 "                can easily find all the information you need for each person;\n"
 "                contact data, job position, availability, etc."
 msgstr ""
-"تنها با یک نگاه سریع بر روی صفحه نمایش کارمند Odoo، شما به راحتی می‌توانید تمام اطلاعات "
-"مورد نیاز خود را برای هر فرد پیدا کنید؛\n"
-"         اطلاعات مخاطب موقعیت شغلی، در دسترس بودن و غیره."
+"تنها با یک نگاه سریع بر روی صفحه‌ی مختص کارمندان ، به راحتی می‌توانید به هر اطلاعاتی که در "
+"مورد کارمندان نیاز دارید، دسترسی‌پیداکنید."
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__address_id

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-21 06:55+0000\n"
-"PO-Revision-Date: 2024-09-25 18:56+0330\n"
+"PO-Revision-Date: 2024-09-29 19:19+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -419,8 +419,8 @@ msgid ""
 "* Identification Type\n"
 "* Identification Number\n"
 "\n"
-"This behavior is a common requirement for some latam countries like Argentina and Chile. If your localization has this requirements then you need to depend on this module and define in your localization module the identifications "
-"types that are used in your country. Generally these types of identifications are defined by the government authorities that regulate the fiscal operations. For example:\n"
+"This behavior is a common requirement for some latam countries like Argentina and Chile. If your localization has this requirements then you need to depend on this module and define in your localization module the identifications types "
+"that are used in your country. Generally these types of identifications are defined by the government authorities that regulate the fiscal operations. For example:\n"
 "\n"
 "* AFIP in Argentina defines DNI, CUIT (vat for legal entities), CUIL (vat for natural person), and another 80 valid identification types.\n"
 "\n"
@@ -433,8 +433,8 @@ msgid ""
 "* sequence: let us to sort the identification types depending on the ones that are most used.\n"
 "* active: we can activate/inactivate identifications to make it easier to our customers\n"
 "\n"
-"In order to make this module compatible for multi-company environments where we have companies that does not need/support this requirement, we have added generic identification types and generic rules to manage the contact "
-"information and make it transparent for the user when only use the VAT as we formerly know.\n"
+"In order to make this module compatible for multi-company environments where we have companies that does not need/support this requirement, we have added generic identification types and generic rules to manage the contact information "
+"and make it transparent for the user when only use the VAT as we formerly know.\n"
 "\n"
 "Generic Identifications:\n"
 "\n"
@@ -444,8 +444,8 @@ msgid ""
 "\n"
 "Rules when creating a new partner: We will only see the identification types that are meaningful, taking into account these rules:\n"
 "\n"
-"* If the partner have not country address set: Will show the generic identification types plus the ones defined in the partner's related company country (If the partner has not specific company then will show the identification "
-"types related to the current user company)\n"
+"* If the partner have not country address set: Will show the generic identification types plus the ones defined in the partner's related company country (If the partner has not specific company then will show the identification types "
+"related to the current user company)\n"
 "\n"
 "* If the partner has country address: will show the generic identification types plus the ones defined for the country of the partner.\n"
 "\n"
@@ -1358,8 +1358,8 @@ msgid ""
 "==========================\n"
 "\n"
 "From July 1st 2021, EU businesses that are selling goods within the EU above EUR 10 000 to buyers located in another EU Member State need to register and pay VAT in the buyers’ Member State.\n"
-"Below this new EU-wide threshold you can continue to apply the domestic rules for VAT on your cross-border sales. In order to simplify the application of this EU directive, the One Stop Shop (OSS) registration scheme allows "
-"businesses to make a unique tax declaration.\n"
+"Below this new EU-wide threshold you can continue to apply the domestic rules for VAT on your cross-border sales. In order to simplify the application of this EU directive, the One Stop Shop (OSS) registration scheme allows businesses "
+"to make a unique tax declaration.\n"
 "\n"
 "This module makes it possible by helping with the creation of the required EU fiscal positions and taxes in order to automatically apply and record the required taxes.\n"
 "\n"
@@ -1434,11 +1434,11 @@ msgid ""
 "Functional\n"
 "----------\n"
 "\n"
-"In some Latinamerica countries, including Argentina and Chile, some accounting transactions like invoices and vendor bills are classified by a document types defined by the government fiscal authorities (In Argentina case AFIP, "
-"Chile case SII).\n"
+"In some Latinamerica countries, including Argentina and Chile, some accounting transactions like invoices and vendor bills are classified by a document types defined by the government fiscal authorities (In Argentina case AFIP, Chile "
+"case SII).\n"
 "\n"
-"This module is intended to be extended by localizations in order to manage these document types and is an essential information that needs to be displayed in the printed reports and that needs to be easily identified, within the "
-"set of invoices as well of account moves.\n"
+"This module is intended to be extended by localizations in order to manage these document types and is an essential information that needs to be displayed in the printed reports and that needs to be easily identified, within the set of "
+"invoices as well of account moves.\n"
 "\n"
 "Each document type have their own rules and sequence number, this last one is integrated with the invoice number and journal sequence in order to be easy for the localization user. In order to support or not this document types a "
 "Journal has a new option that lets to use document or not.\n"
@@ -1460,8 +1460,8 @@ msgid ""
 "Functional\n"
 "----------\n"
 "\n"
-"This module add accounting features for the Argentinean localization, which represent the minimal configuration needed for a company  to operate in Argentina and under the AFIP (Administración Federal de Ingresos Públicos) "
-"regulations and guidelines.\n"
+"This module add accounting features for the Argentinean localization, which represent the minimal configuration needed for a company  to operate in Argentina and under the AFIP (Administración Federal de Ingresos Públicos) regulations "
+"and guidelines.\n"
 "\n"
 "Follow the next configuration steps for Production:\n"
 "\n"
@@ -1584,8 +1584,8 @@ msgid ""
 "General Chart of Accounts.\n"
 "==========================\n"
 "\n"
-"This module adds accounting functionalities for the Uruguayan localization, representing the minimum required configuration for a company to operate in Uruguay under the regulations and guidelines provided by the DGI (Dirección "
-"General Impositiva).\n"
+"This module adds accounting functionalities for the Uruguayan localization, representing the minimum required configuration for a company to operate in Uruguay under the regulations and guidelines provided by the DGI (Dirección General "
+"Impositiva).\n"
 "\n"
 "Among the functionalities are:\n"
 "\n"
@@ -1790,8 +1790,8 @@ msgid ""
 "====================\n"
 "The specific and easy-to-use Invoicing system in Odoo allows you to keep track of your accounting, even when you are not an accountant. It provides an easy way to follow up on your vendors and customers.\n"
 "\n"
-"You could use this simplified accounting in case you work with an (external) account to keep your books, and you still want to keep track of payments. This module also offers you an easy method of registering payments, without "
-"having to encode complete abstracts of account.\n"
+"You could use this simplified accounting in case you work with an (external) account to keep your books, and you still want to keep track of payments. This module also offers you an easy method of registering payments, without having "
+"to encode complete abstracts of account.\n"
 msgstr ""
 
 #. module: base
@@ -1911,8 +1911,8 @@ msgid ""
 "Manage expenses by Employees\n"
 "============================\n"
 "\n"
-"This application allows you to manage your employees' daily expenses. It gives you access to your employees’ fee notes and give you the right to complete and validate or refuse the notes. After validation it creates an invoice for "
-"the employee.\n"
+"This application allows you to manage your employees' daily expenses. It gives you access to your employees’ fee notes and give you the right to complete and validate or refuse the notes. After validation it creates an invoice for the "
+"employee.\n"
 "Employee can encode their own expenses and the validation flow puts it automatically in the accounting after validation by managers.\n"
 "\n"
 "\n"
@@ -1995,8 +1995,8 @@ msgid ""
 "This application controls the time off schedule of your company. It allows employees to request time off. Then, managers can review requests for time off and approve or reject them. This way you can control the overall time off "
 "planning for the company or department.\n"
 "\n"
-"You can configure several kinds of time off (sickness, paid days, ...) and allocate time off to an employee or department quickly using time off allocation. An employee can also make a request for more days off by making a new "
-"time off allocation. It will increase the total of available days for that time off type (if the request is accepted).\n"
+"You can configure several kinds of time off (sickness, paid days, ...) and allocate time off to an employee or department quickly using time off allocation. An employee can also make a request for more days off by making a new time off "
+"allocation. It will increase the total of available days for that time off type (if the request is accepted).\n"
 "\n"
 "You can keep track of time off in different ways by following reports:\n"
 "\n"
@@ -3153,8 +3153,8 @@ msgid ""
 "\n"
 "This module adds a comparison tool to your eCommerce shop, so that your shoppers can easily compare products based on their attributes. It will considerably accelerate their purchasing decision.\n"
 "\n"
-"To configure product attributes, activate *Attributes & Variants* in the Website settings. This will add a dedicated section in the product form. In the configuration, this module adds a category field to product attributes in "
-"order to structure the shopper's comparison table.\n"
+"To configure product attributes, activate *Attributes & Variants* in the Website settings. This will add a dedicated section in the product form. In the configuration, this module adds a category field to product attributes in order to "
+"structure the shopper's comparison table.\n"
 "\n"
 "Finally, the module comes with an option to display an attribute summary table in product web pages (available in Customize menu).\n"
 msgstr ""
@@ -5175,11 +5175,11 @@ msgstr ""
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_res_groups
 msgid ""
-"A group is a set of functional areas that will be assigned to the user in order to give them access and rights to specific applications and tasks in the system. You can create custom groups or edit the ones existing by default in "
-"order to customize the view of the menu that users will be able to see. Whether they can have a read, write, create and delete access right can be managed from here."
+"A group is a set of functional areas that will be assigned to the user in order to give them access and rights to specific applications and tasks in the system. You can create custom groups or edit the ones existing by default in order "
+"to customize the view of the menu that users will be able to see. Whether they can have a read, write, create and delete access right can be managed from here."
 msgstr ""
-"یک گروه مجموعه ای از مناطق کاربردی است که به کاربر اختصاص داده می شود تا به آنها دسترسی و حقوقی برای برنامه ها و وظایف خاص در سیستم بدهد. می‌توانید گروه‌های سفارشی ایجاد کنید یا گروه‌های موجود را به‌طور پیش‌فرض ویرایش کنید تا نمای "
-"منویی را که کاربران می‌توانند ببینند سفارشی کنید. اینکه آیا آنها می توانند حق دسترسی خواندن، نوشتن، ایجاد و حذف داشته باشند را می توان از اینجا مدیریت کرد."
+"یک گروه مجموعه ای از مناطق کاربردی است که به کاربر اختصاص داده می شود تا به آنها دسترسی و حقوقی برای برنامه ها و وظایف خاص در سیستم بدهد. می‌توانید گروه‌های سفارشی ایجاد کنید یا گروه‌های موجود را به‌طور پیش‌فرض ویرایش کنید تا نمای منویی را "
+"که کاربران می‌توانند ببینند سفارشی کنید. اینکه آیا آنها می توانند حق دسترسی خواندن، نوشتن، ایجاد و حذف داشته باشند را می توان از اینجا مدیریت کرد."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hw_posbox_homepage
@@ -5450,9 +5450,9 @@ msgstr "منوی دسترسی"
 #. module: base
 #. odoo-python
 #: code:addons/base/models/res_users.py:0 model:ir.actions.act_window,name:base.ir_access_act model:ir.ui.menu,name:base.menu_ir_access_act model:res.groups,name:base.group_erp_manager
-#: model_terms:ir.ui.view,arch_db:base.ir_access_view_form model_terms:ir.ui.view,arch_db:base.ir_access_view_search model_terms:ir.ui.view,arch_db:base.ir_access_view_tree
-#: model_terms:ir.ui.view,arch_db:base.ir_access_view_tree_edition model_terms:ir.ui.view,arch_db:base.view_groups_form model_terms:ir.ui.view,arch_db:base.view_model_fields_form model_terms:ir.ui.view,arch_db:base.view_model_form
-#: model_terms:ir.ui.view,arch_db:base.view_rule_form model_terms:ir.ui.view,arch_db:base.view_users_form model_terms:ir.ui.view,arch_db:base.view_users_simple_form model_terms:ir.ui.view,arch_db:base.view_view_form
+#: model_terms:ir.ui.view,arch_db:base.ir_access_view_form model_terms:ir.ui.view,arch_db:base.ir_access_view_search model_terms:ir.ui.view,arch_db:base.ir_access_view_tree model_terms:ir.ui.view,arch_db:base.ir_access_view_tree_edition
+#: model_terms:ir.ui.view,arch_db:base.view_groups_form model_terms:ir.ui.view,arch_db:base.view_model_fields_form model_terms:ir.ui.view,arch_db:base.view_model_form model_terms:ir.ui.view,arch_db:base.view_rule_form
+#: model_terms:ir.ui.view,arch_db:base.view_users_form model_terms:ir.ui.view,arch_db:base.view_users_simple_form model_terms:ir.ui.view,arch_db:base.view_view_form
 #, python-format
 msgid "Access Rights"
 msgstr "سطوح دسترسی"
@@ -5594,9 +5594,8 @@ msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_url__help model:ir.model.fields,field_description:base.field_ir_actions_act_window__help
-#: model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__help model:ir.model.fields,field_description:base.field_ir_actions_actions__help
-#: model:ir.model.fields,field_description:base.field_ir_actions_client__help model:ir.model.fields,field_description:base.field_ir_actions_report__help model:ir.model.fields,field_description:base.field_ir_actions_server__help
-#: model:ir.model.fields,field_description:base.field_ir_cron__help
+#: model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__help model:ir.model.fields,field_description:base.field_ir_actions_actions__help model:ir.model.fields,field_description:base.field_ir_actions_client__help
+#: model:ir.model.fields,field_description:base.field_ir_actions_report__help model:ir.model.fields,field_description:base.field_ir_actions_server__help model:ir.model.fields,field_description:base.field_ir_cron__help
 msgid "Action Description"
 msgstr "توضیحات عمل"
 
@@ -5607,9 +5606,8 @@ msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_url__name model:ir.model.fields,field_description:base.field_ir_actions_act_window__name
-#: model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__name model:ir.model.fields,field_description:base.field_ir_actions_actions__name
-#: model:ir.model.fields,field_description:base.field_ir_actions_client__name model:ir.model.fields,field_description:base.field_ir_actions_report__name model:ir.model.fields,field_description:base.field_ir_actions_server__name
-#: model:ir.model.fields,field_description:base.field_ir_cron__name
+#: model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__name model:ir.model.fields,field_description:base.field_ir_actions_actions__name model:ir.model.fields,field_description:base.field_ir_actions_client__name
+#: model:ir.model.fields,field_description:base.field_ir_actions_report__name model:ir.model.fields,field_description:base.field_ir_actions_server__name model:ir.model.fields,field_description:base.field_ir_cron__name
 msgid "Action Name"
 msgstr ""
 
@@ -5620,9 +5618,9 @@ msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_url__type model:ir.model.fields,field_description:base.field_ir_actions_act_window__type
-#: model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__type model:ir.model.fields,field_description:base.field_ir_actions_actions__type
-#: model:ir.model.fields,field_description:base.field_ir_actions_client__type model:ir.model.fields,field_description:base.field_ir_actions_report__type model:ir.model.fields,field_description:base.field_ir_actions_server__type
-#: model:ir.model.fields,field_description:base.field_ir_cron__type model_terms:ir.ui.view,arch_db:base.action_view_search model_terms:ir.ui.view,arch_db:base.view_server_action_search
+#: model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__type model:ir.model.fields,field_description:base.field_ir_actions_actions__type model:ir.model.fields,field_description:base.field_ir_actions_client__type
+#: model:ir.model.fields,field_description:base.field_ir_actions_report__type model:ir.model.fields,field_description:base.field_ir_actions_server__type model:ir.model.fields,field_description:base.field_ir_cron__type
+#: model_terms:ir.ui.view,arch_db:base.action_view_search model_terms:ir.ui.view,arch_db:base.view_server_action_search
 msgid "Action Type"
 msgstr ""
 
@@ -6388,11 +6386,11 @@ msgid "Architecture Diff"
 msgstr ""
 
 #. module: base
-#: model_terms:ir.ui.view,arch_db:base.edit_menu_access_search model_terms:ir.ui.view,arch_db:base.ir_access_view_search model_terms:ir.ui.view,arch_db:base.ir_cron_view_search
-#: model_terms:ir.ui.view,arch_db:base.ir_filters_view_search model_terms:ir.ui.view,arch_db:base.ir_mail_server_form model_terms:ir.ui.view,arch_db:base.res_bank_view_search
-#: model_terms:ir.ui.view,arch_db:base.res_partner_category_view_search model_terms:ir.ui.view,arch_db:base.res_partner_industry_view_search model_terms:ir.ui.view,arch_db:base.view_ir_mail_server_search
-#: model_terms:ir.ui.view,arch_db:base.view_partner_bank_form model_terms:ir.ui.view,arch_db:base.view_partner_form model_terms:ir.ui.view,arch_db:base.view_res_bank_form model_terms:ir.ui.view,arch_db:base.view_res_partner_filter
-#: model_terms:ir.ui.view,arch_db:base.view_rule_search model_terms:ir.ui.view,arch_db:base.view_sequence_search model_terms:ir.ui.view,arch_db:base.view_users_form
+#: model_terms:ir.ui.view,arch_db:base.edit_menu_access_search model_terms:ir.ui.view,arch_db:base.ir_access_view_search model_terms:ir.ui.view,arch_db:base.ir_cron_view_search model_terms:ir.ui.view,arch_db:base.ir_filters_view_search
+#: model_terms:ir.ui.view,arch_db:base.ir_mail_server_form model_terms:ir.ui.view,arch_db:base.res_bank_view_search model_terms:ir.ui.view,arch_db:base.res_partner_category_view_search
+#: model_terms:ir.ui.view,arch_db:base.res_partner_industry_view_search model_terms:ir.ui.view,arch_db:base.view_ir_mail_server_search model_terms:ir.ui.view,arch_db:base.view_partner_bank_form
+#: model_terms:ir.ui.view,arch_db:base.view_partner_form model_terms:ir.ui.view,arch_db:base.view_res_bank_form model_terms:ir.ui.view,arch_db:base.view_res_partner_filter model_terms:ir.ui.view,arch_db:base.view_rule_search
+#: model_terms:ir.ui.view,arch_db:base.view_sequence_search model_terms:ir.ui.view,arch_db:base.view_users_form
 msgid "Archived"
 msgstr "بایگانی شده"
 
@@ -7542,9 +7540,8 @@ msgstr ""
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
-"Certain countries apply withholding at source on the amount of invoices, in accordance with their internal legislation. Any withholding at source will be paid by the client to the tax authorities. Under no circumstances can آلپ "
-"become involved in costs related to a country's legislation. The amount of the invoice will therefore be due to آلپ in its entirety and does not include any costs relating to the legislation of the country in which the client is "
-"located."
+"Certain countries apply withholding at source on the amount of invoices, in accordance with their internal legislation. Any withholding at source will be paid by the client to the tax authorities. Under no circumstances can آلپ become "
+"involved in costs related to a country's legislation. The amount of the invoice will therefore be due to آلپ in its entirety and does not include any costs relating to the legislation of the country in which the client is located."
 msgstr ""
 
 #. module: base
@@ -7896,8 +7893,8 @@ msgid "Comoros - Accounting"
 msgstr ""
 
 #. module: base
-#: model:ir.actions.act_window,name:base.action_res_company_form model:ir.model,name:base.model_res_company model:ir.model.fields,field_description:base.field_res_users__company_ids
-#: model:ir.ui.menu,name:base.menu_action_res_company_form model_terms:ir.ui.view,arch_db:base.view_company_tree model_terms:ir.ui.view,arch_db:base.view_res_partner_filter
+#: model:ir.actions.act_window,name:base.action_res_company_form model:ir.model,name:base.model_res_company model:ir.model.fields,field_description:base.field_res_users__company_ids model:ir.ui.menu,name:base.menu_action_res_company_form
+#: model_terms:ir.ui.view,arch_db:base.view_company_tree model_terms:ir.ui.view,arch_db:base.view_res_partner_filter
 msgid "Companies"
 msgstr "شرکت‌ها"
 
@@ -8020,8 +8017,7 @@ msgid "Complete ID"
 msgstr "آیدی کامل"
 
 #. module: base
-#: model:ir.model.fields,field_description:base.field_ir_model_fields__complete_name model:ir.model.fields,field_description:base.field_res_partner__complete_name
-#: model:ir.model.fields,field_description:base.field_res_users__complete_name
+#: model:ir.model.fields,field_description:base.field_ir_model_fields__complete_name model:ir.model.fields,field_description:base.field_res_partner__complete_name model:ir.model.fields,field_description:base.field_res_users__complete_name
 msgid "Complete Name"
 msgstr "نام کامل"
 
@@ -8338,9 +8334,8 @@ msgstr "کشورها"
 #. module: base
 #: model:ir.model,name:base.model_res_country model:ir.model.fields,field_description:base.field_res_bank__country model:ir.model.fields,field_description:base.field_res_company__country_id
 #: model:ir.model.fields,field_description:base.field_res_country_state__country_id model:ir.model.fields,field_description:base.field_res_partner__country_id model:ir.model.fields,field_description:base.field_res_users__country_id
-#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_country_state_search
-#: model_terms:ir.ui.view,arch_db:base.view_country_tree model_terms:ir.ui.view,arch_db:base.view_partner_address_form model_terms:ir.ui.view,arch_db:base.view_partner_form model_terms:ir.ui.view,arch_db:base.view_res_bank_form
-#: model_terms:ir.ui.view,arch_db:base.view_res_partner_filter
+#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_country_state_search model_terms:ir.ui.view,arch_db:base.view_country_tree
+#: model_terms:ir.ui.view,arch_db:base.view_partner_address_form model_terms:ir.ui.view,arch_db:base.view_partner_form model_terms:ir.ui.view,arch_db:base.view_res_bank_form model_terms:ir.ui.view,arch_db:base.view_res_partner_filter
 msgid "Country"
 msgstr "کشور"
 
@@ -8554,9 +8549,8 @@ msgstr "نماهای پدیدآمده"
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__create_uid model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__create_uid
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window_view__create_uid model:ir.model.fields,field_description:base.field_ir_actions_actions__create_uid
 #: model:ir.model.fields,field_description:base.field_ir_actions_client__create_uid model:ir.model.fields,field_description:base.field_ir_actions_report__create_uid
-#: model:ir.model.fields,field_description:base.field_ir_actions_server__create_uid model:ir.model.fields,field_description:base.field_ir_actions_todo__create_uid
-#: model:ir.model.fields,field_description:base.field_ir_asset__create_uid model:ir.model.fields,field_description:base.field_ir_attachment__create_uid
-#: model:ir.model.fields,field_description:base.field_ir_config_parameter__create_uid model:ir.model.fields,field_description:base.field_ir_cron__create_uid
+#: model:ir.model.fields,field_description:base.field_ir_actions_server__create_uid model:ir.model.fields,field_description:base.field_ir_actions_todo__create_uid model:ir.model.fields,field_description:base.field_ir_asset__create_uid
+#: model:ir.model.fields,field_description:base.field_ir_attachment__create_uid model:ir.model.fields,field_description:base.field_ir_config_parameter__create_uid model:ir.model.fields,field_description:base.field_ir_cron__create_uid
 #: model:ir.model.fields,field_description:base.field_ir_cron_trigger__create_uid model:ir.model.fields,field_description:base.field_ir_default__create_uid model:ir.model.fields,field_description:base.field_ir_demo__create_uid
 #: model:ir.model.fields,field_description:base.field_ir_demo_failure__create_uid model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__create_uid
 #: model:ir.model.fields,field_description:base.field_ir_exports__create_uid model:ir.model.fields,field_description:base.field_ir_exports_line__create_uid model:ir.model.fields,field_description:base.field_ir_filters__create_uid
@@ -8565,17 +8559,15 @@ msgstr "نماهای پدیدآمده"
 #: model:ir.model.fields,field_description:base.field_ir_model_data__create_uid model:ir.model.fields,field_description:base.field_ir_model_fields__create_uid
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_selection__create_uid model:ir.model.fields,field_description:base.field_ir_model_relation__create_uid
 #: model:ir.model.fields,field_description:base.field_ir_module_category__create_uid model:ir.model.fields,field_description:base.field_ir_module_module__create_uid
-#: model:ir.model.fields,field_description:base.field_ir_module_module_exclusion__create_uid model:ir.model.fields,field_description:base.field_ir_property__create_uid
-#: model:ir.model.fields,field_description:base.field_ir_rule__create_uid model:ir.model.fields,field_description:base.field_ir_sequence__create_uid
-#: model:ir.model.fields,field_description:base.field_ir_sequence_date_range__create_uid model:ir.model.fields,field_description:base.field_ir_ui_menu__create_uid
-#: model:ir.model.fields,field_description:base.field_ir_ui_view__create_uid model:ir.model.fields,field_description:base.field_ir_ui_view_custom__create_uid
-#: model:ir.model.fields,field_description:base.field_report_layout__create_uid model:ir.model.fields,field_description:base.field_report_paperformat__create_uid model:ir.model.fields,field_description:base.field_res_bank__create_uid
-#: model:ir.model.fields,field_description:base.field_res_company__create_uid model:ir.model.fields,field_description:base.field_res_config__create_uid
-#: model:ir.model.fields,field_description:base.field_res_config_installer__create_uid model:ir.model.fields,field_description:base.field_res_config_settings__create_uid
-#: model:ir.model.fields,field_description:base.field_res_country__create_uid model:ir.model.fields,field_description:base.field_res_country_group__create_uid
-#: model:ir.model.fields,field_description:base.field_res_country_state__create_uid model:ir.model.fields,field_description:base.field_res_currency__create_uid
-#: model:ir.model.fields,field_description:base.field_res_currency_rate__create_uid model:ir.model.fields,field_description:base.field_res_groups__create_uid model:ir.model.fields,field_description:base.field_res_lang__create_uid
-#: model:ir.model.fields,field_description:base.field_res_partner__create_uid model:ir.model.fields,field_description:base.field_res_partner_bank__create_uid
+#: model:ir.model.fields,field_description:base.field_ir_module_module_exclusion__create_uid model:ir.model.fields,field_description:base.field_ir_property__create_uid model:ir.model.fields,field_description:base.field_ir_rule__create_uid
+#: model:ir.model.fields,field_description:base.field_ir_sequence__create_uid model:ir.model.fields,field_description:base.field_ir_sequence_date_range__create_uid model:ir.model.fields,field_description:base.field_ir_ui_menu__create_uid
+#: model:ir.model.fields,field_description:base.field_ir_ui_view__create_uid model:ir.model.fields,field_description:base.field_ir_ui_view_custom__create_uid model:ir.model.fields,field_description:base.field_report_layout__create_uid
+#: model:ir.model.fields,field_description:base.field_report_paperformat__create_uid model:ir.model.fields,field_description:base.field_res_bank__create_uid model:ir.model.fields,field_description:base.field_res_company__create_uid
+#: model:ir.model.fields,field_description:base.field_res_config__create_uid model:ir.model.fields,field_description:base.field_res_config_installer__create_uid
+#: model:ir.model.fields,field_description:base.field_res_config_settings__create_uid model:ir.model.fields,field_description:base.field_res_country__create_uid
+#: model:ir.model.fields,field_description:base.field_res_country_group__create_uid model:ir.model.fields,field_description:base.field_res_country_state__create_uid
+#: model:ir.model.fields,field_description:base.field_res_currency__create_uid model:ir.model.fields,field_description:base.field_res_currency_rate__create_uid model:ir.model.fields,field_description:base.field_res_groups__create_uid
+#: model:ir.model.fields,field_description:base.field_res_lang__create_uid model:ir.model.fields,field_description:base.field_res_partner__create_uid model:ir.model.fields,field_description:base.field_res_partner_bank__create_uid
 #: model:ir.model.fields,field_description:base.field_res_partner_category__create_uid model:ir.model.fields,field_description:base.field_res_partner_industry__create_uid
 #: model:ir.model.fields,field_description:base.field_res_partner_title__create_uid model:ir.model.fields,field_description:base.field_res_users__create_uid
 #: model:ir.model.fields,field_description:base.field_res_users_apikeys_description__create_uid model:ir.model.fields,field_description:base.field_res_users_deletion__create_uid
@@ -8596,9 +8588,8 @@ msgstr "ایجاد شده توسط"
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__create_date model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__create_date
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window_view__create_date model:ir.model.fields,field_description:base.field_ir_actions_actions__create_date
 #: model:ir.model.fields,field_description:base.field_ir_actions_client__create_date model:ir.model.fields,field_description:base.field_ir_actions_report__create_date
-#: model:ir.model.fields,field_description:base.field_ir_actions_server__create_date model:ir.model.fields,field_description:base.field_ir_actions_todo__create_date
-#: model:ir.model.fields,field_description:base.field_ir_asset__create_date model:ir.model.fields,field_description:base.field_ir_attachment__create_date
-#: model:ir.model.fields,field_description:base.field_ir_config_parameter__create_date model:ir.model.fields,field_description:base.field_ir_cron__create_date
+#: model:ir.model.fields,field_description:base.field_ir_actions_server__create_date model:ir.model.fields,field_description:base.field_ir_actions_todo__create_date model:ir.model.fields,field_description:base.field_ir_asset__create_date
+#: model:ir.model.fields,field_description:base.field_ir_attachment__create_date model:ir.model.fields,field_description:base.field_ir_config_parameter__create_date model:ir.model.fields,field_description:base.field_ir_cron__create_date
 #: model:ir.model.fields,field_description:base.field_ir_cron_trigger__create_date model:ir.model.fields,field_description:base.field_ir_default__create_date model:ir.model.fields,field_description:base.field_ir_demo__create_date
 #: model:ir.model.fields,field_description:base.field_ir_demo_failure__create_date model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__create_date
 #: model:ir.model.fields,field_description:base.field_ir_exports__create_date model:ir.model.fields,field_description:base.field_ir_exports_line__create_date model:ir.model.fields,field_description:base.field_ir_filters__create_date
@@ -8607,16 +8598,14 @@ msgstr "ایجاد شده توسط"
 #: model:ir.model.fields,field_description:base.field_ir_model_fields__create_date model:ir.model.fields,field_description:base.field_ir_model_fields_selection__create_date
 #: model:ir.model.fields,field_description:base.field_ir_module_category__create_date model:ir.model.fields,field_description:base.field_ir_module_module__create_date
 #: model:ir.model.fields,field_description:base.field_ir_module_module_exclusion__create_date model:ir.model.fields,field_description:base.field_ir_property__create_date
-#: model:ir.model.fields,field_description:base.field_ir_rule__create_date model:ir.model.fields,field_description:base.field_ir_sequence__create_date
-#: model:ir.model.fields,field_description:base.field_ir_sequence_date_range__create_date model:ir.model.fields,field_description:base.field_ir_ui_menu__create_date
-#: model:ir.model.fields,field_description:base.field_ir_ui_view__create_date model:ir.model.fields,field_description:base.field_ir_ui_view_custom__create_date
-#: model:ir.model.fields,field_description:base.field_report_layout__create_date model:ir.model.fields,field_description:base.field_report_paperformat__create_date
-#: model:ir.model.fields,field_description:base.field_res_bank__create_date model:ir.model.fields,field_description:base.field_res_company__create_date model:ir.model.fields,field_description:base.field_res_config__create_date
-#: model:ir.model.fields,field_description:base.field_res_config_installer__create_date model:ir.model.fields,field_description:base.field_res_config_settings__create_date
-#: model:ir.model.fields,field_description:base.field_res_country__create_date model:ir.model.fields,field_description:base.field_res_country_group__create_date
-#: model:ir.model.fields,field_description:base.field_res_country_state__create_date model:ir.model.fields,field_description:base.field_res_currency__create_date
-#: model:ir.model.fields,field_description:base.field_res_currency_rate__create_date model:ir.model.fields,field_description:base.field_res_groups__create_date model:ir.model.fields,field_description:base.field_res_lang__create_date
-#: model:ir.model.fields,field_description:base.field_res_partner__create_date model:ir.model.fields,field_description:base.field_res_partner_bank__create_date
+#: model:ir.model.fields,field_description:base.field_ir_rule__create_date model:ir.model.fields,field_description:base.field_ir_sequence__create_date model:ir.model.fields,field_description:base.field_ir_sequence_date_range__create_date
+#: model:ir.model.fields,field_description:base.field_ir_ui_menu__create_date model:ir.model.fields,field_description:base.field_ir_ui_view__create_date model:ir.model.fields,field_description:base.field_ir_ui_view_custom__create_date
+#: model:ir.model.fields,field_description:base.field_report_layout__create_date model:ir.model.fields,field_description:base.field_report_paperformat__create_date model:ir.model.fields,field_description:base.field_res_bank__create_date
+#: model:ir.model.fields,field_description:base.field_res_company__create_date model:ir.model.fields,field_description:base.field_res_config__create_date model:ir.model.fields,field_description:base.field_res_config_installer__create_date
+#: model:ir.model.fields,field_description:base.field_res_config_settings__create_date model:ir.model.fields,field_description:base.field_res_country__create_date
+#: model:ir.model.fields,field_description:base.field_res_country_group__create_date model:ir.model.fields,field_description:base.field_res_country_state__create_date
+#: model:ir.model.fields,field_description:base.field_res_currency__create_date model:ir.model.fields,field_description:base.field_res_currency_rate__create_date model:ir.model.fields,field_description:base.field_res_groups__create_date
+#: model:ir.model.fields,field_description:base.field_res_lang__create_date model:ir.model.fields,field_description:base.field_res_partner__create_date model:ir.model.fields,field_description:base.field_res_partner_bank__create_date
 #: model:ir.model.fields,field_description:base.field_res_partner_category__create_date model:ir.model.fields,field_description:base.field_res_partner_industry__create_date
 #: model:ir.model.fields,field_description:base.field_res_partner_title__create_date model:ir.model.fields,field_description:base.field_res_users__create_date
 #: model:ir.model.fields,field_description:base.field_res_users_apikeys_description__create_date model:ir.model.fields,field_description:base.field_res_users_deletion__create_date
@@ -8694,8 +8683,8 @@ msgstr "ارزها"
 
 #. module: base
 #: model:ir.model,name:base.model_res_currency model:ir.model.fields,field_description:base.field_res_company__currency_id model:ir.model.fields,field_description:base.field_res_country__currency_id
-#: model:ir.model.fields,field_description:base.field_res_currency__name model:ir.model.fields,field_description:base.field_res_currency_rate__currency_id
-#: model:ir.model.fields,field_description:base.field_res_partner_bank__currency_id model_terms:ir.ui.view,arch_db:base.view_currency_form model_terms:ir.ui.view,arch_db:base.view_currency_search
+#: model:ir.model.fields,field_description:base.field_res_currency__name model:ir.model.fields,field_description:base.field_res_currency_rate__currency_id model:ir.model.fields,field_description:base.field_res_partner_bank__currency_id
+#: model_terms:ir.ui.view,arch_db:base.view_currency_form model_terms:ir.ui.view,arch_db:base.view_currency_search
 msgid "Currency"
 msgstr "ارز"
 
@@ -8844,8 +8833,8 @@ msgid "Customizations"
 msgstr "سفارشی سازی"
 
 #. module: base
-#: model:ir.actions.act_window,name:base.action_ui_view_custom model:ir.ui.menu,name:base.menu_action_ui_view_custom model_terms:ir.ui.view,arch_db:base.view_view_custom_form
-#: model_terms:ir.ui.view,arch_db:base.view_view_custom_search model_terms:ir.ui.view,arch_db:base.view_view_custom_tree
+#: model:ir.actions.act_window,name:base.action_ui_view_custom model:ir.ui.menu,name:base.menu_action_ui_view_custom model_terms:ir.ui.view,arch_db:base.view_view_custom_form model_terms:ir.ui.view,arch_db:base.view_view_custom_search
+#: model_terms:ir.ui.view,arch_db:base.view_view_custom_tree
 msgid "Customized Views"
 msgstr "نماهای سفارشی"
 
@@ -9390,9 +9379,8 @@ msgstr "نمایش"
 #: model:ir.model.fields,field_description:base.field_ir_config_parameter__display_name model:ir.model.fields,field_description:base.field_ir_cron__display_name
 #: model:ir.model.fields,field_description:base.field_ir_cron_trigger__display_name model:ir.model.fields,field_description:base.field_ir_default__display_name model:ir.model.fields,field_description:base.field_ir_demo__display_name
 #: model:ir.model.fields,field_description:base.field_ir_demo_failure__display_name model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__display_name
-#: model:ir.model.fields,field_description:base.field_ir_exports__display_name model:ir.model.fields,field_description:base.field_ir_exports_line__display_name
-#: model:ir.model.fields,field_description:base.field_ir_filters__display_name model:ir.model.fields,field_description:base.field_ir_logging__display_name
-#: model:ir.model.fields,field_description:base.field_ir_mail_server__display_name model:ir.model.fields,field_description:base.field_ir_model__display_name
+#: model:ir.model.fields,field_description:base.field_ir_exports__display_name model:ir.model.fields,field_description:base.field_ir_exports_line__display_name model:ir.model.fields,field_description:base.field_ir_filters__display_name
+#: model:ir.model.fields,field_description:base.field_ir_logging__display_name model:ir.model.fields,field_description:base.field_ir_mail_server__display_name model:ir.model.fields,field_description:base.field_ir_model__display_name
 #: model:ir.model.fields,field_description:base.field_ir_model_access__display_name model:ir.model.fields,field_description:base.field_ir_model_constraint__display_name
 #: model:ir.model.fields,field_description:base.field_ir_model_data__display_name model:ir.model.fields,field_description:base.field_ir_model_fields__display_name
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_selection__display_name model:ir.model.fields,field_description:base.field_ir_model_inherit__display_name
@@ -9407,15 +9395,14 @@ msgstr "نمایش"
 #: model:ir.model.fields,field_description:base.field_res_config_installer__display_name model:ir.model.fields,field_description:base.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:base.field_res_country__display_name model:ir.model.fields,field_description:base.field_res_country_group__display_name
 #: model:ir.model.fields,field_description:base.field_res_country_state__display_name model:ir.model.fields,field_description:base.field_res_currency__display_name
-#: model:ir.model.fields,field_description:base.field_res_currency_rate__display_name model:ir.model.fields,field_description:base.field_res_groups__display_name
-#: model:ir.model.fields,field_description:base.field_res_lang__display_name model:ir.model.fields,field_description:base.field_res_partner__display_name
-#: model:ir.model.fields,field_description:base.field_res_partner_bank__display_name model:ir.model.fields,field_description:base.field_res_partner_category__display_name
-#: model:ir.model.fields,field_description:base.field_res_partner_industry__display_name model:ir.model.fields,field_description:base.field_res_partner_title__display_name
-#: model:ir.model.fields,field_description:base.field_res_users__display_name model:ir.model.fields,field_description:base.field_res_users_apikeys__display_name
-#: model:ir.model.fields,field_description:base.field_res_users_apikeys_description__display_name model:ir.model.fields,field_description:base.field_res_users_deletion__display_name
-#: model:ir.model.fields,field_description:base.field_res_users_identitycheck__display_name model:ir.model.fields,field_description:base.field_res_users_log__display_name
-#: model:ir.model.fields,field_description:base.field_res_users_settings__display_name model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__display_name
-#: model:ir.model.fields,field_description:base.field_wizard_ir_model_menu_create__display_name
+#: model:ir.model.fields,field_description:base.field_res_currency_rate__display_name model:ir.model.fields,field_description:base.field_res_groups__display_name model:ir.model.fields,field_description:base.field_res_lang__display_name
+#: model:ir.model.fields,field_description:base.field_res_partner__display_name model:ir.model.fields,field_description:base.field_res_partner_bank__display_name
+#: model:ir.model.fields,field_description:base.field_res_partner_category__display_name model:ir.model.fields,field_description:base.field_res_partner_industry__display_name
+#: model:ir.model.fields,field_description:base.field_res_partner_title__display_name model:ir.model.fields,field_description:base.field_res_users__display_name
+#: model:ir.model.fields,field_description:base.field_res_users_apikeys__display_name model:ir.model.fields,field_description:base.field_res_users_apikeys_description__display_name
+#: model:ir.model.fields,field_description:base.field_res_users_deletion__display_name model:ir.model.fields,field_description:base.field_res_users_identitycheck__display_name
+#: model:ir.model.fields,field_description:base.field_res_users_log__display_name model:ir.model.fields,field_description:base.field_res_users_settings__display_name
+#: model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__display_name model:ir.model.fields,field_description:base.field_wizard_ir_model_menu_create__display_name
 msgid "Display Name"
 msgstr "نام نمایش داده شده"
 
@@ -10358,8 +10345,8 @@ msgid ""
 "regroupant l'ensemble des écritures comptables de l'exercice. Le format de ce\n"
 "fichier, appelé *FEC*, est définit dans l'arrêté.\n"
 "\n"
-"Le détail du format du FEC est spécifié dans le bulletin officiel des finances publiques `BOI-CF-IOR-60-40-20-20131213 <http://bofip.impots.gouv.fr/bofip/ext/pdf/createPdfWithAnnexePermalien/BOI-CF-IOR-60-40-20-20131213.pdf?"
-"doc=9028-PGP&identifiant=BOI-CF-IOR-60-40-20-20131213>` du 13 Décembre 2013. Ce module implémente le fichier\n"
+"Le détail du format du FEC est spécifié dans le bulletin officiel des finances publiques `BOI-CF-IOR-60-40-20-20131213 <http://bofip.impots.gouv.fr/bofip/ext/pdf/createPdfWithAnnexePermalien/BOI-CF-IOR-60-40-20-20131213.pdf?doc=9028-"
+"PGP&identifiant=BOI-CF-IOR-60-40-20-20131213>` du 13 Décembre 2013. Ce module implémente le fichier\n"
 "FEC au format texte et non au format XML, car le format texte sera facilement\n"
 "lisible et vérifiable par le comptable en utilisant un tableur.\n"
 "\n"
@@ -10389,8 +10376,8 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.model.fields,field_description:base.field_ir_default__field_id model:ir.model.fields,field_description:base.field_ir_model_fields_selection__field_id
-#: model:ir.model.fields,field_description:base.field_ir_property__fields_id model_terms:ir.ui.view,arch_db:base.view_model_fields_search model_terms:ir.ui.view,arch_db:base.view_model_fields_selection_search
+#: model:ir.model.fields,field_description:base.field_ir_default__field_id model:ir.model.fields,field_description:base.field_ir_model_fields_selection__field_id model:ir.model.fields,field_description:base.field_ir_property__fields_id
+#: model_terms:ir.ui.view,arch_db:base.view_model_fields_search model_terms:ir.ui.view,arch_db:base.view_model_fields_selection_search
 msgid "Field"
 msgstr "فیلد"
 
@@ -10757,8 +10744,8 @@ msgstr "متن پاورقی نمایش داده شده در همه گزارشه�
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_server__value model:ir.model.fields,help:base.field_ir_cron__value
 msgid ""
-"For Python expressions, this field may hold a Python expression that can use the same values as for the code field on the server action,e.g. `env.user.name` to set the current user's name as the value or `record.id` to set the ID "
-"of the record on which the action is run.\n"
+"For Python expressions, this field may hold a Python expression that can use the same values as for the code field on the server action,e.g. `env.user.name` to set the current user's name as the value or `record.id` to set the ID of "
+"the record on which the action is run.\n"
 "\n"
 "For Static values, the value will be used directly without evaluation, e.g.`42` or `My custom name` or the selected record."
 msgstr ""
@@ -11253,11 +11240,11 @@ msgid "Group"
 msgstr "گروه"
 
 #. module: base
-#: model_terms:ir.ui.view,arch_db:base.act_report_xml_search_view model_terms:ir.ui.view,arch_db:base.ir_access_view_search model_terms:ir.ui.view,arch_db:base.ir_cron_view_search
-#: model_terms:ir.ui.view,arch_db:base.ir_default_search_view model_terms:ir.ui.view,arch_db:base.ir_filters_view_search model_terms:ir.ui.view,arch_db:base.ir_logging_search_view
-#: model_terms:ir.ui.view,arch_db:base.view_attachment_search model_terms:ir.ui.view,arch_db:base.view_country_state_search model_terms:ir.ui.view,arch_db:base.view_model_constraint_search
-#: model_terms:ir.ui.view,arch_db:base.view_model_data_search model_terms:ir.ui.view,arch_db:base.view_model_fields_search model_terms:ir.ui.view,arch_db:base.view_module_filter
-#: model_terms:ir.ui.view,arch_db:base.view_res_partner_filter model_terms:ir.ui.view,arch_db:base.view_rule_search model_terms:ir.ui.view,arch_db:base.view_server_action_search model_terms:ir.ui.view,arch_db:base.view_view_search
+#: model_terms:ir.ui.view,arch_db:base.act_report_xml_search_view model_terms:ir.ui.view,arch_db:base.ir_access_view_search model_terms:ir.ui.view,arch_db:base.ir_cron_view_search model_terms:ir.ui.view,arch_db:base.ir_default_search_view
+#: model_terms:ir.ui.view,arch_db:base.ir_filters_view_search model_terms:ir.ui.view,arch_db:base.ir_logging_search_view model_terms:ir.ui.view,arch_db:base.view_attachment_search
+#: model_terms:ir.ui.view,arch_db:base.view_country_state_search model_terms:ir.ui.view,arch_db:base.view_model_constraint_search model_terms:ir.ui.view,arch_db:base.view_model_data_search
+#: model_terms:ir.ui.view,arch_db:base.view_model_fields_search model_terms:ir.ui.view,arch_db:base.view_module_filter model_terms:ir.ui.view,arch_db:base.view_res_partner_filter model_terms:ir.ui.view,arch_db:base.view_rule_search
+#: model_terms:ir.ui.view,arch_db:base.view_server_action_search model_terms:ir.ui.view,arch_db:base.view_view_search
 msgid "Group By"
 msgstr "گروه‌بندی برمبنای"
 
@@ -11286,8 +11273,7 @@ msgstr ""
 #: code:addons/base/models/ir_actions.py:0
 #, python-format
 msgid ""
-"Group-restricted fields cannot be included in webhook payloads, as it could allow any user to accidentally leak sensitive information. You will have to remove the following fields from the webhook payload in the following "
-"actions:\n"
+"Group-restricted fields cannot be included in webhook payloads, as it could allow any user to accidentally leak sensitive information. You will have to remove the following fields from the webhook payload in the following actions:\n"
 " %s"
 msgstr ""
 
@@ -11742,37 +11728,35 @@ msgid "IBAN Bank Accounts"
 msgstr ""
 
 #. module: base
-#: model:ir.model.fields,field_description:base.field_base_enable_profiling_wizard__id model:ir.model.fields,field_description:base.field_base_language_export__id
-#: model:ir.model.fields,field_description:base.field_base_language_import__id model:ir.model.fields,field_description:base.field_base_language_install__id model:ir.model.fields,field_description:base.field_base_module_uninstall__id
-#: model:ir.model.fields,field_description:base.field_base_module_update__id model:ir.model.fields,field_description:base.field_base_module_upgrade__id
-#: model:ir.model.fields,field_description:base.field_base_partner_merge_automatic_wizard__id model:ir.model.fields,field_description:base.field_base_partner_merge_line__id
-#: model:ir.model.fields,field_description:base.field_change_password_own__id model:ir.model.fields,field_description:base.field_change_password_user__id model:ir.model.fields,field_description:base.field_change_password_wizard__id
-#: model:ir.model.fields,field_description:base.field_decimal_precision__id model:ir.model.fields,field_description:base.field_ir_actions_act_url__id model:ir.model.fields,field_description:base.field_ir_actions_act_window__id
-#: model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__id model:ir.model.fields,field_description:base.field_ir_actions_act_window_view__id
-#: model:ir.model.fields,field_description:base.field_ir_actions_actions__id model:ir.model.fields,field_description:base.field_ir_actions_client__id model:ir.model.fields,field_description:base.field_ir_actions_report__id
-#: model:ir.model.fields,field_description:base.field_ir_actions_server__id model:ir.model.fields,field_description:base.field_ir_actions_todo__id model:ir.model.fields,field_description:base.field_ir_asset__id
-#: model:ir.model.fields,field_description:base.field_ir_attachment__id model:ir.model.fields,field_description:base.field_ir_config_parameter__id model:ir.model.fields,field_description:base.field_ir_cron__id
-#: model:ir.model.fields,field_description:base.field_ir_cron_trigger__id model:ir.model.fields,field_description:base.field_ir_default__id model:ir.model.fields,field_description:base.field_ir_demo__id
-#: model:ir.model.fields,field_description:base.field_ir_demo_failure__id model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__id model:ir.model.fields,field_description:base.field_ir_exports__id
-#: model:ir.model.fields,field_description:base.field_ir_exports_line__id model:ir.model.fields,field_description:base.field_ir_filters__id model:ir.model.fields,field_description:base.field_ir_logging__id
-#: model:ir.model.fields,field_description:base.field_ir_mail_server__id model:ir.model.fields,field_description:base.field_ir_model__id model:ir.model.fields,field_description:base.field_ir_model_access__id
-#: model:ir.model.fields,field_description:base.field_ir_model_constraint__id model:ir.model.fields,field_description:base.field_ir_model_data__id model:ir.model.fields,field_description:base.field_ir_model_fields__id
-#: model:ir.model.fields,field_description:base.field_ir_model_fields_selection__id model:ir.model.fields,field_description:base.field_ir_model_inherit__id model:ir.model.fields,field_description:base.field_ir_model_relation__id
-#: model:ir.model.fields,field_description:base.field_ir_module_category__id model:ir.model.fields,field_description:base.field_ir_module_module__id model:ir.model.fields,field_description:base.field_ir_module_module_dependency__id
-#: model:ir.model.fields,field_description:base.field_ir_module_module_exclusion__id model:ir.model.fields,field_description:base.field_ir_profile__id model:ir.model.fields,field_description:base.field_ir_property__id
-#: model:ir.model.fields,field_description:base.field_ir_rule__id model:ir.model.fields,field_description:base.field_ir_sequence__id model:ir.model.fields,field_description:base.field_ir_sequence_date_range__id
-#: model:ir.model.fields,field_description:base.field_ir_ui_menu__id model:ir.model.fields,field_description:base.field_ir_ui_view__id model:ir.model.fields,field_description:base.field_ir_ui_view_custom__id
-#: model:ir.model.fields,field_description:base.field_report_layout__id model:ir.model.fields,field_description:base.field_report_paperformat__id model:ir.model.fields,field_description:base.field_res_bank__id
-#: model:ir.model.fields,field_description:base.field_res_company__id model:ir.model.fields,field_description:base.field_res_config__id model:ir.model.fields,field_description:base.field_res_config_installer__id
-#: model:ir.model.fields,field_description:base.field_res_config_settings__id model:ir.model.fields,field_description:base.field_res_country__id model:ir.model.fields,field_description:base.field_res_country_group__id
-#: model:ir.model.fields,field_description:base.field_res_country_state__id model:ir.model.fields,field_description:base.field_res_currency__id model:ir.model.fields,field_description:base.field_res_currency_rate__id
-#: model:ir.model.fields,field_description:base.field_res_groups__id model:ir.model.fields,field_description:base.field_res_lang__id model:ir.model.fields,field_description:base.field_res_partner__id
-#: model:ir.model.fields,field_description:base.field_res_partner_bank__id model:ir.model.fields,field_description:base.field_res_partner_category__id model:ir.model.fields,field_description:base.field_res_partner_industry__id
-#: model:ir.model.fields,field_description:base.field_res_partner_title__id model:ir.model.fields,field_description:base.field_res_users__id model:ir.model.fields,field_description:base.field_res_users_apikeys__id
-#: model:ir.model.fields,field_description:base.field_res_users_apikeys_description__id model:ir.model.fields,field_description:base.field_res_users_apikeys_show__id
+#: model:ir.model.fields,field_description:base.field_base_enable_profiling_wizard__id model:ir.model.fields,field_description:base.field_base_language_export__id model:ir.model.fields,field_description:base.field_base_language_import__id
+#: model:ir.model.fields,field_description:base.field_base_language_install__id model:ir.model.fields,field_description:base.field_base_module_uninstall__id model:ir.model.fields,field_description:base.field_base_module_update__id
+#: model:ir.model.fields,field_description:base.field_base_module_upgrade__id model:ir.model.fields,field_description:base.field_base_partner_merge_automatic_wizard__id
+#: model:ir.model.fields,field_description:base.field_base_partner_merge_line__id model:ir.model.fields,field_description:base.field_change_password_own__id model:ir.model.fields,field_description:base.field_change_password_user__id
+#: model:ir.model.fields,field_description:base.field_change_password_wizard__id model:ir.model.fields,field_description:base.field_decimal_precision__id model:ir.model.fields,field_description:base.field_ir_actions_act_url__id
+#: model:ir.model.fields,field_description:base.field_ir_actions_act_window__id model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__id
+#: model:ir.model.fields,field_description:base.field_ir_actions_act_window_view__id model:ir.model.fields,field_description:base.field_ir_actions_actions__id model:ir.model.fields,field_description:base.field_ir_actions_client__id
+#: model:ir.model.fields,field_description:base.field_ir_actions_report__id model:ir.model.fields,field_description:base.field_ir_actions_server__id model:ir.model.fields,field_description:base.field_ir_actions_todo__id
+#: model:ir.model.fields,field_description:base.field_ir_asset__id model:ir.model.fields,field_description:base.field_ir_attachment__id model:ir.model.fields,field_description:base.field_ir_config_parameter__id
+#: model:ir.model.fields,field_description:base.field_ir_cron__id model:ir.model.fields,field_description:base.field_ir_cron_trigger__id model:ir.model.fields,field_description:base.field_ir_default__id
+#: model:ir.model.fields,field_description:base.field_ir_demo__id model:ir.model.fields,field_description:base.field_ir_demo_failure__id model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__id
+#: model:ir.model.fields,field_description:base.field_ir_exports__id model:ir.model.fields,field_description:base.field_ir_exports_line__id model:ir.model.fields,field_description:base.field_ir_filters__id
+#: model:ir.model.fields,field_description:base.field_ir_logging__id model:ir.model.fields,field_description:base.field_ir_mail_server__id model:ir.model.fields,field_description:base.field_ir_model__id
+#: model:ir.model.fields,field_description:base.field_ir_model_access__id model:ir.model.fields,field_description:base.field_ir_model_constraint__id model:ir.model.fields,field_description:base.field_ir_model_data__id
+#: model:ir.model.fields,field_description:base.field_ir_model_fields__id model:ir.model.fields,field_description:base.field_ir_model_fields_selection__id model:ir.model.fields,field_description:base.field_ir_model_inherit__id
+#: model:ir.model.fields,field_description:base.field_ir_model_relation__id model:ir.model.fields,field_description:base.field_ir_module_category__id model:ir.model.fields,field_description:base.field_ir_module_module__id
+#: model:ir.model.fields,field_description:base.field_ir_module_module_dependency__id model:ir.model.fields,field_description:base.field_ir_module_module_exclusion__id model:ir.model.fields,field_description:base.field_ir_profile__id
+#: model:ir.model.fields,field_description:base.field_ir_property__id model:ir.model.fields,field_description:base.field_ir_rule__id model:ir.model.fields,field_description:base.field_ir_sequence__id
+#: model:ir.model.fields,field_description:base.field_ir_sequence_date_range__id model:ir.model.fields,field_description:base.field_ir_ui_menu__id model:ir.model.fields,field_description:base.field_ir_ui_view__id
+#: model:ir.model.fields,field_description:base.field_ir_ui_view_custom__id model:ir.model.fields,field_description:base.field_report_layout__id model:ir.model.fields,field_description:base.field_report_paperformat__id
+#: model:ir.model.fields,field_description:base.field_res_bank__id model:ir.model.fields,field_description:base.field_res_company__id model:ir.model.fields,field_description:base.field_res_config__id
+#: model:ir.model.fields,field_description:base.field_res_config_installer__id model:ir.model.fields,field_description:base.field_res_config_settings__id model:ir.model.fields,field_description:base.field_res_country__id
+#: model:ir.model.fields,field_description:base.field_res_country_group__id model:ir.model.fields,field_description:base.field_res_country_state__id model:ir.model.fields,field_description:base.field_res_currency__id
+#: model:ir.model.fields,field_description:base.field_res_currency_rate__id model:ir.model.fields,field_description:base.field_res_groups__id model:ir.model.fields,field_description:base.field_res_lang__id
+#: model:ir.model.fields,field_description:base.field_res_partner__id model:ir.model.fields,field_description:base.field_res_partner_bank__id model:ir.model.fields,field_description:base.field_res_partner_category__id
+#: model:ir.model.fields,field_description:base.field_res_partner_industry__id model:ir.model.fields,field_description:base.field_res_partner_title__id model:ir.model.fields,field_description:base.field_res_users__id
+#: model:ir.model.fields,field_description:base.field_res_users_apikeys__id model:ir.model.fields,field_description:base.field_res_users_apikeys_description__id model:ir.model.fields,field_description:base.field_res_users_apikeys_show__id
 #: model:ir.model.fields,field_description:base.field_res_users_deletion__id model:ir.model.fields,field_description:base.field_res_users_identitycheck__id model:ir.model.fields,field_description:base.field_res_users_log__id
-#: model:ir.model.fields,field_description:base.field_res_users_settings__id model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__id
-#: model:ir.model.fields,field_description:base.field_wizard_ir_model_menu_create__id
+#: model:ir.model.fields,field_description:base.field_res_users_settings__id model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__id model:ir.model.fields,field_description:base.field_wizard_ir_model_menu_create__id
 msgid "ID"
 msgstr "شناسه"
 
@@ -12659,8 +12643,7 @@ msgid "Invalid xmlid %(xmlid)s for button of type action."
 msgstr ""
 
 #. module: base
-#: model:ir.module.category,name:base.module_category_inventory model:ir.module.category,name:base.module_category_inventory_inventory model:ir.module.module,shortdesc:base.module_stock
-#: model_terms:ir.ui.view,arch_db:base.user_groups_view
+#: model:ir.module.category,name:base.module_category_inventory model:ir.module.category,name:base.module_category_inventory_inventory model:ir.module.module,shortdesc:base.module_stock model_terms:ir.ui.view,arch_db:base.user_groups_view
 msgid "Inventory"
 msgstr "انبار"
 
@@ -13056,8 +13039,8 @@ msgid "Language code cannot be modified."
 msgstr "کد زبان نمی‌توان تغییر داد"
 
 #. module: base
-#: model:ir.actions.act_window,name:base.res_lang_act_window model:ir.model,name:base.model_res_lang model:ir.model.fields,field_description:base.field_base_language_install__lang_ids
-#: model:ir.ui.menu,name:base.menu_res_lang_act_window model_terms:ir.ui.view,arch_db:base.res_lang_form model_terms:ir.ui.view,arch_db:base.res_lang_search model_terms:ir.ui.view,arch_db:base.res_lang_tree
+#: model:ir.actions.act_window,name:base.res_lang_act_window model:ir.model,name:base.model_res_lang model:ir.model.fields,field_description:base.field_base_language_install__lang_ids model:ir.ui.menu,name:base.menu_res_lang_act_window
+#: model_terms:ir.ui.view,arch_db:base.res_lang_form model_terms:ir.ui.view,arch_db:base.res_lang_search model_terms:ir.ui.view,arch_db:base.res_lang_tree
 msgid "Languages"
 msgstr "زبان‌ها"
 
@@ -13090,24 +13073,22 @@ msgstr "اخرین بروزرسانی"
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__write_uid model:ir.model.fields,field_description:base.field_ir_actions_todo__write_uid model:ir.model.fields,field_description:base.field_ir_asset__write_uid
 #: model:ir.model.fields,field_description:base.field_ir_attachment__write_uid model:ir.model.fields,field_description:base.field_ir_config_parameter__write_uid model:ir.model.fields,field_description:base.field_ir_cron__write_uid
 #: model:ir.model.fields,field_description:base.field_ir_cron_trigger__write_uid model:ir.model.fields,field_description:base.field_ir_default__write_uid model:ir.model.fields,field_description:base.field_ir_demo__write_uid
-#: model:ir.model.fields,field_description:base.field_ir_demo_failure__write_uid model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__write_uid
-#: model:ir.model.fields,field_description:base.field_ir_exports__write_uid model:ir.model.fields,field_description:base.field_ir_exports_line__write_uid model:ir.model.fields,field_description:base.field_ir_filters__write_uid
-#: model:ir.model.fields,field_description:base.field_ir_logging__write_uid model:ir.model.fields,field_description:base.field_ir_mail_server__write_uid model:ir.model.fields,field_description:base.field_ir_model__write_uid
-#: model:ir.model.fields,field_description:base.field_ir_model_access__write_uid model:ir.model.fields,field_description:base.field_ir_model_constraint__write_uid
-#: model:ir.model.fields,field_description:base.field_ir_model_data__write_uid model:ir.model.fields,field_description:base.field_ir_model_fields__write_uid
+#: model:ir.model.fields,field_description:base.field_ir_demo_failure__write_uid model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__write_uid model:ir.model.fields,field_description:base.field_ir_exports__write_uid
+#: model:ir.model.fields,field_description:base.field_ir_exports_line__write_uid model:ir.model.fields,field_description:base.field_ir_filters__write_uid model:ir.model.fields,field_description:base.field_ir_logging__write_uid
+#: model:ir.model.fields,field_description:base.field_ir_mail_server__write_uid model:ir.model.fields,field_description:base.field_ir_model__write_uid model:ir.model.fields,field_description:base.field_ir_model_access__write_uid
+#: model:ir.model.fields,field_description:base.field_ir_model_constraint__write_uid model:ir.model.fields,field_description:base.field_ir_model_data__write_uid model:ir.model.fields,field_description:base.field_ir_model_fields__write_uid
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_selection__write_uid model:ir.model.fields,field_description:base.field_ir_model_relation__write_uid
 #: model:ir.model.fields,field_description:base.field_ir_module_category__write_uid model:ir.model.fields,field_description:base.field_ir_module_module__write_uid
-#: model:ir.model.fields,field_description:base.field_ir_module_module_exclusion__write_uid model:ir.model.fields,field_description:base.field_ir_property__write_uid
-#: model:ir.model.fields,field_description:base.field_ir_rule__write_uid model:ir.model.fields,field_description:base.field_ir_sequence__write_uid model:ir.model.fields,field_description:base.field_ir_sequence_date_range__write_uid
-#: model:ir.model.fields,field_description:base.field_ir_ui_menu__write_uid model:ir.model.fields,field_description:base.field_ir_ui_view__write_uid model:ir.model.fields,field_description:base.field_ir_ui_view_custom__write_uid
-#: model:ir.model.fields,field_description:base.field_report_layout__write_uid model:ir.model.fields,field_description:base.field_report_paperformat__write_uid model:ir.model.fields,field_description:base.field_res_bank__write_uid
-#: model:ir.model.fields,field_description:base.field_res_company__write_uid model:ir.model.fields,field_description:base.field_res_config__write_uid model:ir.model.fields,field_description:base.field_res_config_installer__write_uid
-#: model:ir.model.fields,field_description:base.field_res_config_settings__write_uid model:ir.model.fields,field_description:base.field_res_country__write_uid
-#: model:ir.model.fields,field_description:base.field_res_country_group__write_uid model:ir.model.fields,field_description:base.field_res_country_state__write_uid
-#: model:ir.model.fields,field_description:base.field_res_currency__write_uid model:ir.model.fields,field_description:base.field_res_currency_rate__write_uid model:ir.model.fields,field_description:base.field_res_groups__write_uid
-#: model:ir.model.fields,field_description:base.field_res_lang__write_uid model:ir.model.fields,field_description:base.field_res_partner__write_uid model:ir.model.fields,field_description:base.field_res_partner_bank__write_uid
-#: model:ir.model.fields,field_description:base.field_res_partner_category__write_uid model:ir.model.fields,field_description:base.field_res_partner_industry__write_uid
-#: model:ir.model.fields,field_description:base.field_res_partner_title__write_uid model:ir.model.fields,field_description:base.field_res_users__write_uid
+#: model:ir.model.fields,field_description:base.field_ir_module_module_exclusion__write_uid model:ir.model.fields,field_description:base.field_ir_property__write_uid model:ir.model.fields,field_description:base.field_ir_rule__write_uid
+#: model:ir.model.fields,field_description:base.field_ir_sequence__write_uid model:ir.model.fields,field_description:base.field_ir_sequence_date_range__write_uid model:ir.model.fields,field_description:base.field_ir_ui_menu__write_uid
+#: model:ir.model.fields,field_description:base.field_ir_ui_view__write_uid model:ir.model.fields,field_description:base.field_ir_ui_view_custom__write_uid model:ir.model.fields,field_description:base.field_report_layout__write_uid
+#: model:ir.model.fields,field_description:base.field_report_paperformat__write_uid model:ir.model.fields,field_description:base.field_res_bank__write_uid model:ir.model.fields,field_description:base.field_res_company__write_uid
+#: model:ir.model.fields,field_description:base.field_res_config__write_uid model:ir.model.fields,field_description:base.field_res_config_installer__write_uid
+#: model:ir.model.fields,field_description:base.field_res_config_settings__write_uid model:ir.model.fields,field_description:base.field_res_country__write_uid model:ir.model.fields,field_description:base.field_res_country_group__write_uid
+#: model:ir.model.fields,field_description:base.field_res_country_state__write_uid model:ir.model.fields,field_description:base.field_res_currency__write_uid model:ir.model.fields,field_description:base.field_res_currency_rate__write_uid
+#: model:ir.model.fields,field_description:base.field_res_groups__write_uid model:ir.model.fields,field_description:base.field_res_lang__write_uid model:ir.model.fields,field_description:base.field_res_partner__write_uid
+#: model:ir.model.fields,field_description:base.field_res_partner_bank__write_uid model:ir.model.fields,field_description:base.field_res_partner_category__write_uid
+#: model:ir.model.fields,field_description:base.field_res_partner_industry__write_uid model:ir.model.fields,field_description:base.field_res_partner_title__write_uid model:ir.model.fields,field_description:base.field_res_users__write_uid
 #: model:ir.model.fields,field_description:base.field_res_users_apikeys_description__write_uid model:ir.model.fields,field_description:base.field_res_users_deletion__write_uid
 #: model:ir.model.fields,field_description:base.field_res_users_identitycheck__write_uid model:ir.model.fields,field_description:base.field_res_users_log__write_uid
 #: model:ir.model.fields,field_description:base.field_res_users_settings__write_uid model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__write_uid
@@ -13126,27 +13107,24 @@ msgstr "آخرین بروز رسانی توسط"
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__write_date model:ir.model.fields,field_description:base.field_ir_actions_act_window_close__write_date
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window_view__write_date model:ir.model.fields,field_description:base.field_ir_actions_actions__write_date
 #: model:ir.model.fields,field_description:base.field_ir_actions_client__write_date model:ir.model.fields,field_description:base.field_ir_actions_report__write_date
-#: model:ir.model.fields,field_description:base.field_ir_actions_server__write_date model:ir.model.fields,field_description:base.field_ir_actions_todo__write_date
-#: model:ir.model.fields,field_description:base.field_ir_asset__write_date model:ir.model.fields,field_description:base.field_ir_attachment__write_date
-#: model:ir.model.fields,field_description:base.field_ir_config_parameter__write_date model:ir.model.fields,field_description:base.field_ir_cron__write_date
+#: model:ir.model.fields,field_description:base.field_ir_actions_server__write_date model:ir.model.fields,field_description:base.field_ir_actions_todo__write_date model:ir.model.fields,field_description:base.field_ir_asset__write_date
+#: model:ir.model.fields,field_description:base.field_ir_attachment__write_date model:ir.model.fields,field_description:base.field_ir_config_parameter__write_date model:ir.model.fields,field_description:base.field_ir_cron__write_date
 #: model:ir.model.fields,field_description:base.field_ir_cron_trigger__write_date model:ir.model.fields,field_description:base.field_ir_default__write_date model:ir.model.fields,field_description:base.field_ir_demo__write_date
 #: model:ir.model.fields,field_description:base.field_ir_demo_failure__write_date model:ir.model.fields,field_description:base.field_ir_demo_failure_wizard__write_date
 #: model:ir.model.fields,field_description:base.field_ir_exports__write_date model:ir.model.fields,field_description:base.field_ir_exports_line__write_date model:ir.model.fields,field_description:base.field_ir_filters__write_date
 #: model:ir.model.fields,field_description:base.field_ir_logging__write_date model:ir.model.fields,field_description:base.field_ir_mail_server__write_date model:ir.model.fields,field_description:base.field_ir_model__write_date
-#: model:ir.model.fields,field_description:base.field_ir_model_access__write_date model:ir.model.fields,field_description:base.field_ir_model_data__write_date
-#: model:ir.model.fields,field_description:base.field_ir_model_fields__write_date model:ir.model.fields,field_description:base.field_ir_model_fields_selection__write_date
-#: model:ir.model.fields,field_description:base.field_ir_module_category__write_date model:ir.model.fields,field_description:base.field_ir_module_module__write_date
-#: model:ir.model.fields,field_description:base.field_ir_module_module_exclusion__write_date model:ir.model.fields,field_description:base.field_ir_property__write_date
-#: model:ir.model.fields,field_description:base.field_ir_rule__write_date model:ir.model.fields,field_description:base.field_ir_sequence__write_date
-#: model:ir.model.fields,field_description:base.field_ir_sequence_date_range__write_date model:ir.model.fields,field_description:base.field_ir_ui_menu__write_date
-#: model:ir.model.fields,field_description:base.field_ir_ui_view__write_date model:ir.model.fields,field_description:base.field_ir_ui_view_custom__write_date
-#: model:ir.model.fields,field_description:base.field_report_layout__write_date model:ir.model.fields,field_description:base.field_report_paperformat__write_date model:ir.model.fields,field_description:base.field_res_bank__write_date
-#: model:ir.model.fields,field_description:base.field_res_company__write_date model:ir.model.fields,field_description:base.field_res_config__write_date
-#: model:ir.model.fields,field_description:base.field_res_config_installer__write_date model:ir.model.fields,field_description:base.field_res_config_settings__write_date
-#: model:ir.model.fields,field_description:base.field_res_country__write_date model:ir.model.fields,field_description:base.field_res_country_group__write_date
-#: model:ir.model.fields,field_description:base.field_res_country_state__write_date model:ir.model.fields,field_description:base.field_res_currency__write_date
-#: model:ir.model.fields,field_description:base.field_res_currency_rate__write_date model:ir.model.fields,field_description:base.field_res_groups__write_date model:ir.model.fields,field_description:base.field_res_lang__write_date
-#: model:ir.model.fields,field_description:base.field_res_partner__write_date model:ir.model.fields,field_description:base.field_res_partner_bank__write_date
+#: model:ir.model.fields,field_description:base.field_ir_model_access__write_date model:ir.model.fields,field_description:base.field_ir_model_data__write_date model:ir.model.fields,field_description:base.field_ir_model_fields__write_date
+#: model:ir.model.fields,field_description:base.field_ir_model_fields_selection__write_date model:ir.model.fields,field_description:base.field_ir_module_category__write_date
+#: model:ir.model.fields,field_description:base.field_ir_module_module__write_date model:ir.model.fields,field_description:base.field_ir_module_module_exclusion__write_date
+#: model:ir.model.fields,field_description:base.field_ir_property__write_date model:ir.model.fields,field_description:base.field_ir_rule__write_date model:ir.model.fields,field_description:base.field_ir_sequence__write_date
+#: model:ir.model.fields,field_description:base.field_ir_sequence_date_range__write_date model:ir.model.fields,field_description:base.field_ir_ui_menu__write_date model:ir.model.fields,field_description:base.field_ir_ui_view__write_date
+#: model:ir.model.fields,field_description:base.field_ir_ui_view_custom__write_date model:ir.model.fields,field_description:base.field_report_layout__write_date
+#: model:ir.model.fields,field_description:base.field_report_paperformat__write_date model:ir.model.fields,field_description:base.field_res_bank__write_date model:ir.model.fields,field_description:base.field_res_company__write_date
+#: model:ir.model.fields,field_description:base.field_res_config__write_date model:ir.model.fields,field_description:base.field_res_config_installer__write_date
+#: model:ir.model.fields,field_description:base.field_res_config_settings__write_date model:ir.model.fields,field_description:base.field_res_country__write_date
+#: model:ir.model.fields,field_description:base.field_res_country_group__write_date model:ir.model.fields,field_description:base.field_res_country_state__write_date
+#: model:ir.model.fields,field_description:base.field_res_currency__write_date model:ir.model.fields,field_description:base.field_res_currency_rate__write_date model:ir.model.fields,field_description:base.field_res_groups__write_date
+#: model:ir.model.fields,field_description:base.field_res_lang__write_date model:ir.model.fields,field_description:base.field_res_partner__write_date model:ir.model.fields,field_description:base.field_res_partner_bank__write_date
 #: model:ir.model.fields,field_description:base.field_res_partner_category__write_date model:ir.model.fields,field_description:base.field_res_partner_industry__write_date
 #: model:ir.model.fields,field_description:base.field_res_partner_title__write_date model:ir.model.fields,field_description:base.field_res_users__write_date
 #: model:ir.model.fields,field_description:base.field_res_users_apikeys_description__write_date model:ir.model.fields,field_description:base.field_res_users_deletion__write_date
@@ -13747,8 +13725,8 @@ msgstr ""
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.grant_menu_access
 msgid ""
-"Manage and customize the items available and displayed in your Odoo system menu. You can delete an item by clicking on the box at the beginning of each line and then delete it through the button that appeared. Items can be "
-"assigned to specific groups in order to make them accessible to some users within the system."
+"Manage and customize the items available and displayed in your Odoo system menu. You can delete an item by clicking on the box at the beginning of each line and then delete it through the button that appeared. Items can be assigned to "
+"specific groups in order to make them accessible to some users within the system."
 msgstr ""
 
 #. module: base
@@ -13860,8 +13838,7 @@ msgid "Many2one %s on model %s does not exist!"
 msgstr ""
 
 #. module: base
-#: model:ir.actions.act_window,name:base.action_model_relation model:ir.ui.menu,name:base.ir_model_relation_menu model_terms:ir.ui.view,arch_db:base.view_model_relation_form
-#: model_terms:ir.ui.view,arch_db:base.view_model_relation_list
+#: model:ir.actions.act_window,name:base.action_model_relation model:ir.ui.menu,name:base.ir_model_relation_menu model_terms:ir.ui.view,arch_db:base.view_model_relation_form model_terms:ir.ui.view,arch_db:base.view_model_relation_list
 msgid "ManyToMany Relations"
 msgstr "رابطه چندبه‌چند"
 
@@ -14233,12 +14210,12 @@ msgstr "تلفن همراه:"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_report__model_id model:ir.model.fields,field_description:base.field_ir_actions_server__model_id model:ir.model.fields,field_description:base.field_ir_cron__model_id
 #: model:ir.model.fields,field_description:base.field_ir_filters__model_id model:ir.model.fields,field_description:base.field_ir_model__model model:ir.model.fields,field_description:base.field_ir_model_access__model_id
-#: model:ir.model.fields,field_description:base.field_ir_model_constraint__model model:ir.model.fields,field_description:base.field_ir_model_fields__model_id
-#: model:ir.model.fields,field_description:base.field_ir_model_inherit__model_id model:ir.model.fields,field_description:base.field_ir_model_relation__model model:ir.model.fields,field_description:base.field_ir_rule__model_id
-#: model:ir.model.fields,field_description:base.field_ir_ui_view__model model:ir.model.fields.selection,name:base.selection__base_language_export__export_type__model model_terms:ir.ui.view,arch_db:base.act_report_xml_search_view
-#: model_terms:ir.ui.view,arch_db:base.ir_access_view_search model_terms:ir.ui.view,arch_db:base.ir_cron_view_search model_terms:ir.ui.view,arch_db:base.ir_filters_view_search
-#: model_terms:ir.ui.view,arch_db:base.view_model_constraint_search model_terms:ir.ui.view,arch_db:base.view_model_data_search model_terms:ir.ui.view,arch_db:base.view_model_fields_search
-#: model_terms:ir.ui.view,arch_db:base.view_model_search model_terms:ir.ui.view,arch_db:base.view_rule_search model_terms:ir.ui.view,arch_db:base.view_server_action_search model_terms:ir.ui.view,arch_db:base.view_view_search
+#: model:ir.model.fields,field_description:base.field_ir_model_constraint__model model:ir.model.fields,field_description:base.field_ir_model_fields__model_id model:ir.model.fields,field_description:base.field_ir_model_inherit__model_id
+#: model:ir.model.fields,field_description:base.field_ir_model_relation__model model:ir.model.fields,field_description:base.field_ir_rule__model_id model:ir.model.fields,field_description:base.field_ir_ui_view__model
+#: model:ir.model.fields.selection,name:base.selection__base_language_export__export_type__model model_terms:ir.ui.view,arch_db:base.act_report_xml_search_view model_terms:ir.ui.view,arch_db:base.ir_access_view_search
+#: model_terms:ir.ui.view,arch_db:base.ir_cron_view_search model_terms:ir.ui.view,arch_db:base.ir_filters_view_search model_terms:ir.ui.view,arch_db:base.view_model_constraint_search
+#: model_terms:ir.ui.view,arch_db:base.view_model_data_search model_terms:ir.ui.view,arch_db:base.view_model_fields_search model_terms:ir.ui.view,arch_db:base.view_model_search model_terms:ir.ui.view,arch_db:base.view_rule_search
+#: model_terms:ir.ui.view,arch_db:base.view_server_action_search model_terms:ir.ui.view,arch_db:base.view_view_search
 msgid "Model"
 msgstr "مدل"
 
@@ -16338,8 +16315,8 @@ msgid ""
 "\n"
 "### Designers love working on Odoo\n"
 "\n"
-"Themes are awesome and easy to design. You don't need to develop to create new pages, themes or building blocks. We use a clean HTML structure, a [bootstrap](http://getbootstrap.com/) CSS and our modularity allows to distribute "
-"your themes easily.\n"
+"Themes are awesome and easy to design. You don't need to develop to create new pages, themes or building blocks. We use a clean HTML structure, a [bootstrap](http://getbootstrap.com/) CSS and our modularity allows to distribute your "
+"themes easily.\n"
 "\n"
 "The building block approach allows the website to stay clean after the end-users start creating new contents.\n"
 "\n"
@@ -16496,8 +16473,8 @@ msgstr ""
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
-"Our invoices are payable within 21 working days, unless another payment timeframe is indicated on either the invoice or the order. In the event of non-payment by the due date, آلپ reserves the right to request a fixed interest "
-"payment amounting to 10% of the sum remaining due. آلپ will be authorized to suspend any provision of services without prior warning in the event of late payment."
+"Our invoices are payable within 21 working days, unless another payment timeframe is indicated on either the invoice or the order. In the event of non-payment by the due date, آلپ reserves the right to request a fixed interest payment "
+"amounting to 10% of the sum remaining due. آلپ will be authorized to suspend any provision of services without prior warning in the event of late payment."
 msgstr ""
 
 #. module: base
@@ -16804,8 +16781,7 @@ msgid "Parent Menu"
 msgstr "منوی مادر"
 
 #. module: base
-#: model:ir.model.fields,field_description:base.field_ir_ui_menu__parent_path model:ir.model.fields,field_description:base.field_res_company__parent_path
-#: model:ir.model.fields,field_description:base.field_res_partner_category__parent_path
+#: model:ir.model.fields,field_description:base.field_ir_ui_menu__parent_path model:ir.model.fields,field_description:base.field_res_company__parent_path model:ir.model.fields,field_description:base.field_res_partner_category__parent_path
 msgid "Parent Path"
 msgstr "مسیر مادر"
 
@@ -16887,8 +16863,7 @@ msgid "Partners: %(category)s"
 msgstr ""
 
 #. module: base
-#: model:ir.model.fields,field_description:base.field_ir_mail_server__smtp_pass model:ir.model.fields,field_description:base.field_res_users__password
-#: model:ir.model.fields,field_description:base.field_res_users_identitycheck__password
+#: model:ir.model.fields,field_description:base.field_ir_mail_server__smtp_pass model:ir.model.fields,field_description:base.field_res_users__password model:ir.model.fields,field_description:base.field_res_users_identitycheck__password
 msgid "Password"
 msgstr "گذرواژه"
 
@@ -18713,8 +18688,7 @@ msgid "Samoa"
 msgstr "ساموا"
 
 #. module: base
-#: model:ir.model.fields,field_description:base.field_ir_actions_server__webhook_sample_payload model:ir.model.fields,field_description:base.field_ir_cron__webhook_sample_payload
-#: model_terms:ir.ui.view,arch_db:base.view_server_action_form
+#: model:ir.model.fields,field_description:base.field_ir_actions_server__webhook_sample_payload model:ir.model.fields,field_description:base.field_ir_cron__webhook_sample_payload model_terms:ir.ui.view,arch_db:base.view_server_action_form
 msgid "Sample Payload"
 msgstr ""
 
@@ -18986,8 +18960,8 @@ msgstr ""
 
 #. module: base
 #. odoo-python
-#: code:addons/base/models/ir_qweb_fields.py:0 model:ir.model.fields.selection,name:base.selection__base_partner_merge_automatic_wizard__state__selection
-#: model:ir.model.fields.selection,name:base.selection__ir_property__type__selection model_terms:ir.ui.view,arch_db:base.view_model_fields_selection_search
+#: code:addons/base/models/ir_qweb_fields.py:0 model:ir.model.fields.selection,name:base.selection__base_partner_merge_automatic_wizard__state__selection model:ir.model.fields.selection,name:base.selection__ir_property__type__selection
+#: model_terms:ir.ui.view,arch_db:base.view_model_fields_selection_search
 #, python-format
 msgid "Selection"
 msgstr "انتخاب"
@@ -19103,8 +19077,8 @@ msgid ""
 "Sending fake invoices with a fraudulent account number is a common phishing practice. To protect yourself, always verify new bank account numbers, preferably by calling the vendor, as phishing usually happens when their emails are "
 "compromised. Once verified, you can activate the ability to send money."
 msgstr ""
-"ارسال فاکتور با یک حساب جعلی، روشی متداول برای کلاهبرداری است. برای محافظت از خود، همواره شماره حساب‌های جدید را بررسی کنید، ترجیحاً این کار را از طریق تماس با فروشنده انجام دهید، زیرا کلاهبرداری معمولاً زمانی اتفاق می‌افتد که ایمیل‌ها "
-"در معرض خطر قرار بگیرند. پس از بررسی، می‌توانید قابلیت ارسال پول را فعال کنید. "
+"ارسال فاکتور با یک حساب جعلی، روشی متداول برای کلاهبرداری است. برای محافظت از خود، همواره شماره حساب‌های جدید را بررسی کنید، ترجیحاً این کار را از طریق تماس با فروشنده انجام دهید، زیرا کلاهبرداری معمولاً زمانی اتفاق می‌افتد که ایمیل‌ها در "
+"معرض خطر قرار بگیرند. پس از بررسی، می‌توانید قابلیت ارسال پول را فعال کنید. "
 
 #. module: base
 #: model:res.country,name:base.sn
@@ -19212,7 +19186,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.category,name:base.module_category_services model_terms:ir.ui.view,arch_db:base.user_groups_view
 msgid "Services"
-msgstr "محصولات"
+msgstr "خدمات"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_profile__session model_terms:ir.ui.view,arch_db:base.ir_profile_view_search
@@ -19241,9 +19215,8 @@ msgstr "تعیین به عنوان در دست اقدام"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_act_url__binding_model_id model:ir.model.fields,help:base.field_ir_actions_act_window__binding_model_id
-#: model:ir.model.fields,help:base.field_ir_actions_act_window_close__binding_model_id model:ir.model.fields,help:base.field_ir_actions_actions__binding_model_id
-#: model:ir.model.fields,help:base.field_ir_actions_client__binding_model_id model:ir.model.fields,help:base.field_ir_actions_report__binding_model_id model:ir.model.fields,help:base.field_ir_actions_server__binding_model_id
-#: model:ir.model.fields,help:base.field_ir_cron__binding_model_id
+#: model:ir.model.fields,help:base.field_ir_actions_act_window_close__binding_model_id model:ir.model.fields,help:base.field_ir_actions_actions__binding_model_id model:ir.model.fields,help:base.field_ir_actions_client__binding_model_id
+#: model:ir.model.fields,help:base.field_ir_actions_report__binding_model_id model:ir.model.fields,help:base.field_ir_actions_server__binding_model_id model:ir.model.fields,help:base.field_ir_cron__binding_model_id
 msgid "Setting a value makes this action available in the sidebar for the given model."
 msgstr "تنظیم یک مقدار این اقدام را در نوار کناری مدل داده شده در دسترس قرار می دهد."
 
@@ -19822,14 +19795,14 @@ msgid "Street"
 msgstr "آدرس"
 
 #. module: base
-#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_partner_address_form
-#: model_terms:ir.ui.view,arch_db:base.view_partner_form model_terms:ir.ui.view,arch_db:base.view_res_bank_form
+#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_partner_address_form model_terms:ir.ui.view,arch_db:base.view_partner_form
+#: model_terms:ir.ui.view,arch_db:base.view_res_bank_form
 msgid "Street 2..."
 msgstr "آدرس 2 ..."
 
 #. module: base
-#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_partner_address_form
-#: model_terms:ir.ui.view,arch_db:base.view_partner_form model_terms:ir.ui.view,arch_db:base.view_res_bank_form
+#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_partner_address_form model_terms:ir.ui.view,arch_db:base.view_partner_form
+#: model_terms:ir.ui.view,arch_db:base.view_res_bank_form
 msgid "Street..."
 msgstr "آدرس ..."
 
@@ -20391,8 +20364,8 @@ msgstr "کد زبان در URL نمایش داده می شود"
 #. module: base
 #: model:ir.model.fields,help:base.field_res_lang__grouping
 msgid ""
-"The Separator Format should be like [,n] where 0 < n :starting from Unit digit. -1 will end the separation. e.g. [3,2,-1] will represent 106500 to be 1,06,500; [1,2,-1] will represent it to be 106,50,0;[3] will represent it as "
-"106,500. Provided ',' as the thousand separator in each case."
+"The Separator Format should be like [,n] where 0 < n :starting from Unit digit. -1 will end the separation. e.g. [3,2,-1] will represent 106500 to be 1,06,500; [1,2,-1] will represent it to be 106,50,0;[3] will represent it as 106,500. "
+"Provided ',' as the thousand separator in each case."
 msgstr ""
 
 #. module: base
@@ -20400,8 +20373,8 @@ msgstr ""
 #: code:addons/base/models/res_lang.py:0
 #, python-format
 msgid ""
-"The Separator Format should be like [,n] where 0 < n :starting from Unit digit. -1 will end the separation. e.g. [3,2,-1] will represent 106500 to be 1,06,500;[1,2,-1] will represent it to be 106,50,0;[3] will represent it as "
-"106,500. Provided as the thousand separator in each case."
+"The Separator Format should be like [,n] where 0 < n :starting from Unit digit. -1 will end the separation. e.g. [3,2,-1] will represent 106500 to be 1,06,500;[1,2,-1] will represent it to be 106,50,0;[3] will represent it as 106,500. "
+"Provided as the thousand separator in each case."
 msgstr ""
 
 #. module: base
@@ -20429,8 +20402,7 @@ msgstr "پیوست با یک فایل موجود برخورد می کند."
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
-"The client explicitly waives its own standard terms and conditions, even if these were drawn up after these standard terms and conditions of sale. In order to be valid, any derogation must be expressly agreed to in advance in "
-"writing."
+"The client explicitly waives its own standard terms and conditions, even if these were drawn up after these standard terms and conditions of sale. In order to be valid, any derogation must be expressly agreed to in advance in writing."
 msgstr ""
 
 #. module: base
@@ -20583,8 +20555,7 @@ msgstr "فیلد به روز رسانی (%s) read-only است. شما نمی ت�
 msgid ""
 "The field value you're saving (%s %s) includes content that is restricted for security reasons. It is possible that someone with higher privileges previously modified it, and you are therefore not able to modify it yourself while "
 "preserving the content."
-msgstr ""
-"مقدار فیلدی که ذخیره می کنید (%s%s ) شامل محتوایی است که به دلایل امنیتی محدود شده است. این امکان وجود دارد که شخصی با امتیازات بالاتر قبلاً آن را اصلاح کرده باشد و بنابراین شما نمی توانید خودتان آن را با حفظ محتوا تغییر دهید."
+msgstr "مقدار فیلدی که ذخیره می کنید (%s%s ) شامل محتوایی است که به دلایل امنیتی محدود شده است. این امکان وجود دارد که شخصی با امتیازات بالاتر قبلاً آن را اصلاح کرده باشد و بنابراین شما نمی توانید خودتان آن را با حفظ محتوا تغییر دهید."
 
 #. module: base
 #. odoo-python
@@ -20900,11 +20871,11 @@ msgstr "نرخ ارز به ارز با نرخ 1."
 #: code:addons/models.py:0
 #, python-format
 msgid ""
-"The record %(xml_id)s has the module prefix %(module_name)s. This is the part before the '.' in the external id. Because the prefix refers to an existing module, the record would be deleted when the module is upgraded. Use either "
-"no prefix and no dot or a prefix that isn't an existing module. For example, __import__, resulting in the external id __import__.%(record_id)s."
+"The record %(xml_id)s has the module prefix %(module_name)s. This is the part before the '.' in the external id. Because the prefix refers to an existing module, the record would be deleted when the module is upgraded. Use either no "
+"prefix and no dot or a prefix that isn't an existing module. For example, __import__, resulting in the external id __import__.%(record_id)s."
 msgstr ""
-"رکورد%(xml_id)s دارای پیشوند ماژول است%(module_name)s. این قسمت قبل از '. در شناسه خارجی از آنجایی که پیشوند به یک ماژول موجود اشاره دارد، پس از ارتقاء ماژول، رکورد حذف خواهد شد. از بدون پیشوند و بدون نقطه یا پیشوندی که ماژول "
-"موجود نیست استفاده کنید. به عنوان مثال، __import__، که منجر به شناسه خارجی __import__ می شود.%(record_id)s"
+"رکورد%(xml_id)s دارای پیشوند ماژول است%(module_name)s. این قسمت قبل از '. در شناسه خارجی از آنجایی که پیشوند به یک ماژول موجود اشاره دارد، پس از ارتقاء ماژول، رکورد حذف خواهد شد. از بدون پیشوند و بدون نقطه یا پیشوندی که ماژول موجود "
+"نیست استفاده کنید. به عنوان مثال، __import__، که منجر به شناسه خارجی __import__ می شود.%(record_id)s"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_company__company_registry model:ir.model.fields,help:base.field_res_partner__company_registry model:ir.model.fields,help:base.field_res_users__company_registry
@@ -21016,8 +20987,7 @@ msgstr "نام فنی مدلی که این فیلد به آن تعلق دارد"
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_report__report_type
 msgid ""
-"The type of the report that will be rendered, each one having its own rendering method. HTML means the report will be opened directly in your browser PDF means the report will be rendered using Wkhtmltopdf and downloaded by the "
-"user."
+"The type of the report that will be rendered, each one having its own rendering method. HTML means the report will be opened directly in your browser PDF means the report will be rendered using Wkhtmltopdf and downloaded by the user."
 msgstr ""
 "نوع گزارشی که ارائه می شود، هر کدام روش رندر مخصوص به خود را دارند. HTML به این معنی است که گزارش مستقیماً در مرورگر شما به صورت PDF باز می شود به این معنی که گزارش با استفاده از Wkhtmltopdf ارائه می شود و توسط کاربر دانلود می شود."
 
@@ -21464,8 +21434,7 @@ msgid "To"
 msgstr "تا"
 
 #. module: base
-#: model:ir.model.fields.selection,name:base.selection__ir_actions_todo__state__open model:ir.model.fields.selection,name:base.selection__res_users_deletion__state__todo
-#: model_terms:ir.ui.view,arch_db:base.config_wizard_step_view_search
+#: model:ir.model.fields.selection,name:base.selection__ir_actions_todo__state__open model:ir.model.fields.selection,name:base.selection__res_users_deletion__state__todo model_terms:ir.ui.view,arch_db:base.config_wizard_step_view_search
 msgid "To Do"
 msgstr "جهت اقدام"
 
@@ -22272,11 +22241,11 @@ msgstr "اگر می خواهید برچسب مالیات بر ارزش افزو�
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country__address_view_id
 msgid ""
-"Use this field if you want to replace the usual way to encode a complete address. Note that the address_format field is used to modify the way to display addresses (in reports for example), while this field is used to modify the "
-"input form for addresses."
+"Use this field if you want to replace the usual way to encode a complete address. Note that the address_format field is used to modify the way to display addresses (in reports for example), while this field is used to modify the input "
+"form for addresses."
 msgstr ""
-"اگر می خواهید روش معمول را برای رمزگذاری یک آدرس کامل جایگزین کنید، از این فیلد استفاده کنید. توجه داشته باشید که فیلد address_format برای تغییر نحوه نمایش آدرس ها (به عنوان مثال در گزارش ها) استفاده می شود، در حالی که این فیلد "
-"برای تغییر فرم ورودی آدرس ها استفاده می شود."
+"اگر می خواهید روش معمول را برای رمزگذاری یک آدرس کامل جایگزین کنید، از این فیلد استفاده کنید. توجه داشته باشید که فیلد address_format برای تغییر نحوه نمایش آدرس ها (به عنوان مثال در گزارش ها) استفاده می شود، در حالی که این فیلد برای "
+"تغییر فرم ورودی آدرس ها استفاده می شود."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields__relation_table
@@ -22916,8 +22885,8 @@ msgid ""
 "While assigning a sequence number to a record, the 'no gap' sequence implementation ensures that each previous sequence number has been assigned already. While this sequence implementation will not skip any sequence number upon "
 "assignment, there can still be gaps in the sequence if records are deleted. The 'no gap' implementation is slower than the standard one."
 msgstr ""
-"در حالی که یک دنباله را به یک رکورد اختصاص می دهیم، اجرای توالی \"no gap\" تضمین می کند که هر شماره دنباله قبلی قبلاً اختصاص داده شده است. در حالی که این پیاده سازی دنباله هیچ شماره دنباله ای را پس از تخصیص نادیده نمی گیرد، در صورت "
-"حذف رکوردها همچنان ممکن است شکاف هایی در دنباله وجود داشته باشد. اجرای \"no gap\" کندتر از استاندارد است."
+"در حالی که یک دنباله را به یک رکورد اختصاص می دهیم، اجرای توالی \"no gap\" تضمین می کند که هر شماره دنباله قبلی قبلاً اختصاص داده شده است. در حالی که این پیاده سازی دنباله هیچ شماره دنباله ای را پس از تخصیص نادیده نمی گیرد، در صورت حذف "
+"رکوردها همچنان ممکن است شکاف هایی در دنباله وجود داشته باشد. اجرای \"no gap\" کندتر از استاندارد است."
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_G
@@ -23396,8 +23365,8 @@ msgid "Your server does not seem to support SSL, you may want to try STARTTLS in
 msgstr "به نظر می رسد سرور شما از SSL پشتیبانی نمی کند، ممکن است بخواهید به جای آن STARTTLS را امتحان کنید"
 
 #. module: base
-#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_partner_address_form
-#: model_terms:ir.ui.view,arch_db:base.view_partner_form model_terms:ir.ui.view,arch_db:base.view_res_bank_form
+#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private model_terms:ir.ui.view,arch_db:base.view_company_form model_terms:ir.ui.view,arch_db:base.view_partner_address_form model_terms:ir.ui.view,arch_db:base.view_partner_form
+#: model_terms:ir.ui.view,arch_db:base.view_res_bank_form
 msgid "ZIP"
 msgstr "کد پستی"
 
