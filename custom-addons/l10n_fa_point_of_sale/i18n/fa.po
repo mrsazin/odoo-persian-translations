@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-09-10 18:32+0330\n"
+"PO-Revision-Date: 2024-10-07 11:03+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -3810,14 +3810,14 @@ msgstr "انواع عملیات در داشبورد موجودی نشان داد
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_payment__pos_order_id model:ir.model.fields,field_description:point_of_sale.field_report_pos_order__order_id
 #, python-format
 msgid "Order"
-msgstr "سفارش"
+msgstr " سفارش"
 
 #. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/store/models.js:0
 #, python-format
 msgid "Order %s"
-msgstr "سفارش  %s"
+msgstr "شماره سفارش  %s"
 
 #. module: point_of_sale
 #. odoo-python
@@ -4669,7 +4669,7 @@ msgstr "ارسال‌شد"
 #: code:addons/point_of_sale/static/src/app/customer_display/customer_display_template.xml:0
 #, python-format
 msgid "Powered by"
-msgstr "راه اندازی شده به وسیله"
+msgstr "راه اندازی توسط"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__module_pos_preparation_display model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -5642,7 +5642,7 @@ msgstr "شماره سریال/ سری ساخت"
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/receipt_header/receipt_header.xml:0
 #, python-format
 msgid "Served by"
-msgstr "مسئول صندوق"
+msgstr "فروشنده"
 
 #. module: point_of_sale
 #. odoo-javascript
