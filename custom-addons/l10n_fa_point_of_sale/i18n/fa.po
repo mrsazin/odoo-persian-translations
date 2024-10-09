@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-10-07 11:03+0330\n"
+"PO-Revision-Date: 2024-10-07 14:15+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -1643,7 +1643,7 @@ msgstr "هزینه:"
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0 model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
 #, python-format
 msgid "Counted"
-msgstr "شمارش شده"
+msgstr "مبلغ شمارش شده"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -1875,12 +1875,12 @@ msgstr "جزئیات"
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0
 #, python-format
 msgid "Daily Sale"
-msgstr "فروش روزانه"
+msgstr "گزارش فروش روزانه"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
 msgid "Daily Sales Report"
-msgstr "گزارش فروش‌های روزانه"
+msgstr "گزارش فروش‌ روزانه"
 
 #. module: point_of_sale
 #: model_terms:ir.actions.act_window,help:point_of_sale.action_pos_session_filtered
@@ -2070,7 +2070,7 @@ msgstr "حساب مقصد فقط خواندنی است"
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0 model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
 #, python-format
 msgid "Difference"
-msgstr "تفاوت"
+msgstr "میزان مغایرت"
 
 #. module: point_of_sale
 #. odoo-python
@@ -2107,7 +2107,7 @@ msgstr "تخفیف:"
 #: code:addons/point_of_sale/static/src/app/utils/input_popups/textarea_popup.js:0 code:addons/point_of_sale/static/src/app/utils/money_details_popup/money_details_popup.xml:0 model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
 #, python-format
 msgid "Discard"
-msgstr "رها کردن"
+msgstr "لغو"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -2228,7 +2228,7 @@ msgstr "دانلود سفارشات پرداخت نشده"
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0
 #, python-format
 msgid "Download a report with all the sales of the current PoS Session"
-msgstr "دانلود گزارشی از کل فروش های شیفت‌کاری فعلی متعلق به این PoS"
+msgstr "دانلود گزارشی از کل فروش شیفت‌کاری فعلی"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -2370,7 +2370,7 @@ msgstr "خروج از Pos"
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0 model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
 #, python-format
 msgid "Expected"
-msgstr "مورد انتظار"
+msgstr "مبلغ مورد انتظار"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -2667,7 +2667,7 @@ msgstr "شناسه"
 #: code:addons/point_of_sale/static/src/app/errors/popups/error_traceback_popup.js:0
 #, python-format
 msgid "IMPORTANT: Bug Report From Odoo Point Of Sale"
-msgstr "مهم: گزارش باگ از پایانه فروشRGERP"
+msgstr "مهم: گزارش باگ از پایانه فروش"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__proxy_ip model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__pos_proxy_ip
@@ -3750,7 +3750,7 @@ msgstr "باز شده توسط"
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0
 #, python-format
 msgid "Opening"
-msgstr "ابتدای دوره"
+msgstr "مبلغ شمارش‌شده در ابتدای دوره"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -3817,7 +3817,7 @@ msgstr " سفارش"
 #: code:addons/point_of_sale/static/src/app/store/models.js:0
 #, python-format
 msgid "Order %s"
-msgstr "شماره سفارش  %s"
+msgstr "%s"
 
 #. module: point_of_sale
 #. odoo-python
@@ -3931,7 +3931,7 @@ msgstr "خطوط سفارش در این موقعیت خطوطی هستند که 
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
 #, python-format
 msgid "Orders"
-msgstr "سفارشات"
+msgstr "سفارش"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_pos_order_all model:ir.actions.act_window,name:point_of_sale.action_report_pos_order_all_filtered
@@ -4481,7 +4481,7 @@ msgstr "گزارش جزئیات پایانه فروش"
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_report_point_of_sale_report_invoice
 msgid "Point of Sale Invoice Report"
-msgstr "گزارش فاکتور پایانه فروش"
+msgstr "‌گزارش فاکتور پایانه فروش"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__journal_id model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__pos_journal_id
@@ -7527,7 +7527,7 @@ msgstr "یا"
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.xml:0
 #, python-format
 msgid "orders:"
-msgstr "سفارشات:"
+msgstr "سفارش:"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
