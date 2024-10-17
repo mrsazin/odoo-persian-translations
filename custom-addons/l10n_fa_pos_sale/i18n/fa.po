@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-28 16:14+0000\n"
-"PO-Revision-Date: 2024-08-24 09:35+0330\n"
+"PO-Revision-Date: 2024-10-17 11:44+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -94,7 +94,7 @@ msgstr "مشتری"
 #: code:addons/pos_sale/static/src/app/order_management_screen/sale_order_management_screen/sale_order_management_screen.js:0
 #, python-format
 msgid "Customer loading error"
-msgstr ""
+msgstr "خطا در حین بار‌گذاری مشتری"
 
 #. module: pos_sale
 #. odoo-javascript
@@ -262,7 +262,7 @@ msgstr "سفارش POS"
 #. module: pos_sale
 #: model:ir.model.fields.selection,name:pos_sale.selection__sale_report__state__paid
 msgid "Paid"
-msgstr "پرداخت شد"
+msgstr "تسویه‌شده"
 
 #. module: pos_sale
 #: model:ir.model,name:pos_sale.model_pos_config
@@ -532,7 +532,7 @@ msgstr ""
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_sale_order__amount_unpaid
 msgid "Unpaid Amount"
-msgstr ""
+msgstr "مبلغ تسویه‌نشده"
 
 #. module: pos_sale
 #. odoo-javascript

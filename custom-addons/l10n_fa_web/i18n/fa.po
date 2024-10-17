@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-14 06:20+0000\n"
-"PO-Revision-Date: 2024-09-25 14:25+0330\n"
+"PO-Revision-Date: 2024-10-17 13:28+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -1645,6 +1645,8 @@ msgstr ""
 msgid ""
 "Check your network connection and come back here. Odoo will load as soon as you're back online."
 msgstr ""
+"لطفا در ابتدا، اتصال شبکه خود را بررسی کنید و سپس بر روی کلید زیر کلیک کنید تا پورتال دوباره "
+"اجراشود."
 
 #. module: web
 #. odoo-javascript
@@ -1680,7 +1682,7 @@ msgstr "یک دستور دیباگ انتخاب کنید ..."
 #: code:addons/web/static/src/core/emoji_picker/emoji_data.js:0
 #, python-format
 msgid "Christian"
-msgstr ""
+msgstr "مسیحی"
 
 #. module: web
 #. odoo-javascript
@@ -1694,7 +1696,7 @@ msgstr "کریسمس"
 #: code:addons/web/static/src/core/emoji_picker/emoji_data.js:0
 #, python-format
 msgid "Christmas tree"
-msgstr ""
+msgstr "درخت کریسمس"
 
 #. module: web
 #. odoo-javascript
@@ -1770,7 +1772,7 @@ msgstr "بستن منو"
 #: code:addons/web/static/src/views/fields/many2many_tags/many2many_tags_field.js:0
 #, python-format
 msgid "Color field"
-msgstr ""
+msgstr "فیلد رنگ"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.view_base_document_layout
@@ -4913,7 +4915,7 @@ msgstr "پورتال"
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
 msgid "Odoo Client Error"
-msgstr "خطای کلاینت "
+msgstr "خطای کلاینت"
 
 #. module: web
 #. odoo-javascript
