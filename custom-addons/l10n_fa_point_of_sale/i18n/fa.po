@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-10-07 14:15+0330\n"
+"PO-Revision-Date: 2024-10-15 17:13+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -7154,7 +7154,7 @@ msgstr "هر زمان که شیفت‌کاری ای را می بندید، بر�
 #: code:addons/point_of_sale/static/src/app/generic_components/orderline/orderline.xml:0
 #, python-format
 msgid "With a"
-msgstr "با یک"
+msgstr "همراه با"
 
 #. module: point_of_sale
 #. odoo-javascript
