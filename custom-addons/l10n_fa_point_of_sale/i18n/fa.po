@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-10-17 13:13+0330\n"
+"PO-Revision-Date: 2024-10-17 19:39+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -116,7 +116,7 @@ msgstr "+ فروشگاه یا صندوق جدید"
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/order_receipt.xml:0
 #, python-format
 msgid "/pos/ticket and use the code below to request an invoice online"
-msgstr "/pos/ticket و از کد زیر برای درخواست آنلاین فاکتور استفاده کنید"
+msgstr "مراجعه‌کنید /pos/ticket و با استفاده از کد زیر یک فاکتور آنلاین درخواست‌دهید"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
@@ -264,7 +264,7 @@ msgstr "<span class=\"o_stat_text\">صندوق فروش</span>"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
 msgid "<span class=\"o_stat_text\">Journal Items</span>"
-msgstr "<span class=\"o_stat_text\">آیتم‌های دفترحساب</span>"
+msgstr "<span class=\"o_stat_text\">آیتم‌های دفترمالی</span>"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -2991,7 +2991,7 @@ msgstr "آیتم دفترروزنامه"
 #: code:addons/point_of_sale/models/pos_session.py:0
 #, python-format
 msgid "Journal Items"
-msgstr "آیتم های روزنامه"
+msgstr "آیتم های دفترمالی"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_digest_digest__kpi_pos_total_value
@@ -3130,7 +3130,7 @@ msgstr "شماره سطر"
 #: code:addons/point_of_sale/static/src/app/screens/ticket_screen/ticket_screen.xml:0
 #, python-format
 msgid "Load Order"
-msgstr ""
+msgstr "بارگذاری سفارش"
 
 #. module: point_of_sale
 #: model:ir.actions.client,name:point_of_sale.action_client_product_menu
@@ -5362,7 +5362,7 @@ msgstr "پرداخت معکوس"
 #: code:addons/point_of_sale/static/src/app/screens/product_screen/product_screen.xml:0 code:addons/point_of_sale/static/src/app/screens/ticket_screen/ticket_screen.xml:0
 #, python-format
 msgid "Review"
-msgstr "بازبینی"
+msgstr "بازبینی سفارش"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -6056,7 +6056,7 @@ msgstr "خلاصه"
 #: code:addons/point_of_sale/static/src/app/navbar/navbar.xml:0
 #, python-format
 msgid "Switch Product View"
-msgstr ""
+msgstr "تغییر نحوه‌ی نمایش محصول"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -7193,7 +7193,7 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/order_receipt.xml:0
 #, python-format
 msgid "You can go to"
-msgstr "می‌توانید بروید به"
+msgstr "می‌توانید به"
 
 #. module: point_of_sale
 #. odoo-python
@@ -7508,7 +7508,7 @@ msgstr "در این پسته‌بندی."
 #: code:addons/point_of_sale/static/src/app/screens/product_screen/product_screen.xml:0
 #, python-format
 msgid "items"
-msgstr "آیتم ها"
+msgstr "آیتم"
 
 #. module: point_of_sale
 #: model:mail.activity.type,summary:point_of_sale.mail_activity_old_session

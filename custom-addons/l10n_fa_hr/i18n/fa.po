@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-25 15:19+0000\n"
-"PO-Revision-Date: 2024-10-05 11:21+0330\n"
+"PO-Revision-Date: 2024-10-18 12:00+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -52,8 +52,6 @@ msgstr ""
 msgid ""
 "<b>Congratulations!</b> May I recommend you to setup an <a href=\"%s\">onboarding plan?</a>"
 msgstr ""
-"<b> تبریک ! </ b> آیا میتوانم شما را  توصیه کنم به راه اندازی <a href=\"%s\"> طرح پرکننده؟ "
-"</a>"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.hr_department_view_kanban
@@ -1691,9 +1689,9 @@ msgid ""
 "                    related to employees by departments: expenses, timesheets,\n"
 "                    leaves, recruitments, etc."
 msgstr ""
-"ساختار دپارتمان اودو برای مدیریت تمام مدارک استفاده می شود\n"
-"                مربوط به کارکنان توسط دپارتمان‌ها: هزینه ها، برگه کارکرد زمانی،\n"
-"                مرخصی، استخدام، و غیره."
+"در این پورتال برای مدیریت مدارک مربوط به کارکنان\n"
+"                ( هزینه ها، برگه کارکرد زمانی ،مرخصی، استخدام، و غیره)ُ،\n"
+"                از دپارتمان با همان بخش‌ها استفاده می‌شود."
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
@@ -1702,9 +1700,9 @@ msgid ""
 "                related to employees by departments: expenses, timesheets,\n"
 "                time off, recruitments, etc."
 msgstr ""
-"ساختار دپارتمان اودو برای مدیریت تمام مدارک استفاده می شود\n"
-"                مربوط به کارکنان توسط دپارتمان‌ها: هزینه ها، برگه کارکرد زمانی،\n"
-"                مرخصی، استخدام، و غیره."
+"در این پورتال برای مدیریت مدارک مربوط به کارکنان\n"
+"                ( هزینه ها، برگه کارکرد زمانی ،مرخصی، استخدام، و غیره)ُ،\n"
+"                از دپارتمان با همان بخش‌ها استفاده می‌شود."
 
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_work_location__location_type__office
