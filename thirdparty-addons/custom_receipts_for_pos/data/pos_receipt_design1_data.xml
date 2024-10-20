@@ -110,7 +110,7 @@
                 <t t-if='!taxincluded'>
                     <br/>
                     <div style="font-weight:700; font-size:11px; border-top:1px dashed;">
-                        <span style="margin-left:40%;">جمعه کل: </span>
+                        <span style="margin-left:40%;">جمع کل: </span>
                         <span t-esc='env.utils.formatCurrency(props.data.total_without_tax)'
                             class="pos-receipt-right-align"/>
                     </div>

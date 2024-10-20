@@ -10,13 +10,13 @@
                      alt="Logo" class="pos-receipt-logo"/>
                 <br />
              </t>
-            <div style="font-size:13px; text-align:center;">
+            <div style="font-size:10px; text-align:center;">
                 <t t-esc="env.services.pos.company.name"/><br />
-                Phone:<t t-esc="env.services.pos.company.phone || ''"/><br />
+                تلفن:<t t-esc="env.services.pos.company.phone || ''"/><br />
             </div>
             <br/>
-            <div style="font-size:13px; text-align:center;">
-                Date :
+            <div style="font-size:10px; text-align:center;">
+                تاریخ :
                 <t t-if="props.receipt.date">
                     <t t-esc="props.receipt.date"/>
                 </t>
@@ -24,7 +24,7 @@
                     <t t-esc="props.order.validation_date"/>
                 </t>
                 <br />
-                Order : <t t-esc="props.order[0].name"/><br />
+                 <t t-esc="props.order[0].name"/><br /> شماره سفارش:
             </div>
             <br />
             <div style="font-size:13px; text-align:center;">

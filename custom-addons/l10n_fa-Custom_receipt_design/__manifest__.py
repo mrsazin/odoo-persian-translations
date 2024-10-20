@@ -7,7 +7,7 @@
     'category': 'Localization',
     'version': '1.0',
     'author':'Azar Nazari (azar.nazari@gmail.com)',
-    'depends': ['custom_receipt_design'],
+    'depends': ['custom_receipts_for_pos'],
     'data': [],
     'installable': True,
     'application': False,
