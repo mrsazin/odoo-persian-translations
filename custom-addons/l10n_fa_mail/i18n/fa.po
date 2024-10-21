@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 13:25+0000\n"
-"PO-Revision-Date: 2024-10-18 15:18+0330\n"
+"PO-Revision-Date: 2024-10-21 09:12+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -445,8 +445,8 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 msgid ""
-"<span name=\"document_followers_text\" invisible=\"not model or composition_mode == 'mass_mail'\">Followers of the "
-"document and</span>"
+"<span name=\"document_followers_text\" invisible=\"not model or composition_mode == 'mass_mail'\">Followers of the document "
+"and</span>"
 msgstr ""
 "<span name=\"document_followers_text\" invisible=\"not model or composition_mode == 'mass_mail'\">اطلاع رسانی به تمام "
 "فالوورها در تاریخچه پیام ظاهر می شود و همه را مطلع می کند</span>"
@@ -477,8 +477,8 @@ msgid ""
 "<strong>Internal communication</strong>: Replying will post an internal note. Followers won't receive any email "
 "notification."
 msgstr ""
-"<strong>ارتباطات داخلی</strong>: با پاسخ دادن یک یادداشت داخلی ارسال می شود. دنبال کنندگان هیچ اعلان ایمیلی دریافت "
-"نخواهند کرد."
+"<strong>ارتباطات داخلی</strong>: با پاسخ دادن یک یادداشت داخلی ارسال می شود. دنبال کنندگان هیچ اعلان ایمیلی دریافت نخواهند "
+"کرد."
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.message_activity_done
@@ -501,8 +501,7 @@ msgstr "<strong>شما دیگر سند را دنبال نمی کنید:</strong>
 #: model:ir.model.fields,help:mail.field_mail_alias_mixin_optional__alias_defaults
 msgid "A Python dictionary that will be evaluated to provide default values when creating new records for this alias."
 msgstr ""
-"یک دیکشنری پایتون که برای فراهم کردن مقادیر پیش‌فرض هنگام ایجاد رکوردهای جدید برای این نام مستعار مورد  ارزیابی قرار "
-"می‌گیرد."
+"یک دیکشنری پایتون که برای فراهم کردن مقادیر پیش‌فرض هنگام ایجاد رکوردهای جدید برای این نام مستعار مورد  ارزیابی قرار می‌گیرد."
 
 #. module: mail
 #: model:ir.model.constraint,message:mail.constraint_bus_presence_partner_or_guest_exists
@@ -617,11 +616,10 @@ msgstr "مشاهده پنجره اقدام"
 #: model:ir.model.fields,help:mail.field_mail_activity_schedule__activity_category
 #: model:ir.model.fields,help:mail.field_mail_activity_type__category
 msgid ""
-"Actions may trigger specific behavior like opening calendar view or automatically mark as done when a document is "
-"uploaded"
+"Actions may trigger specific behavior like opening calendar view or automatically mark as done when a document is uploaded"
 msgstr ""
-"اقدامات ممکن است رفتار خاصی مانند باز کردن نمای تقویم یا علامت گذاری خودکار به عنوان انجام شده هنگام آپلود یک سند را "
-"ایجاد کند"
+"اقدامات ممکن است رفتار خاصی مانند باز کردن نمای تقویم یا علامت گذاری خودکار به عنوان انجام شده هنگام آپلود یک سند را ایجاد "
+"کند"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_email_server_form
@@ -657,8 +655,8 @@ msgstr "دامنه فعال"
 #: model:ir.model.fields,field_description:mail.field_mail_activity_mixin__activity_ids
 #: model:ir.model.fields,field_description:mail.field_mail_activity_plan__template_ids
 #: model:ir.model.fields,field_description:mail.field_res_partner__activity_ids
-#: model:ir.model.fields,field_description:mail.field_res_users__activity_ids
-#: model:ir.ui.menu,name:mail.menu_mail_activities model:mail.message.subtype,name:mail.mt_activities
+#: model:ir.model.fields,field_description:mail.field_res_users__activity_ids model:ir.ui.menu,name:mail.menu_mail_activities
+#: model:mail.message.subtype,name:mail.mt_activities
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_plan_template_view_tree
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_type_view_form
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_type_view_search
@@ -965,8 +963,7 @@ msgstr "مستعار تماس امنیتی"
 #: model:ir.model.fields,field_description:mail.field_mail_mail__record_alias_domain_id
 #: model:ir.model.fields,field_description:mail.field_mail_message__record_alias_domain_id
 #: model:ir.model.fields,field_description:mail.field_res_config_settings__alias_domain_id
-#: model_terms:ir.ui.view,arch_db:mail.mail_alias_domain_view_form
-#: model_terms:ir.ui.view,arch_db:mail.mail_alias_view_search
+#: model_terms:ir.ui.view,arch_db:mail.mail_alias_domain_view_form model_terms:ir.ui.view,arch_db:mail.mail_alias_view_search
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Alias Domain"
 msgstr "نام مستعار دامنه"
@@ -1141,8 +1138,7 @@ msgstr "اعمال"
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_plan_view_search
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_type_view_form
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_type_view_search
-#: model_terms:ir.ui.view,arch_db:mail.mail_blacklist_view_form
-#: model_terms:ir.ui.view,arch_db:mail.mail_blacklist_view_search
+#: model_terms:ir.ui.view,arch_db:mail.mail_blacklist_view_form model_terms:ir.ui.view,arch_db:mail.mail_blacklist_view_search
 #: model_terms:ir.ui.view,arch_db:mail.view_email_server_form model_terms:ir.ui.view,arch_db:mail.view_email_server_search
 msgid "Archived"
 msgstr "بایگانی شده"
@@ -1169,11 +1165,9 @@ msgstr "مطمئنید میخواهید این پیام را حذف کنید؟"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_template_reset_view_form
 msgid ""
-"Are you sure you want to reset these email templates to their original configuration? Changes and translations will be "
-"lost."
+"Are you sure you want to reset these email templates to their original configuration? Changes and translations will be lost."
 msgstr ""
-"آیا مطمئن هستید که می خواهید این الگوهای ایمیل را به پیکربندی اصلی خود بازنشانی کنید؟ تغییرات و ترجمه ها از بین خواهند "
-"رفت."
+"آیا مطمئن هستید که می خواهید این الگوهای ایمیل را به پیکربندی اصلی خود بازنشانی کنید؟ تغییرات و ترجمه ها از بین خواهند رفت."
 
 #. module: mail
 #. odoo-python
@@ -1312,8 +1306,7 @@ msgstr "مولف"
 #: model:ir.model.fields,help:mail.field_mail_mail__author_id model:ir.model.fields,help:mail.field_mail_message__author_id
 msgid "Author of the message. If not set, email_from may hold an email address that did not match any partner."
 msgstr ""
-"اگر نویسنده‌ی پیام تعیین نشده باشد، email_from ممکن‌است آدرس ایمیلی را نگه دارد که با هیچ همکار و طرف‌حسابی مطابقت "
-"نداشته‌باشد."
+"اگر نویسنده‌ی پیام تعیین نشده باشد، email_from ممکن‌است آدرس ایمیلی را نگه دارد که با هیچ همکار و طرف‌حسابی مطابقت نداشته‌باشد."
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_mail__author_avatar
@@ -1537,11 +1530,11 @@ msgstr "ارسال ایمیل"
 #: code:addons/mail/models/mail_alias_domain.py:0
 #, python-format
 msgid ""
-"Bounce alias %(bounce)s is already used for another domain with same name. Use another bounce or simply use the other "
-"alias domain."
+"Bounce alias %(bounce)s is already used for another domain with same name. Use another bounce or simply use the other alias "
+"domain."
 msgstr ""
-"نام مستعار بازگشت  %(bounce)s قبلاً برای دامنه دیگری با نام مشابه استفاده شده است. از مستعار Bounce دیگری استفاده کنید یا "
-"به سادگی از دامنه نام مستعار دیگر استفاده کنید"
+"نام مستعار بازگشت  %(bounce)s قبلاً برای دامنه دیگری با نام مشابه استفاده شده است. از مستعار Bounce دیگری استفاده کنید یا به "
+"سادگی از دامنه نام مستعار دیگر استفاده کنید"
 
 #. module: mail
 #: model:ir.model.constraint,message:mail.constraint_mail_alias_domain_bounce_email_uniques
@@ -1556,8 +1549,8 @@ msgid ""
 "Bounce/Catchall '%(matching_alias_name)s' is already used by %(document_name)s. Choose another alias or change it on the "
 "other document."
 msgstr ""
-"بازگشتی/پوشش‌دهنده '%(matching_alias_name)s' قبلا استفاده شده توسط  %(document_name)s. یک نام مستعار دیگر انتخاب کنید یا "
-"آن را در سند دیگر تغییر دهید."
+"بازگشتی/پوشش‌دهنده '%(matching_alias_name)s' قبلا استفاده شده توسط  %(document_name)s. یک نام مستعار دیگر انتخاب کنید یا آن "
+"را در سند دیگر تغییر دهید."
 
 #. module: mail
 #. odoo-python
@@ -1565,8 +1558,8 @@ msgstr ""
 #, python-format
 msgid "Bounce/Catchall '%(matching_alias_name)s' is already used. Choose another alias or change it on the linked model."
 msgstr ""
-"بازگشتی/پوشش‌دهنده '%(matching_alias_name)s' قبلاً استفاده شده است. یک نام مستعار دیگر انتخاب کنید یا آن را در مدل لینک "
-"شده تغییر دهید."
+"بازگشتی/پوشش‌دهنده '%(matching_alias_name)s' قبلاً استفاده شده است. یک نام مستعار دیگر انتخاب کنید یا آن را در مدل لینک شده "
+"تغییر دهید."
 
 #. module: mail
 #. odoo-javascript
@@ -1752,11 +1745,11 @@ msgstr "Catchall ایمیل"
 #: code:addons/mail/models/mail_alias_domain.py:0
 #, python-format
 msgid ""
-"Catchall alias %(catchall)s is already used for another domain with same name. Use another catchall or simply use the "
-"other alias domain."
+"Catchall alias %(catchall)s is already used for another domain with same name. Use another catchall or simply use the other "
+"alias domain."
 msgstr ""
-"مستعار catchsll %(catchall)s قبلاً برای دامنه دیگری با همین نام استفاده می شود. از catchall دیگری استفاده کنید یا به "
-"سادگی از دامنه نام مستعار دیگر استفاده کنید."
+"مستعار catchsll %(catchall)s قبلاً برای دامنه دیگری با همین نام استفاده می شود. از catchall دیگری استفاده کنید یا به سادگی "
+"از دامنه نام مستعار دیگر استفاده کنید."
 
 #. module: mail
 #: model:ir.model.constraint,message:mail.constraint_mail_alias_domain_catchall_email_uniques
@@ -1841,8 +1834,7 @@ msgid "Channels"
 msgstr "کانال‌ها"
 
 #. module: mail
-#: model:ir.actions.act_window,name:mail.discuss_channel_member_action
-#: model:ir.ui.menu,name:mail.discuss_channel_member_menu
+#: model:ir.actions.act_window,name:mail.discuss_channel_member_action model:ir.ui.menu,name:mail.discuss_channel_member_menu
 msgid "Channels/Members"
 msgstr "کانال ها / اعضا"
 
@@ -1852,7 +1844,7 @@ msgstr "کانال ها / اعضا"
 #: model:ir.model.fields.selection,name:mail.selection__discuss_channel__channel_type__chat
 #, python-format
 msgid "Chat"
-msgstr "گفتگو"
+msgstr "چت"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_discuss_channel__channel_type
@@ -2035,8 +2027,7 @@ msgstr "شرکت"
 #. odoo-javascript
 #. odoo-python
 #: code:addons/mail/static/src/core/common/composer.js:0 code:addons/mail/static/src/core/web/activity_mail_template.js:0
-#: code:addons/mail/wizard/mail_compose_message.py:0
-#: model:ir.actions.act_window,name:mail.action_email_compose_message_wizard
+#: code:addons/mail/wizard/mail_compose_message.py:0 model:ir.actions.act_window,name:mail.action_email_compose_message_wizard
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 #, python-format
 msgid "Compose Email"
@@ -2107,14 +2098,14 @@ msgstr "تبریک می گویم، شما فعالیت های خود را تما
 #: code:addons/mail/static/src/core/common/thread.xml:0
 #, python-format
 msgid "Congratulations, your inbox is empty"
-msgstr "تبریک، صندوق ورودی شما خالی است"
+msgstr " صندوق ورودی شما خالی است"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/core/common/discuss.js:0
 #, python-format
 msgid "Congratulations, your inbox is empty!"
-msgstr "تبریک، صندوق ورودی شما خالی است"
+msgstr "صندوق ورودی شما خالی است"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_mail__failure_type__mail_smtp
@@ -2186,8 +2177,8 @@ msgid ""
 "Contains the date and time of the last interesting event that happened in this channel for this partner. This includes: "
 "creating, joining, pinning, and new message posted."
 msgstr ""
-"حاوی تاریخ و زمان آخرین رویداد جالبی است که در این کانال برای این مخاطب رخ داده است. این شامل: ایجاد، پیوستن، پین کردن، "
-"و پیام جدید ارسال شده است."
+"حاوی تاریخ و زمان آخرین رویداد جالبی است که در این کانال برای این مخاطب رخ داده است. این شامل: ایجاد، پیوستن، پین کردن، و "
+"پیام جدید ارسال شده است."
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_message_reaction__content
@@ -2484,8 +2475,7 @@ msgstr "کانال داده:"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_mail__date
-#: model:ir.model.fields,field_description:mail.field_mail_message__date
-#: model_terms:ir.ui.view,arch_db:mail.view_mail_search
+#: model:ir.model.fields,field_description:mail.field_mail_message__date model_terms:ir.ui.view,arch_db:mail.view_mail_search
 msgid "Date"
 msgstr "تاریخ"
 
@@ -2723,8 +2713,8 @@ msgid ""
 "Determines how the channel will be displayed by default when opening it from its invitation link. No value means display "
 "text (no voice/video)."
 msgstr ""
-"نحوه نمایش کانال به طور پیش‌فرض هنگام باز کردن آن از پیوند دعوت خود را تعیین می‌کند. بدون مقدار به معنای نمایش متن (بدون "
-"صدا/فیلم) است."
+"نحوه نمایش کانال به طور پیش‌فرض هنگام باز کردن آن از پیوند دعوت خود را تعیین می‌کند. بدون مقدار به معنای نمایش متن (بدون صدا/"
+"فیلم) است."
 
 #. module: mail
 #. odoo-javascript
@@ -2864,8 +2854,7 @@ msgid "Do you really want to delete this preview?"
 msgstr "آیا واقعاً می خواهید این پیش نمایش را حذف کنید؟"
 
 #. module: mail
-#: model_terms:ir.ui.view,arch_db:mail.mail_activity_view_form
-#: model_terms:ir.ui.view,arch_db:mail.view_document_file_kanban
+#: model_terms:ir.ui.view,arch_db:mail.mail_activity_view_form model_terms:ir.ui.view,arch_db:mail.view_document_file_kanban
 msgid "Document"
 msgstr "سند"
 
@@ -2938,8 +2927,7 @@ msgstr "انجام شد و برنامه بعدی"
 
 #. module: mail
 #. odoo-javascript
-#: code:addons/mail/static/src/core/common/attachment_list.xml:0
-#: model_terms:ir.ui.view,arch_db:mail.view_document_file_kanban
+#: code:addons/mail/static/src/core/common/attachment_list.xml:0 model_terms:ir.ui.view,arch_db:mail.view_document_file_kanban
 #, python-format
 msgid "Download"
 msgstr "دانلود"
@@ -3200,8 +3188,7 @@ msgstr "نشانی ایمیل از قبل موجود است!"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__email_from
-#: model:ir.model.fields,help:mail.field_mail_mail__email_from
-#: model:ir.model.fields,help:mail.field_mail_message__email_from
+#: model:ir.model.fields,help:mail.field_mail_mail__email_from model:ir.model.fields,help:mail.field_mail_message__email_from
 msgid ""
 "Email address of the sender. This field is set when no matching partner is found and replaces the author_id field in the "
 "chatter."
@@ -3375,8 +3362,7 @@ msgstr "پیام خطا"
 #: code:addons/mail/models/mail_mail.py:0
 #, python-format
 msgid ""
-"Error without exception. Probably due to concurrent access update of notification records. Please see with an "
-"administrator."
+"Error without exception. Probably due to concurrent access update of notification records. Please see with an administrator."
 msgstr "خطا بدون استثنا. احتمالاً به دلیل به روز رسانی دسترسی همزمان سوابق اعلان است. لطفا با یک مدیر ببینید."
 
 #. module: mail
@@ -3703,8 +3689,7 @@ msgstr "آیکون فونت عالی به عبارتی fa-tasks"
 #. odoo-python
 #: code:addons/mail/models/discuss/discuss_channel.py:0
 #, python-format
-msgid ""
-"For %(channels)s, channel_type should be 'channel' to have the group-based authorization or group auto-subscription."
+msgid "For %(channels)s, channel_type should be 'channel' to have the group-based authorization or group auto-subscription."
 msgstr "For %(channels)s, ، نوع_کانل باید 'channel' باشد تا مجوز مبتنی بر گروه یا اشتراک خودکار گروهی داشته باشد."
 
 #. module: mail
@@ -4271,17 +4256,17 @@ msgid ""
 "If set, the queue manager will send the email after the date. If not set, the email will be send as soon as possible. "
 "Unless a timezone is specified, it is considered as being in UTC timezone."
 msgstr ""
-"در صورت تنظیم، مدیر صف ایمیل را بعد از تاریخ ارسال می کند. در صورت عدم تنظیم، ایمیل در اسرع وقت ارسال خواهد شد. مگر "
-"اینکه یک منطقه زمانی مشخص شده باشد، در منطقه زمانی UTC در نظر گرفته می شود."
+"در صورت تنظیم، مدیر صف ایمیل را بعد از تاریخ ارسال می کند. در صورت عدم تنظیم، ایمیل در اسرع وقت ارسال خواهد شد. مگر اینکه "
+"یک منطقه زمانی مشخص شده باشد، در منطقه زمانی UTC در نظر گرفته می شود."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_template__scheduled_date
 msgid ""
-"If set, the queue manager will send the email after the date. If not set, the email will be send as soon as possible. "
-"You can use dynamic expression."
+"If set, the queue manager will send the email after the date. If not set, the email will be send as soon as possible. You "
+"can use dynamic expression."
 msgstr ""
-"در صورت تنظیم، مدیر صف ایمیل را بعد از تاریخ ارسال می کند. در صورت عدم تنظیم، ایمیل در اسرع وقت ارسال خواهد شد. می "
-"توانید از بیان پویا استفاده کنید."
+"در صورت تنظیم، مدیر صف ایمیل را بعد از تاریخ ارسال می کند. در صورت عدم تنظیم، ایمیل در اسرع وقت ارسال خواهد شد. می توانید "
+"از بیان پویا استفاده کنید."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_bounced_content
@@ -4306,11 +4291,11 @@ msgstr "اگر آدرس ایمیل در لیست سیاه باشد، مخاطب�
 #: model:ir.model.fields,help:mail.field_mail_mail__reply_to_force_new
 #: model:ir.model.fields,help:mail.field_mail_message__reply_to_force_new
 msgid ""
-"If true, answers do not go in the original document discussion thread. Instead, it will check for the reply_to in "
-"tracking message-id and redirected accordingly. This has an impact on the generated message-id."
+"If true, answers do not go in the original document discussion thread. Instead, it will check for the reply_to in tracking "
+"message-id and redirected accordingly. This has an impact on the generated message-id."
 msgstr ""
-"اگر درست باشد، پاسخ ها در موضوع بحث سند اصلی قرار نمی گیرند. در عوض، reply_to را در شناسه پیام ردیابی بررسی می‌کند و بر "
-"این اساس هدایت می‌شود. این روی شناسه پیام تولید شده تأثیر دارد."
+"اگر درست باشد، پاسخ ها در موضوع بحث سند اصلی قرار نمی گیرند. در عوض، reply_to را در شناسه پیام ردیابی بررسی می‌کند و بر این "
+"اساس هدایت می‌شود. این روی شناسه پیام تولید شده تأثیر دارد."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_res_config_settings__alias_domain_id
@@ -4367,8 +4352,8 @@ msgstr "تصویر یک لینک است"
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__scheduled_date
 msgid ""
-"In comment mode: if set, postpone notifications sending. In mass mail mode: if sent, send emails after that date. This "
-"date is considered as being in UTC timezone."
+"In comment mode: if set, postpone notifications sending. In mass mail mode: if sent, send emails after that date. This date "
+"is considered as being in UTC timezone."
 msgstr ""
 "در حالت نظر: در صورت تنظیم، ارسال اعلان‌ها را به تعویق بیندازید. در حالت پست انبوه: در صورت ارسال، پس از آن تاریخ ایمیل "
 "ارسال کنید. این تاریخ در منطقه زمانی UTC در نظر گرفته می شود."
@@ -4418,8 +4403,7 @@ msgid "Incoming Mail Server"
 msgstr "سرور ورودی ایمیل"
 
 #. module: mail
-#: model:ir.actions.act_window,name:mail.action_email_server_tree
-#: model:ir.ui.menu,name:mail.menu_action_fetchmail_server_tree
+#: model:ir.actions.act_window,name:mail.action_email_server_tree model:ir.ui.menu,name:mail.menu_action_fetchmail_server_tree
 msgid "Incoming Mail Servers"
 msgstr "سرورهای ورودی ایمیل"
 
@@ -4461,8 +4445,7 @@ msgid "Install"
 msgstr "نصب"
 
 #. module: mail
-#: model:ir.ui.menu,name:mail.discuss_channel_integrations_menu
-#: model_terms:ir.ui.view,arch_db:mail.discuss_channel_view_form
+#: model:ir.ui.menu,name:mail.discuss_channel_integrations_menu model_terms:ir.ui.view,arch_db:mail.discuss_channel_view_form
 msgid "Integrations"
 msgstr "ادغام‌ها"
 
@@ -4746,11 +4729,11 @@ msgstr "صفحه را به اشتراک می گذارد"
 #: code:addons/mail/models/discuss/discuss_channel_member.py:0
 #, python-format
 msgid ""
-"It appears you're trying to create a channel member, but it seems like you forgot to specify the related channel. To "
-"move forward, please make sure to provide the necessary channel information."
+"It appears you're trying to create a channel member, but it seems like you forgot to specify the related channel. To move "
+"forward, please make sure to provide the necessary channel information."
 msgstr ""
-"به نظر می رسد که در حال تلاش برای ایجاد یک عضو کانال هستید، اما به نظر می رسد فراموش کرده اید که کانال مرتبط را مشخص "
-"کنید. برای حرکت رو به جلو، لطفا اطلاعات لازم کانال را ارائه دهید."
+"به نظر می رسد که در حال تلاش برای ایجاد یک عضو کانال هستید، اما به نظر می رسد فراموش کرده اید که کانال مرتبط را مشخص کنید. "
+"برای حرکت رو به جلو، لطفا اطلاعات لازم کانال را ارائه دهید."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_partner_device__keys
@@ -5095,20 +5078,17 @@ msgstr "تشخیص ورودی مبتنی بر بخش محلی"
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias_domain__catchall_alias
 msgid "Local-part of email used for Reply-To to catch answers e.g. 'catchall' in 'catchall@example.com'"
-msgstr ""
-"بخش محلی ایمیل که برای پاسخ به برای گرفتن پاسخ ها استفاده می شود، به عنوان مثال. 'catchall' در 'catchall@example.com'"
+msgstr "بخش محلی ایمیل که برای پاسخ به برای گرفتن پاسخ ها استفاده می شود، به عنوان مثال. 'catchall' در 'catchall@example.com'"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias_domain__bounce_alias
 msgid "Local-part of email used for Return-Path used when emails bounce e.g. 'bounce' in 'bounce@example.com'"
 msgstr ""
-"بخش محلی ایمیل که برای مسیر بازگشت استفاده می‌شود، زمانی که ایمیل‌ها پرش می‌کنند، به عنوان مثال. 'جهش' در 'bounce@example."
-"com'"
+"بخش محلی ایمیل که برای مسیر بازگشت استفاده می‌شود، زمانی که ایمیل‌ها پرش می‌کنند، به عنوان مثال. 'جهش' در 'bounce@example.com'"
 
 #. module: mail
 #. odoo-javascript
-#: code:addons/mail/static/src/core/common/composer.js:0
-#: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
+#: code:addons/mail/static/src/core/common/composer.js:0 model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 #, python-format
 msgid "Log"
 msgstr "ثبت"
@@ -5351,7 +5331,7 @@ msgstr "صندوق پستی در دسترس نیست - %s"
 #: code:addons/mail/static/src/core/web/messaging_menu.js:0
 #, python-format
 msgid "Mailboxes"
-msgstr "صندوق های پستی"
+msgstr "صندوق‌های پستی"
 
 #. module: mail
 #. odoo-python
@@ -5392,8 +5372,7 @@ msgstr "علامت گذاری به عنوان خوانده شده"
 
 #. module: mail
 #. odoo-javascript
-#: code:addons/mail/static/src/core/web/activity.xml:0
-#: code:addons/mail/static/src/core/web/activity_markasdone_popover.xml:0
+#: code:addons/mail/static/src/core/web/activity.xml:0 code:addons/mail/static/src/core/web/activity_markasdone_popover.xml:0
 #, python-format
 msgid "Mark Done"
 msgstr "انجام شد"
@@ -5480,8 +5459,8 @@ msgid ""
 "Members of those groups will automatically added as followers. Note that they will be able to manage their subscription "
 "manually if necessary."
 msgstr ""
-"اعضای آن گروه ها به طور خودکار به عنوان دنبال کننده اضافه می شوند. توجه داشته باشید که در صورت لزوم می توانند اشتراک خود "
-"را به صورت دستی مدیریت کنند."
+"اعضای آن گروه ها به طور خودکار به عنوان دنبال کننده اضافه می شوند. توجه داشته باشید که در صورت لزوم می توانند اشتراک خود را "
+"به صورت دستی مدیریت کنند."
 
 #. module: mail
 #. odoo-javascript
@@ -5580,8 +5559,7 @@ msgid "Message Record Name"
 msgstr "نام رکورد پیام"
 
 #. module: mail
-#: model:ir.model,name:mail.model_mail_message_translation
-#: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
+#: model:ir.model,name:mail.model_mail_message_translation model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "Message Translation"
 msgstr "ترجمه پیام"
 
@@ -5653,8 +5631,7 @@ msgid ""
 msgstr "نوع پیام: ایمیل برای پیام ایمیل، اعلان برای پیام سیستم، نظر برای پیام های دیگر مانند پاسخ های کاربر"
 
 #. module: mail
-#: model:ir.model.fields,help:mail.field_mail_mail__message_id
-#: model:ir.model.fields,help:mail.field_mail_message__message_id
+#: model:ir.model.fields,help:mail.field_mail_mail__message_id model:ir.model.fields,help:mail.field_mail_message__message_id
 msgid "Message unique identifier"
 msgstr "شناسه منحصر به فرد پیام"
 
@@ -6475,8 +6452,8 @@ msgstr "انصراف داد"
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_force_thread_id
 msgid ""
-"Optional ID of a thread (record) to which all incoming messages will be attached, even if they did not reply to it. If "
-"set, this will disable the creation of new records completely."
+"Optional ID of a thread (record) to which all incoming messages will be attached, even if they did not reply to it. If set, "
+"this will disable the creation of new records completely."
 msgstr ""
 "شناسه اختیاری یک موضوع (رکورد) که تمام پیام‌های دریافتی به آن پیوست می‌شود، حتی اگر به آن پاسخ نداده باشند. اگر تنظیم شود، "
 "ایجاد رکوردهای جدید به طور کامل غیرفعال می شود."
@@ -6496,9 +6473,8 @@ msgstr "سرور ترجیحی اختیاری برای ایمیل‌های خرو
 #: model:ir.model.fields,help:mail.field_mail_composer_mixin__lang
 #: model:ir.model.fields,help:mail.field_mail_render_mixin__lang model:ir.model.fields,help:mail.field_mail_template__lang
 msgid ""
-"Optional translation language (ISO code) to select when sending out an email. If not set, the english version will be "
-"used. This should usually be a placeholder expression that provides the appropriate language, e.g. {{ object.partner_id."
-"lang }}."
+"Optional translation language (ISO code) to select when sending out an email. If not set, the english version will be used. "
+"This should usually be a placeholder expression that provides the appropriate language, e.g. {{ object.partner_id.lang }}."
 msgstr ""
 "زبان ترجمه اختیاری (کد ISO) برای انتخاب هنگام ارسال ایمیل. اگر تنظیم نشود، از نسخه انگلیسی استفاده خواهد شد. این معمولاً "
 "باید یک عبارت نگهدارنده باشد که زبان مناسب را ارائه می دهد، به عنوان مثال. {{ object.partner_id.lang }}."
@@ -6507,8 +6483,8 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_compose_message__reply_to_mode
 msgid ""
 "Original Discussion: Answers go in the original document discussion thread. \n"
-" Another Email Address: Answers go to the email address mentioned in the tracking message-id instead of original "
-"document discussion thread. \n"
+" Another Email Address: Answers go to the email address mentioned in the tracking message-id instead of original document "
+"discussion thread. \n"
 " This has an impact on the generated message-id."
 msgstr ""
 "بحث اصلی: پاسخ ها در موضوع بحث سند اصلی قرار می گیرند.. \n"
@@ -6645,8 +6621,8 @@ msgstr "شناسه موضوع رکورد والد"
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_parent_model_id
 msgid ""
-"Parent model holding the alias. The model holding the alias reference is not necessarily the model given by "
-"alias_model_id (example: project (parent_model) and task (model))"
+"Parent model holding the alias. The model holding the alias reference is not necessarily the model given by alias_model_id "
+"(example: project (parent_model) and task (model))"
 msgstr ""
 "مدل والد دارای نام مستعار. مدلی که مرجع نام مستعار را نگه می دارد لزوماً مدلی نیست که توسط alias_model_id (مثال: پروژه "
 "(parent_model) و task (model)) ارائه شده است."
@@ -6654,11 +6630,11 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_message_subtype__parent_id
 msgid ""
-"Parent subtype, used for automatic subscription. This field is not correctly named. For example on a project, the "
-"parent_id of project subtypes refers to task-related subtypes."
+"Parent subtype, used for automatic subscription. This field is not correctly named. For example on a project, the parent_id "
+"of project subtypes refers to task-related subtypes."
 msgstr ""
-"نوع فرعی والد، برای اشتراک خودکار استفاده می شود. این فیلد به درستی نامگذاری نشده است. به عنوان مثال در یک پروژه، "
-"parent_id زیرگونه‌های پروژه به زیرگروه‌های مربوط به کار اشاره دارد."
+"نوع فرعی والد، برای اشتراک خودکار استفاده می شود. این فیلد به درستی نامگذاری نشده است. به عنوان مثال در یک پروژه، parent_id "
+"زیرگونه‌های پروژه به زیرگروه‌های مربوط به کار اشاره دارد."
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_discuss_channel_member__partner_id
@@ -7461,8 +7437,7 @@ msgid "Reset Mail Template"
 msgstr "بازنشانی الگوی نامه"
 
 #. module: mail
-#: model_terms:ir.ui.view,arch_db:mail.email_template_form
-#: model_terms:ir.ui.view,arch_db:mail.mail_template_reset_view_form
+#: model_terms:ir.ui.view,arch_db:mail.email_template_form model_terms:ir.ui.view,arch_db:mail.mail_template_reset_view_form
 msgid "Reset Template"
 msgstr "بازنشانی قالب"
 
@@ -7683,8 +7658,7 @@ msgstr "پیام‌ زمانبندی‌شده"
 
 #. module: mail
 #: model:ir.actions.act_window,name:mail.mail_message_schedule_action model:ir.model,name:mail.model_mail_message_schedule
-#: model:ir.ui.menu,name:mail.mail_message_schedule_menu
-#: model_terms:ir.ui.view,arch_db:mail.mail_message_schedule_view_search
+#: model:ir.ui.menu,name:mail.mail_message_schedule_menu model_terms:ir.ui.view,arch_db:mail.mail_message_schedule_view_search
 msgid "Scheduled Messages"
 msgstr "پیام‌های زمانبندی‌شده"
 
@@ -7939,8 +7913,8 @@ msgid ""
 "Sender address (placeholders may be used here). If not set, the default value will be the author's email alias if "
 "configured, or email address."
 msgstr ""
-"آدرس فرستنده (جای‌گیرها ممکن است در اینجا استفاده شوند). اگر تنظیم نشود، مقدار پیش‌فرض نام مستعار ایمیل نویسنده یا آدرس "
-"ایمیل در صورت پیکربندی خواهد بود."
+"آدرس فرستنده (جای‌گیرها ممکن است در اینجا استفاده شوند). اگر تنظیم نشود، مقدار پیش‌فرض نام مستعار ایمیل نویسنده یا آدرس ایمیل "
+"در صورت پیکربندی خواهد بود."
 
 #. module: mail
 #: model:ir.actions.act_window,name:mail.mail_resend_message_action
@@ -8063,8 +8037,7 @@ msgid "Short description"
 msgstr "توضیحات کوتاه"
 
 #. module: mail
-#: model_terms:ir.ui.view,arch_db:mail.mail_shortcode_view_form
-#: model_terms:ir.ui.view,arch_db:mail.mail_shortcode_view_tree
+#: model_terms:ir.ui.view,arch_db:mail.mail_shortcode_view_form model_terms:ir.ui.view,arch_db:mail.mail_shortcode_view_tree
 msgid "Shortcodes"
 msgstr "کدهای کوتاه"
 
@@ -8076,8 +8049,8 @@ msgstr "میان‌بر"
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_shortcode__source
 msgid ""
-"Shortcut that will automatically be substituted with longer content in your messages. Type ':' followed by the name of "
-"your shortcut (e.g. :hello) to use in your messages."
+"Shortcut that will automatically be substituted with longer content in your messages. Type ':' followed by the name of your "
+"shortcut (e.g. :hello) to use in your messages."
 msgstr ""
 "میانبری که به طور خودکار با محتوای طولانی تر در پیام های شما جایگزین می شود. \":\" را تایپ کنید و سپس نام میانبر خود (به "
 "عنوان مثال :hello) را برای استفاده در پیام های خود تایپ کنید."
@@ -8219,8 +8192,7 @@ msgstr "کاربر بخصوص"
 #: model:ir.model.fields,help:mail.field_mail_activity_plan_template__res_model
 #: model:ir.model.fields,help:mail.field_mail_activity_type__res_model
 msgid ""
-"Specify a model if the activity should be specific to a model and not available when managing activities for other "
-"models."
+"Specify a model if the activity should be specific to a model and not available when managing activities for other models."
 msgstr "اگر فعالیت باید مختص یک مدل باشد و هنگام مدیریت فعالیت‌ها برای مدل‌های دیگر در دسترس نباشد، مدلی را مشخص کنید."
 
 #. module: mail
@@ -8363,8 +8335,8 @@ msgstr "ذخیره داده های پیش نمایش پیوند"
 #: model:ir.model.fields,help:mail.field_res_users_settings__push_to_talk_key
 msgid "String formatted to represent a key with modifiers following this pattern: shift.ctrl.alt.key, e.g: truthy.1.true.b"
 msgstr ""
-"رشته ای برای نمایش کلیدی با اصلاح کننده هایی که از این الگو پیروی می کنند قالب بندی شده است: shift.ctrl.alt.key، به "
-"عنوان مثال: truey.1.true.b"
+"رشته ای برای نمایش کلیدی با اصلاح کننده هایی که از این الگو پیروی می کنند قالب بندی شده است: shift.ctrl.alt.key، به عنوان "
+"مثال: truey.1.true.b"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_message_translation__body
@@ -8628,8 +8600,8 @@ msgstr "حالت تمام صفحه توسط مرورگر رد شد"
 #. module: mail
 #: model:ir.model.fields,help:mail.field_res_partner__vat model:ir.model.fields,help:mail.field_res_users__vat
 msgid ""
-"The Tax Identification Number. Values here will be validated based on the country format. You can use '/' to indicate "
-"that the partner is not subject to tax."
+"The Tax Identification Number. Values here will be validated based on the country format. You can use '/' to indicate that "
+"the partner is not subject to tax."
 msgstr ""
 "شماره شناسایی مالیاتی مقادیر در اینجا بر اساس قالب کشور تأیید می شوند. می‌توانید از «/» برای نشان دادن اینکه پارتنر یا "
 "طرف‌حساب مشمول مالیات نیست استفاده کنید."
@@ -8646,8 +8618,8 @@ msgstr "فعالیت نمی تواند راه اندازی شود:"
 #: code:addons/mail/models/mail_activity_plan_template.py:0
 #, python-format
 msgid ""
-"The activity type \"%(activity_type_name)s\" is not compatible with the plan \"%(plan_name)s\" because it is limited to "
-"the model \"%(activity_type_model)s\"."
+"The activity type \"%(activity_type_name)s\" is not compatible with the plan \"%(plan_name)s\" because it is limited to the "
+"model \"%(activity_type_model)s\"."
 msgstr ""
 "نوع فعالیت \"%(activity_type_name)s\" با طرح سازگاری ندارد \"%(plan_name)s\" زیرا محدود به مدل است "
 "\"%(activity_type_model)s\"."
@@ -8759,8 +8731,8 @@ msgid ""
 "The model (Odoo Document Kind) to which this alias corresponds. Any incoming email that does not reply to an existing "
 "record will cause the creation of a new record of this model (e.g. a Project Task)"
 msgstr ""
-"مدلی (Odoo Document Kind) که این نام مستعار با آن مطابقت دارد. هر ایمیل دریافتی که به سابقه موجود پاسخ نمی‌دهد باعث ایجاد "
-"یک رکورد جدید از این مدل می‌شود (به عنوان مثال یک وظیفه پروژه)"
+"مدلی (Odoo Document Kind) که این نام مستعار با آن مطابقت دارد. هر ایمیل دریافتی که به سابقه موجود پاسخ نمی‌دهد باعث ایجاد یک "
+"رکورد جدید از این مدل می‌شود (به عنوان مثال یک وظیفه پروژه)"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_name
@@ -8932,11 +8904,11 @@ msgstr "به نظر می رسد این طرح دیگر وجود ندارد."
 #: model:ir.model.fields,help:mail.field_mail_mail__auto_delete
 #: model:ir.model.fields,help:mail.field_mail_template__auto_delete
 msgid ""
-"This option permanently removes any track of email after it's been sent, including from the Technical menu in the "
-"Settings, in order to preserve storage space of your Odoo database."
+"This option permanently removes any track of email after it's been sent, including from the Technical menu in the Settings, "
+"in order to preserve storage space of your Odoo database."
 msgstr ""
-"این گزینه برای حفظ فضای ذخیره‌سازی پایگاه داده شما، هر مسیر ایمیل را پس از ارسال، از جمله از منوی فنی در تنظیمات، برای "
-"همیشه حذف می‌کند."
+"این گزینه برای حفظ فضای ذخیره‌سازی پایگاه داده شما، هر مسیر ایمیل را پس از ارسال، از جمله از منوی فنی در تنظیمات، برای همیشه "
+"حذف می‌کند."
 
 #. module: mail
 #. odoo-javascript
@@ -9034,8 +9006,7 @@ msgstr "به:"
 
 #. module: mail
 #. odoo-javascript
-#: code:addons/mail/static/src/core/common/message_model.js:0
-#: code:addons/mail/static/src/core/web/activity_list_popover.xml:0
+#: code:addons/mail/static/src/core/common/message_model.js:0 code:addons/mail/static/src/core/web/activity_list_popover.xml:0
 #: code:addons/mail/static/src/core/web/activity_list_popover_item.js:0
 #: code:addons/mail/static/src/core/web/activity_menu.xml:0
 #: model:ir.model.fields.selection,name:mail.selection__account_journal__activity_state__today
@@ -9099,8 +9070,8 @@ msgstr "ردیابی گیرندگان"
 #: model:ir.model.fields,help:mail.field_mail_mail__tracking_value_ids
 #: model:ir.model.fields,help:mail.field_mail_message__tracking_value_ids
 msgid ""
-"Tracked values are stored in a separate model. This field allow to reconstruct the tracking and to generate statistics "
-"on the model."
+"Tracked values are stored in a separate model. This field allow to reconstruct the tracking and to generate statistics on "
+"the model."
 msgstr ""
 "مقادیر ردیابی شده در یک مدل جداگانه ذخیره می شوند. این فیلد امکان بازسازی ردیابی و تولید آمار بر روی مدل را فراهم می کند."
 
@@ -9116,8 +9087,7 @@ msgid "Tracking Value"
 msgstr "ارزش پیگیری"
 
 #. module: mail
-#: model:ir.actions.act_window,name:mail.action_view_mail_tracking_value
-#: model:ir.ui.menu,name:mail.menu_mail_tracking_value
+#: model:ir.actions.act_window,name:mail.action_view_mail_tracking_value model:ir.ui.menu,name:mail.menu_mail_tracking_value
 msgid "Tracking Values"
 msgstr "ردیابی مقادیر"
 
@@ -9202,8 +9172,7 @@ msgid ""
 "- 'Update a Record': update the values of a record\n"
 "- 'Create Activity': create an activity (Discuss)\n"
 "- 'Send Email': post a message, a note or send an email (Discuss)\n"
-"- 'Send SMS': send SMS, log them on documents (SMS)- 'Add/Remove Followers': add or remove followers to a record "
-"(Discuss)\n"
+"- 'Send SMS': send SMS, log them on documents (SMS)- 'Add/Remove Followers': add or remove followers to a record (Discuss)\n"
 "- 'Create Record': create a new record with new values\n"
 "- 'Execute Code': a block of Python code that will be executed\n"
 "- 'Send Webhook Notification': send a POST request to an external system, also known as a Webhook\n"
@@ -9684,8 +9653,8 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid ""
-"Using your own email server is required to send/receive emails in Community and Enterprise versions. Online users "
-"already benefit from a ready-to-use email server (@mycompany.odoo.com)."
+"Using your own email server is required to send/receive emails in Community and Enterprise versions. Online users already "
+"benefit from a ready-to-use email server (@mycompany.odoo.com)."
 msgstr ""
 "جهت ارسال یا دریافت ایمیل (در هر دو نسخه  community  وEnterprise ) ،استفاده از سرور ایمیل خود ضروری است .درحال حاضر برای "
 "کاربران آنلاین  یک سرور ایمیل آماده جهت استفاده (mycompany.odoo.com@) وجوددارد."
@@ -9833,8 +9802,8 @@ msgid ""
 "We could not create alias %(alias_name)s because domain %(alias_domain_name)s belongs to company %(alias_company_names)s "
 "while the owner document belongs to company %(company_name)s."
 msgstr ""
-"ما نتوانستیم مستعار ایجاد کنیم %(alias_name)s چون دامنه %(alias_domain_name)s متعلق به شرکت است %(alias_company_names)s "
-"در حالی که سند مالک متعلق به شرکت است %(company_name)s."
+"ما نتوانستیم مستعار ایجاد کنیم %(alias_name)s چون دامنه %(alias_domain_name)s متعلق به شرکت است %(alias_company_names)s در "
+"حالی که سند مالک متعلق به شرکت است %(company_name)s."
 
 #. module: mail
 #. odoo-python
@@ -9844,8 +9813,8 @@ msgid ""
 "We could not create alias %(alias_name)s because domain %(alias_domain_name)s belongs to company %(alias_company_names)s "
 "while the target document belongs to company %(company_name)s."
 msgstr ""
-"ما نتوانستیم نام مستعار ایجاد کنیم %(alias_name)s چون دامنه %(alias_domain_name)s متعلق به شرکت است "
-"%(alias_company_names)s در حالی که سند هدف متعلق به شرکت است %(company_name)s."
+"ما نتوانستیم نام مستعار ایجاد کنیم %(alias_name)s چون دامنه %(alias_domain_name)s متعلق به شرکت است %(alias_company_names)s "
+"در حالی که سند هدف متعلق به شرکت است %(company_name)s."
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__ir_actions_server__activity_date_deadline_range_type__weeks
@@ -9881,8 +9850,8 @@ msgstr "هنگام انتخاب تخصیص \"کاربر پیش فرض\"، بای
 #. module: mail
 #: model:ir.model.fields,help:mail.field_fetchmail_server__original
 msgid ""
-"Whether a full original copy of each email should be kept for reference and attached to each processed message. This "
-"will usually double the size of your message database."
+"Whether a full original copy of each email should be kept for reference and attached to each processed message. This will "
+"usually double the size of your message database."
 msgstr ""
 "آیا یک نسخه اصلی کامل از هر ایمیل باید برای مرجع نگهداری شود و به هر پیام پردازش شده پیوست شود. این معمولاً اندازه پایگاه "
 "داده پیام شما را دو برابر می کند."
@@ -9890,8 +9859,8 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_fetchmail_server__attach
 msgid ""
-"Whether attachments should be downloaded. If not enabled, incoming emails will be stripped of any attachments before "
-"being processed"
+"Whether attachments should be downloaded. If not enabled, incoming emails will be stripped of any attachments before being "
+"processed"
 msgstr "آیا پیوست‌ها باید دانلود شوند یا خیر. اگر فعال نباشد، ایمیل‌های دریافتی قبل از پردازش از هرگونه پیوست پاک می‌شوند"
 
 #. module: mail
@@ -9963,11 +9932,11 @@ msgstr "دیروز:"
 #: code:addons/mail/static/src/discuss/core/web/discuss_sidebar_categories.js:0
 #, python-format
 msgid ""
-"You are about to leave this group conversation and will no longer have access to it unless you are invited again. Are "
-"you sure you want to continue?"
+"You are about to leave this group conversation and will no longer have access to it unless you are invited again. Are you "
+"sure you want to continue?"
 msgstr ""
-"شما در شرف خروج از این مکالمه گروهی هستید و دیگر به آن دسترسی نخواهید داشت مگر اینکه دوباره دعوت شوید. آیا مطمئن هستید "
-"که می خواهید ادامه دهید؟"
+"شما در شرف خروج از این مکالمه گروهی هستید و دیگر به آن دسترسی نخواهید داشت مگر اینکه دوباره دعوت شوید. آیا مطمئن هستید که "
+"می خواهید ادامه دهید؟"
 
 #. module: mail
 #. odoo-python
@@ -10481,8 +10450,7 @@ msgid "e.g. Schedule a meeting"
 msgstr "به‌عنوان مثال، زمانبندی یک قرارملاقات"
 
 #. module: mail
-#: model_terms:ir.ui.view,arch_db:mail.mail_alias_view_form
-#: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:mail.mail_alias_view_form model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "e.g. domain.com"
 msgstr "به طورمثال  domain.com"
 
