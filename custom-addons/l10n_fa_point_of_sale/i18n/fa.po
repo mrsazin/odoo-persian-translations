@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 10:16+0000\n"
-"PO-Revision-Date: 2024-10-18 17:48+0330\n"
+"PO-Revision-Date: 2024-10-22 19:48+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -354,7 +354,7 @@ msgstr "<strong>مجموع</strong>"
 #: code:addons/point_of_sale/static/src/app/screens/payment_screen/payment_screen.js:0
 #, python-format
 msgid "? Clicking \"Confirm\" will validate the payment."
-msgstr "? کلیک بر روی \"تایید\" پرداخت را تایید اعتبار می کند."
+msgstr "? کلیک بر روی \"تایید\" اعتبار پرداخت را تاییدمی کند."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -501,12 +501,12 @@ msgstr "حسابداری"
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__invoice_journal_id model:ir.model.fields,help:point_of_sale.field_res_config_settings__pos_invoice_journal_id
 msgid "Accounting journal used to create invoices."
-msgstr "از دفاتر حسابداری جهت ایجاد فاکتورها استفاده می‌شود."
+msgstr "از دفاتر مالی جهت ایجاد فاکتورها استفاده می‌شود."
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__journal_id model:ir.model.fields,help:point_of_sale.field_pos_order__sale_journal model:ir.model.fields,help:point_of_sale.field_res_config_settings__pos_journal_id
 msgid "Accounting journal used to post POS session journal entries and POS invoice payments."
-msgstr "دفترثبت حسابداری برای ارسال ثبت‌های دفتری شیفت‌کاری POS و پرداخت فاکتور POS استفاده می‌شود."
+msgstr "دفتر مالی برای ارسال ثبت‌های دفتری و پرداخت‌های هر صندوق یا شیفت‌کاری استفاده می‌شود."
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__message_needaction
@@ -682,14 +682,14 @@ msgstr "همه سفارشات فعال"
 #: code:addons/point_of_sale/models/pos_config.py:0
 #, python-format
 msgid "All available pricelists must be in the same currency as the company or as the Sales Journal set on this point of sale if you use the Accounting application."
-msgstr "اگر از برنامه حسابداری استفاده می‌کنید، همه لیست قیمت های موجود باید به واحد پولی شرکت یا همان دفتر روزنامه فروش تنظیم‌شده در این پایانه فروش باشند."
+msgstr "در‌صورت استفاده از برنامه حسابداری پورتال، همه لیست‌قیمت های موجود باید از همان واحدی پولی استفاده کند که برای کل شرکت یا دفتر مالی فروش انتخاب‌شده است."
 
 #. module: point_of_sale
 #. odoo-python
 #: code:addons/point_of_sale/models/pos_config.py:0
 #, python-format
 msgid "All payment methods must be in the same currency as the Sales Journal or the company currency if that is not set."
-msgstr "در صورتی که تنظیم نشده باشد، همه روش‌های پرداخت باید به همان واحد پول دفتر روزنامه فروش یا واحد پول شرکت باشد."
+msgstr "در صورتی که تنظیم نشده باشد، همه روش‌های پرداخت باید به همان واحد پول دفتر مالی فروش یا واحد پول شرکت باشد."
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_all_sales_lines
@@ -1139,7 +1139,7 @@ msgstr "پول نقد ورودی/خروجی"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__cash_journal_id
 msgid "Cash Journal"
-msgstr "دفترحساب متعلق به دریافت‌های نقد"
+msgstr "دفترحساب نقدی"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__statement_line_ids
@@ -1939,7 +1939,7 @@ msgstr "موقعیت مالی پیش فرض"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Default Journals"
-msgstr "دفاترحسابداری پیش‌فرض"
+msgstr "دفاترحساب پیش‌فرض"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -2193,7 +2193,7 @@ msgstr "دسترسی ندارید، از این داده ها برای ایمی�
 #: code:addons/point_of_sale/static/src/app/navbar/closing_popup/closing_popup.js:0
 #, python-format
 msgid "Do you want to accept payments difference and post a profit/loss journal entry?"
-msgstr "آیا این مقدار مغایرت در حساب صندوق را می‌پذیرید ؟درصورت پذیرش، یک سود یا زیان دفتری  ثبت‌‌خوادهدشد"
+msgstr "آیا این مقدار مغایرت در حساب صندوق را می‌پذیرید ؟درصورت پذیرش، یک سود یا زیان دفتری ثبت‌‌خوادهدشد"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -2506,7 +2506,7 @@ msgstr "حساب معوق اجباری"
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_payment_method__split_transactions
 msgid "Forces to set a customer when using this payment method and splits the journal entries for each customer. It could slow down the closing process."
-msgstr "زمانی که از این روش پرداخت استفاده می‌کنید، یک مشتری ایجاد کنید و ورودی‌های دفتر روزنامه برای هر مشتری را تقسیم کنید. این کار می‌تواند باعث  کند شدن روند بستن شیفت‌کاری شود."
+msgstr "زمانی که از این روش پرداخت استفاده می‌کنید، تعیین نام مشتری را الزامی کرده تا ثبت‌مالی بر اساس هر مشتری ایجاد‌شود. البته طبیعی‌است که انجام این کار می‌تواند باعث کند شدن روند بستن شیفت‌کاری شود."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -2845,7 +2845,7 @@ msgstr "فاکتور"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__invoice_journal_id model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__pos_invoice_journal_id
 msgid "Invoice Journal"
-msgstr "دفتر روزنامه فاکتور"
+msgstr "دفتر حساب فاکتور"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
@@ -2974,17 +2974,17 @@ msgstr "آزمایش جاوااسکریپت"
 #: model:ir.model,name:point_of_sale.model_account_journal model:ir.model.fields,field_description:point_of_sale.field_pos_payment_method__journal_id model:ir.model.fields,field_description:point_of_sale.field_report_pos_order__journal_id
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_payment_method_view_search
 msgid "Journal"
-msgstr "روزنامه"
+msgstr "دفترمالی"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_account_move model:ir.model.fields,field_description:point_of_sale.field_pos_session__move_id
 msgid "Journal Entry"
-msgstr "سند دفترروزنامه‌"
+msgstr "ثبت مالی"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_account_move_line
 msgid "Journal Item"
-msgstr "آیتم دفترروزنامه"
+msgstr "آیتم دفترمالی"
 
 #. module: point_of_sale
 #. odoo-python
@@ -3092,8 +3092,8 @@ msgid ""
 "Leave empty to use the default account from the company setting.\n"
 "Overrides the company's receivable account (for Point of Sale) used in the journal entries."
 msgstr ""
-"برای استفاده از حساب پیش‌فرض از تنظیمات شرکت، خالی بگذارید.\n"
-"حساب دریافتنی شرکت (برای پایانه فروش) استفاده شده در ورودی های روزنامه را لغو می کند."
+"برای استفاده از حساب پیش‌فرض تنظیمات شرکت، این گزینه را خالی بگذارید.\n"
+"حساب دریافتنی شرکت (برای پایانه فروش) را در ثبت‌های مالی مربوطه‌ ، نادیده‌می‌گیرد."
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_payment_method_view_form
@@ -3195,7 +3195,7 @@ msgstr "شماره سری ساخت/سریال"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_payment
 msgid "Make Payment"
-msgstr "پرداخت"
+msgstr ""
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__available_pricelist_ids
@@ -3515,7 +3515,7 @@ msgstr "هیچ‌کدام از محصولات"
 #. module: point_of_sale
 #: model_terms:ir.actions.act_window,help:point_of_sale.action_pos_payment_form model_terms:ir.actions.act_window,help:point_of_sale.action_pos_pos_form
 msgid "No orders found"
-msgstr "هیچ سفارشی یافت نشد"
+msgstr "هیچ سفارشی پیدا‌نشد"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -4035,7 +4035,7 @@ msgstr "سطر سفارش POS %s"
 #: model:ir.model.fields.selection,name:point_of_sale.selection__report_pos_order__state__paid
 #, python-format
 msgid "Paid"
-msgstr "پرداخت شد"
+msgstr "پرداخت شده"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_category__parent_id
@@ -4104,7 +4104,7 @@ msgstr "روشهای پرداخت"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
 msgid "Payment Name Demo"
-msgstr "نسخه نمایشی نام پرداخت"
+msgstr ""
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_payment__ticket
@@ -4773,7 +4773,7 @@ msgstr "چاپ رسید"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Print a QR code on the receipt to allow the user to easily request the invoice for an order."
-msgstr "یک کد QR روی رسید چاپ کنید تا کاربر بتواند به راحتی فاکتور سفارش را درخواست کند."
+msgstr "یک کد QR روی فیش چاپ کنید تا کاربر بتواند به راحتی فاکتور سفارش را درخواست کند."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -5077,7 +5077,7 @@ msgstr "علت"
 #: code:addons/point_of_sale/static/src/app/screens/ticket_screen/ticket_screen.js:0
 #, python-format
 msgid "Receipt"
-msgstr "رسید"
+msgstr "رسید (فیش)"
 
 #. module: point_of_sale
 #. odoo-python
@@ -7147,7 +7147,7 @@ msgstr "وقتی غیرفعال است، فقط مدیر PoS می‌تواند �
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Whenever you close a session, one entry is generated in the following accounting journal for all the orders not invoiced. Invoices are recorded in accounting separately."
-msgstr "هر زمان که شیفت‌کاری ای را می بندید، برای تمام سفارش هایی که فاکتور نشده اند، یک ورودی در روزنامه حسابداری زیر ایجاد می شود. فاکتورها به صورت جداگانه در حسابداری ثبت می شوند."
+msgstr "هر زمان که شیفت‌کاری ای را می بندید، برای تمام سفارش هایی که فاکتور نشده اند، یک ورودی در دفتر مالی زیر ایجاد می شود. فاکتورها به صورت جداگانه در سیستم حسابداری ثبت می شوند."
 
 #. module: point_of_sale
 #. odoo-javascript
